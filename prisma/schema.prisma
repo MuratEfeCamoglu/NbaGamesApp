@@ -1,0 +1,94 @@
+// Kullanıcı verisi (ISKELET §3.4). NBA verisi burada değil, src/data/seed/*.json'da.
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id          String   @id @default(cuid())
+  nickname    String?  @unique
+  /// Lowercase copy of nickname for case-insensitive uniqueness.
+  nicknameKey String?  @unique
+  totalPoints Int      @default(0)
+  bestStreak  Int      @default(0)
+  createdAt   DateTime @default(now())
+
+  sessions     GameSession[]
+  achievements UserAchievement[]
+
+  @@index([totalPoints])
+}
+
+model GameSession {
+  id             String    @id @default(cuid())
+  userId         String
+  /// GameMode slug or "daily".
+  mode           String
+  difficulty     String
+  isDaily        Boolean   @default(false)
+  /// UTC YYYY-MM-DD; only for daily sessions (one per user per day).
+  dailyDate      String?
+  seed           Int
+  currentIndex   Int       @default(0)
+  score          Int       @default(0)
+  streak         Int       @default(0)
+  bestStreak     Int       @default(0)
+  /// Correct answer units (top-10: each hidden slot is a unit).
+  correctCount   Int       @default(0)
+  /// Answer units in the session (top-10: hidden slots across lists).
+  total          Int
+  /// Number of questions (lists for top-10).
+  questionCount  Int
+  status         String    @default("ACTIVE")
+  createdAt      DateTime  @default(now())
+  lastActivityAt DateTime  @default(now())
+  finishedAt     DateTime?
+
+  user      User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  questions Question[]
+
+  @@unique([userId, dailyDate])
+  @@index([userId, status, finishedAt])
+  @@index([dailyDate, status])
+}
+
+model Question {
+  id              String    @id @default(cuid())
+  sessionId       String
+  index           Int
+  /// GeneratedQuestion without key/answerKey (JSON string).
+  payload         String
+  /// AnswerKey JSON — server only, never serialized to the client before answering.
+  answerKey       String
+  /// Answer units of this question (1, or hidden slot count for top-10).
+  units           Int       @default(1)
+  issuedAt        DateTime?
+  answeredAt      DateTime?
+  correct         Boolean?
+  correctUnits    Int?
+  points          Int?
+  /// Answer as submitted (canonical JSON) — lets a retried request be replayed idempotently.
+  submittedAnswer String?
+  /// Session streak and score right after this answer (for replaying the same response).
+  streakAfter     Int?
+  scoreAfter      Int?
+
+  session GameSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@unique([sessionId, index])
+  @@index([answeredAt])
+}
+
+model UserAchievement {
+  userId        String
+  achievementId String
+  earnedAt      DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([userId, achievementId])
+}

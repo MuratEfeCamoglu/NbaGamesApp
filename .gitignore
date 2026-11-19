@@ -1,0 +1,25 @@
+# deps
+node_modules/
+.venv/
+__pycache__/
+.pytest_cache/
+
+# build
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+src/generated/
+
+# env & local data
+.env
+.env*.local
+*.db
+*.db-journal
+prisma/*.db
+data-cache/
+
+# tests
+playwright-report/
+test-results/
+coverage/

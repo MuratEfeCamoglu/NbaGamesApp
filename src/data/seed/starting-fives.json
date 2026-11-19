@@ -1,0 +1,7963 @@
+{
+ "meta": {
+  "snapshotDate": "2026-11-19",
+  "source": "stats.nba.com via nba_api 1.12.0",
+  "endpoints": [
+   "leaguedashlineups"
+  ]
+ },
+ "items": [
+  {
+   "id": "ATL-2007-08",
+   "teamId": "ATL",
+   "season": "2007-08",
+   "playerIds": [
+    "1533",
+    "2207",
+    "2746",
+    "101107",
+    "201143"
+   ],
+   "minutes": 542.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2007-08",
+   "teamId": "BOS",
+   "season": "2007-08",
+   "playerIds": [
+    "708",
+    "951",
+    "1718",
+    "2570",
+    "200765"
+   ],
+   "minutes": 1073.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2007-08",
+   "teamId": "CHA",
+   "season": "2007-08",
+   "playerIds": [
+    "976",
+    "2202",
+    "2222",
+    "2731",
+    "101109"
+   ],
+   "minutes": 494.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2007-08",
+   "teamId": "CHI",
+   "season": "2007-08",
+   "playerIds": [
+    "693",
+    "1112",
+    "2550",
+    "2732",
+    "2736"
+   ],
+   "minutes": 194.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2007-08",
+   "teamId": "CLE",
+   "season": "2007-08",
+   "playerIds": [
+    "980",
+    "2400",
+    "2544",
+    "2562",
+    "200789"
+   ],
+   "minutes": 214.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2007-08",
+   "teamId": "DAL",
+   "season": "2007-08",
+   "playerIds": [
+    "467",
+    "956",
+    "1717",
+    "1891",
+    "2572"
+   ],
+   "minutes": 198.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2007-08",
+   "teamId": "DEN",
+   "season": "2007-08",
+   "playerIds": [
+    "947",
+    "948",
+    "1853",
+    "2030",
+    "2546"
+   ],
+   "minutes": 923.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2007-08",
+   "teamId": "DET",
+   "season": "2007-08",
+   "playerIds": [
+    "686",
+    "739",
+    "1497",
+    "1888",
+    "2419"
+   ],
+   "minutes": 1138.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2007-08",
+   "teamId": "GSW",
+   "season": "2007-08",
+   "playerIds": [
+    "1536",
+    "1733",
+    "1884",
+    "2740",
+    "101145"
+   ],
+   "minutes": 512.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2007-08",
+   "teamId": "HOU",
+   "season": "2007-08",
+   "playerIds": [
+    "1503",
+    "1747",
+    "2203",
+    "2397",
+    "101236"
+   ],
+   "minutes": 357.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2007-08",
+   "teamId": "IND",
+   "season": "2007-08",
+   "playerIds": [
+    "1902",
+    "2211",
+    "2399",
+    "101122",
+    "101143"
+   ],
+   "minutes": 252.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2007-08",
+   "teamId": "LAC",
+   "season": "2007-08",
+   "playerIds": [
+    "1501",
+    "1510",
+    "1749",
+    "1894",
+    "2549"
+   ],
+   "minutes": 176.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2007-08",
+   "teamId": "LAL",
+   "season": "2007-08",
+   "playerIds": [
+    "965",
+    "977",
+    "1885",
+    "2200",
+    "2209"
+   ],
+   "minutes": 388.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2007-08",
+   "teamId": "MEM",
+   "season": "2007-08",
+   "playerIds": [
+    "2034",
+    "2545",
+    "101124",
+    "200752",
+    "201144"
+   ],
+   "minutes": 206.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2007-08",
+   "teamId": "MIA",
+   "season": "2007-08",
+   "playerIds": [
+    "406",
+    "1715",
+    "1729",
+    "2548",
+    "2617"
+   ],
+   "minutes": 184.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2007-08",
+   "teamId": "MIL",
+   "season": "2007-08",
+   "playerIds": [
+    "2046",
+    "2072",
+    "2590",
+    "101106",
+    "201146"
+   ],
+   "minutes": 499.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2007-08",
+   "teamId": "MIN",
+   "season": "2007-08",
+   "playerIds": [
+    "2060",
+    "2744",
+    "2745",
+    "101155",
+    "200751"
+   ],
+   "minutes": 229.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NJN-2007-08",
+   "teamId": "NJN",
+   "season": "2007-08",
+   "playerIds": [
+    "467",
+    "1713",
+    "2210",
+    "200767",
+    "201157"
+   ],
+   "minutes": 344.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOH-2007-08",
+   "teamId": "NOH",
+   "season": "2007-08",
+   "playerIds": [
+    "978",
+    "2050",
+    "2199",
+    "2561",
+    "101108"
+   ],
+   "minutes": 1209.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2007-08",
+   "teamId": "NYK",
+   "season": "2007-08",
+   "playerIds": [
+    "950",
+    "2037",
+    "2047",
+    "2201",
+    "2216"
+   ],
+   "minutes": 265.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2007-08",
+   "teamId": "ORL",
+   "season": "2007-08",
+   "playerIds": [
+    "1740",
+    "2045",
+    "2586",
+    "2730",
+    "2749"
+   ],
+   "minutes": 674.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2007-08",
+   "teamId": "PHI",
+   "season": "2007-08",
+   "playerIds": [
+    "1889",
+    "2223",
+    "2501",
+    "2584",
+    "2738"
+   ],
+   "minutes": 871.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2007-08",
+   "teamId": "PHX",
+   "season": "2007-08",
+   "playerIds": [
+    "255",
+    "959",
+    "1890",
+    "1952",
+    "2405"
+   ],
+   "minutes": 422.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2007-08",
+   "teamId": "POR",
+   "season": "2007-08",
+   "playerIds": [
+    "2038",
+    "2581",
+    "101110",
+    "200746",
+    "200750"
+   ],
+   "minutes": 571.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2007-08",
+   "teamId": "SAC",
+   "season": "2007-08",
+   "playerIds": [
+    "1630",
+    "1802",
+    "1897",
+    "2755",
+    "2757"
+   ],
+   "minutes": 381.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2007-08",
+   "teamId": "SAS",
+   "season": "2007-08",
+   "playerIds": [
+    "714",
+    "1477",
+    "1495",
+    "2225",
+    "101177"
+   ],
+   "minutes": 420.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SEA-2007-08",
+   "teamId": "SEA",
+   "season": "2007-08",
+   "playerIds": [
+    "2248",
+    "2555",
+    "101130",
+    "201142",
+    "201145"
+   ],
+   "minutes": 204.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2007-08",
+   "teamId": "TOR",
+   "season": "2007-08",
+   "playerIds": [
+    "1515",
+    "2547",
+    "101181",
+    "200081",
+    "200745"
+   ],
+   "minutes": 556.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2007-08",
+   "teamId": "UTA",
+   "season": "2007-08",
+   "playerIds": [
+    "1905",
+    "2246",
+    "2430",
+    "101114",
+    "200758"
+   ],
+   "minutes": 974.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2007-08",
+   "teamId": "WAS",
+   "season": "2007-08",
+   "playerIds": [
+    "1498",
+    "1712",
+    "2052",
+    "2217",
+    "2406"
+   ],
+   "minutes": 737.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2008-09",
+   "teamId": "ATL",
+   "season": "2008-09",
+   "playerIds": [
+    "1710",
+    "2207",
+    "2746",
+    "101107",
+    "201143"
+   ],
+   "minutes": 568.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2008-09",
+   "teamId": "BOS",
+   "season": "2008-09",
+   "playerIds": [
+    "708",
+    "951",
+    "1718",
+    "2570",
+    "200765"
+   ],
+   "minutes": 1074.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2008-09",
+   "teamId": "CHA",
+   "season": "2008-09",
+   "playerIds": [
+    "1952",
+    "2222",
+    "2564",
+    "2731",
+    "101109"
+   ],
+   "minutes": 809.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2008-09",
+   "teamId": "CHI",
+   "season": "2008-09",
+   "playerIds": [
+    "2732",
+    "2736",
+    "200748",
+    "201149",
+    "201565"
+   ],
+   "minutes": 319.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2008-09",
+   "teamId": "CLE",
+   "season": "2008-09",
+   "playerIds": [
+    "980",
+    "1112",
+    "2544",
+    "2590",
+    "2753"
+   ],
+   "minutes": 486.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2008-09",
+   "teamId": "DAL",
+   "season": "2008-09",
+   "playerIds": [
+    "467",
+    "956",
+    "1717",
+    "2572",
+    "101120"
+   ],
+   "minutes": 391.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2008-09",
+   "teamId": "DEN",
+   "season": "2008-09",
+   "playerIds": [
+    "1497",
+    "2030",
+    "2403",
+    "2546",
+    "2563"
+   ],
+   "minutes": 540.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2008-09",
+   "teamId": "DET",
+   "season": "2008-09",
+   "playerIds": [
+    "686",
+    "739",
+    "1888",
+    "2419",
+    "201155"
+   ],
+   "minutes": 295.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2008-09",
+   "teamId": "GSW",
+   "season": "2008-09",
+   "playerIds": [
+    "1536",
+    "1894",
+    "2037",
+    "101142",
+    "101145"
+   ],
+   "minutes": 85.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2008-09",
+   "teamId": "HOU",
+   "season": "2008-09",
+   "playerIds": [
+    "1897",
+    "2203",
+    "2397",
+    "2449",
+    "201166"
+   ],
+   "minutes": 555.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2008-09",
+   "teamId": "IND",
+   "season": "2008-09",
+   "playerIds": [
+    "1725",
+    "2211",
+    "2551",
+    "2605",
+    "101122"
+   ],
+   "minutes": 233.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2008-09",
+   "teamId": "LAC",
+   "season": "2008-09",
+   "playerIds": [
+    "948",
+    "1884",
+    "2216",
+    "201154",
+    "201569"
+   ],
+   "minutes": 386.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2008-09",
+   "teamId": "LAL",
+   "season": "2008-09",
+   "playerIds": [
+    "965",
+    "977",
+    "1885",
+    "2200",
+    "2772"
+   ],
+   "minutes": 499.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2008-09",
+   "teamId": "MEM",
+   "season": "2008-09",
+   "playerIds": [
+    "200752",
+    "201144",
+    "201188",
+    "201564",
+    "201589"
+   ],
+   "minutes": 709.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2008-09",
+   "teamId": "MIA",
+   "season": "2008-09",
+   "playerIds": [
+    "1890",
+    "2548",
+    "2617",
+    "201202",
+    "201596"
+   ],
+   "minutes": 360.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2008-09",
+   "teamId": "MIL",
+   "season": "2008-09",
+   "playerIds": [
+    "1922",
+    "2210",
+    "101111",
+    "201196",
+    "201601"
+   ],
+   "minutes": 227.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2008-09",
+   "teamId": "MIN",
+   "season": "2008-09",
+   "playerIds": [
+    "2742",
+    "2744",
+    "101155",
+    "200751",
+    "200783"
+   ],
+   "minutes": 262.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NJN-2008-09",
+   "teamId": "NJN",
+   "season": "2008-09",
+   "playerIds": [
+    "1713",
+    "2250",
+    "2734",
+    "201146",
+    "201572"
+   ],
+   "minutes": 332.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOH-2008-09",
+   "teamId": "NOH",
+   "season": "2008-09",
+   "playerIds": [
+    "978",
+    "2199",
+    "2446",
+    "2561",
+    "101108"
+   ],
+   "minutes": 423.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2008-09",
+   "teamId": "NYK",
+   "season": "2008-09",
+   "playerIds": [
+    "1733",
+    "2047",
+    "2768",
+    "101135",
+    "201163"
+   ],
+   "minutes": 311.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2008-09",
+   "teamId": "OKC",
+   "season": "2008-09",
+   "playerIds": [
+    "2420",
+    "200757",
+    "201142",
+    "201145",
+    "201566"
+   ],
+   "minutes": 279.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2008-09",
+   "teamId": "ORL",
+   "season": "2008-09",
+   "playerIds": [
+    "1740",
+    "1747",
+    "2045",
+    "2730",
+    "201584"
+   ],
+   "minutes": 415.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2008-09",
+   "teamId": "PHI",
+   "season": "2008-09",
+   "playerIds": [
+    "1889",
+    "2223",
+    "2584",
+    "2738",
+    "201152"
+   ],
+   "minutes": 784.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2008-09",
+   "teamId": "PHX",
+   "season": "2008-09",
+   "playerIds": [
+    "255",
+    "406",
+    "959",
+    "2202",
+    "2405"
+   ],
+   "minutes": 392.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2008-09",
+   "teamId": "POR",
+   "season": "2008-09",
+   "playerIds": [
+    "2038",
+    "2581",
+    "200746",
+    "200750",
+    "201587"
+   ],
+   "minutes": 561.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2008-09",
+   "teamId": "SAC",
+   "season": "2008-09",
+   "playerIds": [
+    "1802",
+    "2422",
+    "2755",
+    "2757",
+    "201574"
+   ],
+   "minutes": 206.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2008-09",
+   "teamId": "SAS",
+   "season": "2008-09",
+   "playerIds": [
+    "714",
+    "1495",
+    "2225",
+    "2427",
+    "2588"
+   ],
+   "minutes": 554.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2008-09",
+   "teamId": "TOR",
+   "season": "2008-09",
+   "playerIds": [
+    "1515",
+    "1890",
+    "2547",
+    "101181",
+    "200745"
+   ],
+   "minutes": 385.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2008-09",
+   "teamId": "UTA",
+   "season": "2008-09",
+   "playerIds": [
+    "2246",
+    "101114",
+    "101139",
+    "200758",
+    "200794"
+   ],
+   "minutes": 468.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2008-09",
+   "teamId": "WAS",
+   "season": "2008-09",
+   "playerIds": [
+    "1712",
+    "2229",
+    "2406",
+    "101154",
+    "201187"
+   ],
+   "minutes": 281.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2009-10",
+   "teamId": "ATL",
+   "season": "2009-10",
+   "playerIds": [
+    "1710",
+    "2207",
+    "2746",
+    "101107",
+    "201143"
+   ],
+   "minutes": 1172.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2009-10",
+   "teamId": "BOS",
+   "season": "2009-10",
+   "playerIds": [
+    "708",
+    "951",
+    "1718",
+    "2570",
+    "200765"
+   ],
+   "minutes": 1179.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2009-10",
+   "teamId": "CHA",
+   "season": "2009-10",
+   "playerIds": [
+    "1536",
+    "1737",
+    "2222",
+    "2564",
+    "101109"
+   ],
+   "minutes": 454.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2009-10",
+   "teamId": "CHI",
+   "season": "2009-10",
+   "playerIds": [
+    "2550",
+    "2736",
+    "201149",
+    "201565",
+    "201959"
+   ],
+   "minutes": 451.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2009-10",
+   "teamId": "CLE",
+   "season": "2009-10",
+   "playerIds": [
+    "406",
+    "1515",
+    "2544",
+    "2590",
+    "201581"
+   ],
+   "minutes": 384.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2009-10",
+   "teamId": "DAL",
+   "season": "2009-10",
+   "playerIds": [
+    "467",
+    "956",
+    "1717",
+    "1890",
+    "1891"
+   ],
+   "minutes": 342.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2009-10",
+   "teamId": "DEN",
+   "season": "2009-10",
+   "playerIds": [
+    "1497",
+    "2030",
+    "2403",
+    "2546",
+    "201167"
+   ],
+   "minutes": 537.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2009-10",
+   "teamId": "DET",
+   "season": "2009-10",
+   "playerIds": [
+    "1112",
+    "1888",
+    "2419",
+    "201155",
+    "201973"
+   ],
+   "minutes": 303.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2009-10",
+   "teamId": "GSW",
+   "season": "2009-10",
+   "playerIds": [
+    "1630",
+    "2209",
+    "101145",
+    "201627",
+    "201939"
+   ],
+   "minutes": 124.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2009-10",
+   "teamId": "HOU",
+   "season": "2009-10",
+   "playerIds": [
+    "2203",
+    "2449",
+    "2772",
+    "101236",
+    "201166"
+   ],
+   "minutes": 823.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2009-10",
+   "teamId": "IND",
+   "season": "2009-10",
+   "playerIds": [
+    "2211",
+    "2248",
+    "101122",
+    "201575",
+    "201579"
+   ],
+   "minutes": 426.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2009-10",
+   "teamId": "LAC",
+   "season": "2009-10",
+   "playerIds": [
+    "948",
+    "1884",
+    "2446",
+    "2549",
+    "201569"
+   ],
+   "minutes": 406.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2009-10",
+   "teamId": "LAL",
+   "season": "2009-10",
+   "playerIds": [
+    "965",
+    "977",
+    "1897",
+    "2200",
+    "101115"
+   ],
+   "minutes": 668.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2009-10",
+   "teamId": "MEM",
+   "season": "2009-10",
+   "playerIds": [
+    "2216",
+    "200752",
+    "201144",
+    "201188",
+    "201564"
+   ],
+   "minutes": 1474.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2009-10",
+   "teamId": "MIA",
+   "season": "2009-10",
+   "playerIds": [
+    "979",
+    "2047",
+    "2306",
+    "2548",
+    "201563"
+   ],
+   "minutes": 286.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2009-10",
+   "teamId": "MIL",
+   "season": "2009-10",
+   "playerIds": [
+    "2422",
+    "2568",
+    "101106",
+    "201601",
+    "201943"
+   ],
+   "minutes": 282.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2009-10",
+   "teamId": "MIN",
+   "season": "2009-10",
+   "playerIds": [
+    "2744",
+    "101155",
+    "200797",
+    "201147",
+    "201938"
+   ],
+   "minutes": 295.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NJN-2009-10",
+   "teamId": "NJN",
+   "season": "2009-10",
+   "playerIds": [
+    "2553",
+    "2734",
+    "201146",
+    "201572",
+    "201584"
+   ],
+   "minutes": 326.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOH-2009-10",
+   "teamId": "NOH",
+   "season": "2009-10",
+   "playerIds": [
+    "978",
+    "2484",
+    "2561",
+    "2731",
+    "101108"
+   ],
+   "minutes": 496.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2009-10",
+   "teamId": "NYK",
+   "season": "2009-10",
+   "playerIds": [
+    "2407",
+    "2768",
+    "101135",
+    "201163",
+    "201568"
+   ],
+   "minutes": 447.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2009-10",
+   "teamId": "OKC",
+   "season": "2009-10",
+   "playerIds": [
+    "2420",
+    "200757",
+    "201142",
+    "201145",
+    "201566"
+   ],
+   "minutes": 1308.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2009-10",
+   "teamId": "ORL",
+   "season": "2009-10",
+   "playerIds": [
+    "1713",
+    "1740",
+    "2440",
+    "2730",
+    "2749"
+   ],
+   "minutes": 773.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2009-10",
+   "teamId": "PHI",
+   "season": "2009-10",
+   "playerIds": [
+    "1882",
+    "2223",
+    "2738",
+    "101150",
+    "201152"
+   ],
+   "minutes": 253.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2009-10",
+   "teamId": "PHX",
+   "season": "2009-10",
+   "playerIds": [
+    "255",
+    "959",
+    "2202",
+    "2405",
+    "101112"
+   ],
+   "minutes": 828.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2009-10",
+   "teamId": "POR",
+   "season": "2009-10",
+   "playerIds": [
+    "948",
+    "1889",
+    "200746",
+    "200750",
+    "201587"
+   ],
+   "minutes": 372.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2009-10",
+   "teamId": "SAC",
+   "season": "2009-10",
+   "playerIds": [
+    "2757",
+    "201150",
+    "201171",
+    "201590",
+    "201936"
+   ],
+   "minutes": 119.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2009-10",
+   "teamId": "SAS",
+   "season": "2009-10",
+   "playerIds": [
+    "686",
+    "1495",
+    "1938",
+    "2210",
+    "201588"
+   ],
+   "minutes": 230.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2009-10",
+   "teamId": "TOR",
+   "season": "2009-10",
+   "playerIds": [
+    "2045",
+    "2547",
+    "101127",
+    "200745",
+    "201942"
+   ],
+   "minutes": 369.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2009-10",
+   "teamId": "UTA",
+   "season": "2009-10",
+   "playerIds": [
+    "1905",
+    "2246",
+    "2430",
+    "101114",
+    "200758"
+   ],
+   "minutes": 327.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2009-10",
+   "teamId": "WAS",
+   "season": "2009-10",
+   "playerIds": [
+    "1712",
+    "2034",
+    "2217",
+    "2406",
+    "200751"
+   ],
+   "minutes": 163.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2010-11",
+   "teamId": "ATL",
+   "season": "2010-11",
+   "playerIds": [
+    "1710",
+    "2207",
+    "2746",
+    "101107",
+    "201143"
+   ],
+   "minutes": 383.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2010-11",
+   "teamId": "BOS",
+   "season": "2010-11",
+   "playerIds": [
+    "708",
+    "951",
+    "1718",
+    "200765",
+    "201175"
+   ],
+   "minutes": 514.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2010-11",
+   "teamId": "CHA",
+   "season": "2010-11",
+   "playerIds": [
+    "1536",
+    "2198",
+    "2222",
+    "2564",
+    "201571"
+   ],
+   "minutes": 363.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2010-11",
+   "teamId": "CHI",
+   "season": "2010-11",
+   "playerIds": [
+    "2430",
+    "2586",
+    "2736",
+    "201149",
+    "201565"
+   ],
+   "minutes": 419.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2010-11",
+   "teamId": "CLE",
+   "season": "2010-11",
+   "playerIds": [
+    "1515",
+    "1712",
+    "2590",
+    "2760",
+    "200789"
+   ],
+   "minutes": 233.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2010-11",
+   "teamId": "DAL",
+   "season": "2010-11",
+   "playerIds": [
+    "1717",
+    "1890",
+    "1891",
+    "2217",
+    "200826"
+   ],
+   "minutes": 350.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2010-11",
+   "teamId": "DEN",
+   "season": "2010-11",
+   "playerIds": [
+    "1497",
+    "2030",
+    "2403",
+    "2546",
+    "201167"
+   ],
+   "minutes": 309.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2010-11",
+   "teamId": "DET",
+   "season": "2010-11",
+   "playerIds": [
+    "1112",
+    "1888",
+    "2419",
+    "101131",
+    "201155"
+   ],
+   "minutes": 172.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2010-11",
+   "teamId": "GSW",
+   "season": "2010-11",
+   "playerIds": [
+    "2740",
+    "2748",
+    "101135",
+    "101145",
+    "201939"
+   ],
+   "minutes": 686.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2010-11",
+   "teamId": "HOU",
+   "season": "2010-11",
+   "playerIds": [
+    "2203",
+    "2449",
+    "2755",
+    "101236",
+    "200768"
+   ],
+   "minutes": 796.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2010-11",
+   "teamId": "IND",
+   "season": "2010-11",
+   "playerIds": [
+    "2399",
+    "101122",
+    "201177",
+    "201579",
+    "201954"
+   ],
+   "minutes": 443.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2010-11",
+   "teamId": "LAC",
+   "season": "2010-11",
+   "playerIds": [
+    "1884",
+    "101155",
+    "201569",
+    "201599",
+    "201933"
+   ],
+   "minutes": 328.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2010-11",
+   "teamId": "LAL",
+   "season": "2010-11",
+   "playerIds": [
+    "965",
+    "977",
+    "1885",
+    "1897",
+    "2200"
+   ],
+   "minutes": 952.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2010-11",
+   "teamId": "MEM",
+   "season": "2010-11",
+   "playerIds": [
+    "2216",
+    "2754",
+    "201144",
+    "201188",
+    "201970"
+   ],
+   "minutes": 403.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2010-11",
+   "teamId": "MIA",
+   "season": "2010-11",
+   "playerIds": [
+    "980",
+    "2306",
+    "2544",
+    "2547",
+    "2548"
+   ],
+   "minutes": 428.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2010-11",
+   "teamId": "MIL",
+   "season": "2010-11",
+   "playerIds": [
+    "2422",
+    "2568",
+    "101106",
+    "201601",
+    "201943"
+   ],
+   "minutes": 393.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2010-11",
+   "teamId": "MIN",
+   "season": "2010-11",
+   "playerIds": [
+    "2545",
+    "2557",
+    "201563",
+    "201567",
+    "202325"
+   ],
+   "minutes": 472.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NJN-2010-11",
+   "teamId": "NJN",
+   "season": "2010-11",
+   "playerIds": [
+    "2566",
+    "2734",
+    "2743",
+    "201572",
+    "201627"
+   ],
+   "minutes": 257.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOH-2010-11",
+   "teamId": "NOH",
+   "season": "2010-11",
+   "playerIds": [
+    "2561",
+    "2731",
+    "2772",
+    "101108",
+    "201158"
+   ],
+   "minutes": 882.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2010-11",
+   "teamId": "NYK",
+   "season": "2010-11",
+   "playerIds": [
+    "2405",
+    "101109",
+    "201163",
+    "201568",
+    "202361"
+   ],
+   "minutes": 572.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2010-11",
+   "teamId": "OKC",
+   "season": "2010-11",
+   "playerIds": [
+    "2420",
+    "200757",
+    "201142",
+    "201145",
+    "201566"
+   ],
+   "minutes": 541.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2010-11",
+   "teamId": "ORL",
+   "season": "2010-11",
+   "playerIds": [
+    "2045",
+    "2202",
+    "2730",
+    "2749",
+    "101138"
+   ],
+   "minutes": 630.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2010-11",
+   "teamId": "PHI",
+   "season": "2010-11",
+   "playerIds": [
+    "1882",
+    "2738",
+    "201150",
+    "201950",
+    "201975"
+   ],
+   "minutes": 776.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2010-11",
+   "teamId": "PHX",
+   "season": "2010-11",
+   "playerIds": [
+    "255",
+    "959",
+    "1713",
+    "101112",
+    "201577"
+   ],
+   "minutes": 363.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2010-11",
+   "teamId": "POR",
+   "season": "2010-11",
+   "playerIds": [
+    "948",
+    "1889",
+    "200746",
+    "201587",
+    "202083"
+   ],
+   "minutes": 452.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2010-11",
+   "teamId": "SAC",
+   "season": "2010-11",
+   "playerIds": [
+    "2223",
+    "2757",
+    "101128",
+    "201977",
+    "202326"
+   ],
+   "minutes": 176.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2010-11",
+   "teamId": "SAS",
+   "season": "2010-11",
+   "playerIds": [
+    "1495",
+    "1938",
+    "2210",
+    "2225",
+    "201971"
+   ],
+   "minutes": 687.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2010-11",
+   "teamId": "TOR",
+   "season": "2010-11",
+   "playerIds": [
+    "101161",
+    "101181",
+    "200745",
+    "201603",
+    "201942"
+   ],
+   "minutes": 271.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2010-11",
+   "teamId": "UTA",
+   "season": "2010-11",
+   "playerIds": [
+    "1905",
+    "1952",
+    "2744",
+    "101114",
+    "200794"
+   ],
+   "minutes": 748.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2010-11",
+   "teamId": "WAS",
+   "season": "2010-11",
+   "playerIds": [
+    "1740",
+    "101154",
+    "201156",
+    "201580",
+    "202322"
+   ],
+   "minutes": 255.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2011-12",
+   "teamId": "ATL",
+   "season": "2011-12",
+   "playerIds": [
+    "2207",
+    "2585",
+    "2746",
+    "101107",
+    "201952"
+   ],
+   "minutes": 398.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2011-12",
+   "teamId": "BOS",
+   "season": "2011-12",
+   "playerIds": [
+    "708",
+    "951",
+    "1718",
+    "101138",
+    "200765"
+   ],
+   "minutes": 327.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2011-12",
+   "teamId": "CHA",
+   "season": "2011-12",
+   "playerIds": [
+    "1894",
+    "200748",
+    "201571",
+    "201945",
+    "202687"
+   ],
+   "minutes": 161.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2011-12",
+   "teamId": "CHI",
+   "season": "2011-12",
+   "playerIds": [
+    "2430",
+    "2736",
+    "200758",
+    "201149",
+    "201565"
+   ],
+   "minutes": 289.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2011-12",
+   "teamId": "CLE",
+   "season": "2011-12",
+   "playerIds": [
+    "1515",
+    "1712",
+    "2760",
+    "201956",
+    "202681"
+   ],
+   "minutes": 311.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2011-12",
+   "teamId": "DAL",
+   "season": "2011-12",
+   "playerIds": [
+    "467",
+    "1717",
+    "1890",
+    "2217",
+    "2753"
+   ],
+   "minutes": 190.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2011-12",
+   "teamId": "DEN",
+   "season": "2011-12",
+   "playerIds": [
+    "2403",
+    "201167",
+    "201568",
+    "201951",
+    "202389"
+   ],
+   "minutes": 135.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2011-12",
+   "teamId": "DET",
+   "season": "2011-12",
+   "playerIds": [
+    "2419",
+    "101131",
+    "201155",
+    "202328",
+    "202688"
+   ],
+   "minutes": 569.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2011-12",
+   "teamId": "GSW",
+   "season": "2011-12",
+   "playerIds": [
+    "2740",
+    "2748",
+    "101135",
+    "101145",
+    "201939"
+   ],
+   "minutes": 277.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2011-12",
+   "teamId": "HOU",
+   "season": "2011-12",
+   "playerIds": [
+    "2223",
+    "2449",
+    "2755",
+    "200768",
+    "202718"
+   ],
+   "minutes": 455.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2011-12",
+   "teamId": "IND",
+   "season": "2011-12",
+   "playerIds": [
+    "2561",
+    "101122",
+    "201579",
+    "201954",
+    "202331"
+   ],
+   "minutes": 1000.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2011-12",
+   "teamId": "LAC",
+   "season": "2011-12",
+   "playerIds": [
+    "2406",
+    "101108",
+    "200751",
+    "201599",
+    "201933"
+   ],
+   "minutes": 648.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2011-12",
+   "teamId": "LAL",
+   "season": "2011-12",
+   "playerIds": [
+    "965",
+    "977",
+    "1897",
+    "2200",
+    "101115"
+   ],
+   "minutes": 492.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2011-12",
+   "teamId": "MEM",
+   "season": "2011-12",
+   "playerIds": [
+    "2754",
+    "200752",
+    "201144",
+    "201188",
+    "201578"
+   ],
+   "minutes": 522.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2011-12",
+   "teamId": "MIA",
+   "season": "2011-12",
+   "playerIds": [
+    "2544",
+    "2547",
+    "2548",
+    "201202",
+    "201596"
+   ],
+   "minutes": 534.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2011-12",
+   "teamId": "MIL",
+   "season": "2011-12",
+   "playerIds": [
+    "2400",
+    "2568",
+    "2733",
+    "201601",
+    "201943"
+   ],
+   "minutes": 180.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2011-12",
+   "teamId": "MIN",
+   "season": "2011-12",
+   "playerIds": [
+    "2557",
+    "201567",
+    "201593",
+    "201937",
+    "202325"
+   ],
+   "minutes": 267.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NJN-2011-12",
+   "teamId": "NJN",
+   "season": "2011-12",
+   "playerIds": [
+    "2052",
+    "2743",
+    "101114",
+    "200749",
+    "202705"
+   ],
+   "minutes": 156.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOH-2011-12",
+   "teamId": "NOH",
+   "season": "2011-12",
+   "playerIds": [
+    "2549",
+    "2772",
+    "101127",
+    "201158",
+    "202970"
+   ],
+   "minutes": 156.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2011-12",
+   "teamId": "NYK",
+   "season": "2011-12",
+   "playerIds": [
+    "2199",
+    "2405",
+    "2546",
+    "202361",
+    "202697"
+   ],
+   "minutes": 262.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2011-12",
+   "teamId": "OKC",
+   "season": "2011-12",
+   "playerIds": [
+    "2570",
+    "200757",
+    "201142",
+    "201566",
+    "201586"
+   ],
+   "minutes": 664.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2011-12",
+   "teamId": "ORL",
+   "season": "2011-12",
+   "playerIds": [
+    "2045",
+    "2202",
+    "2730",
+    "2749",
+    "201583"
+   ],
+   "minutes": 530.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2011-12",
+   "teamId": "PHI",
+   "season": "2011-12",
+   "playerIds": [
+    "1882",
+    "2738",
+    "201150",
+    "201950",
+    "201975"
+   ],
+   "minutes": 197.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2011-12",
+   "teamId": "PHX",
+   "season": "2011-12",
+   "playerIds": [
+    "255",
+    "959",
+    "101112",
+    "101162",
+    "201162"
+   ],
+   "minutes": 746.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2011-12",
+   "teamId": "POR",
+   "season": "2011-12",
+   "playerIds": [
+    "948",
+    "2222",
+    "101109",
+    "200746",
+    "202083"
+   ],
+   "minutes": 404.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2011-12",
+   "teamId": "SAC",
+   "season": "2011-12",
+   "playerIds": [
+    "201574",
+    "201936",
+    "201977",
+    "202326",
+    "202738"
+   ],
+   "minutes": 317.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2011-12",
+   "teamId": "SAS",
+   "season": "2011-12",
+   "playerIds": [
+    "1495",
+    "2210",
+    "2225",
+    "201971",
+    "202695"
+   ],
+   "minutes": 190.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2011-12",
+   "teamId": "TOR",
+   "season": "2011-12",
+   "playerIds": [
+    "2446",
+    "101161",
+    "101181",
+    "200745",
+    "201942"
+   ],
+   "minutes": 150.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2011-12",
+   "teamId": "UTA",
+   "season": "2011-12",
+   "playerIds": [
+    "1952",
+    "2734",
+    "2744",
+    "200794",
+    "202330"
+   ],
+   "minutes": 401.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2011-12",
+   "teamId": "WAS",
+   "season": "2011-12",
+   "playerIds": [
+    "201156",
+    "201580",
+    "202322",
+    "202344",
+    "202698"
+   ],
+   "minutes": 201.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2012-13",
+   "teamId": "ATL",
+   "season": "2012-13",
+   "playerIds": [
+    "2594",
+    "2734",
+    "2746",
+    "201143",
+    "201952"
+   ],
+   "minutes": 351.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2012-13",
+   "teamId": "BKN",
+   "season": "2012-13",
+   "playerIds": [
+    "2207",
+    "2222",
+    "2501",
+    "101114",
+    "201572"
+   ],
+   "minutes": 640.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2012-13",
+   "teamId": "BOS",
+   "season": "2012-13",
+   "playerIds": [
+    "708",
+    "1718",
+    "101138",
+    "201584",
+    "202340"
+   ],
+   "minutes": 244.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2012-13",
+   "teamId": "CHA",
+   "season": "2012-13",
+   "playerIds": [
+    "201177",
+    "201945",
+    "202687",
+    "202689",
+    "203077"
+   ],
+   "minutes": 279.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2012-13",
+   "teamId": "CHI",
+   "season": "2012-13",
+   "playerIds": [
+    "1888",
+    "2430",
+    "2550",
+    "2736",
+    "201149"
+   ],
+   "minutes": 428.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2012-13",
+   "teamId": "CLE",
+   "season": "2012-13",
+   "playerIds": [
+    "202087",
+    "202681",
+    "202684",
+    "203079",
+    "203092"
+   ],
+   "minutes": 421.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2012-13",
+   "teamId": "DAL",
+   "season": "2012-13",
+   "playerIds": [
+    "1713",
+    "1882",
+    "1890",
+    "201564",
+    "201954"
+   ],
+   "minutes": 196.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2012-13",
+   "teamId": "DEN",
+   "season": "2012-13",
+   "playerIds": [
+    "2738",
+    "201568",
+    "201585",
+    "201951",
+    "202702"
+   ],
+   "minutes": 797.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2012-13",
+   "teamId": "DET",
+   "season": "2012-13",
+   "playerIds": [
+    "2419",
+    "101131",
+    "202328",
+    "202688",
+    "202713"
+   ],
+   "minutes": 605.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2012-13",
+   "teamId": "GSW",
+   "season": "2012-13",
+   "playerIds": [
+    "101135",
+    "201939",
+    "202691",
+    "203084",
+    "203105"
+   ],
+   "minutes": 516.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2012-13",
+   "teamId": "HOU",
+   "season": "2012-13",
+   "playerIds": [
+    "201600",
+    "201935",
+    "202335",
+    "202391",
+    "202718"
+   ],
+   "minutes": 566.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2012-13",
+   "teamId": "IND",
+   "season": "2012-13",
+   "playerIds": [
+    "2561",
+    "201579",
+    "201588",
+    "202331",
+    "202362"
+   ],
+   "minutes": 1217.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2012-13",
+   "teamId": "LAC",
+   "season": "2012-13",
+   "playerIds": [
+    "2406",
+    "2584",
+    "101108",
+    "201599",
+    "201933"
+   ],
+   "minutes": 700.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2012-13",
+   "teamId": "LAL",
+   "season": "2012-13",
+   "playerIds": [
+    "959",
+    "977",
+    "1897",
+    "2730",
+    "201947"
+   ],
+   "minutes": 339.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2012-13",
+   "teamId": "MEM",
+   "season": "2012-13",
+   "playerIds": [
+    "2216",
+    "2754",
+    "200752",
+    "201144",
+    "201188"
+   ],
+   "minutes": 631.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2012-13",
+   "teamId": "MIA",
+   "season": "2012-13",
+   "playerIds": [
+    "2544",
+    "2547",
+    "2548",
+    "2617",
+    "201596"
+   ],
+   "minutes": 688.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2012-13",
+   "teamId": "MIL",
+   "season": "2012-13",
+   "playerIds": [
+    "101141",
+    "101145",
+    "201601",
+    "201943",
+    "202336"
+   ],
+   "minutes": 389.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2012-13",
+   "teamId": "MIN",
+   "season": "2012-13",
+   "playerIds": [
+    "1905",
+    "2557",
+    "201593",
+    "201937",
+    "202682"
+   ],
+   "minutes": 376.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOH-2012-13",
+   "teamId": "NOH",
+   "season": "2012-13",
+   "playerIds": [
+    "201569",
+    "201577",
+    "202329",
+    "202349",
+    "203076"
+   ],
+   "minutes": 505.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2012-13",
+   "teamId": "NYK",
+   "season": "2012-13",
+   "playerIds": [
+    "467",
+    "2199",
+    "2546",
+    "2747",
+    "101109"
+   ],
+   "minutes": 269.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2012-13",
+   "teamId": "OKC",
+   "season": "2012-13",
+   "playerIds": [
+    "2570",
+    "200757",
+    "201142",
+    "201566",
+    "201586"
+   ],
+   "minutes": 1307.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2012-13",
+   "teamId": "ORL",
+   "season": "2012-13",
+   "playerIds": [
+    "2749",
+    "200755",
+    "201167",
+    "201175",
+    "202696"
+   ],
+   "minutes": 230.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2012-13",
+   "teamId": "PHI",
+   "season": "2012-13",
+   "playerIds": [
+    "2202",
+    "201152",
+    "201950",
+    "202323",
+    "202730"
+   ],
+   "minutes": 382.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2012-13",
+   "teamId": "PHX",
+   "season": "2012-13",
+   "playerIds": [
+    "2449",
+    "101162",
+    "200782",
+    "201162",
+    "201609"
+   ],
+   "minutes": 441.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2012-13",
+   "teamId": "POR",
+   "season": "2012-13",
+   "playerIds": [
+    "200746",
+    "201581",
+    "201587",
+    "202083",
+    "203081"
+   ],
+   "minutes": 1143.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2012-13",
+   "teamId": "SAC",
+   "season": "2012-13",
+   "playerIds": [
+    "2422",
+    "201574",
+    "201936",
+    "202326",
+    "202738"
+   ],
+   "minutes": 581.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2012-13",
+   "teamId": "SAS",
+   "season": "2012-13",
+   "playerIds": [
+    "1495",
+    "2225",
+    "201168",
+    "201980",
+    "202695"
+   ],
+   "minutes": 363.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2012-13",
+   "teamId": "TOR",
+   "season": "2012-13",
+   "playerIds": [
+    "101161",
+    "200752",
+    "200768",
+    "201942",
+    "202685"
+   ],
+   "minutes": 342.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2012-13",
+   "teamId": "UTA",
+   "season": "2012-13",
+   "playerIds": [
+    "2224",
+    "2744",
+    "101107",
+    "200751",
+    "200794"
+   ],
+   "minutes": 454.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2012-13",
+   "teamId": "WAS",
+   "season": "2012-13",
+   "playerIds": [
+    "2403",
+    "2731",
+    "101110",
+    "202066",
+    "202322"
+   ],
+   "minutes": 283.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2013-14",
+   "teamId": "ATL",
+   "season": "2013-14",
+   "playerIds": [
+    "2594",
+    "200794",
+    "201143",
+    "201952",
+    "201960"
+   ],
+   "minutes": 392.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2013-14",
+   "teamId": "BKN",
+   "season": "2013-14",
+   "playerIds": [
+    "1718",
+    "2207",
+    "2733",
+    "101114",
+    "203486"
+   ],
+   "minutes": 284.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2013-14",
+   "teamId": "BOS",
+   "season": "2013-14",
+   "playerIds": [
+    "101138",
+    "201145",
+    "202340",
+    "202348",
+    "203096"
+   ],
+   "minutes": 372.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2013-14",
+   "teamId": "CHA",
+   "season": "2013-14",
+   "playerIds": [
+    "2744",
+    "201177",
+    "201945",
+    "202689",
+    "203077"
+   ],
+   "minutes": 526.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2013-14",
+   "teamId": "CHI",
+   "season": "2013-14",
+   "playerIds": [
+    "2399",
+    "2430",
+    "2550",
+    "201149",
+    "202710"
+   ],
+   "minutes": 681.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2013-14",
+   "teamId": "CLE",
+   "season": "2013-14",
+   "playerIds": [
+    "2736",
+    "101127",
+    "201150",
+    "202681",
+    "202684"
+   ],
+   "minutes": 240.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2013-14",
+   "teamId": "DAL",
+   "season": "2013-14",
+   "playerIds": [
+    "1717",
+    "1890",
+    "2223",
+    "101145",
+    "101181"
+   ],
+   "minutes": 844.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2013-14",
+   "teamId": "DEN",
+   "season": "2013-14",
+   "playerIds": [
+    "200751",
+    "201163",
+    "201581",
+    "201951",
+    "202702"
+   ],
+   "minutes": 490.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2013-14",
+   "teamId": "DET",
+   "season": "2013-14",
+   "playerIds": [
+    "2746",
+    "201943",
+    "202328",
+    "203083",
+    "203484"
+   ],
+   "minutes": 496.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2013-14",
+   "teamId": "GSW",
+   "season": "2013-14",
+   "playerIds": [
+    "2738",
+    "101106",
+    "101135",
+    "201939",
+    "202691"
+   ],
+   "minutes": 819.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2013-14",
+   "teamId": "HOU",
+   "season": "2013-14",
+   "playerIds": [
+    "2730",
+    "201935",
+    "201976",
+    "202718",
+    "203093"
+   ],
+   "minutes": 620.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2013-14",
+   "teamId": "IND",
+   "season": "2013-14",
+   "playerIds": [
+    "2561",
+    "201579",
+    "201588",
+    "202331",
+    "202362"
+   ],
+   "minutes": 1468.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2013-14",
+   "teamId": "LAC",
+   "season": "2013-14",
+   "playerIds": [
+    "2440",
+    "101108",
+    "201599",
+    "201933",
+    "201954"
+   ],
+   "minutes": 325.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2013-14",
+   "teamId": "LAL",
+   "season": "2013-14",
+   "playerIds": [
+    "2200",
+    "201975",
+    "202325",
+    "203088",
+    "203527"
+   ],
+   "minutes": 193.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2013-14",
+   "teamId": "MEM",
+   "season": "2013-14",
+   "playerIds": [
+    "2216",
+    "2419",
+    "201144",
+    "201188",
+    "201584"
+   ],
+   "minutes": 592.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2013-14",
+   "teamId": "MIA",
+   "season": "2013-14",
+   "playerIds": [
+    "2203",
+    "2544",
+    "2547",
+    "2548",
+    "201596"
+   ],
+   "minutes": 429.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2013-14",
+   "teamId": "MIL",
+   "season": "2013-14",
+   "playerIds": [
+    "2585",
+    "101141",
+    "202688",
+    "203114",
+    "203489"
+   ],
+   "minutes": 205.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2013-14",
+   "teamId": "MIN",
+   "season": "2013-14",
+   "playerIds": [
+    "2755",
+    "201147",
+    "201567",
+    "201593",
+    "201937"
+   ],
+   "minutes": 1052.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2013-14",
+   "teamId": "NOP",
+   "season": "2013-14",
+   "playerIds": [
+    "201160",
+    "201569",
+    "201950",
+    "202329",
+    "203076"
+   ],
+   "minutes": 200.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2013-14",
+   "teamId": "NYK",
+   "season": "2013-14",
+   "playerIds": [
+    "2199",
+    "2405",
+    "2546",
+    "2747",
+    "101109"
+   ],
+   "minutes": 286.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2013-14",
+   "teamId": "OKC",
+   "season": "2013-14",
+   "playerIds": [
+    "2570",
+    "200757",
+    "201142",
+    "201586",
+    "202704"
+   ],
+   "minutes": 549.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2013-14",
+   "teamId": "ORL",
+   "season": "2013-14",
+   "playerIds": [
+    "2749",
+    "201167",
+    "201175",
+    "202699",
+    "203506"
+   ],
+   "minutes": 200.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2013-14",
+   "teamId": "PHI",
+   "season": "2013-14",
+   "playerIds": [
+    "201150",
+    "201152",
+    "202323",
+    "202341",
+    "203487"
+   ],
+   "minutes": 611.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2013-14",
+   "teamId": "PHX",
+   "season": "2013-14",
+   "playerIds": [
+    "101112",
+    "101123",
+    "200782",
+    "201609",
+    "203101"
+   ],
+   "minutes": 526.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2013-14",
+   "teamId": "POR",
+   "season": "2013-14",
+   "playerIds": [
+    "200746",
+    "201577",
+    "201587",
+    "202083",
+    "203081"
+   ],
+   "minutes": 1373.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2013-14",
+   "teamId": "SAC",
+   "season": "2013-14",
+   "playerIds": [
+    "200752",
+    "201574",
+    "202326",
+    "202738",
+    "203463"
+   ],
+   "minutes": 316.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2013-14",
+   "teamId": "SAS",
+   "season": "2013-14",
+   "playerIds": [
+    "1495",
+    "2225",
+    "201168",
+    "201980",
+    "202695"
+   ],
+   "minutes": 262.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2013-14",
+   "teamId": "TOR",
+   "season": "2013-14",
+   "playerIds": [
+    "101161",
+    "200768",
+    "201942",
+    "202685",
+    "203082"
+   ],
+   "minutes": 717.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2013-14",
+   "teamId": "UTA",
+   "season": "2013-14",
+   "playerIds": [
+    "2210",
+    "101107",
+    "202324",
+    "202330",
+    "203504"
+   ],
+   "minutes": 602.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2013-14",
+   "teamId": "WAS",
+   "season": "2013-14",
+   "playerIds": [
+    "2772",
+    "101162",
+    "202322",
+    "202344",
+    "203078"
+   ],
+   "minutes": 690.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2014-15",
+   "teamId": "ATL",
+   "season": "2014-15",
+   "playerIds": [
+    "2594",
+    "200794",
+    "201143",
+    "201952",
+    "201960"
+   ],
+   "minutes": 915.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2014-15",
+   "teamId": "BKN",
+   "season": "2014-15",
+   "playerIds": [
+    "2207",
+    "101114",
+    "201152",
+    "201572",
+    "203900"
+   ],
+   "minutes": 256.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2014-15",
+   "teamId": "BOS",
+   "season": "2014-15",
+   "playerIds": [
+    "101138",
+    "202323",
+    "202340",
+    "203092",
+    "203935"
+   ],
+   "minutes": 320.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2014-15",
+   "teamId": "CHA",
+   "season": "2014-15",
+   "playerIds": [
+    "2744",
+    "201945",
+    "202362",
+    "202689",
+    "203469"
+   ],
+   "minutes": 155.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2014-15",
+   "teamId": "CHI",
+   "season": "2014-15",
+   "playerIds": [
+    "2200",
+    "2399",
+    "201149",
+    "201565",
+    "202710"
+   ],
+   "minutes": 353.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2014-15",
+   "teamId": "CLE",
+   "season": "2014-15",
+   "playerIds": [
+    "2544",
+    "2747",
+    "201567",
+    "202389",
+    "202681"
+   ],
+   "minutes": 480.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2014-15",
+   "teamId": "DAL",
+   "season": "2014-15",
+   "playerIds": [
+    "1717",
+    "2199",
+    "101145",
+    "200765",
+    "202718"
+   ],
+   "minutes": 455.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2014-15",
+   "teamId": "DEN",
+   "season": "2014-15",
+   "playerIds": [
+    "201163",
+    "201167",
+    "201951",
+    "202389",
+    "202702"
+   ],
+   "minutes": 415.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2014-15",
+   "teamId": "DET",
+   "season": "2014-15",
+   "playerIds": [
+    "201943",
+    "202328",
+    "202713",
+    "203083",
+    "203484"
+   ],
+   "minutes": 254.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2014-15",
+   "teamId": "GSW",
+   "season": "2014-15",
+   "playerIds": [
+    "101106",
+    "201939",
+    "202691",
+    "203084",
+    "203110"
+   ],
+   "minutes": 813.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2014-15",
+   "teamId": "HOU",
+   "season": "2014-15",
+   "playerIds": [
+    "2730",
+    "2772",
+    "201935",
+    "201976",
+    "202700"
+   ],
+   "minutes": 360.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2014-15",
+   "teamId": "IND",
+   "season": "2014-15",
+   "playerIds": [
+    "2561",
+    "101139",
+    "201579",
+    "201588",
+    "203524"
+   ],
+   "minutes": 374.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2014-15",
+   "teamId": "LAC",
+   "season": "2014-15",
+   "playerIds": [
+    "2440",
+    "101108",
+    "200755",
+    "201599",
+    "201933"
+   ],
+   "minutes": 1217.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2014-15",
+   "teamId": "LAL",
+   "season": "2014-15",
+   "playerIds": [
+    "977",
+    "2430",
+    "201941",
+    "202325",
+    "202391"
+   ],
+   "minutes": 338.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2014-15",
+   "teamId": "MEM",
+   "season": "2014-15",
+   "playerIds": [
+    "2216",
+    "2754",
+    "201144",
+    "201188",
+    "201584"
+   ],
+   "minutes": 460.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2014-15",
+   "teamId": "MIA",
+   "season": "2014-15",
+   "playerIds": [
+    "2548",
+    "2617",
+    "2736",
+    "201609",
+    "202355"
+   ],
+   "minutes": 179.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2014-15",
+   "teamId": "MIL",
+   "season": "2014-15",
+   "playerIds": [
+    "2585",
+    "101141",
+    "203114",
+    "203487",
+    "203507"
+   ],
+   "minutes": 344.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2014-15",
+   "teamId": "MIN",
+   "season": "2014-15",
+   "playerIds": [
+    "201152",
+    "203476",
+    "203498",
+    "203897",
+    "203952"
+   ],
+   "minutes": 151.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2014-15",
+   "teamId": "NOP",
+   "season": "2014-15",
+   "playerIds": [
+    "201569",
+    "201600",
+    "201936",
+    "202347",
+    "203076"
+   ],
+   "minutes": 346.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2014-15",
+   "teamId": "NYK",
+   "season": "2014-15",
+   "playerIds": [
+    "2546",
+    "101181",
+    "200811",
+    "201160",
+    "204038"
+   ],
+   "minutes": 158.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2014-15",
+   "teamId": "OKC",
+   "season": "2014-15",
+   "playerIds": [
+    "201142",
+    "201566",
+    "201586",
+    "203460",
+    "203500"
+   ],
+   "minutes": 249.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2014-15",
+   "teamId": "ORL",
+   "season": "2014-15",
+   "playerIds": [
+    "101112",
+    "202696",
+    "202699",
+    "203095",
+    "203506"
+   ],
+   "minutes": 210.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2014-15",
+   "teamId": "PHI",
+   "season": "2014-15",
+   "playerIds": [
+    "201601",
+    "203457",
+    "203487",
+    "203496",
+    "203909"
+   ],
+   "minutes": 152.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2014-15",
+   "teamId": "PHX",
+   "season": "2014-15",
+   "playerIds": [
+    "200782",
+    "201609",
+    "202339",
+    "202693",
+    "203458"
+   ],
+   "minutes": 391.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2014-15",
+   "teamId": "POR",
+   "season": "2014-15",
+   "playerIds": [
+    "200746",
+    "201577",
+    "201587",
+    "202083",
+    "203081"
+   ],
+   "minutes": 629.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2014-15",
+   "teamId": "SAC",
+   "season": "2014-15",
+   "playerIds": [
+    "200752",
+    "201574",
+    "201954",
+    "202326",
+    "203463"
+   ],
+   "minutes": 427.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2014-15",
+   "teamId": "SAS",
+   "season": "2014-15",
+   "playerIds": [
+    "1495",
+    "2225",
+    "2564",
+    "201980",
+    "202695"
+   ],
+   "minutes": 265.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2014-15",
+   "teamId": "TOR",
+   "season": "2014-15",
+   "playerIds": [
+    "101161",
+    "200768",
+    "201942",
+    "202685",
+    "203082"
+   ],
+   "minutes": 390.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2014-15",
+   "teamId": "UTA",
+   "season": "2014-15",
+   "playerIds": [
+    "202324",
+    "202330",
+    "202683",
+    "202692",
+    "203504"
+   ],
+   "minutes": 328.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2014-15",
+   "teamId": "WAS",
+   "season": "2014-15",
+   "playerIds": [
+    "1718",
+    "2403",
+    "101162",
+    "202322",
+    "203078"
+   ],
+   "minutes": 596.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2015-16",
+   "teamId": "ATL",
+   "season": "2015-16",
+   "playerIds": [
+    "2594",
+    "200794",
+    "201143",
+    "201952",
+    "203145"
+   ],
+   "minutes": 891.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2015-16",
+   "teamId": "BKN",
+   "season": "2015-16",
+   "playerIds": [
+    "2207",
+    "201152",
+    "201572",
+    "201961",
+    "202388"
+   ],
+   "minutes": 408.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2015-16",
+   "teamId": "BOS",
+   "season": "2015-16",
+   "playerIds": [
+    "101161",
+    "202340",
+    "202738",
+    "203096",
+    "203109"
+   ],
+   "minutes": 723.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2015-16",
+   "teamId": "CHA",
+   "season": "2015-16",
+   "playerIds": [
+    "101107",
+    "201584",
+    "201587",
+    "202689",
+    "203469"
+   ],
+   "minutes": 406.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2015-16",
+   "teamId": "CHI",
+   "season": "2015-16",
+   "playerIds": [
+    "2200",
+    "201565",
+    "201959",
+    "202710",
+    "203503"
+   ],
+   "minutes": 219.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2015-16",
+   "teamId": "CLE",
+   "season": "2015-16",
+   "playerIds": [
+    "2544",
+    "2747",
+    "201567",
+    "202681",
+    "202684"
+   ],
+   "minutes": 465.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2015-16",
+   "teamId": "DAL",
+   "season": "2015-16",
+   "playerIds": [
+    "1717",
+    "2585",
+    "101114",
+    "202083",
+    "202718"
+   ],
+   "minutes": 418.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2015-16",
+   "teamId": "DEN",
+   "season": "2015-16",
+   "playerIds": [
+    "201568",
+    "202702",
+    "203914",
+    "203999",
+    "1626144"
+   ],
+   "minutes": 290.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2015-16",
+   "teamId": "DET",
+   "season": "2015-16",
+   "playerIds": [
+    "101141",
+    "202694",
+    "202704",
+    "203083",
+    "203484"
+   ],
+   "minutes": 914.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2015-16",
+   "teamId": "GSW",
+   "season": "2015-16",
+   "playerIds": [
+    "101106",
+    "201939",
+    "202691",
+    "203084",
+    "203110"
+   ],
+   "minutes": 552.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2015-16",
+   "teamId": "HOU",
+   "season": "2015-16",
+   "playerIds": [
+    "2730",
+    "2772",
+    "201935",
+    "201976",
+    "202700"
+   ],
+   "minutes": 295.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2015-16",
+   "teamId": "IND",
+   "season": "2015-16",
+   "playerIds": [
+    "101133",
+    "101145",
+    "201588",
+    "202331",
+    "1626167"
+   ],
+   "minutes": 452.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2015-16",
+   "teamId": "LAC",
+   "season": "2015-16",
+   "playerIds": [
+    "1718",
+    "101108",
+    "200755",
+    "201599",
+    "201601"
+   ],
+   "minutes": 375.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2015-16",
+   "teamId": "LAL",
+   "season": "2015-16",
+   "playerIds": [
+    "977",
+    "201579",
+    "203903",
+    "203944",
+    "1626156"
+   ],
+   "minutes": 571.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2015-16",
+   "teamId": "MEM",
+   "season": "2015-16",
+   "playerIds": [
+    "2216",
+    "2754",
+    "201144",
+    "201188",
+    "201584"
+   ],
+   "minutes": 260.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2015-16",
+   "teamId": "MIA",
+   "season": "2015-16",
+   "playerIds": [
+    "2547",
+    "2548",
+    "2736",
+    "201609",
+    "202355"
+   ],
+   "minutes": 339.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2015-16",
+   "teamId": "MIL",
+   "season": "2015-16",
+   "playerIds": [
+    "202328",
+    "203114",
+    "203487",
+    "203507",
+    "203953"
+   ],
+   "minutes": 539.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2015-16",
+   "teamId": "MIN",
+   "season": "2015-16",
+   "playerIds": [
+    "201937",
+    "203476",
+    "203897",
+    "203952",
+    "1626157"
+   ],
+   "minutes": 647.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2015-16",
+   "teamId": "NOP",
+   "season": "2015-16",
+   "playerIds": [
+    "201569",
+    "201600",
+    "201936",
+    "202087",
+    "203076"
+   ],
+   "minutes": 131.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2015-16",
+   "teamId": "NYK",
+   "season": "2015-16",
+   "playerIds": [
+    "2546",
+    "101181",
+    "201167",
+    "201577",
+    "204001"
+   ],
+   "minutes": 734.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2015-16",
+   "teamId": "OKC",
+   "season": "2015-16",
+   "playerIds": [
+    "201142",
+    "201566",
+    "201586",
+    "203460",
+    "203500"
+   ],
+   "minutes": 815.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2015-16",
+   "teamId": "ORL",
+   "season": "2015-16",
+   "playerIds": [
+    "101112",
+    "202696",
+    "202699",
+    "203095",
+    "203901"
+   ],
+   "minutes": 334.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2015-16",
+   "teamId": "PHI",
+   "season": "2015-16",
+   "playerIds": [
+    "202397",
+    "203457",
+    "203496",
+    "203917",
+    "1626143"
+   ],
+   "minutes": 106.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2015-16",
+   "teamId": "PHX",
+   "season": "2015-16",
+   "playerIds": [
+    "2199",
+    "101179",
+    "200782",
+    "203458",
+    "1626164"
+   ],
+   "minutes": 200.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2015-16",
+   "teamId": "POR",
+   "season": "2015-16",
+   "playerIds": [
+    "202329",
+    "203081",
+    "203468",
+    "203486",
+    "203943"
+   ],
+   "minutes": 610.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2015-16",
+   "teamId": "SAC",
+   "season": "2015-16",
+   "playerIds": [
+    "200752",
+    "200765",
+    "201956",
+    "202326",
+    "203463"
+   ],
+   "minutes": 178.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2015-16",
+   "teamId": "SAS",
+   "season": "2015-16",
+   "playerIds": [
+    "1495",
+    "2225",
+    "200746",
+    "201980",
+    "202695"
+   ],
+   "minutes": 698.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2015-16",
+   "teamId": "TOR",
+   "season": "2015-16",
+   "playerIds": [
+    "2449",
+    "200768",
+    "201942",
+    "201949",
+    "202685"
+   ],
+   "minutes": 327.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2015-16",
+   "teamId": "UTA",
+   "season": "2015-16",
+   "playerIds": [
+    "202324",
+    "202330",
+    "203497",
+    "203526",
+    "203918"
+   ],
+   "minutes": 305.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2015-16",
+   "teamId": "WAS",
+   "season": "2015-16",
+   "playerIds": [
+    "101162",
+    "201162",
+    "202066",
+    "202322",
+    "203490"
+   ],
+   "minutes": 311.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2016-17",
+   "teamId": "ATL",
+   "season": "2016-17",
+   "playerIds": [
+    "2730",
+    "200757",
+    "200794",
+    "203145",
+    "203471"
+   ],
+   "minutes": 425.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2016-17",
+   "teamId": "BKN",
+   "season": "2016-17",
+   "playerIds": [
+    "200751",
+    "201572",
+    "202391",
+    "1626178",
+    "1627747"
+   ],
+   "minutes": 244.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2016-17",
+   "teamId": "BOS",
+   "season": "2016-17",
+   "playerIds": [
+    "101161",
+    "201143",
+    "202340",
+    "202738",
+    "203109"
+   ],
+   "minutes": 434.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2016-17",
+   "teamId": "CHA",
+   "season": "2016-17",
+   "playerIds": [
+    "101107",
+    "201587",
+    "202689",
+    "203077",
+    "203469"
+   ],
+   "minutes": 783.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2016-17",
+   "teamId": "CHI",
+   "season": "2016-17",
+   "playerIds": [
+    "2548",
+    "200765",
+    "201577",
+    "201959",
+    "202710"
+   ],
+   "minutes": 390.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2016-17",
+   "teamId": "CLE",
+   "season": "2016-17",
+   "playerIds": [
+    "2544",
+    "2747",
+    "201567",
+    "202681",
+    "202684"
+   ],
+   "minutes": 454.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2016-17",
+   "teamId": "DAL",
+   "season": "2016-17",
+   "playerIds": [
+    "1717",
+    "202083",
+    "203084",
+    "203552",
+    "1627812"
+   ],
+   "minutes": 257.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2016-17",
+   "teamId": "DEN",
+   "season": "2016-17",
+   "playerIds": [
+    "201163",
+    "201568",
+    "203914",
+    "203999",
+    "1626144"
+   ],
+   "minutes": 207.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2016-17",
+   "teamId": "DET",
+   "season": "2016-17",
+   "playerIds": [
+    "202397",
+    "202694",
+    "202699",
+    "203083",
+    "203484"
+   ],
+   "minutes": 492.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2016-17",
+   "teamId": "GSW",
+   "season": "2016-17",
+   "playerIds": [
+    "2585",
+    "201142",
+    "201939",
+    "202691",
+    "203110"
+   ],
+   "minutes": 532.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2016-17",
+   "teamId": "HOU",
+   "season": "2016-17",
+   "playerIds": [
+    "2772",
+    "201583",
+    "201935",
+    "201976",
+    "203991"
+   ],
+   "minutes": 505.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2016-17",
+   "teamId": "IND",
+   "season": "2016-17",
+   "playerIds": [
+    "101145",
+    "201152",
+    "201952",
+    "202331",
+    "1626167"
+   ],
+   "minutes": 603.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2016-17",
+   "teamId": "LAC",
+   "season": "2016-17",
+   "playerIds": [
+    "101108",
+    "200755",
+    "201599",
+    "201601",
+    "201933"
+   ],
+   "minutes": 870.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2016-17",
+   "teamId": "LAL",
+   "season": "2016-17",
+   "playerIds": [
+    "2736",
+    "201156",
+    "202389",
+    "203944",
+    "1626156"
+   ],
+   "minutes": 403.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2016-17",
+   "teamId": "MEM",
+   "season": "2016-17",
+   "playerIds": [
+    "2754",
+    "201144",
+    "201188",
+    "202718",
+    "203210"
+   ],
+   "minutes": 281.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2016-17",
+   "teamId": "MIA",
+   "season": "2016-17",
+   "playerIds": [
+    "201609",
+    "202337",
+    "202355",
+    "203079",
+    "203585"
+   ],
+   "minutes": 247.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2016-17",
+   "teamId": "MIL",
+   "season": "2016-17",
+   "playerIds": [
+    "203089",
+    "203503",
+    "203507",
+    "203521",
+    "203953"
+   ],
+   "minutes": 389.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2016-17",
+   "teamId": "MIN",
+   "season": "2016-17",
+   "playerIds": [
+    "201937",
+    "203476",
+    "203897",
+    "203952",
+    "1626157"
+   ],
+   "minutes": 881.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2016-17",
+   "teamId": "NOP",
+   "season": "2016-17",
+   "playerIds": [
+    "201950",
+    "201967",
+    "203076",
+    "203524",
+    "1627741"
+   ],
+   "minutes": 189.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2016-17",
+   "teamId": "NYK",
+   "season": "2016-17",
+   "playerIds": [
+    "2546",
+    "201149",
+    "201565",
+    "201584",
+    "204001"
+   ],
+   "minutes": 395.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2016-17",
+   "teamId": "OKC",
+   "season": "2016-17",
+   "playerIds": [
+    "201566",
+    "203460",
+    "203500",
+    "203506",
+    "1627734"
+   ],
+   "minutes": 631.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2016-17",
+   "teamId": "ORL",
+   "season": "2016-17",
+   "playerIds": [
+    "202696",
+    "203082",
+    "203095",
+    "203901",
+    "203932"
+   ],
+   "minutes": 410.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2016-17",
+   "teamId": "PHI",
+   "season": "2016-17",
+   "playerIds": [
+    "101141",
+    "203496",
+    "203917",
+    "203954",
+    "204456"
+   ],
+   "minutes": 114.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2016-17",
+   "teamId": "PHX",
+   "season": "2016-17",
+   "playerIds": [
+    "2199",
+    "202339",
+    "203933",
+    "1626164",
+    "1627737"
+   ],
+   "minutes": 294.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2016-17",
+   "teamId": "POR",
+   "season": "2016-17",
+   "playerIds": [
+    "202329",
+    "203081",
+    "203090",
+    "203468",
+    "203486"
+   ],
+   "minutes": 254.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2016-17",
+   "teamId": "SAC",
+   "season": "2016-17",
+   "playerIds": [
+    "200752",
+    "201167",
+    "201585",
+    "201951",
+    "202326"
+   ],
+   "minutes": 144.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2016-17",
+   "teamId": "SAS",
+   "season": "2016-17",
+   "playerIds": [
+    "2200",
+    "2225",
+    "200746",
+    "201980",
+    "202695"
+   ],
+   "minutes": 392.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2016-17",
+   "teamId": "TOR",
+   "season": "2016-17",
+   "playerIds": [
+    "200768",
+    "201942",
+    "201960",
+    "202685",
+    "1627783"
+   ],
+   "minutes": 364.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2016-17",
+   "teamId": "UTA",
+   "season": "2016-17",
+   "playerIds": [
+    "201588",
+    "202324",
+    "202330",
+    "203497",
+    "203918"
+   ],
+   "minutes": 152.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2016-17",
+   "teamId": "WAS",
+   "season": "2016-17",
+   "playerIds": [
+    "101162",
+    "202322",
+    "202693",
+    "203078",
+    "203490"
+   ],
+   "minutes": 1347.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2017-18",
+   "teamId": "ATL",
+   "season": "2017-18",
+   "playerIds": [
+    "101141",
+    "203101",
+    "203145",
+    "203471",
+    "1627752"
+   ],
+   "minutes": 352.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2017-18",
+   "teamId": "BKN",
+   "season": "2017-18",
+   "playerIds": [
+    "201960",
+    "203092",
+    "203459",
+    "203915",
+    "1626178"
+   ],
+   "minutes": 315.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2017-18",
+   "teamId": "BOS",
+   "season": "2017-18",
+   "playerIds": [
+    "201143",
+    "202681",
+    "203382",
+    "1627759",
+    "1628369"
+   ],
+   "minutes": 354.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2017-18",
+   "teamId": "CHA",
+   "season": "2017-18",
+   "playerIds": [
+    "2730",
+    "101107",
+    "201587",
+    "202689",
+    "203077"
+   ],
+   "minutes": 1086.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2017-18",
+   "teamId": "CHI",
+   "season": "2017-18",
+   "playerIds": [
+    "201577",
+    "203200",
+    "1627739",
+    "1627756",
+    "1628374"
+   ],
+   "minutes": 504.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2017-18",
+   "teamId": "CLE",
+   "season": "2017-18",
+   "playerIds": [
+    "2544",
+    "2747",
+    "101181",
+    "201567",
+    "203109"
+   ],
+   "minutes": 354.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2017-18",
+   "teamId": "DEN",
+   "season": "2017-18",
+   "playerIds": [
+    "200794",
+    "201163",
+    "203914",
+    "203999",
+    "1627750"
+   ],
+   "minutes": 345.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2017-18",
+   "teamId": "DET",
+   "season": "2017-18",
+   "playerIds": [
+    "202340",
+    "202699",
+    "202704",
+    "203083",
+    "1626169"
+   ],
+   "minutes": 396.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2017-18",
+   "teamId": "GSW",
+   "season": "2017-18",
+   "playerIds": [
+    "2585",
+    "201142",
+    "201939",
+    "202691",
+    "203110"
+   ],
+   "minutes": 414.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2017-18",
+   "teamId": "HOU",
+   "season": "2017-18",
+   "playerIds": [
+    "2772",
+    "101108",
+    "200782",
+    "201935",
+    "203991"
+   ],
+   "minutes": 267.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2017-18",
+   "teamId": "IND",
+   "season": "2017-18",
+   "playerIds": [
+    "201152",
+    "201954",
+    "202711",
+    "203506",
+    "1626167"
+   ],
+   "minutes": 696.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2017-18",
+   "teamId": "LAC",
+   "season": "2017-18",
+   "playerIds": [
+    "101150",
+    "201599",
+    "202699",
+    "203085",
+    "1628414"
+   ],
+   "minutes": 163.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2017-18",
+   "teamId": "LAL",
+   "season": "2017-18",
+   "playerIds": [
+    "201572",
+    "203484",
+    "1627742",
+    "1628366",
+    "1628398"
+   ],
+   "minutes": 225.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2017-18",
+   "teamId": "MEM",
+   "season": "2017-18",
+   "playerIds": [
+    "201188",
+    "201936",
+    "203210",
+    "1626150",
+    "1628415"
+   ],
+   "minutes": 196.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2017-18",
+   "teamId": "MIA",
+   "season": "2017-18",
+   "playerIds": [
+    "201609",
+    "201949",
+    "202355",
+    "204020",
+    "1626196"
+   ],
+   "minutes": 202.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2017-18",
+   "teamId": "MIL",
+   "season": "2017-18",
+   "playerIds": [
+    "202339",
+    "203089",
+    "203114",
+    "203503",
+    "203507"
+   ],
+   "minutes": 605.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2017-18",
+   "teamId": "MIN",
+   "season": "2017-18",
+   "playerIds": [
+    "201952",
+    "201959",
+    "202710",
+    "203952",
+    "1626157"
+   ],
+   "minutes": 1131.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2017-18",
+   "teamId": "NOP",
+   "season": "2017-18",
+   "playerIds": [
+    "200765",
+    "201950",
+    "202326",
+    "202734",
+    "203076"
+   ],
+   "minutes": 408.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2017-18",
+   "teamId": "NYK",
+   "season": "2017-18",
+   "playerIds": [
+    "101127",
+    "201584",
+    "202683",
+    "203501",
+    "204001"
+   ],
+   "minutes": 383.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2017-18",
+   "teamId": "OKC",
+   "season": "2017-18",
+   "playerIds": [
+    "2546",
+    "201566",
+    "202331",
+    "203460",
+    "203500"
+   ],
+   "minutes": 538.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2017-18",
+   "teamId": "ORL",
+   "season": "2017-18",
+   "playerIds": [
+    "202687",
+    "203095",
+    "203613",
+    "203901",
+    "203932"
+   ],
+   "minutes": 219.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2017-18",
+   "teamId": "PHI",
+   "season": "2017-18",
+   "playerIds": [
+    "200755",
+    "203496",
+    "203954",
+    "203967",
+    "1627732"
+   ],
+   "minutes": 600.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2017-18",
+   "teamId": "PHX",
+   "season": "2017-18",
+   "playerIds": [
+    "2199",
+    "203933",
+    "1626164",
+    "1627737",
+    "1627755"
+   ],
+   "minutes": 154.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2017-18",
+   "teamId": "POR",
+   "season": "2017-18",
+   "playerIds": [
+    "202323",
+    "202329",
+    "203081",
+    "203468",
+    "203994"
+   ],
+   "minutes": 534.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2017-18",
+   "teamId": "SAC",
+   "season": "2017-18",
+   "playerIds": [
+    "2216",
+    "203992",
+    "1626161",
+    "1628368",
+    "1628382"
+   ],
+   "minutes": 174.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2017-18",
+   "teamId": "SAS",
+   "season": "2017-18",
+   "playerIds": [
+    "200746",
+    "201980",
+    "201988",
+    "203937",
+    "1627749"
+   ],
+   "minutes": 189.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2017-18",
+   "teamId": "TOR",
+   "season": "2017-18",
+   "playerIds": [
+    "200768",
+    "201586",
+    "201942",
+    "202685",
+    "1628384"
+   ],
+   "minutes": 801.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2017-18",
+   "teamId": "UTA",
+   "season": "2017-18",
+   "playerIds": [
+    "201937",
+    "202324",
+    "203497",
+    "204060",
+    "1628378"
+   ],
+   "minutes": 455.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2017-18",
+   "teamId": "WAS",
+   "season": "2017-18",
+   "playerIds": [
+    "101162",
+    "202693",
+    "203078",
+    "203107",
+    "203490"
+   ],
+   "minutes": 526.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2018-19",
+   "teamId": "ATL",
+   "season": "2018-19",
+   "playerIds": [
+    "203473",
+    "1627752",
+    "1628381",
+    "1628989",
+    "1629027"
+   ],
+   "minutes": 324.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2018-19",
+   "teamId": "BKN",
+   "season": "2018-19",
+   "playerIds": [
+    "201162",
+    "203925",
+    "1626156",
+    "1627747",
+    "1628386"
+   ],
+   "minutes": 189.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2018-19",
+   "teamId": "BOS",
+   "season": "2018-19",
+   "playerIds": [
+    "201143",
+    "202681",
+    "202694",
+    "203935",
+    "1628369"
+   ],
+   "minutes": 484.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2018-19",
+   "teamId": "CHA",
+   "season": "2018-19",
+   "playerIds": [
+    "101107",
+    "201587",
+    "202689",
+    "203087",
+    "203469"
+   ],
+   "minutes": 592.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2018-19",
+   "teamId": "CHI",
+   "season": "2018-19",
+   "playerIds": [
+    "203200",
+    "203897",
+    "203953",
+    "1627853",
+    "1628976"
+   ],
+   "minutes": 228.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2018-19",
+   "teamId": "CLE",
+   "season": "2018-19",
+   "playerIds": [
+    "201567",
+    "202688",
+    "1626224",
+    "1627790",
+    "1629012"
+   ],
+   "minutes": 125.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2018-19",
+   "teamId": "DAL",
+   "season": "2018-19",
+   "playerIds": [
+    "201599",
+    "202083",
+    "203084",
+    "1628372",
+    "1629029"
+   ],
+   "minutes": 401.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2018-19",
+   "teamId": "DEN",
+   "season": "2018-19",
+   "playerIds": [
+    "200794",
+    "203115",
+    "203914",
+    "203999",
+    "1627750"
+   ],
+   "minutes": 429.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2018-19",
+   "teamId": "DET",
+   "season": "2018-19",
+   "playerIds": [
+    "201933",
+    "202704",
+    "203083",
+    "203493",
+    "1628971"
+   ],
+   "minutes": 293.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2018-19",
+   "teamId": "GSW",
+   "season": "2018-19",
+   "playerIds": [
+    "201142",
+    "201939",
+    "202691",
+    "203110",
+    "1626172"
+   ],
+   "minutes": 312.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2018-19",
+   "teamId": "HOU",
+   "season": "2018-19",
+   "playerIds": [
+    "101108",
+    "200782",
+    "201569",
+    "201935",
+    "203991"
+   ],
+   "minutes": 420.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2018-19",
+   "teamId": "IND",
+   "season": "2018-19",
+   "playerIds": [
+    "201152",
+    "201954",
+    "202711",
+    "203506",
+    "1626167"
+   ],
+   "minutes": 554.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2018-19",
+   "teamId": "LAC",
+   "season": "2018-19",
+   "playerIds": [
+    "101162",
+    "201568",
+    "202340",
+    "202699",
+    "1628983"
+   ],
+   "minutes": 348.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2018-19",
+   "teamId": "LAL",
+   "season": "2018-19",
+   "playerIds": [
+    "2544",
+    "201580",
+    "1627742",
+    "1628366",
+    "1628398"
+   ],
+   "minutes": 233.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2018-19",
+   "teamId": "MEM",
+   "season": "2018-19",
+   "playerIds": [
+    "201144",
+    "201188",
+    "202066",
+    "203937",
+    "1628991"
+   ],
+   "minutes": 464.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2018-19",
+   "teamId": "MIA",
+   "season": "2018-19",
+   "playerIds": [
+    "201949",
+    "202355",
+    "203585",
+    "1626159",
+    "1626196"
+   ],
+   "minutes": 162.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2018-19",
+   "teamId": "MIL",
+   "season": "2018-19",
+   "playerIds": [
+    "201572",
+    "202339",
+    "203114",
+    "203507",
+    "1627763"
+   ],
+   "minutes": 597.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2018-19",
+   "teamId": "MIN",
+   "season": "2018-19",
+   "playerIds": [
+    "203952",
+    "203967",
+    "1626145",
+    "1626157",
+    "1629006"
+   ],
+   "minutes": 298.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2018-19",
+   "teamId": "NOP",
+   "season": "2018-19",
+   "playerIds": [
+    "201950",
+    "202325",
+    "202703",
+    "202734",
+    "203076"
+   ],
+   "minutes": 135.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2018-19",
+   "teamId": "NYK",
+   "season": "2018-19",
+   "playerIds": [
+    "202683",
+    "203501",
+    "203943",
+    "1626144",
+    "1628995"
+   ],
+   "minutes": 166.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2018-19",
+   "teamId": "OKC",
+   "season": "2018-19",
+   "playerIds": [
+    "201566",
+    "202331",
+    "203500",
+    "203924",
+    "1628390"
+   ],
+   "minutes": 919.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2018-19",
+   "teamId": "ORL",
+   "season": "2018-19",
+   "playerIds": [
+    "201571",
+    "202696",
+    "203095",
+    "203932",
+    "1628371"
+   ],
+   "minutes": 865.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2018-19",
+   "teamId": "PHI",
+   "season": "2018-19",
+   "playerIds": [
+    "200755",
+    "201163",
+    "202710",
+    "203954",
+    "1627732"
+   ],
+   "minutes": 292.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2018-19",
+   "teamId": "PHX",
+   "season": "2018-19",
+   "playerIds": [
+    "203933",
+    "1626164",
+    "1628969",
+    "1629001",
+    "1629028"
+   ],
+   "minutes": 191.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2018-19",
+   "teamId": "POR",
+   "season": "2018-19",
+   "playerIds": [
+    "202329",
+    "203081",
+    "203090",
+    "203468",
+    "203994"
+   ],
+   "minutes": 744.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2018-19",
+   "teamId": "SAC",
+   "season": "2018-19",
+   "playerIds": [
+    "202357",
+    "202697",
+    "1626161",
+    "1627741",
+    "1628368"
+   ],
+   "minutes": 500.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2018-19",
+   "teamId": "SAS",
+   "season": "2018-19",
+   "playerIds": [
+    "200746",
+    "200752",
+    "201942",
+    "1627854",
+    "1628401"
+   ],
+   "minutes": 388.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2018-19",
+   "teamId": "TOR",
+   "season": "2018-19",
+   "playerIds": [
+    "200768",
+    "201586",
+    "201980",
+    "202695",
+    "1627783"
+   ],
+   "minutes": 546.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2018-19",
+   "teamId": "UTA",
+   "season": "2018-19",
+   "playerIds": [
+    "201937",
+    "202324",
+    "203497",
+    "204060",
+    "1628378"
+   ],
+   "minutes": 501.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2018-19",
+   "teamId": "WAS",
+   "season": "2018-19",
+   "playerIds": [
+    "2772",
+    "201145",
+    "203078",
+    "203107",
+    "1628418"
+   ],
+   "minutes": 356.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2019-20",
+   "teamId": "ATL",
+   "season": "2019-20",
+   "playerIds": [
+    "1628381",
+    "1628989",
+    "1629027",
+    "1629629",
+    "1629631"
+   ],
+   "minutes": 204.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2019-20",
+   "teamId": "BKN",
+   "season": "2019-20",
+   "playerIds": [
+    "202066",
+    "203915",
+    "203925",
+    "1627752",
+    "1628386"
+   ],
+   "minutes": 491.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2019-20",
+   "teamId": "BOS",
+   "season": "2019-20",
+   "playerIds": [
+    "202330",
+    "202689",
+    "1627759",
+    "1628369",
+    "1628464"
+   ],
+   "minutes": 262.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2019-20",
+   "teamId": "CHA",
+   "season": "2019-20",
+   "playerIds": [
+    "203469",
+    "1626179",
+    "1628970",
+    "1628984",
+    "1629023"
+   ],
+   "minutes": 283.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2019-20",
+   "teamId": "CHI",
+   "season": "2019-20",
+   "playerIds": [
+    "203107",
+    "203897",
+    "1627739",
+    "1628374",
+    "1628976"
+   ],
+   "minutes": 316.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2019-20",
+   "teamId": "CLE",
+   "season": "2019-20",
+   "playerIds": [
+    "201567",
+    "202684",
+    "1626224",
+    "1629012",
+    "1629636"
+   ],
+   "minutes": 679.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2019-20",
+   "teamId": "DAL",
+   "season": "2019-20",
+   "playerIds": [
+    "203501",
+    "203939",
+    "204001",
+    "1627827",
+    "1629029"
+   ],
+   "minutes": 205.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2019-20",
+   "teamId": "DEN",
+   "season": "2019-20",
+   "playerIds": [
+    "200794",
+    "203115",
+    "203914",
+    "203999",
+    "1627750"
+   ],
+   "minutes": 735.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2019-20",
+   "teamId": "DET",
+   "season": "2019-20",
+   "playerIds": [
+    "201933",
+    "203083",
+    "203503",
+    "1628379",
+    "1628971"
+   ],
+   "minutes": 117.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2019-20",
+   "teamId": "GSW",
+   "season": "2019-20",
+   "playerIds": [
+    "203110",
+    "203922",
+    "1626156",
+    "1626161",
+    "1627814"
+   ],
+   "minutes": 123.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2019-20",
+   "teamId": "HOU",
+   "season": "2019-20",
+   "playerIds": [
+    "200782",
+    "201566",
+    "201935",
+    "203991",
+    "1627863"
+   ],
+   "minutes": 356.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2019-20",
+   "teamId": "IND",
+   "season": "2019-20",
+   "playerIds": [
+    "203087",
+    "203933",
+    "1626167",
+    "1627734",
+    "1627763"
+   ],
+   "minutes": 354.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2019-20",
+   "teamId": "LAC",
+   "season": "2019-20",
+   "playerIds": [
+    "201976",
+    "202331",
+    "202695",
+    "203090",
+    "1627826"
+   ],
+   "minutes": 214.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2019-20",
+   "teamId": "LAL",
+   "season": "2019-20",
+   "playerIds": [
+    "2544",
+    "201580",
+    "201980",
+    "202340",
+    "203076"
+   ],
+   "minutes": 389.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2019-20",
+   "teamId": "MEM",
+   "season": "2019-20",
+   "playerIds": [
+    "202685",
+    "203109",
+    "1628415",
+    "1628991",
+    "1629630"
+   ],
+   "minutes": 413.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2019-20",
+   "teamId": "MIA",
+   "season": "2019-20",
+   "playerIds": [
+    "202710",
+    "203086",
+    "1628389",
+    "1629130",
+    "1629134"
+   ],
+   "minutes": 487.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2019-20",
+   "teamId": "MIL",
+   "season": "2019-20",
+   "playerIds": [
+    "201572",
+    "202083",
+    "202339",
+    "203114",
+    "203507"
+   ],
+   "minutes": 424.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2019-20",
+   "teamId": "MIN",
+   "season": "2019-20",
+   "playerIds": [
+    "1626156",
+    "1627736",
+    "1627823",
+    "1629006",
+    "1629675"
+   ],
+   "minutes": 126.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2019-20",
+   "teamId": "NOP",
+   "season": "2019-20",
+   "playerIds": [
+    "201950",
+    "202324",
+    "1627742",
+    "1628366",
+    "1629627"
+   ],
+   "minutes": 282.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2019-20",
+   "teamId": "NYK",
+   "season": "2019-20",
+   "playerIds": [
+    "201959",
+    "202694",
+    "203944",
+    "1628373",
+    "1629628"
+   ],
+   "minutes": 240.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2019-20",
+   "teamId": "OKC",
+   "season": "2019-20",
+   "playerIds": [
+    "101108",
+    "201568",
+    "203500",
+    "1628390",
+    "1628983"
+   ],
+   "minutes": 334.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2019-20",
+   "teamId": "ORL",
+   "season": "2019-20",
+   "playerIds": [
+    "202696",
+    "203095",
+    "203932",
+    "1628365",
+    "1628371"
+   ],
+   "minutes": 240.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2019-20",
+   "teamId": "PHI",
+   "season": "2019-20",
+   "playerIds": [
+    "201143",
+    "202699",
+    "203954",
+    "1626196",
+    "1627732"
+   ],
+   "minutes": 246.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2019-20",
+   "teamId": "PHX",
+   "season": "2019-20",
+   "playerIds": [
+    "201937",
+    "203382",
+    "203967",
+    "1626162",
+    "1626164"
+   ],
+   "minutes": 244.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2019-20",
+   "teamId": "POR",
+   "season": "2019-20",
+   "playerIds": [
+    "2546",
+    "202355",
+    "203081",
+    "203145",
+    "203468"
+   ],
+   "minutes": 315.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2019-20",
+   "teamId": "SAC",
+   "season": "2019-20",
+   "playerIds": [
+    "202357",
+    "202709",
+    "203084",
+    "1626158",
+    "1627741"
+   ],
+   "minutes": 262.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2019-20",
+   "teamId": "SAS",
+   "season": "2019-20",
+   "playerIds": [
+    "200746",
+    "201942",
+    "1626168",
+    "1627749",
+    "1627854"
+   ],
+   "minutes": 505.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2019-20",
+   "teamId": "TOR",
+   "season": "2019-20",
+   "playerIds": [
+    "200768",
+    "201188",
+    "1627783",
+    "1627832",
+    "1628384"
+   ],
+   "minutes": 360.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2019-20",
+   "teamId": "UTA",
+   "season": "2019-20",
+   "playerIds": [
+    "202711",
+    "203497",
+    "204060",
+    "1626220",
+    "1628378"
+   ],
+   "minutes": 570.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2019-20",
+   "teamId": "WAS",
+   "season": "2019-20",
+   "playerIds": [
+    "202738",
+    "203078",
+    "1628418",
+    "1628972",
+    "1629060"
+   ],
+   "minutes": 179.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2020-21",
+   "teamId": "ATL",
+   "season": "2020-21",
+   "playerIds": [
+    "203991",
+    "1628381",
+    "1628989",
+    "1629027",
+    "1629629"
+   ],
+   "minutes": 194.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2020-21",
+   "teamId": "BKN",
+   "season": "2020-21",
+   "playerIds": [
+    "201599",
+    "201935",
+    "202681",
+    "203925",
+    "1628971"
+   ],
+   "minutes": 191.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2020-21",
+   "teamId": "BOS",
+   "season": "2020-21",
+   "playerIds": [
+    "202684",
+    "202689",
+    "1627759",
+    "1628369",
+    "1628464"
+   ],
+   "minutes": 131.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2020-21",
+   "teamId": "CHA",
+   "season": "2020-21",
+   "playerIds": [
+    "202330",
+    "202687",
+    "1626179",
+    "1628984",
+    "1629023"
+   ],
+   "minutes": 258.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2020-21",
+   "teamId": "CHI",
+   "season": "2020-21",
+   "playerIds": [
+    "202066",
+    "203897",
+    "1628976",
+    "1629632",
+    "1630172"
+   ],
+   "minutes": 137.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2020-21",
+   "teamId": "CLE",
+   "season": "2020-21",
+   "playerIds": [
+    "1626204",
+    "1628386",
+    "1629012",
+    "1629636",
+    "1630171"
+   ],
+   "minutes": 140.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2020-21",
+   "teamId": "DEN",
+   "season": "2020-21",
+   "playerIds": [
+    "200794",
+    "203115",
+    "203914",
+    "203999",
+    "1627750"
+   ],
+   "minutes": 249.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2020-21",
+   "teamId": "DET",
+   "season": "2020-21",
+   "playerIds": [
+    "201933",
+    "201961",
+    "203486",
+    "203924",
+    "1626153"
+   ],
+   "minutes": 177.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2020-21",
+   "teamId": "GSW",
+   "season": "2020-21",
+   "playerIds": [
+    "201939",
+    "203110",
+    "203145",
+    "203952",
+    "1626172"
+   ],
+   "minutes": 268.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2020-21",
+   "teamId": "HOU",
+   "season": "2020-21",
+   "playerIds": [
+    "202322",
+    "203482",
+    "1626174",
+    "1629645",
+    "1630256"
+   ],
+   "minutes": 124.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2020-21",
+   "teamId": "IND",
+   "season": "2020-21",
+   "playerIds": [
+    "203200",
+    "203926",
+    "1626167",
+    "1627734",
+    "1627763"
+   ],
+   "minutes": 238.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2020-21",
+   "teamId": "LAC",
+   "season": "2020-21",
+   "playerIds": [
+    "201586",
+    "201587",
+    "201976",
+    "202331",
+    "202695"
+   ],
+   "minutes": 263.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2020-21",
+   "teamId": "LAL",
+   "season": "2020-21",
+   "playerIds": [
+    "2544",
+    "201188",
+    "203076",
+    "203471",
+    "203484"
+   ],
+   "minutes": 281.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2020-21",
+   "teamId": "MEM",
+   "season": "2020-21",
+   "playerIds": [
+    "202685",
+    "203937",
+    "1628415",
+    "1628960",
+    "1629630"
+   ],
+   "minutes": 457.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2020-21",
+   "teamId": "MIA",
+   "season": "2020-21",
+   "playerIds": [
+    "2772",
+    "202710",
+    "1628389",
+    "1629130",
+    "1629134"
+   ],
+   "minutes": 202.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2020-21",
+   "teamId": "MIL",
+   "season": "2020-21",
+   "playerIds": [
+    "201572",
+    "201950",
+    "203114",
+    "203507",
+    "1628978"
+   ],
+   "minutes": 507.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2020-21",
+   "teamId": "MIN",
+   "season": "2020-21",
+   "playerIds": [
+    "201937",
+    "1626157",
+    "1629006",
+    "1630162",
+    "1630183"
+   ],
+   "minutes": 171.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2020-21",
+   "teamId": "NOP",
+   "season": "2020-21",
+   "playerIds": [
+    "202339",
+    "203500",
+    "1627742",
+    "1628366",
+    "1629627"
+   ],
+   "minutes": 609.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2020-21",
+   "teamId": "NYK",
+   "season": "2020-21",
+   "playerIds": [
+    "203457",
+    "203493",
+    "203901",
+    "203944",
+    "1629628"
+   ],
+   "minutes": 554.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2020-21",
+   "teamId": "OKC",
+   "season": "2020-21",
+   "playerIds": [
+    "201143",
+    "201588",
+    "1628983",
+    "1629647",
+    "1629652"
+   ],
+   "minutes": 195.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2020-21",
+   "teamId": "ORL",
+   "season": "2020-21",
+   "playerIds": [
+    "203914",
+    "1628407",
+    "1628976",
+    "1629643",
+    "1630175"
+   ],
+   "minutes": 74.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2020-21",
+   "teamId": "PHI",
+   "season": "2020-21",
+   "playerIds": [
+    "201980",
+    "202699",
+    "203552",
+    "203954",
+    "1627732"
+   ],
+   "minutes": 655.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2020-21",
+   "teamId": "PHX",
+   "season": "2020-21",
+   "playerIds": [
+    "101108",
+    "203109",
+    "1626164",
+    "1628969",
+    "1629028"
+   ],
+   "minutes": 705.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2020-21",
+   "teamId": "POR",
+   "season": "2020-21",
+   "playerIds": [
+    "203081",
+    "203468",
+    "203496",
+    "203994",
+    "1626181"
+   ],
+   "minutes": 370.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2020-21",
+   "teamId": "SAC",
+   "season": "2020-21",
+   "playerIds": [
+    "203084",
+    "1626158",
+    "1627741",
+    "1628368",
+    "1628963"
+   ],
+   "minutes": 424.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2020-21",
+   "teamId": "SAS",
+   "season": "2020-21",
+   "playerIds": [
+    "201942",
+    "1627749",
+    "1627751",
+    "1628401",
+    "1629640"
+   ],
+   "minutes": 332.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2020-21",
+   "teamId": "TOR",
+   "season": "2020-21",
+   "playerIds": [
+    "200768",
+    "203382",
+    "1626181",
+    "1627783",
+    "1627832"
+   ],
+   "minutes": 129.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2020-21",
+   "teamId": "UTA",
+   "season": "2020-21",
+   "playerIds": [
+    "201144",
+    "202711",
+    "203497",
+    "1626220",
+    "1628378"
+   ],
+   "minutes": 593.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2020-21",
+   "teamId": "WAS",
+   "season": "2020-21",
+   "playerIds": [
+    "201566",
+    "203078",
+    "1629021",
+    "1629060",
+    "1629726"
+   ],
+   "minutes": 133.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2021-22",
+   "teamId": "ATL",
+   "season": "2021-22",
+   "playerIds": [
+    "203991",
+    "203992",
+    "1628381",
+    "1629027",
+    "1629631"
+   ],
+   "minutes": 245.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2021-22",
+   "teamId": "BKN",
+   "season": "2021-22",
+   "playerIds": [
+    "201142",
+    "201933",
+    "201935",
+    "203925",
+    "1628971"
+   ],
+   "minutes": 171.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2021-22",
+   "teamId": "BOS",
+   "season": "2021-22",
+   "playerIds": [
+    "201143",
+    "203935",
+    "1627759",
+    "1628369",
+    "1629057"
+   ],
+   "minutes": 442.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2021-22",
+   "teamId": "CHA",
+   "season": "2021-22",
+   "playerIds": [
+    "202330",
+    "203486",
+    "1626179",
+    "1628970",
+    "1630163"
+   ],
+   "minutes": 373.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2021-22",
+   "teamId": "CHI",
+   "season": "2021-22",
+   "playerIds": [
+    "201942",
+    "202696",
+    "203897",
+    "1629750",
+    "1630245"
+   ],
+   "minutes": 251.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2021-22",
+   "teamId": "CLE",
+   "season": "2021-22",
+   "playerIds": [
+    "1628374",
+    "1628386",
+    "1629636",
+    "1630171",
+    "1630596"
+   ],
+   "minutes": 225.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2021-22",
+   "teamId": "DAL",
+   "season": "2021-22",
+   "playerIds": [
+    "203493",
+    "203939",
+    "1627827",
+    "1628973",
+    "1629029"
+   ],
+   "minutes": 366.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2021-22",
+   "teamId": "DEN",
+   "season": "2021-22",
+   "playerIds": [
+    "201145",
+    "203115",
+    "203932",
+    "203999",
+    "1628420"
+   ],
+   "minutes": 761.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2021-22",
+   "teamId": "DET",
+   "season": "2021-22",
+   "playerIds": [
+    "202709",
+    "203924",
+    "1630180",
+    "1630191",
+    "1630595"
+   ],
+   "minutes": 273.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2021-22",
+   "teamId": "GSW",
+   "season": "2021-22",
+   "playerIds": [
+    "201939",
+    "203110",
+    "203952",
+    "1626172",
+    "1629673"
+   ],
+   "minutes": 346.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2021-22",
+   "teamId": "HOU",
+   "season": "2021-22",
+   "playerIds": [
+    "201569",
+    "1626174",
+    "1629645",
+    "1630224",
+    "1630256"
+   ],
+   "minutes": 351.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2021-22",
+   "teamId": "IND",
+   "season": "2021-22",
+   "playerIds": [
+    "1626167",
+    "1627734",
+    "1627747",
+    "1627763",
+    "1630537"
+   ],
+   "minutes": 148.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2021-22",
+   "teamId": "LAC",
+   "season": "2021-22",
+   "playerIds": [
+    "201587",
+    "202694",
+    "202704",
+    "1627826",
+    "1629599"
+   ],
+   "minutes": 220.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2021-22",
+   "teamId": "LAL",
+   "season": "2021-22",
+   "playerIds": [
+    "2544",
+    "201566",
+    "202340",
+    "1626169",
+    "1628370"
+   ],
+   "minutes": 89.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2021-22",
+   "teamId": "MEM",
+   "season": "2021-22",
+   "playerIds": [
+    "203500",
+    "1628991",
+    "1629630",
+    "1630217",
+    "1630533"
+   ],
+   "minutes": 208.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2021-22",
+   "teamId": "MIA",
+   "season": "2021-22",
+   "playerIds": [
+    "200768",
+    "200782",
+    "202710",
+    "1628389",
+    "1629130"
+   ],
+   "minutes": 422.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2021-22",
+   "teamId": "MIL",
+   "season": "2021-22",
+   "playerIds": [
+    "201950",
+    "203114",
+    "203507",
+    "1626171",
+    "1628960"
+   ],
+   "minutes": 336.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2021-22",
+   "teamId": "MIN",
+   "season": "2021-22",
+   "playerIds": [
+    "201976",
+    "1626156",
+    "1626157",
+    "1629020",
+    "1630162"
+   ],
+   "minutes": 438.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2021-22",
+   "teamId": "NOP",
+   "season": "2021-22",
+   "playerIds": [
+    "202685",
+    "1627742",
+    "1628404",
+    "1628984",
+    "1630529"
+   ],
+   "minutes": 345.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2021-22",
+   "teamId": "NYK",
+   "season": "2021-22",
+   "playerIds": [
+    "202692",
+    "203095",
+    "203944",
+    "1629011",
+    "1629628"
+   ],
+   "minutes": 433.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2021-22",
+   "teamId": "OKC",
+   "season": "2021-22",
+   "playerIds": [
+    "1628983",
+    "1629647",
+    "1629652",
+    "1630526",
+    "1630581"
+   ],
+   "minutes": 254.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2021-22",
+   "teamId": "ORL",
+   "season": "2021-22",
+   "playerIds": [
+    "1628964",
+    "1628976",
+    "1630175",
+    "1630532",
+    "1630591"
+   ],
+   "minutes": 423.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2021-22",
+   "teamId": "PHI",
+   "season": "2021-22",
+   "playerIds": [
+    "201935",
+    "202699",
+    "203954",
+    "1629680",
+    "1630178"
+   ],
+   "minutes": 323.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2021-22",
+   "teamId": "PHX",
+   "season": "2021-22",
+   "playerIds": [
+    "101108",
+    "203109",
+    "1626164",
+    "1628969",
+    "1629028"
+   ],
+   "minutes": 754.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2021-22",
+   "teamId": "POR",
+   "season": "2021-22",
+   "playerIds": [
+    "203081",
+    "203468",
+    "203496",
+    "203994",
+    "1626181"
+   ],
+   "minutes": 274.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2021-22",
+   "teamId": "SAC",
+   "season": "2021-22",
+   "playerIds": [
+    "203084",
+    "203200",
+    "1626168",
+    "1627745",
+    "1630558"
+   ],
+   "minutes": 117.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2021-22",
+   "teamId": "SAS",
+   "season": "2021-22",
+   "playerIds": [
+    "203926",
+    "1627749",
+    "1627751",
+    "1628401",
+    "1629640"
+   ],
+   "minutes": 308.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2021-22",
+   "teamId": "TOR",
+   "season": "2021-22",
+   "playerIds": [
+    "1627783",
+    "1627832",
+    "1628384",
+    "1629018",
+    "1630567"
+   ],
+   "minutes": 345.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2021-22",
+   "teamId": "UTA",
+   "season": "2021-22",
+   "playerIds": [
+    "201144",
+    "202711",
+    "203497",
+    "1626220",
+    "1628378"
+   ],
+   "minutes": 666.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2021-22",
+   "teamId": "WAS",
+   "season": "2021-22",
+   "playerIds": [
+    "203078",
+    "203484",
+    "203915",
+    "1628398",
+    "1629655"
+   ],
+   "minutes": 318.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2022-23",
+   "teamId": "ATL",
+   "season": "2022-23",
+   "playerIds": [
+    "203991",
+    "1627749",
+    "1628381",
+    "1629027",
+    "1629631"
+   ],
+   "minutes": 737.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2022-23",
+   "teamId": "BKN",
+   "season": "2022-23",
+   "playerIds": [
+    "203915",
+    "1627827",
+    "1628969",
+    "1629651",
+    "1629661"
+   ],
+   "minutes": 328.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2022-23",
+   "teamId": "BOS",
+   "season": "2022-23",
+   "playerIds": [
+    "201143",
+    "203935",
+    "1627759",
+    "1628369",
+    "1628401"
+   ],
+   "minutes": 432.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2022-23",
+   "teamId": "CHA",
+   "season": "2022-23",
+   "playerIds": [
+    "202330",
+    "203486",
+    "1626179",
+    "1629023",
+    "1630163"
+   ],
+   "minutes": 199.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2022-23",
+   "teamId": "CHI",
+   "season": "2022-23",
+   "playerIds": [
+    "201942",
+    "202696",
+    "203897",
+    "1630172",
+    "1630245"
+   ],
+   "minutes": 591.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2022-23",
+   "teamId": "CLE",
+   "season": "2022-23",
+   "playerIds": [
+    "1628378",
+    "1628386",
+    "1629636",
+    "1630171",
+    "1630596"
+   ],
+   "minutes": 397.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2022-23",
+   "teamId": "DAL",
+   "season": "2022-23",
+   "playerIds": [
+    "203493",
+    "203501",
+    "203915",
+    "1626174",
+    "1629029"
+   ],
+   "minutes": 197.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2022-23",
+   "teamId": "DEN",
+   "season": "2022-23",
+   "playerIds": [
+    "203484",
+    "203932",
+    "203999",
+    "1627750",
+    "1629008"
+   ],
+   "minutes": 706.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2022-23",
+   "teamId": "DET",
+   "season": "2022-23",
+   "playerIds": [
+    "202711",
+    "1630165",
+    "1630191",
+    "1631093",
+    "1631105"
+   ],
+   "minutes": 248.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2022-23",
+   "teamId": "GSW",
+   "season": "2022-23",
+   "playerIds": [
+    "201939",
+    "202691",
+    "203110",
+    "203952",
+    "1626172"
+   ],
+   "minutes": 330.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2022-23",
+   "teamId": "HOU",
+   "season": "2022-23",
+   "playerIds": [
+    "1629645",
+    "1630224",
+    "1630231",
+    "1630578",
+    "1631095"
+   ],
+   "minutes": 439.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2022-23",
+   "teamId": "IND",
+   "season": "2022-23",
+   "playerIds": [
+    "1626167",
+    "1627741",
+    "1629614",
+    "1630169",
+    "1630174"
+   ],
+   "minutes": 415.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2022-23",
+   "teamId": "LAC",
+   "season": "2022-23",
+   "playerIds": [
+    "202331",
+    "202694",
+    "202695",
+    "202704",
+    "1627826"
+   ],
+   "minutes": 164.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2022-23",
+   "teamId": "LAL",
+   "season": "2022-23",
+   "playerIds": [
+    "2544",
+    "201976",
+    "203471",
+    "1628418",
+    "1628972"
+   ],
+   "minutes": 119.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2022-23",
+   "teamId": "MEM",
+   "season": "2022-23",
+   "playerIds": [
+    "203500",
+    "1628415",
+    "1628991",
+    "1629630",
+    "1629723"
+   ],
+   "minutes": 162.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2022-23",
+   "teamId": "MIA",
+   "season": "2022-23",
+   "playerIds": [
+    "200768",
+    "202710",
+    "1628389",
+    "1628997",
+    "1629639"
+   ],
+   "minutes": 302.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2022-23",
+   "teamId": "MIL",
+   "season": "2022-23",
+   "playerIds": [
+    "201572",
+    "201950",
+    "203507",
+    "1626192",
+    "1628960"
+   ],
+   "minutes": 231.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2022-23",
+   "teamId": "MIN",
+   "season": "2022-23",
+   "playerIds": [
+    "203497",
+    "1626156",
+    "1626157",
+    "1630162",
+    "1630183"
+   ],
+   "minutes": 260.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2022-23",
+   "teamId": "NOP",
+   "season": "2022-23",
+   "playerIds": [
+    "202685",
+    "203468",
+    "1627742",
+    "1630529",
+    "1630530"
+   ],
+   "minutes": 357.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2022-23",
+   "teamId": "NYK",
+   "season": "2022-23",
+   "playerIds": [
+    "203944",
+    "1628973",
+    "1629011",
+    "1629628",
+    "1629656"
+   ],
+   "minutes": 526.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2022-23",
+   "teamId": "OKC",
+   "season": "2022-23",
+   "playerIds": [
+    "1628983",
+    "1629652",
+    "1630581",
+    "1631114",
+    "1631119"
+   ],
+   "minutes": 288.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2022-23",
+   "teamId": "ORL",
+   "season": "2022-23",
+   "playerIds": [
+    "203914",
+    "1628365",
+    "1628976",
+    "1630532",
+    "1631094"
+   ],
+   "minutes": 570.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2022-23",
+   "teamId": "PHI",
+   "season": "2022-23",
+   "playerIds": [
+    "200782",
+    "201935",
+    "202699",
+    "203954",
+    "1629001"
+   ],
+   "minutes": 518.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2022-23",
+   "teamId": "PHX",
+   "season": "2022-23",
+   "playerIds": [
+    "1626164",
+    "1626166",
+    "1628470",
+    "1628969",
+    "1629028"
+   ],
+   "minutes": 240.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2022-23",
+   "teamId": "POR",
+   "season": "2022-23",
+   "playerIds": [
+    "203081",
+    "203924",
+    "203994",
+    "1628404",
+    "1629014"
+   ],
+   "minutes": 541.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2022-23",
+   "teamId": "SAC",
+   "season": "2022-23",
+   "playerIds": [
+    "203084",
+    "1627734",
+    "1628368",
+    "1628989",
+    "1631099"
+   ],
+   "minutes": 900.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2022-23",
+   "teamId": "SAS",
+   "season": "2022-23",
+   "playerIds": [
+    "1627751",
+    "1629640",
+    "1630170",
+    "1630200",
+    "1631110"
+   ],
+   "minutes": 188.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2022-23",
+   "teamId": "TOR",
+   "season": "2022-23",
+   "playerIds": [
+    "1627783",
+    "1627832",
+    "1628384",
+    "1629018",
+    "1630567"
+   ],
+   "minutes": 380.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2022-23",
+   "teamId": "UTA",
+   "season": "2022-23",
+   "playerIds": [
+    "201144",
+    "203482",
+    "203903",
+    "1628374",
+    "1629020"
+   ],
+   "minutes": 303.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2022-23",
+   "teamId": "WAS",
+   "season": "2022-23",
+   "playerIds": [
+    "203078",
+    "204001",
+    "1628398",
+    "1628420",
+    "1630166"
+   ],
+   "minutes": 157.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2023-24",
+   "teamId": "ATL",
+   "season": "2023-24",
+   "playerIds": [
+    "203991",
+    "1627749",
+    "1629027",
+    "1630180",
+    "1630552"
+   ],
+   "minutes": 288.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2023-24",
+   "teamId": "BKN",
+   "season": "2023-24",
+   "playerIds": [
+    "203915",
+    "1627827",
+    "1628969",
+    "1629651",
+    "1629661"
+   ],
+   "minutes": 313.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2023-24",
+   "teamId": "BOS",
+   "season": "2023-24",
+   "playerIds": [
+    "201950",
+    "204001",
+    "1627759",
+    "1628369",
+    "1628401"
+   ],
+   "minutes": 622.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2023-24",
+   "teamId": "CHA",
+   "season": "2023-24",
+   "playerIds": [
+    "203995",
+    "1628970",
+    "1630208",
+    "1630544",
+    "1641706"
+   ],
+   "minutes": 115.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2023-24",
+   "teamId": "CHI",
+   "season": "2023-24",
+   "playerIds": [
+    "201942",
+    "202696",
+    "1627936",
+    "1629632",
+    "1630245"
+   ],
+   "minutes": 433.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2023-24",
+   "teamId": "CLE",
+   "season": "2023-24",
+   "playerIds": [
+    "1628378",
+    "1628386",
+    "1629622",
+    "1629636",
+    "1630596"
+   ],
+   "minutes": 367.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2023-24",
+   "teamId": "DAL",
+   "season": "2023-24",
+   "playerIds": [
+    "202681",
+    "1627884",
+    "1629023",
+    "1629029",
+    "1629655"
+   ],
+   "minutes": 175.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2023-24",
+   "teamId": "DEN",
+   "season": "2023-24",
+   "playerIds": [
+    "203484",
+    "203932",
+    "203999",
+    "1627750",
+    "1629008"
+   ],
+   "minutes": 958.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2023-24",
+   "teamId": "DET",
+   "season": "2023-24",
+   "playerIds": [
+    "1630191",
+    "1630595",
+    "1631093",
+    "1631105",
+    "1641709"
+   ],
+   "minutes": 144.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2023-24",
+   "teamId": "GSW",
+   "season": "2023-24",
+   "playerIds": [
+    "201939",
+    "203110",
+    "203952",
+    "1630228",
+    "1641764"
+   ],
+   "minutes": 231.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2023-24",
+   "teamId": "HOU",
+   "season": "2023-24",
+   "playerIds": [
+    "1627832",
+    "1628415",
+    "1630224",
+    "1630578",
+    "1631095"
+   ],
+   "minutes": 754.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2023-24",
+   "teamId": "IND",
+   "season": "2023-24",
+   "playerIds": [
+    "1626167",
+    "1627783",
+    "1629614",
+    "1630169",
+    "1630174"
+   ],
+   "minutes": 443.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2023-24",
+   "teamId": "LAC",
+   "season": "2023-24",
+   "playerIds": [
+    "201935",
+    "202331",
+    "202695",
+    "1627826",
+    "1629611"
+   ],
+   "minutes": 592.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2023-24",
+   "teamId": "LAL",
+   "season": "2023-24",
+   "playerIds": [
+    "2544",
+    "203076",
+    "1626156",
+    "1629060",
+    "1630559"
+   ],
+   "minutes": 388.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2023-24",
+   "teamId": "MEM",
+   "season": "2023-24",
+   "playerIds": [
+    "203935",
+    "1628991",
+    "1630214",
+    "1630217",
+    "1630533"
+   ],
+   "minutes": 68.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2023-24",
+   "teamId": "MIA",
+   "season": "2023-24",
+   "playerIds": [
+    "202710",
+    "1626179",
+    "1628389",
+    "1629130",
+    "1631107"
+   ],
+   "minutes": 180.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2023-24",
+   "teamId": "MIL",
+   "season": "2023-24",
+   "playerIds": [
+    "201572",
+    "203081",
+    "203114",
+    "203507",
+    "1627736"
+   ],
+   "minutes": 598.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2023-24",
+   "teamId": "MIN",
+   "season": "2023-24",
+   "playerIds": [
+    "201144",
+    "203497",
+    "1626157",
+    "1630162",
+    "1630183"
+   ],
+   "minutes": 640.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2023-24",
+   "teamId": "NOP",
+   "season": "2023-24",
+   "playerIds": [
+    "202685",
+    "203468",
+    "1627742",
+    "1629627",
+    "1630529"
+   ],
+   "minutes": 423.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2023-24",
+   "teamId": "NYK",
+   "season": "2023-24",
+   "playerIds": [
+    "203944",
+    "1628973",
+    "1629011",
+    "1629628",
+    "1629656"
+   ],
+   "minutes": 228.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2023-24",
+   "teamId": "OKC",
+   "season": "2023-24",
+   "playerIds": [
+    "1628983",
+    "1629652",
+    "1630581",
+    "1631096",
+    "1631114"
+   ],
+   "minutes": 799.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2023-24",
+   "teamId": "ORL",
+   "season": "2023-24",
+   "playerIds": [
+    "203914",
+    "1628976",
+    "1630532",
+    "1630591",
+    "1631094"
+   ],
+   "minutes": 299.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2023-24",
+   "teamId": "PHI",
+   "season": "2023-24",
+   "playerIds": [
+    "201587",
+    "202699",
+    "203954",
+    "1629001",
+    "1630178"
+   ],
+   "minutes": 218.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2023-24",
+   "teamId": "PHX",
+   "season": "2023-24",
+   "playerIds": [
+    "201142",
+    "203078",
+    "203994",
+    "1626164",
+    "1628960"
+   ],
+   "minutes": 502.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2023-24",
+   "teamId": "POR",
+   "season": "2023-24",
+   "playerIds": [
+    "203924",
+    "1627763",
+    "1629028",
+    "1631101",
+    "1641739"
+   ],
+   "minutes": 112.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2023-24",
+   "teamId": "SAC",
+   "season": "2023-24",
+   "playerIds": [
+    "203084",
+    "1627734",
+    "1628368",
+    "1628989",
+    "1631099"
+   ],
+   "minutes": 668.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2023-24",
+   "teamId": "SAS",
+   "season": "2023-24",
+   "playerIds": [
+    "1630170",
+    "1630200",
+    "1630577",
+    "1631110",
+    "1641705"
+   ],
+   "minutes": 404.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2023-24",
+   "teamId": "TOR",
+   "season": "2023-24",
+   "playerIds": [
+    "203471",
+    "1627751",
+    "1627783",
+    "1628384",
+    "1630567"
+   ],
+   "minutes": 366.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2023-24",
+   "teamId": "UTA",
+   "season": "2023-24",
+   "playerIds": [
+    "1627739",
+    "1628374",
+    "1628381",
+    "1629012",
+    "1631323"
+   ],
+   "minutes": 256.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2023-24",
+   "teamId": "WAS",
+   "season": "2023-24",
+   "playerIds": [
+    "1626145",
+    "1628398",
+    "1629655",
+    "1629673",
+    "1630166"
+   ],
+   "minutes": 576.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2024-25",
+   "teamId": "ATL",
+   "season": "2024-25",
+   "playerIds": [
+    "203991",
+    "1629027",
+    "1630552",
+    "1630700",
+    "1642258"
+   ],
+   "minutes": 281.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2024-25",
+   "teamId": "BKN",
+   "season": "2024-25",
+   "playerIds": [
+    "203471",
+    "1627827",
+    "1629651",
+    "1629661",
+    "1630560"
+   ],
+   "minutes": 105.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2024-25",
+   "teamId": "BOS",
+   "season": "2024-25",
+   "playerIds": [
+    "201950",
+    "204001",
+    "1627759",
+    "1628369",
+    "1628401"
+   ],
+   "minutes": 356.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2024-25",
+   "teamId": "CHA",
+   "season": "2024-25",
+   "playerIds": [
+    "1628970",
+    "1630163",
+    "1630182",
+    "1631109",
+    "1641733"
+   ],
+   "minutes": 119.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2024-25",
+   "teamId": "CHI",
+   "season": "2024-25",
+   "playerIds": [
+    "202696",
+    "203897",
+    "1629632",
+    "1630172",
+    "1630581"
+   ],
+   "minutes": 250.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2024-25",
+   "teamId": "CLE",
+   "season": "2024-25",
+   "playerIds": [
+    "1628378",
+    "1628386",
+    "1629622",
+    "1629636",
+    "1630596"
+   ],
+   "minutes": 242.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2024-25",
+   "teamId": "DAL",
+   "season": "2024-25",
+   "playerIds": [
+    "202681",
+    "202691",
+    "1629023",
+    "1629029",
+    "1641726"
+   ],
+   "minutes": 118.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2024-25",
+   "teamId": "DEN",
+   "season": "2024-25",
+   "playerIds": [
+    "203932",
+    "203999",
+    "1627750",
+    "1629008",
+    "1631128"
+   ],
+   "minutes": 425.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2024-25",
+   "teamId": "DET",
+   "season": "2024-25",
+   "playerIds": [
+    "202699",
+    "203501",
+    "1630595",
+    "1631105",
+    "1641709"
+   ],
+   "minutes": 491.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2024-25",
+   "teamId": "GSW",
+   "season": "2024-25",
+   "playerIds": [
+    "201939",
+    "202710",
+    "203110",
+    "1630541",
+    "1641764"
+   ],
+   "minutes": 211.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2024-25",
+   "teamId": "HOU",
+   "season": "2024-25",
+   "playerIds": [
+    "1627832",
+    "1628415",
+    "1630224",
+    "1630578",
+    "1631095"
+   ],
+   "minutes": 450.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2024-25",
+   "teamId": "IND",
+   "season": "2024-25",
+   "playerIds": [
+    "1626167",
+    "1627783",
+    "1629614",
+    "1630169",
+    "1631097"
+   ],
+   "minutes": 434.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2024-25",
+   "teamId": "LAC",
+   "season": "2024-25",
+   "playerIds": [
+    "201935",
+    "1626181",
+    "1627739",
+    "1627826",
+    "1627884"
+   ],
+   "minutes": 326.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2024-25",
+   "teamId": "LAL",
+   "season": "2024-25",
+   "playerIds": [
+    "2544",
+    "203076",
+    "1629060",
+    "1630559",
+    "1631108"
+   ],
+   "minutes": 198.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2024-25",
+   "teamId": "MEM",
+   "season": "2024-25",
+   "playerIds": [
+    "1628991",
+    "1629630",
+    "1630217",
+    "1641744",
+    "1642377"
+   ],
+   "minutes": 221.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2024-25",
+   "teamId": "MIA",
+   "season": "2024-25",
+   "playerIds": [
+    "202710",
+    "1628389",
+    "1629130",
+    "1629312",
+    "1629639"
+   ],
+   "minutes": 188.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2024-25",
+   "teamId": "MIL",
+   "season": "2024-25",
+   "playerIds": [
+    "201572",
+    "203081",
+    "203507",
+    "1627752",
+    "1641748"
+   ],
+   "minutes": 310.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2024-25",
+   "teamId": "MIN",
+   "season": "2024-25",
+   "playerIds": [
+    "201144",
+    "203497",
+    "203944",
+    "1630162",
+    "1630183"
+   ],
+   "minutes": 713.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2024-25",
+   "teamId": "NOP",
+   "season": "2024-25",
+   "playerIds": [
+    "203468",
+    "1627749",
+    "1630529",
+    "1630530",
+    "1642274"
+   ],
+   "minutes": 221.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2024-25",
+   "teamId": "NYK",
+   "season": "2024-25",
+   "playerIds": [
+    "1626157",
+    "1628384",
+    "1628404",
+    "1628969",
+    "1628973"
+   ],
+   "minutes": 940.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2024-25",
+   "teamId": "OKC",
+   "season": "2024-25",
+   "playerIds": [
+    "1628392",
+    "1628983",
+    "1629652",
+    "1631114",
+    "1641717"
+   ],
+   "minutes": 316.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2024-25",
+   "teamId": "ORL",
+   "season": "2024-25",
+   "playerIds": [
+    "202709",
+    "203484",
+    "1628976",
+    "1630532",
+    "1631094"
+   ],
+   "minutes": 215.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2024-25",
+   "teamId": "PHI",
+   "season": "2024-25",
+   "playerIds": [
+    "202331",
+    "1626162",
+    "1627824",
+    "1628997",
+    "1630178"
+   ],
+   "minutes": 72.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2024-25",
+   "teamId": "PHX",
+   "season": "2024-25",
+   "playerIds": [
+    "201142",
+    "203078",
+    "203994",
+    "1626145",
+    "1626164"
+   ],
+   "minutes": 119.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2024-25",
+   "teamId": "POR",
+   "season": "2024-25",
+   "playerIds": [
+    "203924",
+    "1629014",
+    "1629028",
+    "1630166",
+    "1641739"
+   ],
+   "minutes": 251.1,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2024-25",
+   "teamId": "SAC",
+   "season": "2024-25",
+   "playerIds": [
+    "201942",
+    "1627734",
+    "1628368",
+    "1628370",
+    "1631099"
+   ],
+   "minutes": 430.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2024-25",
+   "teamId": "SAS",
+   "season": "2024-25",
+   "playerIds": [
+    "101108",
+    "203084",
+    "1630577",
+    "1641705",
+    "1642264"
+   ],
+   "minutes": 176.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2024-25",
+   "teamId": "TOR",
+   "season": "2024-25",
+   "playerIds": [
+    "1627751",
+    "1629628",
+    "1630534",
+    "1630558",
+    "1641711"
+   ],
+   "minutes": 166.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2024-25",
+   "teamId": "UTA",
+   "season": "2024-25",
+   "playerIds": [
+    "1628374",
+    "1628381",
+    "1629012",
+    "1631117",
+    "1641718"
+   ],
+   "minutes": 196.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2024-25",
+   "teamId": "WAS",
+   "season": "2024-25",
+   "playerIds": [
+    "1628398",
+    "1629673",
+    "1641731",
+    "1642259",
+    "1642267"
+   ],
+   "minutes": 207.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-2025-26",
+   "teamId": "ATL",
+   "season": "2025-26",
+   "playerIds": [
+    "203468",
+    "1629638",
+    "1630168",
+    "1630552",
+    "1630700"
+   ],
+   "minutes": 390.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BKN-2025-26",
+   "teamId": "BKN",
+   "season": "2025-26",
+   "playerIds": [
+    "1629008",
+    "1629611",
+    "1629651",
+    "1641730",
+    "1642856"
+   ],
+   "minutes": 307.0,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "BOS-2025-26",
+   "teamId": "BOS",
+   "season": "2025-26",
+   "playerIds": [
+    "1627759",
+    "1628401",
+    "1629674",
+    "1630202",
+    "1630573"
+   ],
+   "minutes": 199.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHA-2025-26",
+   "teamId": "CHA",
+   "season": "2025-26",
+   "playerIds": [
+    "1628970",
+    "1630163",
+    "1631217",
+    "1641706",
+    "1642851"
+   ],
+   "minutes": 509.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CHI-2025-26",
+   "teamId": "CHI",
+   "season": "2025-26",
+   "playerIds": [
+    "202696",
+    "1629632",
+    "1630171",
+    "1630581",
+    "1641824"
+   ],
+   "minutes": 103.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "CLE-2025-26",
+   "teamId": "CLE",
+   "season": "2025-26",
+   "playerIds": [
+    "1628378",
+    "1629631",
+    "1629636",
+    "1630596",
+    "1642281"
+   ],
+   "minutes": 89.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DAL-2025-26",
+   "teamId": "DAL",
+   "season": "2025-26",
+   "playerIds": [
+    "1629023",
+    "1629655",
+    "1630230",
+    "1631108",
+    "1642843"
+   ],
+   "minutes": 91.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DEN-2025-26",
+   "teamId": "DEN",
+   "season": "2025-26",
+   "playerIds": [
+    "203932",
+    "203999",
+    "1627750",
+    "1629661",
+    "1631128"
+   ],
+   "minutes": 359.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "DET-2025-26",
+   "teamId": "DET",
+   "season": "2025-26",
+   "playerIds": [
+    "202699",
+    "1629130",
+    "1630595",
+    "1631105",
+    "1641709"
+   ],
+   "minutes": 536.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "GSW-2025-26",
+   "teamId": "GSW",
+   "season": "2025-26",
+   "playerIds": [
+    "201939",
+    "202710",
+    "203110",
+    "1630541",
+    "1642366"
+   ],
+   "minutes": 124.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "HOU-2025-26",
+   "teamId": "HOU",
+   "season": "2025-26",
+   "playerIds": [
+    "201142",
+    "1629006",
+    "1630578",
+    "1631095",
+    "1641708"
+   ],
+   "minutes": 376.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "IND-2025-26",
+   "teamId": "IND",
+   "season": "2025-26",
+   "playerIds": [
+    "1627783",
+    "1629614",
+    "1630643",
+    "1630679",
+    "1631097"
+   ],
+   "minutes": 96.2,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAC-2025-26",
+   "teamId": "LAC",
+   "season": "2025-26",
+   "playerIds": [
+    "201935",
+    "202695",
+    "1627739",
+    "1627826",
+    "1628381"
+   ],
+   "minutes": 303.4,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "LAL-2025-26",
+   "teamId": "LAL",
+   "season": "2025-26",
+   "playerIds": [
+    "2544",
+    "203935",
+    "1629028",
+    "1629029",
+    "1631222"
+   ],
+   "minutes": 225.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MEM-2025-26",
+   "teamId": "MEM",
+   "season": "2025-26",
+   "playerIds": [
+    "1628991",
+    "1631246",
+    "1641744",
+    "1642377",
+    "1642907"
+   ],
+   "minutes": 101.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIA-2025-26",
+   "teamId": "MIA",
+   "season": "2025-26",
+   "playerIds": [
+    "203952",
+    "1628389",
+    "1629639",
+    "1630558",
+    "1641796"
+   ],
+   "minutes": 181.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIL-2025-26",
+   "teamId": "MIL",
+   "season": "2025-26",
+   "playerIds": [
+    "203507",
+    "1626167",
+    "1629645",
+    "1631157",
+    "1631260"
+   ],
+   "minutes": 173.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "MIN-2025-26",
+   "teamId": "MIN",
+   "season": "2025-26",
+   "playerIds": [
+    "203497",
+    "203944",
+    "1628978",
+    "1630162",
+    "1630183"
+   ],
+   "minutes": 709.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NOP-2025-26",
+   "teamId": "NOP",
+   "season": "2025-26",
+   "playerIds": [
+    "1629627",
+    "1630180",
+    "1630529",
+    "1630530",
+    "1642852"
+   ],
+   "minutes": 138.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "NYK-2025-26",
+   "teamId": "NYK",
+   "season": "2025-26",
+   "playerIds": [
+    "1626157",
+    "1628384",
+    "1628404",
+    "1628969",
+    "1628973"
+   ],
+   "minutes": 540.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "OKC-2025-26",
+   "teamId": "OKC",
+   "season": "2025-26",
+   "playerIds": [
+    "1628392",
+    "1628983",
+    "1629652",
+    "1631096",
+    "1641717"
+   ],
+   "minutes": 166.6,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "ORL-2025-26",
+   "teamId": "ORL",
+   "season": "2025-26",
+   "playerIds": [
+    "1628976",
+    "1630217",
+    "1630591",
+    "1631094",
+    "1641783"
+   ],
+   "minutes": 258.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHI-2025-26",
+   "teamId": "PHI",
+   "season": "2025-26",
+   "playerIds": [
+    "202331",
+    "203954",
+    "1630178",
+    "1631230",
+    "1642845"
+   ],
+   "minutes": 192.5,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "PHX-2025-26",
+   "teamId": "PHX",
+   "season": "2025-26",
+   "playerIds": [
+    "1626164",
+    "1626220",
+    "1628415",
+    "1631109",
+    "1631221"
+   ],
+   "minutes": 266.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "POR-2025-26",
+   "teamId": "POR",
+   "season": "2025-26",
+   "playerIds": [
+    "201950",
+    "203924",
+    "1630166",
+    "1641739",
+    "1642270"
+   ],
+   "minutes": 159.9,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAC-2025-26",
+   "teamId": "SAC",
+   "season": "2025-26",
+   "playerIds": [
+    "201566",
+    "201942",
+    "1630173",
+    "1631099",
+    "1642875"
+   ],
+   "minutes": 129.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "SAS-2025-26",
+   "teamId": "SAS",
+   "season": "2025-26",
+   "playerIds": [
+    "1628368",
+    "1630170",
+    "1630577",
+    "1641705",
+    "1642264"
+   ],
+   "minutes": 284.3,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "TOR-2025-26",
+   "teamId": "TOR",
+   "season": "2025-26",
+   "playerIds": [
+    "1627742",
+    "1627751",
+    "1629628",
+    "1630193",
+    "1630567"
+   ],
+   "minutes": 353.7,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "UTA-2025-26",
+   "teamId": "UTA",
+   "season": "2025-26",
+   "playerIds": [
+    "203994",
+    "1628374",
+    "1629004",
+    "1641718",
+    "1642846"
+   ],
+   "minutes": 178.8,
+   "source": "leaguedashlineups"
+  },
+  {
+   "id": "WAS-2025-26",
+   "teamId": "WAS",
+   "season": "2025-26",
+   "playerIds": [
+    "203114",
+    "203468",
+    "1641731",
+    "1642259",
+    "1642273"
+   ],
+   "minutes": 90.3,
+   "source": "leaguedashlineups"
+  }
+ ]
+}

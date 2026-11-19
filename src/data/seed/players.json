@@ -1,0 +1,9860 @@
+{
+ "meta": {
+  "snapshotDate": "2026-11-19",
+  "source": "stats.nba.com via nba_api 1.12.0",
+  "endpoints": [
+   "commonallplayers",
+   "playerindex",
+   "playerawards",
+   "leaguegamelog"
+  ]
+ },
+ "items": [
+  {
+   "id": "1000",
+   "name": "Shandon Anderson",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1000"
+  },
+  {
+   "id": "1005",
+   "name": "Walt Williams",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1005"
+  },
+  {
+   "id": "101106",
+   "name": "Andrew Bogut",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101106"
+  },
+  {
+   "id": "101107",
+   "name": "Marvin Williams",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101107"
+  },
+  {
+   "id": "101108",
+   "name": "Chris Paul",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": false,
+   "headshotId": "101108"
+  },
+  {
+   "id": "101109",
+   "name": "Raymond Felton",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101109"
+  },
+  {
+   "id": "101110",
+   "name": "Martell Webster",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101110"
+  },
+  {
+   "id": "101111",
+   "name": "Charlie Villanueva",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101111"
+  },
+  {
+   "id": "101112",
+   "name": "Channing Frye",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101112"
+  },
+  {
+   "id": "101114",
+   "name": "Deron Williams",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "101114"
+  },
+  {
+   "id": "101115",
+   "name": "Andrew Bynum",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "101115"
+  },
+  {
+   "id": "101120",
+   "name": "Antoine Wright",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101120"
+  },
+  {
+   "id": "101121",
+   "name": "Joey Graham",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101121"
+  },
+  {
+   "id": "101122",
+   "name": "Danny Granger",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "101122"
+  },
+  {
+   "id": "101123",
+   "name": "Gerald Green",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101123"
+  },
+  {
+   "id": "101124",
+   "name": "Hakim Warrick",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101124"
+  },
+  {
+   "id": "101126",
+   "name": "Nate Robinson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101126"
+  },
+  {
+   "id": "101127",
+   "name": "Jarrett Jack",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101127"
+  },
+  {
+   "id": "101128",
+   "name": "Francisco Garcia",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101128"
+  },
+  {
+   "id": "101129",
+   "name": "Luther Head",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101129"
+  },
+  {
+   "id": "101130",
+   "name": "Johan Petro",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101130"
+  },
+  {
+   "id": "101131",
+   "name": "Jason Maxiell",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101131"
+  },
+  {
+   "id": "101132",
+   "name": "Linas Kleiza",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101132"
+  },
+  {
+   "id": "101133",
+   "name": "Ian Mahinmi",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101133"
+  },
+  {
+   "id": "101135",
+   "name": "David Lee",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "101135"
+  },
+  {
+   "id": "101138",
+   "name": "Brandon Bass",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101138"
+  },
+  {
+   "id": "101139",
+   "name": "CJ Miles",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101139"
+  },
+  {
+   "id": "101141",
+   "name": "Ersan Ilyasova",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101141"
+  },
+  {
+   "id": "101142",
+   "name": "Ronny Turiaf",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101142"
+  },
+  {
+   "id": "101143",
+   "name": "Travis Diener",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101143"
+  },
+  {
+   "id": "101145",
+   "name": "Monta Ellis",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101145"
+  },
+  {
+   "id": "101150",
+   "name": "Lou Williams",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101150"
+  },
+  {
+   "id": "101154",
+   "name": "Andray Blatche",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101154"
+  },
+  {
+   "id": "101155",
+   "name": "Ryan Gomes",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101155"
+  },
+  {
+   "id": "101161",
+   "name": "Amir Johnson",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101161"
+  },
+  {
+   "id": "101162",
+   "name": "Marcin Gortat",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101162"
+  },
+  {
+   "id": "101177",
+   "name": "Fabricio Oberto",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101177"
+  },
+  {
+   "id": "101179",
+   "name": "Ronnie Price",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101179"
+  },
+  {
+   "id": "101181",
+   "name": "Jose Calderon",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101181"
+  },
+  {
+   "id": "101187",
+   "name": "Alan Anderson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101187"
+  },
+  {
+   "id": "101198",
+   "name": "Will Bynum",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101198"
+  },
+  {
+   "id": "101236",
+   "name": "Chuck Hayes",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "101236"
+  },
+  {
+   "id": "1032",
+   "name": "Darvin Ham",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1032"
+  },
+  {
+   "id": "105",
+   "name": "Dan Majerle",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "105"
+  },
+  {
+   "id": "1051",
+   "name": "Dean Garrett",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1051"
+  },
+  {
+   "id": "1065",
+   "name": "Erick Strickland",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1065"
+  },
+  {
+   "id": "1088",
+   "name": "Chucky Atkins",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1088"
+  },
+  {
+   "id": "109",
+   "name": "Robert Horry",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "109"
+  },
+  {
+   "id": "111",
+   "name": "LaPhonso Ellis",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "111"
+  },
+  {
+   "id": "1112",
+   "name": "Ben Wallace",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "1112"
+  },
+  {
+   "id": "1114",
+   "name": "Jaren Jackson",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1114"
+  },
+  {
+   "id": "1134",
+   "name": "Ike Austin",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1134"
+  },
+  {
+   "id": "120",
+   "name": "Steven Smith",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "120"
+  },
+  {
+   "id": "121",
+   "name": "Patrick Ewing",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 11,
+   "active": false,
+   "headshotId": "121"
+  },
+  {
+   "id": "124",
+   "name": "Vlade Divac",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "124"
+  },
+  {
+   "id": "133",
+   "name": "David Wesley",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "133"
+  },
+  {
+   "id": "136",
+   "name": "P.J. Brown",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "136"
+  },
+  {
+   "id": "1425",
+   "name": "Aaron Williams",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1425"
+  },
+  {
+   "id": "1444",
+   "name": "Lawrence Funderburke",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1444"
+  },
+  {
+   "id": "145",
+   "name": "Tracy Murray",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "145"
+  },
+  {
+   "id": "146",
+   "name": "Jud Buechler",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "146"
+  },
+  {
+   "id": "147",
+   "name": "Jalen Rose",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "147"
+  },
+  {
+   "id": "1477",
+   "name": "Bruce Bowen",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1477"
+  },
+  {
+   "id": "1495",
+   "name": "Tim Duncan",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 15,
+   "active": false,
+   "headshotId": "1495"
+  },
+  {
+   "id": "1496",
+   "name": "Keith Van Horn",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1496"
+  },
+  {
+   "id": "1497",
+   "name": "Chauncey Billups",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": false,
+   "headshotId": "1497"
+  },
+  {
+   "id": "1498",
+   "name": "Antonio Daniels",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1498"
+  },
+  {
+   "id": "1499",
+   "name": "Tony Battie",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1499"
+  },
+  {
+   "id": "15",
+   "name": "Eric Piatkowski",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "15"
+  },
+  {
+   "id": "1500",
+   "name": "Ron Mercer",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1500"
+  },
+  {
+   "id": "1501",
+   "name": "Tim Thomas",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1501"
+  },
+  {
+   "id": "1502",
+   "name": "Adonal Foyle",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1502"
+  },
+  {
+   "id": "1503",
+   "name": "Tracy McGrady",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": false,
+   "headshotId": "1503"
+  },
+  {
+   "id": "1504",
+   "name": "Danny Fortson",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1504"
+  },
+  {
+   "id": "1506",
+   "name": "Austin Croshere",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1506"
+  },
+  {
+   "id": "1507",
+   "name": "Derek Anderson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1507"
+  },
+  {
+   "id": "1508",
+   "name": "Maurice Taylor",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1508"
+  },
+  {
+   "id": "1509",
+   "name": "Kelvin Cato",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1509"
+  },
+  {
+   "id": "1510",
+   "name": "Brevin Knight",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1510"
+  },
+  {
+   "id": "1513",
+   "name": "Scot Pollard",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1513"
+  },
+  {
+   "id": "1515",
+   "name": "Anthony Parker",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1515"
+  },
+  {
+   "id": "1517",
+   "name": "Bobby Jackson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1517"
+  },
+  {
+   "id": "1521",
+   "name": "Jacque Vaughn",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1521"
+  },
+  {
+   "id": "1531",
+   "name": "Marc Jackson",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1531"
+  },
+  {
+   "id": "1533",
+   "name": "Anthony Johnson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1533"
+  },
+  {
+   "id": "1536",
+   "name": "Stephen Jackson",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1536"
+  },
+  {
+   "id": "1541",
+   "name": "Alvin Williams",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1541"
+  },
+  {
+   "id": "1548",
+   "name": "Mark Blount",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1548"
+  },
+  {
+   "id": "1559",
+   "name": "Adrian Griffin",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1559"
+  },
+  {
+   "id": "1563",
+   "name": "Kevin Ollie",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1563"
+  },
+  {
+   "id": "1594",
+   "name": "Rick Brunson",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1594"
+  },
+  {
+   "id": "1607",
+   "name": "Troy Hudson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1607"
+  },
+  {
+   "id": "1626143",
+   "name": "Jahlil Okafor",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626143"
+  },
+  {
+   "id": "1626144",
+   "name": "Emmanuel Mudiay",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626144"
+  },
+  {
+   "id": "1626145",
+   "name": "Tyus Jones",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1626145"
+  },
+  {
+   "id": "1626149",
+   "name": "Montrezl Harrell",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626149"
+  },
+  {
+   "id": "1626150",
+   "name": "Andrew Harrison",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626150"
+  },
+  {
+   "id": "1626153",
+   "name": "Delon Wright",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626153"
+  },
+  {
+   "id": "1626156",
+   "name": "D'Angelo Russell",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1626156"
+  },
+  {
+   "id": "1626157",
+   "name": "Karl-Anthony Towns",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": true,
+   "headshotId": "1626157"
+  },
+  {
+   "id": "1626158",
+   "name": "Richaun Holmes",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626158"
+  },
+  {
+   "id": "1626159",
+   "name": "Justise Winslow",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626159"
+  },
+  {
+   "id": "1626161",
+   "name": "Willie Cauley-Stein",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626161"
+  },
+  {
+   "id": "1626162",
+   "name": "Kelly Oubre Jr.",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1626162"
+  },
+  {
+   "id": "1626163",
+   "name": "Frank Kaminsky",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626163"
+  },
+  {
+   "id": "1626164",
+   "name": "Devin Booker",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": true,
+   "headshotId": "1626164"
+  },
+  {
+   "id": "1626166",
+   "name": "Cameron Payne",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626166"
+  },
+  {
+   "id": "1626167",
+   "name": "Myles Turner",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1626167"
+  },
+  {
+   "id": "1626168",
+   "name": "Trey Lyles",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626168"
+  },
+  {
+   "id": "1626169",
+   "name": "Stanley Johnson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626169"
+  },
+  {
+   "id": "1626171",
+   "name": "Bobby Portis Jr.",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1626171"
+  },
+  {
+   "id": "1626172",
+   "name": "Kevon Looney",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1626172"
+  },
+  {
+   "id": "1626174",
+   "name": "Christian Wood",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626174"
+  },
+  {
+   "id": "1626178",
+   "name": "Rondae Hollis-Jefferson",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626178"
+  },
+  {
+   "id": "1626179",
+   "name": "Terry Rozier",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626179"
+  },
+  {
+   "id": "1626181",
+   "name": "Norman Powell",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1626181"
+  },
+  {
+   "id": "1626192",
+   "name": "Pat Connaughton",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1626192"
+  },
+  {
+   "id": "1626195",
+   "name": "Willy Hernangomez",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626195"
+  },
+  {
+   "id": "1626196",
+   "name": "Josh Richardson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626196"
+  },
+  {
+   "id": "1626204",
+   "name": "Larry Nance Jr.",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1626204"
+  },
+  {
+   "id": "1626209",
+   "name": "Mario Hezonja",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626209"
+  },
+  {
+   "id": "1626220",
+   "name": "Royce O'Neale",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1626220"
+  },
+  {
+   "id": "1626224",
+   "name": "Cedi Osman",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626224"
+  },
+  {
+   "id": "1626246",
+   "name": "Boban Marjanovic",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1626246"
+  },
+  {
+   "id": "1627732",
+   "name": "Ben Simmons",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "1627732"
+  },
+  {
+   "id": "1627734",
+   "name": "Domantas Sabonis",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": true,
+   "headshotId": "1627734"
+  },
+  {
+   "id": "1627736",
+   "name": "Malik Beasley",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627736"
+  },
+  {
+   "id": "1627737",
+   "name": "Marquese Chriss",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627737"
+  },
+  {
+   "id": "1627739",
+   "name": "Kris Dunn",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627739"
+  },
+  {
+   "id": "1627741",
+   "name": "Buddy Hield",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627741"
+  },
+  {
+   "id": "1627742",
+   "name": "Brandon Ingram",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1627742"
+  },
+  {
+   "id": "1627745",
+   "name": "Damian Jones",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627745"
+  },
+  {
+   "id": "1627747",
+   "name": "Caris LeVert",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627747"
+  },
+  {
+   "id": "1627749",
+   "name": "Dejounte Murray",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1627749"
+  },
+  {
+   "id": "1627750",
+   "name": "Jamal Murray",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1627750"
+  },
+  {
+   "id": "1627751",
+   "name": "Jakob Poeltl",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627751"
+  },
+  {
+   "id": "1627752",
+   "name": "Taurean Prince",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627752"
+  },
+  {
+   "id": "1627755",
+   "name": "Tyler Ulis",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627755"
+  },
+  {
+   "id": "1627756",
+   "name": "Denzel Valentine",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627756"
+  },
+  {
+   "id": "1627759",
+   "name": "Jaylen Brown",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": true,
+   "headshotId": "1627759"
+  },
+  {
+   "id": "1627763",
+   "name": "Malcolm Brogdon",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627763"
+  },
+  {
+   "id": "1627777",
+   "name": "Georges Niang",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627777"
+  },
+  {
+   "id": "1627780",
+   "name": "Gary Payton II",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627780"
+  },
+  {
+   "id": "1627783",
+   "name": "Pascal Siakam",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": true,
+   "headshotId": "1627783"
+  },
+  {
+   "id": "1627788",
+   "name": "Furkan Korkmaz",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627788"
+  },
+  {
+   "id": "1627789",
+   "name": "Timothe Luwawu-Cabarrot",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627789"
+  },
+  {
+   "id": "1627790",
+   "name": "Ante Zizic",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627790"
+  },
+  {
+   "id": "1627812",
+   "name": "Yogi Ferrell",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627812"
+  },
+  {
+   "id": "1627814",
+   "name": "Damion Lee",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627814"
+  },
+  {
+   "id": "1627823",
+   "name": "Juancho Hernangomez",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627823"
+  },
+  {
+   "id": "1627824",
+   "name": "Guerschon Yabusele",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627824"
+  },
+  {
+   "id": "1627826",
+   "name": "Ivica Zubac",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627826"
+  },
+  {
+   "id": "1627827",
+   "name": "Dorian Finney-Smith",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627827"
+  },
+  {
+   "id": "1627832",
+   "name": "Fred VanVleet",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1627832"
+  },
+  {
+   "id": "1627853",
+   "name": "Ryan Arcidiacono",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627853"
+  },
+  {
+   "id": "1627854",
+   "name": "Bryn Forbes",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627854"
+  },
+  {
+   "id": "1627863",
+   "name": "Danuel House Jr.",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1627863"
+  },
+  {
+   "id": "1627884",
+   "name": "Derrick Jones Jr.",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627884"
+  },
+  {
+   "id": "1627936",
+   "name": "Alex Caruso",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1627936"
+  },
+  {
+   "id": "1628365",
+   "name": "Markelle Fultz",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628365"
+  },
+  {
+   "id": "1628366",
+   "name": "Lonzo Ball",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628366"
+  },
+  {
+   "id": "1628368",
+   "name": "De'Aaron Fox",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1628368"
+  },
+  {
+   "id": "1628369",
+   "name": "Jayson Tatum",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": true,
+   "headshotId": "1628369"
+  },
+  {
+   "id": "1628370",
+   "name": "Malik Monk",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628370"
+  },
+  {
+   "id": "1628371",
+   "name": "Jonathan Isaac",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628371"
+  },
+  {
+   "id": "1628372",
+   "name": "Dennis Smith Jr.",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628372"
+  },
+  {
+   "id": "1628373",
+   "name": "Frank Ntilikina",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628373"
+  },
+  {
+   "id": "1628374",
+   "name": "Lauri Markkanen",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1628374"
+  },
+  {
+   "id": "1628378",
+   "name": "Donovan Mitchell",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": true,
+   "headshotId": "1628378"
+  },
+  {
+   "id": "1628379",
+   "name": "Luke Kennard",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628379"
+  },
+  {
+   "id": "1628380",
+   "name": "Zach Collins",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628380"
+  },
+  {
+   "id": "1628381",
+   "name": "John Collins",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628381"
+  },
+  {
+   "id": "1628382",
+   "name": "Justin Jackson",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628382"
+  },
+  {
+   "id": "1628384",
+   "name": "OG Anunoby",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628384"
+  },
+  {
+   "id": "1628386",
+   "name": "Jarrett Allen",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1628386"
+  },
+  {
+   "id": "1628389",
+   "name": "Bam Adebayo",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": true,
+   "headshotId": "1628389"
+  },
+  {
+   "id": "1628390",
+   "name": "Terrance Ferguson",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628390"
+  },
+  {
+   "id": "1628392",
+   "name": "Isaiah Hartenstein",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628392"
+  },
+  {
+   "id": "1628398",
+   "name": "Kyle Kuzma",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628398"
+  },
+  {
+   "id": "1628401",
+   "name": "Derrick White",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628401"
+  },
+  {
+   "id": "1628404",
+   "name": "Josh Hart",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628404"
+  },
+  {
+   "id": "1628407",
+   "name": "Dwayne Bacon",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628407"
+  },
+  {
+   "id": "1628414",
+   "name": "Sindarius Thornwell",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628414"
+  },
+  {
+   "id": "1628415",
+   "name": "Dillon Brooks",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628415"
+  },
+  {
+   "id": "1628418",
+   "name": "Thomas Bryant",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628418"
+  },
+  {
+   "id": "1628420",
+   "name": "Monte Morris",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628420"
+  },
+  {
+   "id": "1628436",
+   "name": "Luke Kornet",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628436"
+  },
+  {
+   "id": "1628449",
+   "name": "Chris Boucher",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628449"
+  },
+  {
+   "id": "1628464",
+   "name": "Daniel Theis",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628464"
+  },
+  {
+   "id": "1628470",
+   "name": "Torrey Craig",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628470"
+  },
+  {
+   "id": "1628960",
+   "name": "Grayson Allen",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628960"
+  },
+  {
+   "id": "1628963",
+   "name": "Marvin Bagley III",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628963"
+  },
+  {
+   "id": "1628964",
+   "name": "Mo Bamba",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628964"
+  },
+  {
+   "id": "1628969",
+   "name": "Mikal Bridges",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628969"
+  },
+  {
+   "id": "1628970",
+   "name": "Miles Bridges",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628970"
+  },
+  {
+   "id": "1628971",
+   "name": "Bruce Brown",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628971"
+  },
+  {
+   "id": "1628972",
+   "name": "Troy Brown Jr.",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628972"
+  },
+  {
+   "id": "1628973",
+   "name": "Jalen Brunson",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": true,
+   "headshotId": "1628973"
+  },
+  {
+   "id": "1628975",
+   "name": "Jevon Carter",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628975"
+  },
+  {
+   "id": "1628976",
+   "name": "Wendell Carter Jr.",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628976"
+  },
+  {
+   "id": "1628978",
+   "name": "Donte DiVincenzo",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628978"
+  },
+  {
+   "id": "1628983",
+   "name": "Shai Gilgeous-Alexander",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": true,
+   "headshotId": "1628983"
+  },
+  {
+   "id": "1628984",
+   "name": "Devonte' Graham",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628984"
+  },
+  {
+   "id": "1628988",
+   "name": "Aaron Holiday",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628988"
+  },
+  {
+   "id": "1628989",
+   "name": "Kevin Huerter",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628989"
+  },
+  {
+   "id": "1628991",
+   "name": "Jaren Jackson Jr.",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1628991"
+  },
+  {
+   "id": "1628995",
+   "name": "Kevin Knox II",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1628995"
+  },
+  {
+   "id": "1628997",
+   "name": "Caleb Martin",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1628997"
+  },
+  {
+   "id": "1629001",
+   "name": "De'Anthony Melton",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629001"
+  },
+  {
+   "id": "1629003",
+   "name": "Shake Milton",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1629003"
+  },
+  {
+   "id": "1629004",
+   "name": "Svi Mykhailiuk",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629004"
+  },
+  {
+   "id": "1629006",
+   "name": "Josh Okogie",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629006"
+  },
+  {
+   "id": "1629008",
+   "name": "Michael Porter Jr.",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629008"
+  },
+  {
+   "id": "1629011",
+   "name": "Mitchell Robinson",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629011"
+  },
+  {
+   "id": "1629012",
+   "name": "Collin Sexton",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629012"
+  },
+  {
+   "id": "1629013",
+   "name": "Landry Shamet",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629013"
+  },
+  {
+   "id": "1629014",
+   "name": "Anfernee Simons",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629014"
+  },
+  {
+   "id": "1629018",
+   "name": "Gary Trent Jr.",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629018"
+  },
+  {
+   "id": "1629020",
+   "name": "Jarred Vanderbilt",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629020"
+  },
+  {
+   "id": "1629021",
+   "name": "Moritz Wagner",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629021"
+  },
+  {
+   "id": "1629022",
+   "name": "Lonnie Walker IV",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1629022"
+  },
+  {
+   "id": "1629023",
+   "name": "P.J. Washington",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629023"
+  },
+  {
+   "id": "1629026",
+   "name": "Kenrich Williams",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629026"
+  },
+  {
+   "id": "1629027",
+   "name": "Trae Young",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": true,
+   "headshotId": "1629027"
+  },
+  {
+   "id": "1629028",
+   "name": "Deandre Ayton",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629028"
+  },
+  {
+   "id": "1629029",
+   "name": "Luka Dončić",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": true,
+   "headshotId": "1629029"
+  },
+  {
+   "id": "1629048",
+   "name": "Goga Bitadze",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629048"
+  },
+  {
+   "id": "1629057",
+   "name": "Robert Williams III",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629057"
+  },
+  {
+   "id": "1629060",
+   "name": "Rui Hachimura",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629060"
+  },
+  {
+   "id": "1629130",
+   "name": "Duncan Robinson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629130"
+  },
+  {
+   "id": "1629134",
+   "name": "Kendrick Nunn",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1629134"
+  },
+  {
+   "id": "1629162",
+   "name": "Jordan McLaughlin",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629162"
+  },
+  {
+   "id": "1629216",
+   "name": "Gabe Vincent",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629216"
+  },
+  {
+   "id": "1629234",
+   "name": "Drew Eubanks",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629234"
+  },
+  {
+   "id": "1629312",
+   "name": "Haywood Highsmith",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629312"
+  },
+  {
+   "id": "1629599",
+   "name": "Amir Coffey",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629599"
+  },
+  {
+   "id": "1629611",
+   "name": "Terance Mann",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629611"
+  },
+  {
+   "id": "1629614",
+   "name": "Andrew Nembhard",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629614"
+  },
+  {
+   "id": "1629622",
+   "name": "Max Strus",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629622"
+  },
+  {
+   "id": "1629627",
+   "name": "Zion Williamson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1629627"
+  },
+  {
+   "id": "1629628",
+   "name": "RJ Barrett",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629628"
+  },
+  {
+   "id": "1629629",
+   "name": "Cam Reddish",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1629629"
+  },
+  {
+   "id": "1629630",
+   "name": "Ja Morant",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1629630"
+  },
+  {
+   "id": "1629631",
+   "name": "De'Andre Hunter",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629631"
+  },
+  {
+   "id": "1629632",
+   "name": "Coby White",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629632"
+  },
+  {
+   "id": "1629634",
+   "name": "Brandon Clarke",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629634"
+  },
+  {
+   "id": "1629636",
+   "name": "Darius Garland",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1629636"
+  },
+  {
+   "id": "1629637",
+   "name": "Jaxson Hayes",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629637"
+  },
+  {
+   "id": "1629638",
+   "name": "Nickeil Alexander-Walker",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629638"
+  },
+  {
+   "id": "1629639",
+   "name": "Tyler Herro",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1629639"
+  },
+  {
+   "id": "1629640",
+   "name": "Keldon Johnson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629640"
+  },
+  {
+   "id": "1629643",
+   "name": "Chuma Okeke",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1629643"
+  },
+  {
+   "id": "1629645",
+   "name": "Kevin Porter Jr.",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629645"
+  },
+  {
+   "id": "1629647",
+   "name": "Darius Bazley",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1629647"
+  },
+  {
+   "id": "1629651",
+   "name": "Nic Claxton",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629651"
+  },
+  {
+   "id": "1629652",
+   "name": "Luguentz Dort",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629652"
+  },
+  {
+   "id": "1629655",
+   "name": "Daniel Gafford",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629655"
+  },
+  {
+   "id": "1629656",
+   "name": "Quentin Grimes",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629656"
+  },
+  {
+   "id": "1629659",
+   "name": "Talen Horton-Tucker",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1629659"
+  },
+  {
+   "id": "1629661",
+   "name": "Cameron Johnson",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629661"
+  },
+  {
+   "id": "1629673",
+   "name": "Jordan Poole",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629673"
+  },
+  {
+   "id": "1629674",
+   "name": "Neemias Queta",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629674"
+  },
+  {
+   "id": "1629675",
+   "name": "Naz Reid",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629675"
+  },
+  {
+   "id": "1629680",
+   "name": "Matisse Thybulle",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629680"
+  },
+  {
+   "id": "1629684",
+   "name": "Grant Williams",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629684"
+  },
+  {
+   "id": "1629723",
+   "name": "John Konchar",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629723"
+  },
+  {
+   "id": "1629726",
+   "name": "Garrison Mathews",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1629726"
+  },
+  {
+   "id": "1629731",
+   "name": "Dean Wade",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629731"
+  },
+  {
+   "id": "1629750",
+   "name": "Javonte Green",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1629750"
+  },
+  {
+   "id": "1630",
+   "name": "Mikki Moore",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1630"
+  },
+  {
+   "id": "1630162",
+   "name": "Anthony Edwards",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": true,
+   "headshotId": "1630162"
+  },
+  {
+   "id": "1630163",
+   "name": "LaMelo Ball",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1630163"
+  },
+  {
+   "id": "1630165",
+   "name": "Killian Hayes",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630165"
+  },
+  {
+   "id": "1630166",
+   "name": "Deni Avdija",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1630166"
+  },
+  {
+   "id": "1630167",
+   "name": "Obi Toppin",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630167"
+  },
+  {
+   "id": "1630168",
+   "name": "Onyeka Okongwu",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630168"
+  },
+  {
+   "id": "1630169",
+   "name": "Tyrese Haliburton",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1630169"
+  },
+  {
+   "id": "1630170",
+   "name": "Devin Vassell",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630170"
+  },
+  {
+   "id": "1630171",
+   "name": "Isaac Okoro",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630171"
+  },
+  {
+   "id": "1630172",
+   "name": "Patrick Williams",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630172"
+  },
+  {
+   "id": "1630173",
+   "name": "Precious Achiuwa",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630173"
+  },
+  {
+   "id": "1630174",
+   "name": "Aaron Nesmith",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630174"
+  },
+  {
+   "id": "1630175",
+   "name": "Cole Anthony",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1630175"
+  },
+  {
+   "id": "1630178",
+   "name": "Tyrese Maxey",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1630178"
+  },
+  {
+   "id": "1630180",
+   "name": "Saddiq Bey",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630180"
+  },
+  {
+   "id": "1630182",
+   "name": "Josh Green",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630182"
+  },
+  {
+   "id": "1630183",
+   "name": "Jaden McDaniels",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630183"
+  },
+  {
+   "id": "1630188",
+   "name": "Jalen Smith",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630188"
+  },
+  {
+   "id": "1630191",
+   "name": "Isaiah Stewart",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630191"
+  },
+  {
+   "id": "1630192",
+   "name": "Zeke Nnaji",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630192"
+  },
+  {
+   "id": "1630193",
+   "name": "Immanuel Quickley",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630193"
+  },
+  {
+   "id": "1630194",
+   "name": "Paul Reed",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630194"
+  },
+  {
+   "id": "1630198",
+   "name": "Isaiah Joe",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630198"
+  },
+  {
+   "id": "1630200",
+   "name": "Tre Jones",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630200"
+  },
+  {
+   "id": "1630202",
+   "name": "Payton Pritchard",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630202"
+  },
+  {
+   "id": "1630208",
+   "name": "Nick Richards",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630208"
+  },
+  {
+   "id": "1630214",
+   "name": "Xavier Tillman",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630214"
+  },
+  {
+   "id": "1630217",
+   "name": "Desmond Bane",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630217"
+  },
+  {
+   "id": "1630224",
+   "name": "Jalen Green",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630224"
+  },
+  {
+   "id": "1630228",
+   "name": "Jonathan Kuminga",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630228"
+  },
+  {
+   "id": "1630230",
+   "name": "Naji Marshall",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630230"
+  },
+  {
+   "id": "1630231",
+   "name": "KJ Martin",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1630231"
+  },
+  {
+   "id": "1630245",
+   "name": "Ayo Dosunmu",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630245"
+  },
+  {
+   "id": "1630256",
+   "name": "Jae'Sean Tate",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630256"
+  },
+  {
+   "id": "1630526",
+   "name": "Jeremiah Robinson-Earl",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1630526"
+  },
+  {
+   "id": "1630529",
+   "name": "Herbert Jones",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630529"
+  },
+  {
+   "id": "1630530",
+   "name": "Trey Murphy III",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630530"
+  },
+  {
+   "id": "1630532",
+   "name": "Franz Wagner",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630532"
+  },
+  {
+   "id": "1630533",
+   "name": "Ziaire Williams",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630533"
+  },
+  {
+   "id": "1630534",
+   "name": "Ochai Agbaji",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630534"
+  },
+  {
+   "id": "1630537",
+   "name": "Chris Duarte",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1630537"
+  },
+  {
+   "id": "1630541",
+   "name": "Moses Moody",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630541"
+  },
+  {
+   "id": "1630544",
+   "name": "Tre Mann",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630544"
+  },
+  {
+   "id": "1630552",
+   "name": "Jalen Johnson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1630552"
+  },
+  {
+   "id": "1630557",
+   "name": "Corey Kispert",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630557"
+  },
+  {
+   "id": "1630558",
+   "name": "Davion Mitchell",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630558"
+  },
+  {
+   "id": "1630559",
+   "name": "Austin Reaves",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630559"
+  },
+  {
+   "id": "1630560",
+   "name": "Cam Thomas",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1630560"
+  },
+  {
+   "id": "1630567",
+   "name": "Scottie Barnes",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1630567"
+  },
+  {
+   "id": "1630573",
+   "name": "Sam Hauser",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630573"
+  },
+  {
+   "id": "1630577",
+   "name": "Julian Champagnie",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630577"
+  },
+  {
+   "id": "1630578",
+   "name": "Alperen Sengun",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1630578"
+  },
+  {
+   "id": "1630581",
+   "name": "Josh Giddey",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630581"
+  },
+  {
+   "id": "1630591",
+   "name": "Jalen Suggs",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630591"
+  },
+  {
+   "id": "1630595",
+   "name": "Cade Cunningham",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1630595"
+  },
+  {
+   "id": "1630596",
+   "name": "Evan Mobley",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1630596"
+  },
+  {
+   "id": "1630598",
+   "name": "Aaron Wiggins",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630598"
+  },
+  {
+   "id": "1630643",
+   "name": "Jay Huff",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630643"
+  },
+  {
+   "id": "1630679",
+   "name": "Ethan Thompson",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630679"
+  },
+  {
+   "id": "1630700",
+   "name": "Dyson Daniels",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1630700"
+  },
+  {
+   "id": "1631093",
+   "name": "Jaden Ivey",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1631093"
+  },
+  {
+   "id": "1631094",
+   "name": "Paolo Banchero",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1631094"
+  },
+  {
+   "id": "1631095",
+   "name": "Jabari Smith Jr.",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631095"
+  },
+  {
+   "id": "1631096",
+   "name": "Chet Holmgren",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1631096"
+  },
+  {
+   "id": "1631097",
+   "name": "Bennedict Mathurin",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631097"
+  },
+  {
+   "id": "1631099",
+   "name": "Keegan Murray",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631099"
+  },
+  {
+   "id": "1631101",
+   "name": "Shaedon Sharpe",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631101"
+  },
+  {
+   "id": "1631105",
+   "name": "Jalen Duren",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1631105"
+  },
+  {
+   "id": "1631107",
+   "name": "Nikola Jović",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631107"
+  },
+  {
+   "id": "1631108",
+   "name": "Max Christie",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631108"
+  },
+  {
+   "id": "1631109",
+   "name": "Mark Williams",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631109"
+  },
+  {
+   "id": "1631110",
+   "name": "Jeremy Sochan",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631110"
+  },
+  {
+   "id": "1631114",
+   "name": "Jalen Williams",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "1631114"
+  },
+  {
+   "id": "1631117",
+   "name": "Walker Kessler",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631117"
+  },
+  {
+   "id": "1631119",
+   "name": "Jaylin Williams",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631119"
+  },
+  {
+   "id": "1631128",
+   "name": "Christian Braun",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631128"
+  },
+  {
+   "id": "1631157",
+   "name": "Ryan Rollins",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631157"
+  },
+  {
+   "id": "1631217",
+   "name": "Moussa Diabaté",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631217"
+  },
+  {
+   "id": "1631221",
+   "name": "Collin Gillespie",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631221"
+  },
+  {
+   "id": "1631222",
+   "name": "Jake LaRavia",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631222"
+  },
+  {
+   "id": "1631230",
+   "name": "Dominick Barlow",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631230"
+  },
+  {
+   "id": "1631246",
+   "name": "Vince Williams Jr.",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1631246"
+  },
+  {
+   "id": "1631260",
+   "name": "AJ Green",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631260"
+  },
+  {
+   "id": "1631323",
+   "name": "Simone Fontecchio",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1631323"
+  },
+  {
+   "id": "164",
+   "name": "Chris Childs",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "164"
+  },
+  {
+   "id": "1641705",
+   "name": "Victor Wembanyama",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "1641705"
+  },
+  {
+   "id": "1641706",
+   "name": "Brandon Miller",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641706"
+  },
+  {
+   "id": "1641708",
+   "name": "Amen Thompson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641708"
+  },
+  {
+   "id": "1641709",
+   "name": "Ausar Thompson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641709"
+  },
+  {
+   "id": "1641711",
+   "name": "Gradey Dick",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641711"
+  },
+  {
+   "id": "1641717",
+   "name": "Cason Wallace",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641717"
+  },
+  {
+   "id": "1641718",
+   "name": "Keyonte George",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641718"
+  },
+  {
+   "id": "1641726",
+   "name": "Dereck Lively II",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641726"
+  },
+  {
+   "id": "1641730",
+   "name": "Noah Clowney",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641730"
+  },
+  {
+   "id": "1641731",
+   "name": "Bilal Coulibaly",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641731"
+  },
+  {
+   "id": "1641733",
+   "name": "Nick Smith Jr.",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641733"
+  },
+  {
+   "id": "1641739",
+   "name": "Toumani Camara",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641739"
+  },
+  {
+   "id": "1641744",
+   "name": "Zach Edey",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641744"
+  },
+  {
+   "id": "1641748",
+   "name": "Andre Jackson Jr.",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641748"
+  },
+  {
+   "id": "1641764",
+   "name": "Brandin Podziemski",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641764"
+  },
+  {
+   "id": "1641783",
+   "name": "Tristan da Silva",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641783"
+  },
+  {
+   "id": "1641796",
+   "name": "Pelle Larsson",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641796"
+  },
+  {
+   "id": "1641824",
+   "name": "Matas Buzelis",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1641824"
+  },
+  {
+   "id": "1642258",
+   "name": "Zaccharie Risacher",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642258"
+  },
+  {
+   "id": "1642259",
+   "name": "Alex Sarr",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642259"
+  },
+  {
+   "id": "1642264",
+   "name": "Stephon Castle",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642264"
+  },
+  {
+   "id": "1642267",
+   "name": "Bub Carrington",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642267"
+  },
+  {
+   "id": "1642270",
+   "name": "Donovan Clingan",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642270"
+  },
+  {
+   "id": "1642273",
+   "name": "Kyshawn George",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642273"
+  },
+  {
+   "id": "1642274",
+   "name": "Yves Missi",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642274"
+  },
+  {
+   "id": "1642281",
+   "name": "Jaylon Tyson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642281"
+  },
+  {
+   "id": "1642366",
+   "name": "Quinten Post",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642366"
+  },
+  {
+   "id": "1642377",
+   "name": "Jaylen Wells",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642377"
+  },
+  {
+   "id": "1642843",
+   "name": "Cooper Flagg",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642843"
+  },
+  {
+   "id": "1642845",
+   "name": "VJ Edgecombe",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642845"
+  },
+  {
+   "id": "1642846",
+   "name": "Ace Bailey",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642846"
+  },
+  {
+   "id": "1642851",
+   "name": "Kon Knueppel",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642851"
+  },
+  {
+   "id": "1642852",
+   "name": "Derik Queen",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642852"
+  },
+  {
+   "id": "1642856",
+   "name": "Egor Dëmin",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642856"
+  },
+  {
+   "id": "1642875",
+   "name": "Maxime Raynaud",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642875"
+  },
+  {
+   "id": "1642907",
+   "name": "Cedric Coward",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "1642907"
+  },
+  {
+   "id": "165",
+   "name": "Hakeem Olajuwon",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": false,
+   "headshotId": "165"
+  },
+  {
+   "id": "166",
+   "name": "Ron Harper",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "166"
+  },
+  {
+   "id": "168",
+   "name": "Chris Mills",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "168"
+  },
+  {
+   "id": "17",
+   "name": "Clyde Drexler",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": false,
+   "headshotId": "17"
+  },
+  {
+   "id": "1709",
+   "name": "Michael Olowokandi",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1709"
+  },
+  {
+   "id": "1710",
+   "name": "Mike Bibby",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1710"
+  },
+  {
+   "id": "1711",
+   "name": "Raef LaFrentz",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1711"
+  },
+  {
+   "id": "1712",
+   "name": "Antawn Jamison",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "1712"
+  },
+  {
+   "id": "1713",
+   "name": "Vince Carter",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 8,
+   "active": false,
+   "headshotId": "1713"
+  },
+  {
+   "id": "1714",
+   "name": "Robert Traylor",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1714"
+  },
+  {
+   "id": "1715",
+   "name": "Jason Williams",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1715"
+  },
+  {
+   "id": "1716",
+   "name": "Larry Hughes",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1716"
+  },
+  {
+   "id": "1717",
+   "name": "Dirk Nowitzki",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 14,
+   "active": false,
+   "headshotId": "1717"
+  },
+  {
+   "id": "1718",
+   "name": "Paul Pierce",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": false,
+   "headshotId": "1718"
+  },
+  {
+   "id": "1719",
+   "name": "Bonzi Wells",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1719"
+  },
+  {
+   "id": "1720",
+   "name": "Michael Doleac",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1720"
+  },
+  {
+   "id": "1721",
+   "name": "Keon Clark",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1721"
+  },
+  {
+   "id": "1723",
+   "name": "Matt Harpring",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1723"
+  },
+  {
+   "id": "1725",
+   "name": "Rasho Nesterovic",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1725"
+  },
+  {
+   "id": "1727",
+   "name": "Pat Garrity",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1727"
+  },
+  {
+   "id": "1729",
+   "name": "Ricky Davis",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1729"
+  },
+  {
+   "id": "1730",
+   "name": "Brian Skinner",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1730"
+  },
+  {
+   "id": "1731",
+   "name": "Tyronn Lue",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1731"
+  },
+  {
+   "id": "1733",
+   "name": "Al Harrington",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1733"
+  },
+  {
+   "id": "1737",
+   "name": "Nazr Mohammed",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1737"
+  },
+  {
+   "id": "1739",
+   "name": "Ruben Patterson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1739"
+  },
+  {
+   "id": "1740",
+   "name": "Rashard Lewis",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "1740"
+  },
+  {
+   "id": "1742",
+   "name": "Shammond Williams",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1742"
+  },
+  {
+   "id": "1744",
+   "name": "Jerome James",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1744"
+  },
+  {
+   "id": "1747",
+   "name": "Rafer Alston",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1747"
+  },
+  {
+   "id": "1749",
+   "name": "Cuttino Mobley",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1749"
+  },
+  {
+   "id": "1751",
+   "name": "Jahidi White",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1751"
+  },
+  {
+   "id": "1761",
+   "name": "Greg Buckner",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1761"
+  },
+  {
+   "id": "1763",
+   "name": "Ryan Bowen",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1763"
+  },
+  {
+   "id": "178",
+   "name": "Olden Polynice",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "178"
+  },
+  {
+   "id": "179",
+   "name": "Bryant Stith",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "179"
+  },
+  {
+   "id": "1800",
+   "name": "Damon Jones",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1800"
+  },
+  {
+   "id": "1802",
+   "name": "Brad Miller",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "1802"
+  },
+  {
+   "id": "185",
+   "name": "Chris Webber",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": false,
+   "headshotId": "185"
+  },
+  {
+   "id": "1853",
+   "name": "Anthony Carter",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1853"
+  },
+  {
+   "id": "1863",
+   "name": "Earl Boykins",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1863"
+  },
+  {
+   "id": "1882",
+   "name": "Elton Brand",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "1882"
+  },
+  {
+   "id": "1883",
+   "name": "Steve Francis",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "1883"
+  },
+  {
+   "id": "1884",
+   "name": "Baron Davis",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "1884"
+  },
+  {
+   "id": "1885",
+   "name": "Lamar Odom",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1885"
+  },
+  {
+   "id": "1887",
+   "name": "Wally Szczerbiak",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "1887"
+  },
+  {
+   "id": "1888",
+   "name": "Richard Hamilton",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "1888"
+  },
+  {
+   "id": "1889",
+   "name": "Andre Miller",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1889"
+  },
+  {
+   "id": "1890",
+   "name": "Shawn Marion",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "1890"
+  },
+  {
+   "id": "1891",
+   "name": "Jason Terry",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1891"
+  },
+  {
+   "id": "1894",
+   "name": "Corey Maggette",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1894"
+  },
+  {
+   "id": "1897",
+   "name": "Metta World Peace",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "1897"
+  },
+  {
+   "id": "1899",
+   "name": "James Posey",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1899"
+  },
+  {
+   "id": "1902",
+   "name": "Jeff Foster",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1902"
+  },
+  {
+   "id": "1903",
+   "name": "Kenny Thomas",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1903"
+  },
+  {
+   "id": "1904",
+   "name": "Devean George",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1904"
+  },
+  {
+   "id": "1905",
+   "name": "Andrei Kirilenko",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "1905"
+  },
+  {
+   "id": "1908",
+   "name": "Jumaine Jones",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1908"
+  },
+  {
+   "id": "1909",
+   "name": "Scott Padgett",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1909"
+  },
+  {
+   "id": "1913",
+   "name": "Michael Ruffin",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1913"
+  },
+  {
+   "id": "1916",
+   "name": "Calvin Booth",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1916"
+  },
+  {
+   "id": "1921",
+   "name": "Gordan Giricek",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1921"
+  },
+  {
+   "id": "1922",
+   "name": "Francisco Elson",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1922"
+  },
+  {
+   "id": "1924",
+   "name": "Lee Nailon",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1924"
+  },
+  {
+   "id": "193",
+   "name": "Anthony Mason",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "193"
+  },
+  {
+   "id": "1938",
+   "name": "Manu Ginobili",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "1938"
+  },
+  {
+   "id": "1952",
+   "name": "Raja Bell",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1952"
+  },
+  {
+   "id": "1956",
+   "name": "Ira Newble",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1956"
+  },
+  {
+   "id": "1960",
+   "name": "Milt Palacio",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "1960"
+  },
+  {
+   "id": "198",
+   "name": "Danny Ferry",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "198"
+  },
+  {
+   "id": "200081",
+   "name": "Jamario Moon",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200081"
+  },
+  {
+   "id": "200745",
+   "name": "Andrea Bargnani",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200745"
+  },
+  {
+   "id": "200746",
+   "name": "LaMarcus Aldridge",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": false,
+   "headshotId": "200746"
+  },
+  {
+   "id": "200748",
+   "name": "Tyrus Thomas",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200748"
+  },
+  {
+   "id": "200749",
+   "name": "Shelden Williams",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200749"
+  },
+  {
+   "id": "200750",
+   "name": "Brandon Roy",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "200750"
+  },
+  {
+   "id": "200751",
+   "name": "Randy Foye",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200751"
+  },
+  {
+   "id": "200752",
+   "name": "Rudy Gay",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200752"
+  },
+  {
+   "id": "200755",
+   "name": "JJ Redick",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200755"
+  },
+  {
+   "id": "200757",
+   "name": "Thabo Sefolosha",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200757"
+  },
+  {
+   "id": "200758",
+   "name": "Ronnie Brewer",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200758"
+  },
+  {
+   "id": "200761",
+   "name": "Shawne Williams",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200761"
+  },
+  {
+   "id": "200765",
+   "name": "Rajon Rondo",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "200765"
+  },
+  {
+   "id": "200767",
+   "name": "Josh Boone",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200767"
+  },
+  {
+   "id": "200768",
+   "name": "Kyle Lowry",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": true,
+   "headshotId": "200768"
+  },
+  {
+   "id": "200769",
+   "name": "Shannon Brown",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200769"
+  },
+  {
+   "id": "200770",
+   "name": "Jordan Farmar",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200770"
+  },
+  {
+   "id": "200771",
+   "name": "Sergio Rodriguez",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200771"
+  },
+  {
+   "id": "200779",
+   "name": "Steve Novak",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200779"
+  },
+  {
+   "id": "200782",
+   "name": "P.J. Tucker",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200782"
+  },
+  {
+   "id": "200783",
+   "name": "Craig Smith",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200783"
+  },
+  {
+   "id": "200789",
+   "name": "Daniel Gibson",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200789"
+  },
+  {
+   "id": "200794",
+   "name": "Paul Millsap",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "200794"
+  },
+  {
+   "id": "200797",
+   "name": "Ryan Hollins",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200797"
+  },
+  {
+   "id": "200811",
+   "name": "Lou Amundson",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200811"
+  },
+  {
+   "id": "200826",
+   "name": "J.J. Barea",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "200826"
+  },
+  {
+   "id": "201",
+   "name": "Chris Dudley",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201"
+  },
+  {
+   "id": "201142",
+   "name": "Kevin Durant",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 16,
+   "active": true,
+   "headshotId": "201142"
+  },
+  {
+   "id": "201143",
+   "name": "Al Horford",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": true,
+   "headshotId": "201143"
+  },
+  {
+   "id": "201144",
+   "name": "Mike Conley",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "201144"
+  },
+  {
+   "id": "201145",
+   "name": "Jeff Green",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "201145"
+  },
+  {
+   "id": "201146",
+   "name": "Yi Jianlian",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201146"
+  },
+  {
+   "id": "201147",
+   "name": "Corey Brewer",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201147"
+  },
+  {
+   "id": "201148",
+   "name": "Brandan Wright",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201148"
+  },
+  {
+   "id": "201149",
+   "name": "Joakim Noah",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "201149"
+  },
+  {
+   "id": "201150",
+   "name": "Spencer Hawes",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201150"
+  },
+  {
+   "id": "201152",
+   "name": "Thaddeus Young",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201152"
+  },
+  {
+   "id": "201154",
+   "name": "Al Thornton",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201154"
+  },
+  {
+   "id": "201155",
+   "name": "Rodney Stuckey",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201155"
+  },
+  {
+   "id": "201156",
+   "name": "Nick Young",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201156"
+  },
+  {
+   "id": "201157",
+   "name": "Sean Williams",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201157"
+  },
+  {
+   "id": "201158",
+   "name": "Marco Belinelli",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201158"
+  },
+  {
+   "id": "201160",
+   "name": "Jason Smith",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201160"
+  },
+  {
+   "id": "201161",
+   "name": "Daequan Cook",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201161"
+  },
+  {
+   "id": "201162",
+   "name": "Jared Dudley",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201162"
+  },
+  {
+   "id": "201163",
+   "name": "Wilson Chandler",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201163"
+  },
+  {
+   "id": "201166",
+   "name": "Aaron Brooks",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201166"
+  },
+  {
+   "id": "201167",
+   "name": "Arron Afflalo",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201167"
+  },
+  {
+   "id": "201168",
+   "name": "Tiago Splitter",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201168"
+  },
+  {
+   "id": "201171",
+   "name": "Carl Landry",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201171"
+  },
+  {
+   "id": "201175",
+   "name": "Glen Davis",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201175"
+  },
+  {
+   "id": "201177",
+   "name": "Josh McRoberts",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201177"
+  },
+  {
+   "id": "201187",
+   "name": "Dominic McGuire",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201187"
+  },
+  {
+   "id": "201188",
+   "name": "Marc Gasol",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "201188"
+  },
+  {
+   "id": "201189",
+   "name": "Aaron Gray",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201189"
+  },
+  {
+   "id": "201196",
+   "name": "Ramon Sessions",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201196"
+  },
+  {
+   "id": "201202",
+   "name": "Joel Anthony",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201202"
+  },
+  {
+   "id": "201228",
+   "name": "C.J. Watson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201228"
+  },
+  {
+   "id": "201229",
+   "name": "Anthony Tolliver",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201229"
+  },
+  {
+   "id": "201563",
+   "name": "Michael Beasley",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201563"
+  },
+  {
+   "id": "201564",
+   "name": "O.J. Mayo",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201564"
+  },
+  {
+   "id": "201565",
+   "name": "Derrick Rose",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "201565"
+  },
+  {
+   "id": "201566",
+   "name": "Russell Westbrook",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 9,
+   "active": true,
+   "headshotId": "201566"
+  },
+  {
+   "id": "201567",
+   "name": "Kevin Love",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": true,
+   "headshotId": "201567"
+  },
+  {
+   "id": "201568",
+   "name": "Danilo Gallinari",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201568"
+  },
+  {
+   "id": "201569",
+   "name": "Eric Gordon",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201569"
+  },
+  {
+   "id": "201571",
+   "name": "D.J. Augustin",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201571"
+  },
+  {
+   "id": "201572",
+   "name": "Brook Lopez",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "201572"
+  },
+  {
+   "id": "201573",
+   "name": "Jerryd Bayless",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201573"
+  },
+  {
+   "id": "201574",
+   "name": "Jason Thompson",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201574"
+  },
+  {
+   "id": "201575",
+   "name": "Brandon Rush",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201575"
+  },
+  {
+   "id": "201577",
+   "name": "Robin Lopez",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201577"
+  },
+  {
+   "id": "201578",
+   "name": "Marreese Speights",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201578"
+  },
+  {
+   "id": "201579",
+   "name": "Roy Hibbert",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "201579"
+  },
+  {
+   "id": "201580",
+   "name": "JaVale McGee",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201580"
+  },
+  {
+   "id": "201581",
+   "name": "JJ Hickson",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201581"
+  },
+  {
+   "id": "201583",
+   "name": "Ryan Anderson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201583"
+  },
+  {
+   "id": "201584",
+   "name": "Courtney Lee",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201584"
+  },
+  {
+   "id": "201585",
+   "name": "Kosta Koufos",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201585"
+  },
+  {
+   "id": "201586",
+   "name": "Serge Ibaka",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201586"
+  },
+  {
+   "id": "201587",
+   "name": "Nicolas Batum",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "201587"
+  },
+  {
+   "id": "201588",
+   "name": "George Hill",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201588"
+  },
+  {
+   "id": "201589",
+   "name": "Darrell Arthur",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201589"
+  },
+  {
+   "id": "201590",
+   "name": "Donte Greene",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201590"
+  },
+  {
+   "id": "201593",
+   "name": "Nikola Pekovic",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201593"
+  },
+  {
+   "id": "201596",
+   "name": "Mario Chalmers",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201596"
+  },
+  {
+   "id": "201599",
+   "name": "DeAndre Jordan",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "201599"
+  },
+  {
+   "id": "201600",
+   "name": "Omer Asik",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201600"
+  },
+  {
+   "id": "201601",
+   "name": "Luc Mbah a Moute",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201601"
+  },
+  {
+   "id": "201603",
+   "name": "Sonny Weems",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201603"
+  },
+  {
+   "id": "201609",
+   "name": "Goran Dragic",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "201609"
+  },
+  {
+   "id": "201627",
+   "name": "Anthony Morrow",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201627"
+  },
+  {
+   "id": "201933",
+   "name": "Blake Griffin",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": false,
+   "headshotId": "201933"
+  },
+  {
+   "id": "201935",
+   "name": "James Harden",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 11,
+   "active": true,
+   "headshotId": "201935"
+  },
+  {
+   "id": "201936",
+   "name": "Tyreke Evans",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201936"
+  },
+  {
+   "id": "201937",
+   "name": "Ricky Rubio",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201937"
+  },
+  {
+   "id": "201938",
+   "name": "Jonny Flynn",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201938"
+  },
+  {
+   "id": "201939",
+   "name": "Stephen Curry",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": true,
+   "headshotId": "201939"
+  },
+  {
+   "id": "201941",
+   "name": "Jordan Hill",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201941"
+  },
+  {
+   "id": "201942",
+   "name": "DeMar DeRozan",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": true,
+   "headshotId": "201942"
+  },
+  {
+   "id": "201943",
+   "name": "Brandon Jennings",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201943"
+  },
+  {
+   "id": "201945",
+   "name": "Gerald Henderson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201945"
+  },
+  {
+   "id": "201946",
+   "name": "Tyler Hansbrough",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201946"
+  },
+  {
+   "id": "201947",
+   "name": "Earl Clark",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201947"
+  },
+  {
+   "id": "201949",
+   "name": "James Johnson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201949"
+  },
+  {
+   "id": "201950",
+   "name": "Jrue Holiday",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "201950"
+  },
+  {
+   "id": "201951",
+   "name": "Ty Lawson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201951"
+  },
+  {
+   "id": "201952",
+   "name": "Jeff Teague",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "201952"
+  },
+  {
+   "id": "201954",
+   "name": "Darren Collison",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201954"
+  },
+  {
+   "id": "201956",
+   "name": "Omri Casspi",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201956"
+  },
+  {
+   "id": "201959",
+   "name": "Taj Gibson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "201959"
+  },
+  {
+   "id": "201960",
+   "name": "DeMarre Carroll",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201960"
+  },
+  {
+   "id": "201961",
+   "name": "Wayne Ellington",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201961"
+  },
+  {
+   "id": "201962",
+   "name": "Toney Douglas",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201962"
+  },
+  {
+   "id": "201967",
+   "name": "Dante Cunningham",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201967"
+  },
+  {
+   "id": "201970",
+   "name": "Sam Young",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201970"
+  },
+  {
+   "id": "201971",
+   "name": "DeJuan Blair",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201971"
+  },
+  {
+   "id": "201973",
+   "name": "Jonas Jerebko",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201973"
+  },
+  {
+   "id": "201975",
+   "name": "Jodie Meeks",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201975"
+  },
+  {
+   "id": "201976",
+   "name": "Patrick Beverley",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201976"
+  },
+  {
+   "id": "201977",
+   "name": "Marcus Thornton",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201977"
+  },
+  {
+   "id": "201978",
+   "name": "Chase Budinger",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201978"
+  },
+  {
+   "id": "201980",
+   "name": "Danny Green",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201980"
+  },
+  {
+   "id": "201988",
+   "name": "Patty Mills",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "201988"
+  },
+  {
+   "id": "202066",
+   "name": "Garrett Temple",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "202066"
+  },
+  {
+   "id": "202083",
+   "name": "Wesley Matthews",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202083"
+  },
+  {
+   "id": "202087",
+   "name": "Alonzo Gee",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202087"
+  },
+  {
+   "id": "202322",
+   "name": "John Wall",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": false,
+   "headshotId": "202322"
+  },
+  {
+   "id": "202323",
+   "name": "Evan Turner",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202323"
+  },
+  {
+   "id": "202324",
+   "name": "Derrick Favors",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202324"
+  },
+  {
+   "id": "202325",
+   "name": "Wesley Johnson",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202325"
+  },
+  {
+   "id": "202326",
+   "name": "DeMarcus Cousins",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "202326"
+  },
+  {
+   "id": "202327",
+   "name": "Ekpe Udoh",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202327"
+  },
+  {
+   "id": "202328",
+   "name": "Greg Monroe",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202328"
+  },
+  {
+   "id": "202329",
+   "name": "Al-Farouq Aminu",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202329"
+  },
+  {
+   "id": "202330",
+   "name": "Gordon Hayward",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "202330"
+  },
+  {
+   "id": "202331",
+   "name": "Paul George",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 9,
+   "active": true,
+   "headshotId": "202331"
+  },
+  {
+   "id": "202332",
+   "name": "Cole Aldrich",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202332"
+  },
+  {
+   "id": "202334",
+   "name": "Ed Davis",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202334"
+  },
+  {
+   "id": "202335",
+   "name": "Patrick Patterson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202335"
+  },
+  {
+   "id": "202336",
+   "name": "Larry Sanders",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202336"
+  },
+  {
+   "id": "202337",
+   "name": "Luke Babbitt",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202337"
+  },
+  {
+   "id": "202338",
+   "name": "Kevin Seraphin",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202338"
+  },
+  {
+   "id": "202339",
+   "name": "Eric Bledsoe",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202339"
+  },
+  {
+   "id": "202340",
+   "name": "Avery Bradley",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202340"
+  },
+  {
+   "id": "202341",
+   "name": "James Anderson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202341"
+  },
+  {
+   "id": "202344",
+   "name": "Trevor Booker",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202344"
+  },
+  {
+   "id": "202347",
+   "name": "Quincy Pondexter",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202347"
+  },
+  {
+   "id": "202348",
+   "name": "Jordan Crawford",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202348"
+  },
+  {
+   "id": "202349",
+   "name": "Greivis Vasquez",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202349"
+  },
+  {
+   "id": "202355",
+   "name": "Hassan Whiteside",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202355"
+  },
+  {
+   "id": "202357",
+   "name": "Nemanja Bjelica",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202357"
+  },
+  {
+   "id": "202361",
+   "name": "Landry Fields",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202361"
+  },
+  {
+   "id": "202362",
+   "name": "Lance Stephenson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202362"
+  },
+  {
+   "id": "202388",
+   "name": "Donald Sloan",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202388"
+  },
+  {
+   "id": "202389",
+   "name": "Timofey Mozgov",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202389"
+  },
+  {
+   "id": "202390",
+   "name": "Gary Neal",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202390"
+  },
+  {
+   "id": "202391",
+   "name": "Jeremy Lin",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202391"
+  },
+  {
+   "id": "202397",
+   "name": "Ish Smith",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202397"
+  },
+  {
+   "id": "202498",
+   "name": "Lance Thomas",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202498"
+  },
+  {
+   "id": "202681",
+   "name": "Kyrie Irving",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 9,
+   "active": true,
+   "headshotId": "202681"
+  },
+  {
+   "id": "202682",
+   "name": "Derrick Williams",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202682"
+  },
+  {
+   "id": "202683",
+   "name": "Enes Freedom",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202683"
+  },
+  {
+   "id": "202684",
+   "name": "Tristan Thompson",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202684"
+  },
+  {
+   "id": "202685",
+   "name": "Jonas Valanciunas",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "202685"
+  },
+  {
+   "id": "202687",
+   "name": "Bismack Biyombo",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "202687"
+  },
+  {
+   "id": "202688",
+   "name": "Brandon Knight",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202688"
+  },
+  {
+   "id": "202689",
+   "name": "Kemba Walker",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "202689"
+  },
+  {
+   "id": "202691",
+   "name": "Klay Thompson",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": true,
+   "headshotId": "202691"
+  },
+  {
+   "id": "202692",
+   "name": "Alec Burks",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202692"
+  },
+  {
+   "id": "202693",
+   "name": "Markieff Morris",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202693"
+  },
+  {
+   "id": "202694",
+   "name": "Marcus Morris Sr.",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202694"
+  },
+  {
+   "id": "202695",
+   "name": "Kawhi Leonard",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": true,
+   "headshotId": "202695"
+  },
+  {
+   "id": "202696",
+   "name": "Nikola Vučević",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "202696"
+  },
+  {
+   "id": "202697",
+   "name": "Iman Shumpert",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202697"
+  },
+  {
+   "id": "202698",
+   "name": "Chris Singleton",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202698"
+  },
+  {
+   "id": "202699",
+   "name": "Tobias Harris",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "202699"
+  },
+  {
+   "id": "202700",
+   "name": "Donatas Motiejunas",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202700"
+  },
+  {
+   "id": "202702",
+   "name": "Kenneth Faried",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202702"
+  },
+  {
+   "id": "202703",
+   "name": "Nikola Mirotic",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202703"
+  },
+  {
+   "id": "202704",
+   "name": "Reggie Jackson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202704"
+  },
+  {
+   "id": "202705",
+   "name": "MarShon Brooks",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202705"
+  },
+  {
+   "id": "202708",
+   "name": "Norris Cole",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202708"
+  },
+  {
+   "id": "202709",
+   "name": "Cory Joseph",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202709"
+  },
+  {
+   "id": "202710",
+   "name": "Jimmy Butler III",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": true,
+   "headshotId": "202710"
+  },
+  {
+   "id": "202711",
+   "name": "Bojan Bogdanovic",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202711"
+  },
+  {
+   "id": "202713",
+   "name": "Kyle Singler",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202713"
+  },
+  {
+   "id": "202714",
+   "name": "Shelvin Mack",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202714"
+  },
+  {
+   "id": "202718",
+   "name": "Chandler Parsons",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202718"
+  },
+  {
+   "id": "202720",
+   "name": "Jon Leuer",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202720"
+  },
+  {
+   "id": "202722",
+   "name": "Davis Bertans",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202722"
+  },
+  {
+   "id": "202730",
+   "name": "Lavoy Allen",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202730"
+  },
+  {
+   "id": "202734",
+   "name": "E'Twaun Moore",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202734"
+  },
+  {
+   "id": "202738",
+   "name": "Isaiah Thomas",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "202738"
+  },
+  {
+   "id": "202970",
+   "name": "Gustavo Ayon",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "202970"
+  },
+  {
+   "id": "2030",
+   "name": "Kenyon Martin",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2030"
+  },
+  {
+   "id": "203076",
+   "name": "Anthony Davis",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": true,
+   "headshotId": "203076"
+  },
+  {
+   "id": "203077",
+   "name": "Michael Kidd-Gilchrist",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203077"
+  },
+  {
+   "id": "203078",
+   "name": "Bradley Beal",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": true,
+   "headshotId": "203078"
+  },
+  {
+   "id": "203079",
+   "name": "Dion Waiters",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203079"
+  },
+  {
+   "id": "203080",
+   "name": "Thomas Robinson",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203080"
+  },
+  {
+   "id": "203081",
+   "name": "Damian Lillard",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 9,
+   "active": true,
+   "headshotId": "203081"
+  },
+  {
+   "id": "203082",
+   "name": "Terrence Ross",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203082"
+  },
+  {
+   "id": "203083",
+   "name": "Andre Drummond",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "203083"
+  },
+  {
+   "id": "203084",
+   "name": "Harrison Barnes",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203084"
+  },
+  {
+   "id": "203085",
+   "name": "Austin Rivers",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203085"
+  },
+  {
+   "id": "203086",
+   "name": "Meyers Leonard",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203086"
+  },
+  {
+   "id": "203087",
+   "name": "Jeremy Lamb",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203087"
+  },
+  {
+   "id": "203088",
+   "name": "Kendall Marshall",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203088"
+  },
+  {
+   "id": "203089",
+   "name": "John Henson",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203089"
+  },
+  {
+   "id": "203090",
+   "name": "Maurice Harkless",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203090"
+  },
+  {
+   "id": "203092",
+   "name": "Tyler Zeller",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203092"
+  },
+  {
+   "id": "203093",
+   "name": "Terrence Jones",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203093"
+  },
+  {
+   "id": "203095",
+   "name": "Evan Fournier",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203095"
+  },
+  {
+   "id": "203096",
+   "name": "Jared Sullinger",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203096"
+  },
+  {
+   "id": "2031",
+   "name": "Stromile Swift",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2031"
+  },
+  {
+   "id": "203101",
+   "name": "Miles Plumlee",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203101"
+  },
+  {
+   "id": "203105",
+   "name": "Festus Ezeli",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203105"
+  },
+  {
+   "id": "203107",
+   "name": "Tomas Satoransky",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203107"
+  },
+  {
+   "id": "203109",
+   "name": "Jae Crowder",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203109"
+  },
+  {
+   "id": "203110",
+   "name": "Draymond Green",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": true,
+   "headshotId": "203110"
+  },
+  {
+   "id": "203112",
+   "name": "Quincy Acy",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203112"
+  },
+  {
+   "id": "203114",
+   "name": "Khris Middleton",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": true,
+   "headshotId": "203114"
+  },
+  {
+   "id": "203115",
+   "name": "Will Barton",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203115"
+  },
+  {
+   "id": "203118",
+   "name": "Mike Scott",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203118"
+  },
+  {
+   "id": "203124",
+   "name": "Kyle O'Quinn",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203124"
+  },
+  {
+   "id": "203141",
+   "name": "Mirza Teletovic",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203141"
+  },
+  {
+   "id": "203145",
+   "name": "Kent Bazemore",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203145"
+  },
+  {
+   "id": "203148",
+   "name": "Brian Roberts",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203148"
+  },
+  {
+   "id": "2032",
+   "name": "Darius Miles",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2032"
+  },
+  {
+   "id": "203200",
+   "name": "Justin Holiday",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203200"
+  },
+  {
+   "id": "203210",
+   "name": "JaMychal Green",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203210"
+  },
+  {
+   "id": "203382",
+   "name": "Aron Baynes",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203382"
+  },
+  {
+   "id": "2034",
+   "name": "Mike Miller",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2034"
+  },
+  {
+   "id": "203457",
+   "name": "Nerlens Noel",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203457"
+  },
+  {
+   "id": "203458",
+   "name": "Alex Len",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203458"
+  },
+  {
+   "id": "203459",
+   "name": "Allen Crabbe",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203459"
+  },
+  {
+   "id": "203460",
+   "name": "Andre Roberson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203460"
+  },
+  {
+   "id": "203463",
+   "name": "Ben McLemore",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203463"
+  },
+  {
+   "id": "203468",
+   "name": "CJ McCollum",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203468"
+  },
+  {
+   "id": "203469",
+   "name": "Cody Zeller",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203469"
+  },
+  {
+   "id": "203471",
+   "name": "Dennis Schröder",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203471"
+  },
+  {
+   "id": "203473",
+   "name": "Dewayne Dedmon",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203473"
+  },
+  {
+   "id": "203476",
+   "name": "Gorgui Dieng",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203476"
+  },
+  {
+   "id": "203482",
+   "name": "Kelly Olynyk",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203482"
+  },
+  {
+   "id": "203484",
+   "name": "Kentavious Caldwell-Pope",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203484"
+  },
+  {
+   "id": "203486",
+   "name": "Mason Plumlee",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203486"
+  },
+  {
+   "id": "203487",
+   "name": "Michael Carter-Williams",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203487"
+  },
+  {
+   "id": "203488",
+   "name": "Mike Muscala",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203488"
+  },
+  {
+   "id": "203489",
+   "name": "Nate Wolters",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203489"
+  },
+  {
+   "id": "203490",
+   "name": "Otto Porter Jr.",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203490"
+  },
+  {
+   "id": "203493",
+   "name": "Reggie Bullock Jr.",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203493"
+  },
+  {
+   "id": "203496",
+   "name": "Robert Covington",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203496"
+  },
+  {
+   "id": "203497",
+   "name": "Rudy Gobert",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": true,
+   "headshotId": "203497"
+  },
+  {
+   "id": "203498",
+   "name": "Shabazz Muhammad",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203498"
+  },
+  {
+   "id": "2035",
+   "name": "DerMarr Johnson",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2035"
+  },
+  {
+   "id": "203500",
+   "name": "Steven Adams",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203500"
+  },
+  {
+   "id": "203501",
+   "name": "Tim Hardaway Jr.",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203501"
+  },
+  {
+   "id": "203503",
+   "name": "Tony Snell",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203503"
+  },
+  {
+   "id": "203504",
+   "name": "Trey Burke",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203504"
+  },
+  {
+   "id": "203506",
+   "name": "Victor Oladipo",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "203506"
+  },
+  {
+   "id": "203507",
+   "name": "Giannis Antetokounmpo",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": true,
+   "headshotId": "203507"
+  },
+  {
+   "id": "203516",
+   "name": "James Ennis III",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203516"
+  },
+  {
+   "id": "203521",
+   "name": "Matthew Dellavedova",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203521"
+  },
+  {
+   "id": "203524",
+   "name": "Solomon Hill",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203524"
+  },
+  {
+   "id": "203526",
+   "name": "Raul Neto",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203526"
+  },
+  {
+   "id": "203527",
+   "name": "Ryan Kelly",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203527"
+  },
+  {
+   "id": "203546",
+   "name": "Ian Clark",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203546"
+  },
+  {
+   "id": "203552",
+   "name": "Seth Curry",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203552"
+  },
+  {
+   "id": "203584",
+   "name": "Troy Daniels",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203584"
+  },
+  {
+   "id": "203585",
+   "name": "Rodney McGruder",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203585"
+  },
+  {
+   "id": "2036",
+   "name": "Chris Mihm",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2036"
+  },
+  {
+   "id": "203613",
+   "name": "Jonathon Simmons",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203613"
+  },
+  {
+   "id": "2037",
+   "name": "Jamal Crawford",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2037"
+  },
+  {
+   "id": "2038",
+   "name": "Joel Przybilla",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2038"
+  },
+  {
+   "id": "203894",
+   "name": "Shabazz Napier",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203894"
+  },
+  {
+   "id": "203897",
+   "name": "Zach LaVine",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": true,
+   "headshotId": "203897"
+  },
+  {
+   "id": "2039",
+   "name": "Keyon Dooling",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2039"
+  },
+  {
+   "id": "203900",
+   "name": "Markel Brown",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203900"
+  },
+  {
+   "id": "203901",
+   "name": "Elfrid Payton",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203901"
+  },
+  {
+   "id": "203903",
+   "name": "Jordan Clarkson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203903"
+  },
+  {
+   "id": "203909",
+   "name": "KJ McDaniels",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203909"
+  },
+  {
+   "id": "203914",
+   "name": "Gary Harris",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203914"
+  },
+  {
+   "id": "203915",
+   "name": "Spencer Dinwiddie",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203915"
+  },
+  {
+   "id": "203917",
+   "name": "Nik Stauskas",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203917"
+  },
+  {
+   "id": "203918",
+   "name": "Rodney Hood",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203918"
+  },
+  {
+   "id": "203922",
+   "name": "Glenn Robinson III",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203922"
+  },
+  {
+   "id": "203924",
+   "name": "Jerami Grant",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203924"
+  },
+  {
+   "id": "203925",
+   "name": "Joe Harris",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203925"
+  },
+  {
+   "id": "203926",
+   "name": "Doug McDermott",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203926"
+  },
+  {
+   "id": "203932",
+   "name": "Aaron Gordon",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203932"
+  },
+  {
+   "id": "203933",
+   "name": "T.J. Warren",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203933"
+  },
+  {
+   "id": "203935",
+   "name": "Marcus Smart",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203935"
+  },
+  {
+   "id": "203937",
+   "name": "Kyle Anderson",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203937"
+  },
+  {
+   "id": "203939",
+   "name": "Dwight Powell",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203939"
+  },
+  {
+   "id": "203943",
+   "name": "Noah Vonleh",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203943"
+  },
+  {
+   "id": "203944",
+   "name": "Julius Randle",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": true,
+   "headshotId": "203944"
+  },
+  {
+   "id": "203952",
+   "name": "Andrew Wiggins",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "203952"
+  },
+  {
+   "id": "203953",
+   "name": "Jabari Parker",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203953"
+  },
+  {
+   "id": "203954",
+   "name": "Joel Embiid",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": true,
+   "headshotId": "203954"
+  },
+  {
+   "id": "203957",
+   "name": "Dante Exum",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203957"
+  },
+  {
+   "id": "203967",
+   "name": "Dario Saric",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203967"
+  },
+  {
+   "id": "203991",
+   "name": "Clint Capela",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203991"
+  },
+  {
+   "id": "203992",
+   "name": "Bogdan Bogdanović",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203992"
+  },
+  {
+   "id": "203994",
+   "name": "Jusuf Nurkić",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "203994"
+  },
+  {
+   "id": "203995",
+   "name": "Vasilije Micic",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "203995"
+  },
+  {
+   "id": "203999",
+   "name": "Nikola Jokić",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 8,
+   "active": true,
+   "headshotId": "203999"
+  },
+  {
+   "id": "204001",
+   "name": "Kristaps Porziņģis",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": true,
+   "headshotId": "204001"
+  },
+  {
+   "id": "204020",
+   "name": "Tyler Johnson",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "204020"
+  },
+  {
+   "id": "204038",
+   "name": "Langston Galloway",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "204038"
+  },
+  {
+   "id": "204060",
+   "name": "Joe Ingles",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "204060"
+  },
+  {
+   "id": "2041",
+   "name": "Etan Thomas",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2041"
+  },
+  {
+   "id": "204456",
+   "name": "T.J. McConnell",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": true,
+   "headshotId": "204456"
+  },
+  {
+   "id": "2045",
+   "name": "Hedo Turkoglu",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2045"
+  },
+  {
+   "id": "2046",
+   "name": "Desmond Mason",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2046"
+  },
+  {
+   "id": "2047",
+   "name": "Quentin Richardson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2047"
+  },
+  {
+   "id": "2048",
+   "name": "Jamaal Magloire",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2048"
+  },
+  {
+   "id": "2049",
+   "name": "Speedy Claxton",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2049"
+  },
+  {
+   "id": "2050",
+   "name": "Morris Peterson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2050"
+  },
+  {
+   "id": "2052",
+   "name": "DeShawn Stevenson",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2052"
+  },
+  {
+   "id": "2054",
+   "name": "Jake Tsakalidis",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2054"
+  },
+  {
+   "id": "2056",
+   "name": "Primoz Brezec",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2056"
+  },
+  {
+   "id": "2058",
+   "name": "Mark Madsen",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2058"
+  },
+  {
+   "id": "2059",
+   "name": "Eduardo Najera",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2059"
+  },
+  {
+   "id": "2060",
+   "name": "Marko Jaric",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2060"
+  },
+  {
+   "id": "2063",
+   "name": "Jake Voskuhl",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2063"
+  },
+  {
+   "id": "2067",
+   "name": "Eddie House",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2067"
+  },
+  {
+   "id": "2072",
+   "name": "Michael Redd",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2072"
+  },
+  {
+   "id": "2073",
+   "name": "Brian Cardinal",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2073"
+  },
+  {
+   "id": "2078",
+   "name": "Jason Hart",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2078"
+  },
+  {
+   "id": "208",
+   "name": "Sam Cassell",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "208"
+  },
+  {
+   "id": "209",
+   "name": "Dell Curry",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "209"
+  },
+  {
+   "id": "21",
+   "name": "Greg Anthony",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "21"
+  },
+  {
+   "id": "210",
+   "name": "Terrell Brandon",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "210"
+  },
+  {
+   "id": "2124",
+   "name": "Malik Allen",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2124"
+  },
+  {
+   "id": "213",
+   "name": "Antonio Davis",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "213"
+  },
+  {
+   "id": "2137",
+   "name": "Ime Udoka",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2137"
+  },
+  {
+   "id": "216",
+   "name": "Brian Shaw",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "216"
+  },
+  {
+   "id": "219",
+   "name": "Vinny Del Negro",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "219"
+  },
+  {
+   "id": "2198",
+   "name": "Kwame Brown",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2198"
+  },
+  {
+   "id": "2199",
+   "name": "Tyson Chandler",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2199"
+  },
+  {
+   "id": "2200",
+   "name": "Pau Gasol",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": false,
+   "headshotId": "2200"
+  },
+  {
+   "id": "2201",
+   "name": "Eddy Curry",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2201"
+  },
+  {
+   "id": "2202",
+   "name": "Jason Richardson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2202"
+  },
+  {
+   "id": "2203",
+   "name": "Shane Battier",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2203"
+  },
+  {
+   "id": "2204",
+   "name": "Eddie Griffin",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2204"
+  },
+  {
+   "id": "2205",
+   "name": "DeSagana Diop",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2205"
+  },
+  {
+   "id": "2207",
+   "name": "Joe Johnson",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": false,
+   "headshotId": "2207"
+  },
+  {
+   "id": "2209",
+   "name": "Vladimir Radmanovic",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2209"
+  },
+  {
+   "id": "221",
+   "name": "Clar. Weatherspoon",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "221"
+  },
+  {
+   "id": "2210",
+   "name": "Richard Jefferson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2210"
+  },
+  {
+   "id": "2211",
+   "name": "Troy Murphy",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2211"
+  },
+  {
+   "id": "2212",
+   "name": "Steven Hunter",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2212"
+  },
+  {
+   "id": "2215",
+   "name": "Jason Collins",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2215"
+  },
+  {
+   "id": "2216",
+   "name": "Zach Randolph",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "2216"
+  },
+  {
+   "id": "2217",
+   "name": "Brendan Haywood",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2217"
+  },
+  {
+   "id": "2222",
+   "name": "Gerald Wallace",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2222"
+  },
+  {
+   "id": "2223",
+   "name": "Samuel Dalembert",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2223"
+  },
+  {
+   "id": "2224",
+   "name": "Jamaal Tinsley",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2224"
+  },
+  {
+   "id": "2225",
+   "name": "Tony Parker",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": false,
+   "headshotId": "2225"
+  },
+  {
+   "id": "2229",
+   "name": "Mike James",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2229"
+  },
+  {
+   "id": "2230",
+   "name": "Maurice Evans",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2230"
+  },
+  {
+   "id": "2239",
+   "name": "Trenton Hassell",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2239"
+  },
+  {
+   "id": "224",
+   "name": "Eddie Jones",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "224"
+  },
+  {
+   "id": "2240",
+   "name": "Gilbert Arenas",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "2240"
+  },
+  {
+   "id": "2243",
+   "name": "Brian Scalabrine",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2243"
+  },
+  {
+   "id": "2246",
+   "name": "Mehmet Okur",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2246"
+  },
+  {
+   "id": "2248",
+   "name": "Earl Watson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2248"
+  },
+  {
+   "id": "2250",
+   "name": "Bobby Simmons",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2250"
+  },
+  {
+   "id": "2260",
+   "name": "Jarron Collins",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2260"
+  },
+  {
+   "id": "228",
+   "name": "Adam Keefe",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "228"
+  },
+  {
+   "id": "2294",
+   "name": "Charlie Bell",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2294"
+  },
+  {
+   "id": "2306",
+   "name": "Carlos Arroyo",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2306"
+  },
+  {
+   "id": "2365",
+   "name": "Chris Andersen",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2365"
+  },
+  {
+   "id": "238",
+   "name": "Tyrone Hill",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "238"
+  },
+  {
+   "id": "239",
+   "name": "Darrick Martin",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "239"
+  },
+  {
+   "id": "2397",
+   "name": "Yao Ming",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 8,
+   "active": false,
+   "headshotId": "2397"
+  },
+  {
+   "id": "2399",
+   "name": "Mike Dunleavy",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2399"
+  },
+  {
+   "id": "2400",
+   "name": "Drew Gooden",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2400"
+  },
+  {
+   "id": "2403",
+   "name": "Nene",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2403"
+  },
+  {
+   "id": "2404",
+   "name": "Chris Wilcox",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2404"
+  },
+  {
+   "id": "2405",
+   "name": "Amar'e Stoudemire",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": false,
+   "headshotId": "2405"
+  },
+  {
+   "id": "2406",
+   "name": "Caron Butler",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "2406"
+  },
+  {
+   "id": "2407",
+   "name": "Jared Jeffries",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2407"
+  },
+  {
+   "id": "2408",
+   "name": "Melvin Ely",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2408"
+  },
+  {
+   "id": "2410",
+   "name": "Fred Jones",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2410"
+  },
+  {
+   "id": "2411",
+   "name": "Bostjan Nachbar",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2411"
+  },
+  {
+   "id": "2413",
+   "name": "Juan Dixon",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2413"
+  },
+  {
+   "id": "2416",
+   "name": "Kareem Rush",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2416"
+  },
+  {
+   "id": "2419",
+   "name": "Tayshaun Prince",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2419"
+  },
+  {
+   "id": "2420",
+   "name": "Nenad Krstic",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2420"
+  },
+  {
+   "id": "2422",
+   "name": "John Salmons",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2422"
+  },
+  {
+   "id": "2424",
+   "name": "Dan Dickau",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2424"
+  },
+  {
+   "id": "2427",
+   "name": "Roger Mason Jr.",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2427"
+  },
+  {
+   "id": "2429",
+   "name": "Dan Gadzuric",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2429"
+  },
+  {
+   "id": "243",
+   "name": "Aaron McKie",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "243"
+  },
+  {
+   "id": "2430",
+   "name": "Carlos Boozer",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "2430"
+  },
+  {
+   "id": "2436",
+   "name": "Flip Murray",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2436"
+  },
+  {
+   "id": "2440",
+   "name": "Matt Barnes",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2440"
+  },
+  {
+   "id": "2443",
+   "name": "Darius Songaila",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2443"
+  },
+  {
+   "id": "2446",
+   "name": "Rasual Butler",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2446"
+  },
+  {
+   "id": "2449",
+   "name": "Luis Scola",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2449"
+  },
+  {
+   "id": "2457",
+   "name": "Jannero Pargo",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2457"
+  },
+  {
+   "id": "248",
+   "name": "George Lynch",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "248"
+  },
+  {
+   "id": "2484",
+   "name": "Devin Brown",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2484"
+  },
+  {
+   "id": "2501",
+   "name": "Reggie Evans",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2501"
+  },
+  {
+   "id": "252",
+   "name": "Karl Malone",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 14,
+   "active": false,
+   "headshotId": "252"
+  },
+  {
+   "id": "2544",
+   "name": "LeBron James",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 22,
+   "active": true,
+   "headshotId": "2544"
+  },
+  {
+   "id": "2545",
+   "name": "Darko Milicic",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2545"
+  },
+  {
+   "id": "2546",
+   "name": "Carmelo Anthony",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": false,
+   "headshotId": "2546"
+  },
+  {
+   "id": "2547",
+   "name": "Chris Bosh",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 11,
+   "active": false,
+   "headshotId": "2547"
+  },
+  {
+   "id": "2548",
+   "name": "Dwyane Wade",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 13,
+   "active": false,
+   "headshotId": "2548"
+  },
+  {
+   "id": "2549",
+   "name": "Chris Kaman",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2549"
+  },
+  {
+   "id": "255",
+   "name": "Grant Hill",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": false,
+   "headshotId": "255"
+  },
+  {
+   "id": "2550",
+   "name": "Kirk Hinrich",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2550"
+  },
+  {
+   "id": "2551",
+   "name": "T.J. Ford",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2551"
+  },
+  {
+   "id": "2553",
+   "name": "Jarvis Hayes",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2553"
+  },
+  {
+   "id": "2554",
+   "name": "Mickael Pietrus",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2554"
+  },
+  {
+   "id": "2555",
+   "name": "Nick Collison",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2555"
+  },
+  {
+   "id": "2556",
+   "name": "Marcus Banks",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2556"
+  },
+  {
+   "id": "2557",
+   "name": "Luke Ridnour",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2557"
+  },
+  {
+   "id": "2561",
+   "name": "David West",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "2561"
+  },
+  {
+   "id": "2562",
+   "name": "Sasha Pavlovic",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2562"
+  },
+  {
+   "id": "2563",
+   "name": "Dahntay Jones",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2563"
+  },
+  {
+   "id": "2564",
+   "name": "Boris Diaw",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2564"
+  },
+  {
+   "id": "2566",
+   "name": "Travis Outlaw",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2566"
+  },
+  {
+   "id": "2567",
+   "name": "Brian Cook",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2567"
+  },
+  {
+   "id": "2568",
+   "name": "Carlos Delfino",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2568"
+  },
+  {
+   "id": "2570",
+   "name": "Kendrick Perkins",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2570"
+  },
+  {
+   "id": "2571",
+   "name": "Leandro Barbosa",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2571"
+  },
+  {
+   "id": "2572",
+   "name": "Josh Howard",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2572"
+  },
+  {
+   "id": "2574",
+   "name": "Jason Kapono",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2574"
+  },
+  {
+   "id": "2575",
+   "name": "Luke Walton",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2575"
+  },
+  {
+   "id": "258",
+   "name": "Brian Grant",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "258"
+  },
+  {
+   "id": "2581",
+   "name": "Steve Blake",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2581"
+  },
+  {
+   "id": "2584",
+   "name": "Willie Green",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2584"
+  },
+  {
+   "id": "2585",
+   "name": "Zaza Pachulia",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2585"
+  },
+  {
+   "id": "2586",
+   "name": "Keith Bogans",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2586"
+  },
+  {
+   "id": "2588",
+   "name": "Matt Bonner",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2588"
+  },
+  {
+   "id": "2590",
+   "name": "Mo Williams",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2590"
+  },
+  {
+   "id": "2592",
+   "name": "James Jones",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2592"
+  },
+  {
+   "id": "2594",
+   "name": "Kyle Korver",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2594"
+  },
+  {
+   "id": "2605",
+   "name": "Marquis Daniels",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2605"
+  },
+  {
+   "id": "2617",
+   "name": "Udonis Haslem",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2617"
+  },
+  {
+   "id": "2624",
+   "name": "Quinton Ross",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2624"
+  },
+  {
+   "id": "2679",
+   "name": "Matt Carroll",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2679"
+  },
+  {
+   "id": "2694",
+   "name": "Josh Powell",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2694"
+  },
+  {
+   "id": "270",
+   "name": "Horace Grant",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "270"
+  },
+  {
+   "id": "271",
+   "name": "Johnny Newman",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "271"
+  },
+  {
+   "id": "2730",
+   "name": "Dwight Howard",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 8,
+   "active": false,
+   "headshotId": "2730"
+  },
+  {
+   "id": "2731",
+   "name": "Emeka Okafor",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2731"
+  },
+  {
+   "id": "2732",
+   "name": "Ben Gordon",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2732"
+  },
+  {
+   "id": "2733",
+   "name": "Shaun Livingston",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2733"
+  },
+  {
+   "id": "2734",
+   "name": "Devin Harris",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2734"
+  },
+  {
+   "id": "2735",
+   "name": "Josh Childress",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2735"
+  },
+  {
+   "id": "2736",
+   "name": "Luol Deng",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "2736"
+  },
+  {
+   "id": "2738",
+   "name": "Andre Iguodala",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2738"
+  },
+  {
+   "id": "2740",
+   "name": "Andris Biedrins",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2740"
+  },
+  {
+   "id": "2742",
+   "name": "Sebastian Telfair",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2742"
+  },
+  {
+   "id": "2743",
+   "name": "Kris Humphries",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2743"
+  },
+  {
+   "id": "2744",
+   "name": "Al Jefferson",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2744"
+  },
+  {
+   "id": "2745",
+   "name": "Kirk Snyder",
+   "position": "G-F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2745"
+  },
+  {
+   "id": "2746",
+   "name": "Josh Smith",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2746"
+  },
+  {
+   "id": "2747",
+   "name": "JR Smith",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2747"
+  },
+  {
+   "id": "2748",
+   "name": "Dorell Wright",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2748"
+  },
+  {
+   "id": "2749",
+   "name": "Jameer Nelson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "2749"
+  },
+  {
+   "id": "275",
+   "name": "Allan Houston",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "275"
+  },
+  {
+   "id": "2753",
+   "name": "Delonte West",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2753"
+  },
+  {
+   "id": "2754",
+   "name": "Tony Allen",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2754"
+  },
+  {
+   "id": "2755",
+   "name": "Kevin Martin",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2755"
+  },
+  {
+   "id": "2756",
+   "name": "Sasha Vujacic",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2756"
+  },
+  {
+   "id": "2757",
+   "name": "Beno Udrih",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2757"
+  },
+  {
+   "id": "2760",
+   "name": "Anderson Varejao",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2760"
+  },
+  {
+   "id": "2767",
+   "name": "Royal Ivey",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2767"
+  },
+  {
+   "id": "2768",
+   "name": "Chris Duhon",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2768"
+  },
+  {
+   "id": "2772",
+   "name": "Trevor Ariza",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2772"
+  },
+  {
+   "id": "278",
+   "name": "Stacey Augmon",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "278"
+  },
+  {
+   "id": "2804",
+   "name": "Andres Nocioni",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2804"
+  },
+  {
+   "id": "281",
+   "name": "Scott Williams",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "281"
+  },
+  {
+   "id": "283",
+   "name": "Lindsey Hunter",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "283"
+  },
+  {
+   "id": "2863",
+   "name": "Damien Wilkins",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "2863"
+  },
+  {
+   "id": "296",
+   "name": "Rick Fox",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "296"
+  },
+  {
+   "id": "297",
+   "name": "Alonzo Mourning",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": false,
+   "headshotId": "297"
+  },
+  {
+   "id": "299",
+   "name": "Glenn Robinson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "299"
+  },
+  {
+   "id": "3",
+   "name": "Grant Long",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "3"
+  },
+  {
+   "id": "302",
+   "name": "Mookie Blaylock",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "302"
+  },
+  {
+   "id": "304",
+   "name": "John Stockton",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": false,
+   "headshotId": "304"
+  },
+  {
+   "id": "305",
+   "name": "Robert Parish",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 9,
+   "active": false,
+   "headshotId": "305"
+  },
+  {
+   "id": "317",
+   "name": "John Starks",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "317"
+  },
+  {
+   "id": "323",
+   "name": "Greg Foster",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "323"
+  },
+  {
+   "id": "324",
+   "name": "Anthony Peeler",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "324"
+  },
+  {
+   "id": "330",
+   "name": "Danny Manning",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "330"
+  },
+  {
+   "id": "339",
+   "name": "Tom Gugliotta",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "339"
+  },
+  {
+   "id": "344",
+   "name": "Dana Barros",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "344"
+  },
+  {
+   "id": "345",
+   "name": "Terry Porter",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "345"
+  },
+  {
+   "id": "349",
+   "name": "Mark Jackson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "349"
+  },
+  {
+   "id": "353",
+   "name": "Darrell Armstrong",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "353"
+  },
+  {
+   "id": "358",
+   "name": "Anfernee Hardaway",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "358"
+  },
+  {
+   "id": "359",
+   "name": "Chucky Brown",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "359"
+  },
+  {
+   "id": "361",
+   "name": "Clifford Robinson",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "361"
+  },
+  {
+   "id": "363",
+   "name": "Christian Laettner",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "363"
+  },
+  {
+   "id": "369",
+   "name": "Charlie Ward",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "369"
+  },
+  {
+   "id": "375",
+   "name": "Isaiah Rider",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "375"
+  },
+  {
+   "id": "376",
+   "name": "Eric Montross",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "376"
+  },
+  {
+   "id": "383",
+   "name": "Kendall Gill",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "383"
+  },
+  {
+   "id": "384",
+   "name": "Calbert Cheaney",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "384"
+  },
+  {
+   "id": "386",
+   "name": "Elliot Perry",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "386"
+  },
+  {
+   "id": "389",
+   "name": "Toni Kukoc",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "389"
+  },
+  {
+   "id": "393",
+   "name": "Rod Strickland",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "393"
+  },
+  {
+   "id": "397",
+   "name": "Reggie Miller",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": false,
+   "headshotId": "397"
+  },
+  {
+   "id": "399",
+   "name": "Sean Rooks",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "399"
+  },
+  {
+   "id": "406",
+   "name": "Shaquille O'Neal",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 15,
+   "active": false,
+   "headshotId": "406"
+  },
+  {
+   "id": "417",
+   "name": "Sam Mitchell",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "417"
+  },
+  {
+   "id": "42",
+   "name": "Monty Williams",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "42"
+  },
+  {
+   "id": "422",
+   "name": "Avery Johnson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "422"
+  },
+  {
+   "id": "423",
+   "name": "Chris Gatling",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "423"
+  },
+  {
+   "id": "43",
+   "name": "Chris Whitney",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "43"
+  },
+  {
+   "id": "431",
+   "name": "Shawn Kemp",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": false,
+   "headshotId": "431"
+  },
+  {
+   "id": "436",
+   "name": "Juwan Howard",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "436"
+  },
+  {
+   "id": "441",
+   "name": "Lamond Murray",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "441"
+  },
+  {
+   "id": "445",
+   "name": "Wesley Person",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "445"
+  },
+  {
+   "id": "446",
+   "name": "Lucious Harris",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "446"
+  },
+  {
+   "id": "448",
+   "name": "Bo Outlaw",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "448"
+  },
+  {
+   "id": "45",
+   "name": "George McCloud",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "45"
+  },
+  {
+   "id": "452",
+   "name": "Vin Baker",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "452"
+  },
+  {
+   "id": "458",
+   "name": "Howard Eisley",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "458"
+  },
+  {
+   "id": "461",
+   "name": "Popeye Jones",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "461"
+  },
+  {
+   "id": "467",
+   "name": "Jason Kidd",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": false,
+   "headshotId": "467"
+  },
+  {
+   "id": "468",
+   "name": "Jon Barry",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "468"
+  },
+  {
+   "id": "469",
+   "name": "Jamal Mashburn",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "469"
+  },
+  {
+   "id": "53",
+   "name": "Mario Elie",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "53"
+  },
+  {
+   "id": "56",
+   "name": "Gary Payton",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 9,
+   "active": false,
+   "headshotId": "56"
+  },
+  {
+   "id": "57",
+   "name": "Doug Christie",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "57"
+  },
+  {
+   "id": "600015",
+   "name": "Oscar Robertson",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": false,
+   "headshotId": "600015"
+  },
+  {
+   "id": "63",
+   "name": "Michael Smith",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "63"
+  },
+  {
+   "id": "64",
+   "name": "Sam Perkins",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "64"
+  },
+  {
+   "id": "672",
+   "name": "Matt Bullard",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "672"
+  },
+  {
+   "id": "673",
+   "name": "Alan Henderson",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "673"
+  },
+  {
+   "id": "677",
+   "name": "Eric Williams",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "677"
+  },
+  {
+   "id": "679",
+   "name": "Jason Caffey",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "679"
+  },
+  {
+   "id": "682",
+   "name": "Bob Sura",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "682"
+  },
+  {
+   "id": "685",
+   "name": "Cherokee Parks",
+   "position": "F-C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "685"
+  },
+  {
+   "id": "686",
+   "name": "Antonio McDyess",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "686"
+  },
+  {
+   "id": "688",
+   "name": "Michael Curry",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "688"
+  },
+  {
+   "id": "689",
+   "name": "Theo Ratliff",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "689"
+  },
+  {
+   "id": "690",
+   "name": "Don Reid",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "690"
+  },
+  {
+   "id": "692",
+   "name": "Andrew DeClercq",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "692"
+  },
+  {
+   "id": "693",
+   "name": "Joe Smith",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "693"
+  },
+  {
+   "id": "696",
+   "name": "Travis Best",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "696"
+  },
+  {
+   "id": "697",
+   "name": "Fred Hoiberg",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "697"
+  },
+  {
+   "id": "699",
+   "name": "Brent Barry",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "699"
+  },
+  {
+   "id": "70",
+   "name": "Steve Kerr",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "70"
+  },
+  {
+   "id": "702",
+   "name": "Voshon Lenard",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "702"
+  },
+  {
+   "id": "703",
+   "name": "Kurt Thomas",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "703"
+  },
+  {
+   "id": "708",
+   "name": "Kevin Garnett",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 15,
+   "active": false,
+   "headshotId": "708"
+  },
+  {
+   "id": "711",
+   "name": "Jerry Stackhouse",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "711"
+  },
+  {
+   "id": "714",
+   "name": "Michael Finley",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "714"
+  },
+  {
+   "id": "717",
+   "name": "Arvydas Sabonis",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "717"
+  },
+  {
+   "id": "718",
+   "name": "Gary Trent",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "718"
+  },
+  {
+   "id": "72",
+   "name": "Kenny Anderson",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "72"
+  },
+  {
+   "id": "722",
+   "name": "Corliss Williamson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "722"
+  },
+  {
+   "id": "727",
+   "name": "Eric Snow",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "727"
+  },
+  {
+   "id": "731",
+   "name": "Greg Ostertag",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "731"
+  },
+  {
+   "id": "735",
+   "name": "Bryant Reeves",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "735"
+  },
+  {
+   "id": "739",
+   "name": "Rasheed Wallace",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "739"
+  },
+  {
+   "id": "753",
+   "name": "Randy Brown",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "753"
+  },
+  {
+   "id": "754",
+   "name": "Jim Jackson",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "754"
+  },
+  {
+   "id": "757",
+   "name": "Damon Stoudamire",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "757"
+  },
+  {
+   "id": "76003",
+   "name": "Kareem Abdul-Jabbar",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 19,
+   "active": false,
+   "headshotId": "76003"
+  },
+  {
+   "id": "762",
+   "name": "Shawn Bradley",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "762"
+  },
+  {
+   "id": "763",
+   "name": "Tony Massenburg",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "763"
+  },
+  {
+   "id": "76375",
+   "name": "Wilt Chamberlain",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 13,
+   "active": false,
+   "headshotId": "76375"
+  },
+  {
+   "id": "76385",
+   "name": "Maurice Cheeks",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "76385"
+  },
+  {
+   "id": "764",
+   "name": "David Robinson",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": false,
+   "headshotId": "764"
+  },
+  {
+   "id": "765",
+   "name": "Hersey Hawkins",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "765"
+  },
+  {
+   "id": "76631",
+   "name": "Mark Eaton",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "76631"
+  },
+  {
+   "id": "76979",
+   "name": "Elvin Hayes",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": false,
+   "headshotId": "76979"
+  },
+  {
+   "id": "77142",
+   "name": "Magic Johnson",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": false,
+   "headshotId": "77142"
+  },
+  {
+   "id": "77449",
+   "name": "Moses Malone",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": false,
+   "headshotId": "77449"
+  },
+  {
+   "id": "779",
+   "name": "Glen Rice",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "779"
+  },
+  {
+   "id": "78014",
+   "name": "Tree Rollins",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "78014"
+  },
+  {
+   "id": "78049",
+   "name": "Bill Russell",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": false,
+   "headshotId": "78049"
+  },
+  {
+   "id": "782",
+   "name": "Mitch Richmond",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": false,
+   "headshotId": "782"
+  },
+  {
+   "id": "78318",
+   "name": "Isiah Thomas",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 12,
+   "active": false,
+   "headshotId": "78318"
+  },
+  {
+   "id": "78497",
+   "name": "Jerry West",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 14,
+   "active": false,
+   "headshotId": "78497"
+  },
+  {
+   "id": "787",
+   "name": "Charles Barkley",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 11,
+   "active": false,
+   "headshotId": "787"
+  },
+  {
+   "id": "788",
+   "name": "Kevin Willis",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "788"
+  },
+  {
+   "id": "84",
+   "name": "Latrell Sprewell",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 4,
+   "active": false,
+   "headshotId": "84"
+  },
+  {
+   "id": "87",
+   "name": "Dikembe Mutombo",
+   "position": "C",
+   "fameTier": 1,
+   "allStarCount": 8,
+   "active": false,
+   "headshotId": "87"
+  },
+  {
+   "id": "89",
+   "name": "Nick Van Exel",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "89"
+  },
+  {
+   "id": "891",
+   "name": "Charles Oakley",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "891"
+  },
+  {
+   "id": "893",
+   "name": "Michael Jordan",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 14,
+   "active": false,
+   "headshotId": "893"
+  },
+  {
+   "id": "896",
+   "name": "Tim Hardaway",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 5,
+   "active": false,
+   "headshotId": "896"
+  },
+  {
+   "id": "901",
+   "name": "Otis Thorpe",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "901"
+  },
+  {
+   "id": "902",
+   "name": "Bimbo Coles",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "902"
+  },
+  {
+   "id": "905",
+   "name": "Dale Davis",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "905"
+  },
+  {
+   "id": "911",
+   "name": "Ervin Johnson",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "911"
+  },
+  {
+   "id": "913",
+   "name": "Larry Johnson",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "913"
+  },
+  {
+   "id": "915",
+   "name": "Rodney Rogers",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "915"
+  },
+  {
+   "id": "916",
+   "name": "Corie Blount",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "916"
+  },
+  {
+   "id": "920",
+   "name": "A.C. Green",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "920"
+  },
+  {
+   "id": "922",
+   "name": "Elden Campbell",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "922"
+  },
+  {
+   "id": "923",
+   "name": "Donyell Marshall",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "923"
+  },
+  {
+   "id": "93",
+   "name": "Hubert Davis",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "93"
+  },
+  {
+   "id": "934",
+   "name": "Derrick Coleman",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "934"
+  },
+  {
+   "id": "935",
+   "name": "Bryon Russell",
+   "position": "G-F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "935"
+  },
+  {
+   "id": "937",
+   "name": "Scottie Pippen",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 7,
+   "active": false,
+   "headshotId": "937"
+  },
+  {
+   "id": "947",
+   "name": "Allen Iverson",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 11,
+   "active": false,
+   "headshotId": "947"
+  },
+  {
+   "id": "948",
+   "name": "Marcus Camby",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "948"
+  },
+  {
+   "id": "949",
+   "name": "Shareef Abdur-Rahim",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 1,
+   "active": false,
+   "headshotId": "949"
+  },
+  {
+   "id": "950",
+   "name": "Stephon Marbury",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "950"
+  },
+  {
+   "id": "951",
+   "name": "Ray Allen",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 10,
+   "active": false,
+   "headshotId": "951"
+  },
+  {
+   "id": "952",
+   "name": "Antoine Walker",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "952"
+  },
+  {
+   "id": "953",
+   "name": "Lorenzen Wright",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "953"
+  },
+  {
+   "id": "954",
+   "name": "Kerry Kittles",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "954"
+  },
+  {
+   "id": "955",
+   "name": "Samaki Walker",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "955"
+  },
+  {
+   "id": "956",
+   "name": "Erick Dampier",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "956"
+  },
+  {
+   "id": "958",
+   "name": "Vitaly Potapenko",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "958"
+  },
+  {
+   "id": "959",
+   "name": "Steve Nash",
+   "position": "G",
+   "fameTier": 1,
+   "allStarCount": 8,
+   "active": false,
+   "headshotId": "959"
+  },
+  {
+   "id": "960",
+   "name": "Tony Delk",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "960"
+  },
+  {
+   "id": "961",
+   "name": "John Wallace",
+   "position": "F",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "961"
+  },
+  {
+   "id": "962",
+   "name": "Walter McCarty",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "962"
+  },
+  {
+   "id": "965",
+   "name": "Derek Fisher",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "965"
+  },
+  {
+   "id": "966",
+   "name": "Jerome Williams",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "966"
+  },
+  {
+   "id": "969",
+   "name": "Travis Knight",
+   "position": "C",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "969"
+  },
+  {
+   "id": "970",
+   "name": "Othella Harrington",
+   "position": "F-C",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "970"
+  },
+  {
+   "id": "976",
+   "name": "Jeff McInnis",
+   "position": "G",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "976"
+  },
+  {
+   "id": "977",
+   "name": "Kobe Bryant",
+   "position": "G-F",
+   "fameTier": 1,
+   "allStarCount": 18,
+   "active": false,
+   "headshotId": "977"
+  },
+  {
+   "id": "978",
+   "name": "Peja Stojakovic",
+   "position": "F",
+   "fameTier": 1,
+   "allStarCount": 3,
+   "active": false,
+   "headshotId": "978"
+  },
+  {
+   "id": "979",
+   "name": "Jermaine O'Neal",
+   "position": "F-C",
+   "fameTier": 1,
+   "allStarCount": 6,
+   "active": false,
+   "headshotId": "979"
+  },
+  {
+   "id": "980",
+   "name": "Zydrunas Ilgauskas",
+   "position": "C",
+   "fameTier": 2,
+   "allStarCount": 2,
+   "active": false,
+   "headshotId": "980"
+  },
+  {
+   "id": "983",
+   "name": "Moochie Norris",
+   "position": "G",
+   "fameTier": 3,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "983"
+  },
+  {
+   "id": "990",
+   "name": "Malik Rose",
+   "position": "F",
+   "fameTier": 2,
+   "allStarCount": 0,
+   "active": false,
+   "headshotId": "990"
+  }
+ ]
+}

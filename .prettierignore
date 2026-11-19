@@ -1,0 +1,11 @@
+.next
+node_modules
+.venv
+data-cache
+design
+src/generated
+src/data/seed
+package-lock.json
+playwright-report
+test-results
+*.md

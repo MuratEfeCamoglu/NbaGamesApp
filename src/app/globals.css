@@ -1,0 +1,1844 @@
+@import "tailwindcss";
+@import "./design.css";
+
+/*
+  Tasarım token'ları — kaynak: design/design.html :root bloğu (birebir).
+  Yalnız iki fark: fontlar next/font değişkenleriyle self-host edilir ve tasarımın
+  "Add teams as needed" notu gereği eksik 15 takım + tarihî franchise renkleri eklendi.
+  `static`: token'lar kullanılmasa da CSS değişkeni olarak her zaman üretilir (design.css var() ile okur).
+*/
+@theme static {
+  /* ---------- Colour ---------- */
+  --color-bg: #0b0b0d;
+  --color-surface: #16171b;
+  --color-surface-2: #1f2026;
+  --color-surface-3: #282a31;
+  --color-border: #2a2c33;
+  --color-border-strong: #3a3d46;
+  --color-text: #f5f5f7;
+  --color-text-muted: #9a9ca5;
+  --color-accent: #ff6b1a;
+  --color-accent-hover: #ff8540;
+  --color-on-accent: #0b0b0d;
+  --color-success: #22c55e;
+  --color-danger: #f87171;
+  --color-warning: #f59e0b;
+  --color-on-status: #0b0b0d;
+  --color-diff-easy: #4ade80;
+  --color-diff-medium: #60a5fa;
+  --color-diff-hard: #fb923c;
+  --color-diff-expert: #e879f9;
+  --color-gold: #f5c542;
+  --color-silver: #c9cdd6;
+  --color-bronze: #d08b57;
+  --color-overlay: #000000b3;
+  --color-court-line: #ffffff0a;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Team colours (TeamBadge / PlayerAvatar fallback) — design.html */
+  --color-team-lal: #552583;
+  --color-team-lal-fg: #fdb927;
+  --color-team-gsw: #1d428a;
+  --color-team-gsw-fg: #ffc72c;
+  --color-team-mia: #98002e;
+  --color-team-mia-fg: #ffffff;
+  --color-team-cle: #860038;
+  --color-team-cle-fg: #fdbb30;
+  --color-team-den: #0e2240;
+  --color-team-den-fg: #fec524;
+  --color-team-nyk: #006bb6;
+  --color-team-nyk-fg: #ffffff;
+  --color-team-okc: #007ac1;
+  --color-team-okc-fg: #ffffff;
+  --color-team-hou: #ce1141;
+  --color-team-hou-fg: #ffffff;
+  --color-team-por: #e03a3e;
+  --color-team-por-fg: #000000;
+  --color-team-sas: #c4ced4;
+  --color-team-sas-fg: #000000;
+  --color-team-tor: #ce1141;
+  --color-team-tor-fg: #ffffff;
+  --color-team-bos: #007a33;
+  --color-team-bos-fg: #ffffff;
+  --color-team-dal: #00538c;
+  --color-team-dal-fg: #ffffff;
+  --color-team-mil: #00471b;
+  --color-team-mil-fg: #eee1c6;
+  --color-team-phx: #1d1160;
+  --color-team-phx-fg: #ffffff;
+  /* Added (remaining franchises) */
+  --color-team-atl: #c8102e;
+  --color-team-atl-fg: #ffffff;
+  --color-team-bkn: #000000;
+  --color-team-bkn-fg: #ffffff;
+  --color-team-cha: #1d1160;
+  --color-team-cha-fg: #00b2a9;
+  --color-team-chi: #ce1141;
+  --color-team-chi-fg: #ffffff;
+  --color-team-det: #1d42ba;
+  --color-team-det-fg: #ffffff;
+  --color-team-ind: #002d62;
+  --color-team-ind-fg: #fdbb30;
+  --color-team-lac: #c8102e;
+  --color-team-lac-fg: #ffffff;
+  --color-team-mem: #5d76a9;
+  --color-team-mem-fg: #12173f;
+  --color-team-min: #0c2340;
+  --color-team-min-fg: #78be20;
+  --color-team-nop: #0c2340;
+  --color-team-nop-fg: #ffffff;
+  --color-team-orl: #0077c0;
+  --color-team-orl-fg: #ffffff;
+  --color-team-phi: #006bb6;
+  --color-team-phi-fg: #ffffff;
+  --color-team-sac: #5a2d81;
+  --color-team-sac-fg: #ffffff;
+  --color-team-uta: #002b5c;
+  --color-team-uta-fg: #f9a01b;
+  --color-team-was: #e31837;
+  --color-team-was-fg: #ffffff;
+  /* Historical abbreviations seen in 1996-97+ data */
+  --color-team-sea: #00653a;
+  --color-team-sea-fg: #ffc200;
+  --color-team-van: #00b2a9;
+  --color-team-van-fg: #000000;
+  --color-team-njn: #002a60;
+  --color-team-njn-fg: #ffffff;
+  --color-team-noh: #00778b;
+  --color-team-noh-fg: #ffffff;
+  --color-team-nok: #00778b;
+  --color-team-nok-fg: #ffffff;
+  --color-team-chh: #00778b;
+  --color-team-chh-fg: #ffffff;
+
+  /* ---------- Type ---------- */
+  --font-display: var(--font-oswald), "Arial Narrow", system-ui, sans-serif;
+  --font-body: var(--font-inter), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --tracking-display: 0.03em;
+  --tracking-label: 0.08em;
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-lg: 18px;
+  --text-lg--line-height: 26px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-2xl: 24px;
+  --text-2xl--line-height: 30px;
+  --text-3xl: 32px;
+  --text-3xl--line-height: 38px;
+  --text-4xl: 40px;
+  --text-4xl--line-height: 44px;
+  --text-5xl: 56px;
+  --text-5xl--line-height: 58px;
+
+  /* ---------- Radius ---------- */
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  /* ---------- Shadow ---------- */
+  --shadow-sm: 0 1px 2px #00000066;
+  --shadow-md: 0 6px 20px #00000080;
+  --shadow-lg: 0 18px 48px #000000a6;
+  --shadow-glow-accent: 0 0 0 1px #ff6b1a66, 0 8px 28px #ff6b1a40;
+  --shadow-glow-success: 0 0 0 1px #22c55e80, 0 0 24px #22c55e59;
+  --shadow-glow-danger: 0 0 0 1px #f8717180, 0 0 20px #f8717140;
+
+  /* ---------- Spacing (4 px base) ---------- */
+  --spacing: 4px;
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-10: 40px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-20: 80px;
+  --spacing-touch: 44px;
+  --spacing-gutter: 16px;
+  --spacing-container: 1200px;
+  --spacing-topnav: 64px;
+  --spacing-tabbar: 64px;
+
+  /* ---------- Motion ---------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration-base: 250ms;
+  --duration-slow: 400ms;
+  --duration-feedback: 1500ms;
+  --duration-pulse: 800ms;
+
+  /* ---------- Breakpoints ---------- */
+  --breakpoint-md: 768px;
+  --breakpoint-xl: 1280px;
+
+  /* ============================================================
+     Visual refresh (2026-11, user request: more colour, modern, animated).
+     design.html stays the structural base; these tokens feed the "Visual refresh layer" at the end of this file.
+     Every text colour below is ≥4.5:1 on --color-bg/--color-surface and
+     --color-on-accent text is ≥4.5:1 on top of each (ratios in the refresh-layer header below).
+     ============================================================ */
+  /* Per-mode identity (gradient from → to) */
+  --color-mode-starting-five-from: #ff6b1a;
+  --color-mode-starting-five-to: #fb7185;
+  --color-mode-team-journey-from: #a78bfa;
+  --color-mode-team-journey-to: #60a5fa;
+  --color-mode-teammate-challenge-from: #2dd4bf;
+  --color-mode-teammate-challenge-to: #4ade80;
+  --color-mode-career-stats-from: #38bdf8;
+  --color-mode-career-stats-to: #22d3ee;
+  --color-mode-box-score-from: #e879f9;
+  --color-mode-box-score-to: #f472b6;
+  --color-mode-top-10-from: #fde047;
+  --color-mode-top-10-to: #fbbf24;
+
+  /* Ambient "court lights" (decorative only, always used at ≤14% opacity) */
+  --color-aurora-violet: #8b5cf6;
+  --color-aurora-cyan: #06b6d4;
+  --color-aurora-rose: #f43f5e;
+
+  /* Glass surfaces */
+  --color-glass: #16171bb8;
+  --color-glass-strong: #1f2026e0;
+  --color-glass-border: #ffffff14;
+  --color-glass-highlight: #ffffff24;
+
+  /* Streak heat: hot (2–4) → fire → blaze glow (5+) */
+  --color-streak-hot: #ff8a3d;
+  --color-streak-fire: #f43f5e;
+  --color-streak-blaze: #c084fc;
+
+  /* Secondary hues (gradients, score toast, badges) */
+  --color-success-2: #2dd4bf;
+  --color-accent-2: #fb7185;
+  --color-gold-deep: #e0a526;
+  --color-silver-deep: #9aa1b0;
+  --color-bronze-deep: #b4703f;
+
+  /* Achievement identity (medal colour when earned) */
+  --color-badge-first-game: #4ade80;
+  --color-badge-perfect-10: #a78bfa;
+  --color-badge-streak-5: #ff8a3d;
+  --color-badge-streak-10: #fb7185;
+  --color-badge-expert-win: #e879f9;
+  --color-badge-all-modes: #38bdf8;
+  --color-badge-daily-3: #2dd4bf;
+  --color-badge-points-10k: #fde047;
+
+  --text-6xl: 72px;
+  --text-6xl--line-height: 72px;
+
+  --blur-glass: 16px;
+  --shadow-card-hover: 0 22px 50px #00000099;
+  --shadow-inset-highlight: inset 0 1px 0 #ffffff14;
+
+  --spacing-container-wide: 1360px;
+
+  --duration-reveal: 600ms;
+  --duration-count: 900ms;
+  --duration-shine: 600ms;
+  /* Ambient background drift: decorative, never tied to interaction */
+  --duration-ambient: 24s;
+  --duration-ring: 8s;
+}
+
+/* ============================================================
+   Visual refresh layer (2026-11, user request: "more modern, responsive, animated, more colour").
+   design.css (design/design.html) stays the structural base; this file only adds colour, glass,
+   depth and motion on top of the same class names / data attributes. No hex here: every value
+   comes from the @theme tokens in globals.css (colour mixes are composed from those tokens).
+
+   Contrast checked (WCAG 2.x, text on #0b0b0d bg / #16171b surface; dark #0b0b0d text on fill):
+   mode starting-five #ff6b1a 6.90/6.29 · #fb7185 7.31/6.65 · team-journey #a78bfa 7.23/6.58 ·
+   #60a5fa 7.73/7.04 · teammate #2dd4bf 10.56/9.62 · #4ade80 11.29/10.28 · career #38bdf8 9.18/8.36 ·
+   #22d3ee 10.88/9.91 · box-score #e879f9 7.99/7.28 · #f472b6 7.42/6.76 · top-10 #fde047 14.92 ·
+   #fbbf24 11.78 · streak #ff8a3d 8.39 · #f43f5e 5.36 · #c084fc 7.44 · gold-deep 8.97 ·
+   silver-deep 7.58 · bronze-deep 4.99. Same ratios apply to dark text on each fill (all ≥4.5).
+   Aurora tints stay ≤14% so muted text keeps ≥4.5:1 on tinted surfaces.
+   ============================================================ */
+
+@property --count {
+  syntax: "<integer>";
+  inherits: false;
+  initial-value: 0;
+}
+
+:root {
+  --mode-from: var(--color-accent);
+  --mode-to: var(--color-accent-2);
+  --mode-grad: linear-gradient(120deg, var(--mode-from), var(--mode-to));
+  --brand-grad: linear-gradient(120deg, var(--color-accent), var(--color-accent-2));
+}
+
+/* ---------- Mode identity: one place maps a mode slug to its colours ---------- */
+[data-mode-theme="starting-five"],
+.game-card[data-mode="starting-five"],
+.question-card[data-mode="starting-five"],
+.game-stage:has(.question-card[data-mode="starting-five"]) {
+  --mode-from: var(--color-mode-starting-five-from);
+  --mode-to: var(--color-mode-starting-five-to);
+}
+[data-mode-theme="team-journey"],
+.game-card[data-mode="team-journey"],
+.question-card[data-mode="team-journey"],
+.game-stage:has(.question-card[data-mode="team-journey"]) {
+  --mode-from: var(--color-mode-team-journey-from);
+  --mode-to: var(--color-mode-team-journey-to);
+}
+[data-mode-theme="teammate-challenge"],
+.game-card[data-mode="teammate-challenge"],
+.question-card[data-mode="teammate-challenge"],
+.game-stage:has(.question-card[data-mode="teammate-challenge"]) {
+  --mode-from: var(--color-mode-teammate-challenge-from);
+  --mode-to: var(--color-mode-teammate-challenge-to);
+}
+[data-mode-theme="career-stats"],
+.game-card[data-mode="career-stats"],
+.question-card[data-mode="career-stats"],
+.game-stage:has(.question-card[data-mode="career-stats"]) {
+  --mode-from: var(--color-mode-career-stats-from);
+  --mode-to: var(--color-mode-career-stats-to);
+}
+[data-mode-theme="box-score"],
+.game-card[data-mode="box-score"],
+.question-card[data-mode="box-score"],
+.game-stage:has(.question-card[data-mode="box-score"]) {
+  --mode-from: var(--color-mode-box-score-from);
+  --mode-to: var(--color-mode-box-score-to);
+}
+[data-mode-theme="top-10"],
+.game-card[data-mode="top-10"],
+.question-card[data-mode="top-10"],
+.game-stage:has(.question-card[data-mode="top-10"]) {
+  --mode-from: var(--color-mode-top-10-from);
+  --mode-to: var(--color-mode-top-10-to);
+}
+/* Inside a mode, every accent-coloured detail (stat highlights, hidden Top-10 rank, links) follows
+   the mode hue. --mode-from inherits as an already-resolved colour, so there is no var() cycle. */
+[data-mode-theme],
+.game-stage {
+  --color-accent: var(--mode-from);
+}
+/* Re-declare so --mode-grad picks up the overridden stops on the element that sets them. */
+[data-mode-theme],
+.game-card[data-mode],
+.question-card[data-mode],
+.game-stage {
+  --mode-grad: linear-gradient(120deg, var(--mode-from), var(--mode-to));
+}
+
+/* ============================================================
+   BACKGROUND — ambient court lights behind everything
+   ============================================================ */
+body {
+  position: relative;
+  isolation: isolate;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      40vmax 30vmax at 15% 10%,
+      color-mix(in srgb, var(--color-accent) 14%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      36vmax 28vmax at 85% 15%,
+      color-mix(in srgb, var(--color-aurora-violet) 13%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      40vmax 30vmax at 70% 85%,
+      color-mix(in srgb, var(--color-aurora-cyan) 9%, transparent),
+      transparent 70%
+    ),
+    radial-gradient(
+      30vmax 24vmax at 10% 80%,
+      color-mix(in srgb, var(--color-aurora-rose) 8%, transparent),
+      transparent 70%
+    );
+  animation: aurora-drift var(--duration-ambient) var(--ease-in-out) infinite alternate;
+  will-change: transform;
+}
+
+/* ============================================================
+   LAYOUT CHROME
+   ============================================================ */
+.top-nav {
+  background: color-mix(in srgb, var(--color-bg) 62%, transparent);
+  backdrop-filter: blur(var(--blur-glass)) saturate(1.4);
+  border-bottom-color: var(--color-glass-border);
+}
+.top-nav::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    color-mix(in srgb, var(--color-accent) 70%, transparent),
+    color-mix(in srgb, var(--color-aurora-violet) 70%, transparent),
+    color-mix(in srgb, var(--color-aurora-cyan) 60%, transparent),
+    transparent
+  );
+  opacity: 0.6;
+  pointer-events: none;
+}
+.logo__mark {
+  transition: transform var(--duration-slow) var(--ease-spring);
+}
+.logo:hover .logo__mark {
+  transform: rotate(200deg) scale(1.08);
+}
+.logo__accent {
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Active link: gradient underline that grows in, replaces the flat inset shadow */
+.top-nav__link {
+  position: relative;
+}
+.top-nav__link::after {
+  content: "";
+  position: absolute;
+  left: var(--spacing-3);
+  right: var(--spacing-3);
+  bottom: 4px;
+  height: 2px;
+  border-radius: var(--radius-full);
+  background: var(--brand-grad);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform var(--duration-base) var(--ease-out);
+}
+.top-nav__link:hover::after {
+  transform: scaleX(0.5);
+}
+.top-nav__link[aria-current="page"] {
+  box-shadow: none;
+  border-radius: var(--radius-md);
+}
+.top-nav__link[aria-current="page"]::after {
+  transform: scaleX(1);
+}
+.points-pill {
+  background: color-mix(in srgb, var(--color-accent) 10%, var(--color-glass-strong));
+  border-color: color-mix(in srgb, var(--color-accent) 35%, transparent);
+  box-shadow: 0 0 18px color-mix(in srgb, var(--color-accent) 18%, transparent);
+}
+.user-chip {
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+.user-chip:hover {
+  transform: scale(1.06);
+}
+
+.bottom-tab-bar {
+  background: color-mix(in srgb, var(--color-surface) 70%, transparent);
+  backdrop-filter: blur(var(--blur-glass)) saturate(1.4);
+  border-top-color: var(--color-glass-border);
+}
+.bottom-tab-bar__item {
+  position: relative;
+  transition: color var(--duration-fast) var(--ease-out);
+}
+.bottom-tab-bar__item .icon {
+  transition: transform var(--duration-base) var(--ease-spring);
+}
+.bottom-tab-bar__item[aria-current="page"] .icon {
+  transform: translateY(-2px);
+  filter: drop-shadow(0 0 8px color-mix(in srgb, var(--color-accent) 60%, transparent));
+}
+.bottom-tab-bar__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 30%;
+  right: 30%;
+  height: 3px;
+  border-radius: 0 0 var(--radius-full) var(--radius-full);
+  background: var(--brand-grad);
+  transform: scaleX(0);
+  transition: transform var(--duration-base) var(--ease-out);
+}
+.bottom-tab-bar__item[aria-current="page"]::before {
+  transform: scaleX(1);
+}
+
+/* Page header: soft coloured glow + gradient eyebrow */
+.page-header {
+  position: relative;
+}
+.page-header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -10%;
+  top: -40px;
+  width: min(560px, 90%);
+  height: 220px;
+  pointer-events: none;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--mode-from) 16%, transparent),
+    transparent
+  );
+  filter: blur(8px);
+}
+.page-header__eyebrow {
+  background: var(--mode-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.page-header__title {
+  animation: rise-in var(--duration-reveal) var(--ease-out) both;
+}
+[data-mode-theme] .page-header__title {
+  background: var(--mode-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+}
+.page-header__desc {
+  animation: rise-in var(--duration-reveal) var(--ease-out) 80ms both;
+}
+
+.footer {
+  border-top-color: var(--color-glass-border);
+  background: linear-gradient(
+    180deg,
+    transparent,
+    color-mix(in srgb, var(--color-bg) 80%, transparent)
+  );
+}
+
+/* ============================================================
+   BASE COMPONENTS
+   ============================================================ */
+.card {
+  position: relative;
+  background:
+    linear-gradient(180deg, var(--color-glass-highlight), transparent 120px) border-box,
+    var(--color-glass);
+  border-color: var(--color-glass-border);
+  box-shadow: var(--shadow-inset-highlight);
+}
+.card[data-variant="raised"] {
+  background: var(--color-glass-strong);
+}
+.card[data-variant="interactive"]:hover {
+  box-shadow:
+    var(--shadow-card-hover),
+    0 0 0 1px color-mix(in srgb, var(--mode-from) 45%, transparent),
+    0 10px 40px color-mix(in srgb, var(--mode-from) 22%, transparent);
+  border-color: transparent;
+}
+
+/* Buttons: gradient primary with a shine sweep on hover */
+.btn {
+  overflow: hidden;
+  isolation: isolate;
+}
+.btn[data-variant="primary"] {
+  background: var(--brand-grad);
+  background-size: 140% 100%;
+  background-position: 0% 0;
+  transition:
+    background-position var(--duration-slow) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out),
+    color var(--duration-fast) var(--ease-out);
+}
+[data-mode-theme] .btn[data-variant="primary"],
+.game-card .btn[data-variant="primary"] {
+  background-image: var(--mode-grad);
+}
+.btn[data-variant="primary"]:hover,
+.btn[data-variant="primary"][data-state="hover"] {
+  background-position: 100% 0;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--mode-from) 50%, transparent),
+    0 10px 30px color-mix(in srgb, var(--mode-from) 35%, transparent);
+}
+.btn[data-variant="primary"]::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    color-mix(in srgb, var(--color-white) 45%, transparent) 50%,
+    transparent 65%
+  );
+  transform: translateX(-120%);
+  pointer-events: none;
+}
+.btn[data-variant="primary"]:hover::before {
+  transform: translateX(120%);
+  transition: transform var(--duration-shine) var(--ease-out);
+}
+.btn[data-variant="secondary"] {
+  background: var(--color-glass-strong);
+  border-color: var(--color-glass-highlight);
+}
+.btn[data-variant="secondary"]:hover {
+  border-color: color-mix(in srgb, var(--mode-from) 55%, transparent);
+  box-shadow: 0 0 22px color-mix(in srgb, var(--mode-from) 18%, transparent);
+}
+.btn[data-variant="ghost"]:hover {
+  background: color-mix(in srgb, var(--mode-from) 10%, var(--color-surface-2));
+}
+.btn[data-variant="ghost"] .icon {
+  transition: transform var(--duration-base) var(--ease-out);
+}
+.btn[data-variant="ghost"]:hover .icon:last-child {
+  transform: translateX(3px);
+}
+
+/* DifficultyBadge: glowing dot */
+.diff-badge::before {
+  box-shadow: 0 0 8px var(--diff);
+}
+
+/* Tabs: sliding pill indicator (position measured in tabs.tsx) */
+.tabs {
+  position: relative;
+  background: var(--color-glass);
+  border-color: var(--color-glass-border);
+}
+.tabs__tab {
+  position: relative;
+  z-index: 1;
+}
+.tabs[data-indicator="true"] .tabs__tab[aria-selected="true"] {
+  background: transparent;
+  box-shadow: none;
+}
+.tabs[data-indicator="true"]::before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: var(--spacing-1);
+  bottom: var(--spacing-1);
+  width: var(--tab-w, 0px);
+  transform: translateX(var(--tab-x, 0px));
+  border-radius: var(--radius-sm);
+  background: color-mix(in srgb, var(--color-accent) 16%, var(--color-surface-3));
+  box-shadow:
+    inset 0 -2px 0 var(--color-accent),
+    0 4px 16px color-mix(in srgb, var(--color-accent) 20%, transparent);
+  transition:
+    transform var(--duration-slow) var(--ease-spring),
+    width var(--duration-slow) var(--ease-spring);
+}
+
+/* Toast / modal: springier entrance */
+.toast {
+  animation-timing-function: var(--ease-spring);
+  backdrop-filter: blur(var(--blur-glass));
+}
+.modal__panel {
+  animation-timing-function: var(--ease-spring);
+  background: var(--color-glass-strong);
+  backdrop-filter: blur(var(--blur-glass));
+  border-color: var(--color-glass-highlight);
+}
+.modal {
+  backdrop-filter: blur(6px);
+}
+
+/* Skeleton: tinted shimmer */
+.skeleton {
+  background-image: linear-gradient(
+    90deg,
+    var(--color-surface-2) 0%,
+    color-mix(in srgb, var(--color-aurora-violet) 10%, var(--color-surface-3)) 50%,
+    var(--color-surface-2) 100%
+  );
+}
+
+/* EmptyState / ErrorState icon glow */
+.empty-state__icon,
+.error-state__icon {
+  box-shadow: 0 0 32px color-mix(in srgb, var(--color-accent) 22%, transparent);
+}
+
+/* ============================================================
+   HOME
+   ============================================================ */
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -40px 0 auto;
+  height: 420px;
+  pointer-events: none;
+  background:
+    radial-gradient(
+      closest-side at 30% 45%,
+      color-mix(in srgb, var(--color-accent) 22%, transparent),
+      transparent
+    ),
+    radial-gradient(
+      closest-side at 60% 30%,
+      color-mix(in srgb, var(--color-aurora-violet) 16%, transparent),
+      transparent
+    );
+  filter: blur(20px);
+  animation: glow-breathe 7s var(--ease-in-out) infinite alternate;
+}
+.hero > .stack > * {
+  animation: rise-in var(--duration-reveal) var(--ease-out) both;
+}
+.hero > .stack > :nth-child(2) {
+  animation-delay: 70ms;
+}
+.hero > .stack > :nth-child(3) {
+  animation-delay: 140ms;
+}
+.hero > .stack > :nth-child(4) {
+  animation-delay: 210ms;
+}
+.hero > :nth-child(2) {
+  animation: rise-in var(--duration-reveal) var(--ease-out) 260ms both;
+}
+.hero__title em {
+  display: inline-block;
+  background: linear-gradient(
+    100deg,
+    var(--color-accent),
+    var(--color-accent-2),
+    var(--color-streak-blaze),
+    var(--color-accent)
+  );
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation:
+    rise-in var(--duration-reveal) var(--ease-out) 180ms both,
+    gradient-pan 8s linear 800ms infinite;
+  padding-right: 0.06em;
+}
+.hero__lead {
+  max-width: 52ch;
+}
+
+.summary-strip .stat-tile,
+.profile-tiles .stat-tile {
+  position: relative;
+  overflow: hidden;
+}
+.summary-strip .stat-tile::before,
+.profile-tiles .stat-tile::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, var(--tile-from), var(--tile-to));
+}
+.summary-strip .stat-tile::after,
+.profile-tiles .stat-tile::after {
+  content: "";
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  width: 110px;
+  height: 110px;
+  border-radius: var(--radius-full);
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--tile-from) 18%, transparent),
+    transparent
+  );
+  pointer-events: none;
+}
+.summary-strip .stat-tile:nth-child(1),
+.profile-tiles .stat-tile:nth-child(1) {
+  --tile-from: var(--color-accent);
+  --tile-to: var(--color-accent-2);
+}
+.summary-strip .stat-tile:nth-child(2),
+.profile-tiles .stat-tile:nth-child(2) {
+  --tile-from: var(--color-mode-career-stats-from);
+  --tile-to: var(--color-mode-team-journey-from);
+}
+.summary-strip .stat-tile:nth-child(3),
+.profile-tiles .stat-tile:nth-child(3) {
+  --tile-from: var(--color-mode-teammate-challenge-from);
+  --tile-to: var(--color-mode-teammate-challenge-to);
+}
+.summary-strip .stat-tile:nth-child(4),
+.profile-tiles .stat-tile:nth-child(4) {
+  --tile-from: var(--color-mode-box-score-from);
+  --tile-to: var(--color-streak-blaze);
+}
+.summary-strip > *,
+.profile-tiles > * {
+  animation: rise-in var(--duration-reveal) var(--ease-out) both;
+}
+.summary-strip > :nth-child(2),
+.profile-tiles > :nth-child(2) {
+  animation-delay: 60ms;
+}
+.summary-strip > :nth-child(3),
+.profile-tiles > :nth-child(3) {
+  animation-delay: 120ms;
+}
+.summary-strip > :nth-child(4),
+.profile-tiles > :nth-child(4) {
+  animation-delay: 180ms;
+}
+
+.stat-tile {
+  background: var(--color-glass);
+  border-color: var(--color-glass-border);
+}
+
+/* Count-up: real text stays in the DOM (tests + screen readers); ::after rolls the number. */
+.count-up {
+  position: relative;
+  animation: count-host var(--duration-count) steps(1, end) both;
+}
+.count-up::after {
+  content: counter(count-up);
+  counter-reset: count-up var(--count);
+  position: absolute;
+  inset: 0;
+  color: var(--count-color, var(--color-text));
+  -webkit-text-fill-color: var(--count-color, var(--color-text));
+  white-space: nowrap;
+  pointer-events: none;
+  animation: count-run var(--duration-count) var(--ease-out) forwards;
+}
+.count-up.t-accent {
+  --count-color: var(--color-accent);
+}
+
+/* Featured / Games grid: staggered entrance */
+.grid--3 > *,
+.achievements > * {
+  animation: rise-in var(--duration-reveal) var(--ease-out) both;
+}
+.grid--3 > :nth-child(2),
+.achievements > :nth-child(2) {
+  animation-delay: 60ms;
+}
+.grid--3 > :nth-child(3),
+.achievements > :nth-child(3) {
+  animation-delay: 120ms;
+}
+.grid--3 > :nth-child(4),
+.achievements > :nth-child(4) {
+  animation-delay: 180ms;
+}
+.grid--3 > :nth-child(5),
+.achievements > :nth-child(5) {
+  animation-delay: 240ms;
+}
+.grid--3 > :nth-child(n + 6),
+.achievements > :nth-child(n + 6) {
+  animation-delay: 300ms;
+}
+
+/* Blocks below the fold fade up as they scroll in (progressive: Chromium only, no JS). */
+/* Targets never contain position:fixed overlays (modals/countdown), which a running translate would trap. */
+@supports (animation-timeline: view()) {
+  .block__head,
+  .history,
+  .leaderboard,
+  .achievements {
+    animation: reveal linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 40%;
+  }
+}
+
+/* ============================================================
+   GAME CARD — mode colour, gradient border, orb art, tilt, shine
+   ============================================================ */
+.game-card {
+  --tilt-x: 0deg;
+  --tilt-y: 0deg;
+  --spot-x: 50%;
+  --spot-y: 0%;
+  transform: perspective(900px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y));
+  transition:
+    transform var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out);
+}
+/* Gradient hairline border (mask keeps only the 1px ring) */
+.game-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  padding: 1px;
+  border-radius: inherit;
+  background: linear-gradient(
+    140deg,
+    color-mix(in srgb, var(--mode-from) 70%, transparent),
+    transparent 40%,
+    transparent 60%,
+    color-mix(in srgb, var(--mode-to) 55%, transparent)
+  );
+  -webkit-mask:
+    linear-gradient(var(--color-black) 0 0) content-box,
+    linear-gradient(var(--color-black) 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(var(--color-black) 0 0) content-box exclude,
+    linear-gradient(var(--color-black) 0 0);
+  opacity: 0.55;
+  pointer-events: none;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+/* Shine sweep across the card on hover */
+.game-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    color-mix(in srgb, var(--color-white) 10%, transparent) 48%,
+    transparent 62%
+  );
+  transform: translateX(-110%);
+}
+.game-card:hover::before,
+.game-card:focus-within::before {
+  opacity: 1;
+}
+.game-card:hover::after {
+  transform: translateX(110%);
+  transition: transform var(--duration-reveal) var(--ease-out);
+}
+.game-card[data-variant="interactive"]:hover {
+  transform: perspective(900px) rotateX(var(--tilt-x)) rotateY(var(--tilt-y)) translateY(-4px);
+}
+.game-card[data-spotlight="on"]:hover {
+  transition:
+    transform 80ms linear,
+    box-shadow var(--duration-base) var(--ease-out);
+}
+.spotlight {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(
+    260px circle at var(--spot-x) var(--spot-y),
+    color-mix(in srgb, var(--mode-from) 16%, transparent),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+.game-card:hover .spotlight {
+  opacity: 1;
+}
+.game-card__visual {
+  height: 128px;
+  color: var(--mode-from);
+  border-bottom-color: color-mix(in srgb, var(--mode-from) 25%, var(--color-border));
+  background:
+    radial-gradient(
+      120% 90% at 0% 0%,
+      color-mix(in srgb, var(--mode-from) 30%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      100% 90% at 100% 100%,
+      color-mix(in srgb, var(--mode-to) 24%, transparent),
+      transparent 60%
+    ),
+    var(--color-surface-2);
+}
+.game-card__visual::before,
+.game-card__visual::after {
+  border-color: color-mix(in srgb, var(--mode-from) 30%, transparent);
+}
+.game-card__orb {
+  position: absolute;
+  width: 96px;
+  height: 96px;
+  border-radius: var(--radius-full);
+  background: conic-gradient(var(--mode-from), var(--mode-to), transparent 60%, var(--mode-from));
+  filter: blur(22px);
+  opacity: 0.55;
+  animation: spin var(--duration-ring) linear infinite;
+}
+.game-card__glyph {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-xl);
+  color: var(--color-on-accent);
+  background: var(--mode-grad);
+  border: 0;
+  box-shadow:
+    0 10px 30px color-mix(in srgb, var(--mode-from) 40%, transparent),
+    inset 0 1px 0 color-mix(in srgb, var(--color-white) 45%, transparent);
+  transition: transform var(--duration-slow) var(--ease-spring);
+}
+.game-card:hover .game-card__glyph {
+  transform: translateY(-4px) rotate(-6deg) scale(1.06);
+}
+.game-card__index {
+  color: var(--mode-from);
+  z-index: 1;
+}
+.game-card__rules .icon {
+  color: var(--mode-from);
+}
+.game-card__body {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================================
+   GAME DETAIL — intro, HUD, question, answers, feedback
+   ============================================================ */
+/* Mode edge (3px gradient) + corner glow as background layers: clipped by the radius,
+   and nothing overflows, so the ScoreToast can still float above the question card. */
+[data-mode-theme] .split > .card,
+.game-stage .question-card,
+.game-hud {
+  background:
+    var(--mode-grad) top / 100% 3px no-repeat,
+    radial-gradient(
+      280px 220px at 100% 0%,
+      color-mix(in srgb, var(--mode-from) 14%, transparent),
+      transparent 70%
+    ),
+    linear-gradient(180deg, var(--color-glass-highlight), transparent 120px),
+    var(--color-glass);
+}
+[data-mode-theme] .badge[data-variant="accent"] {
+  color: var(--mode-from);
+  background: color-mix(in srgb, var(--mode-from) 14%, transparent);
+  border-color: color-mix(in srgb, var(--mode-from) 40%, transparent);
+}
+[data-mode-theme] .game-card__rules .icon {
+  color: var(--mode-from);
+}
+
+/* DifficultySelector: coloured gradient tint + glow when picked */
+.difficulty-option {
+  background: var(--color-glass-strong);
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out);
+}
+.difficulty-option:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--diff) 50%, var(--color-border));
+}
+.difficulty-option:has(input:checked) {
+  background:
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--diff) 22%, transparent),
+      color-mix(in srgb, var(--diff) 4%, transparent)
+    ),
+    var(--color-surface-2);
+  box-shadow:
+    inset 0 0 0 1px var(--diff),
+    0 8px 26px color-mix(in srgb, var(--diff) 25%, transparent);
+}
+
+/* HUD */
+.game-hud {
+  position: relative;
+  border-color: var(--color-glass-border);
+  box-shadow: var(--shadow-inset-highlight);
+}
+.game-hud__score-value {
+  background: var(--mode-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.question-progress__seg {
+  transition:
+    background-color var(--duration-base) var(--ease-out),
+    transform var(--duration-base) var(--ease-spring);
+}
+.question-progress__seg[data-state="current"] {
+  background: var(--mode-grad);
+  transform: scaleY(1.5);
+  box-shadow: 0 0 8px color-mix(in srgb, var(--mode-from) 60%, transparent);
+}
+.question-progress__seg[data-state="correct"] {
+  box-shadow: 0 0 6px color-mix(in srgb, var(--color-success) 50%, transparent);
+}
+
+/* TimerBar: mode gradient that shifts to warning → danger, with a glowing head */
+.timer-bar__track {
+  background: color-mix(in srgb, var(--color-surface-3) 80%, transparent);
+}
+.timer-bar__fill {
+  background: var(--mode-grad);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--mode-from) 55%, transparent);
+}
+.timer-bar[data-state="warning"] .timer-bar__fill {
+  background: linear-gradient(90deg, var(--color-danger), var(--color-warning));
+  box-shadow: 0 0 14px color-mix(in srgb, var(--color-warning) 65%, transparent);
+}
+.timer-bar[data-state="expired"] .timer-bar__fill {
+  background: var(--color-danger);
+}
+
+/* StreakMeter: heat scale */
+.streak-meter {
+  background: var(--color-glass-strong);
+  transition:
+    color var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out),
+    background-color var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-slow) var(--ease-out);
+}
+.streak-meter[data-state="hot"] {
+  color: var(--color-streak-hot);
+  border-color: color-mix(in srgb, var(--color-streak-hot) 55%, transparent);
+  box-shadow: 0 0 16px color-mix(in srgb, var(--color-streak-hot) 30%, transparent);
+}
+.streak-meter[data-state="hot"] .icon {
+  filter: drop-shadow(0 0 4px var(--color-streak-hot));
+}
+.streak-meter[data-state="fire"] {
+  color: var(--color-on-accent);
+  border-color: transparent;
+  background: linear-gradient(
+    110deg,
+    var(--color-streak-hot),
+    var(--color-streak-fire),
+    var(--color-streak-blaze)
+  );
+  background-size: 200% 100%;
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-streak-blaze) 60%, transparent),
+    0 0 26px color-mix(in srgb, var(--color-streak-blaze) 50%, transparent),
+    0 0 12px color-mix(in srgb, var(--color-streak-fire) 45%, transparent);
+  animation: gradient-pan 3s linear infinite;
+}
+
+/* Question card: mode edge + glass */
+.question-card__prompt {
+  text-wrap: balance;
+}
+
+/* AnswerOption: mode glow on hover, burst on correct, flash + shake on wrong */
+.answer-option {
+  background: var(--color-glass-strong);
+  border-color: var(--color-glass-highlight);
+  min-height: 60px;
+  transition:
+    background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out),
+    opacity var(--duration-base) var(--ease-out);
+}
+.answer-option:hover:not(:disabled) {
+  border-color: color-mix(in srgb, var(--mode-from) 65%, transparent);
+  background: color-mix(in srgb, var(--mode-from) 8%, var(--color-surface-2));
+  box-shadow: 0 6px 24px color-mix(in srgb, var(--mode-from) 18%, transparent);
+  transform: translateY(-1px);
+}
+.answer-option:hover:not(:disabled) .answer-option__key {
+  border-color: var(--mode-from);
+  color: var(--mode-from);
+}
+.answer-option__key {
+  transition:
+    border-color var(--duration-fast) var(--ease-out),
+    color var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out);
+}
+.answer-option[data-state="correct"] {
+  background:
+    linear-gradient(
+      120deg,
+      color-mix(in srgb, var(--color-success) 26%, transparent),
+      color-mix(in srgb, var(--color-success-2) 12%, transparent)
+    ),
+    var(--color-surface-2);
+}
+/* Confetti-lite: eight dots burst from the centre once (box-shadow particles, no DOM) */
+.answer-option[data-state="correct"]::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: var(--radius-full);
+  pointer-events: none;
+  box-shadow:
+    0 -26px 0 0 var(--color-success),
+    22px -14px 0 0 var(--color-mode-top-10-from),
+    28px 8px 0 0 var(--color-success-2),
+    10px 26px 0 0 var(--color-mode-career-stats-from),
+    -12px 26px 0 0 var(--color-mode-box-score-from),
+    -28px 8px 0 0 var(--color-success),
+    -22px -14px 0 0 var(--color-accent),
+    0 0 0 0 var(--color-success);
+  animation: burst var(--duration-reveal) var(--ease-out) both;
+}
+.answer-option[data-state="correct"]::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-success) 60%, transparent);
+  animation: ring-out var(--duration-reveal) var(--ease-out) both;
+}
+.answer-option[data-state="wrong"] {
+  animation:
+    shake 360ms var(--ease-out),
+    wrong-flash var(--duration-reveal) var(--ease-out);
+}
+
+.feedback-banner[data-state="correct"] {
+  background: linear-gradient(
+    120deg,
+    color-mix(in srgb, var(--color-success) 20%, transparent),
+    color-mix(in srgb, var(--color-success-2) 10%, transparent)
+  );
+  box-shadow: 0 0 24px color-mix(in srgb, var(--color-success) 18%, transparent);
+}
+
+/* ScoreToast: gradient pill with a ring flash */
+.score-toast {
+  background: linear-gradient(120deg, var(--color-success), var(--color-success-2));
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--color-success) 60%, transparent),
+    0 10px 36px color-mix(in srgb, var(--color-success-2) 45%, transparent);
+}
+
+/* PlayerSearch: mode focus glow */
+.player-search .input:focus,
+.player-search input:focus-visible {
+  border-color: var(--mode-from);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--mode-from) 22%, transparent);
+}
+
+/* Countdown 3-2-1: gradient numeral + expanding ring */
+.countdown {
+  background: color-mix(in srgb, var(--color-bg) 80%, transparent);
+  backdrop-filter: blur(10px);
+}
+.countdown__num {
+  position: relative;
+  background: var(--mode-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 30px color-mix(in srgb, var(--mode-from) 45%, transparent));
+}
+
+/* ============================================================
+   RESULT SUMMARY
+   ============================================================ */
+.result-summary {
+  overflow: hidden;
+  isolation: isolate;
+}
+.result-summary__rays {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 70px;
+  width: 640px;
+  height: 640px;
+  margin-left: -320px;
+  margin-top: -320px;
+  border-radius: var(--radius-full);
+  pointer-events: none;
+  background:
+    radial-gradient(closest-side, var(--color-surface) 20%, transparent 70%),
+    repeating-conic-gradient(
+      color-mix(in srgb, var(--mode-from) 14%, transparent) 0deg 8deg,
+      transparent 8deg 22deg
+    );
+  -webkit-mask: radial-gradient(closest-side, var(--color-black) 30%, transparent);
+  mask: radial-gradient(closest-side, var(--color-black) 30%, transparent);
+  animation:
+    fade-in var(--duration-reveal) var(--ease-out) both,
+    spin 40s linear infinite;
+}
+.result-summary__score {
+  font-size: var(--text-6xl);
+  line-height: var(--text-6xl--line-height);
+  background: var(--mode-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 24px color-mix(in srgb, var(--mode-from) 35%, transparent));
+  --count-color: var(--mode-from);
+}
+.result-summary > * {
+  animation: rise-in var(--duration-reveal) var(--ease-out) both;
+}
+.result-summary > :nth-child(3) {
+  animation-delay: 60ms;
+}
+.result-summary > :nth-child(4) {
+  animation-delay: 140ms;
+}
+.result-summary > :nth-child(5) {
+  animation-delay: 220ms;
+}
+.result-summary > :nth-child(n + 6) {
+  animation-delay: 300ms;
+}
+.result-summary__rays {
+  animation-delay: 0ms;
+}
+
+/* ============================================================
+   COMPETITION — daily, leaderboard, achievements, profile
+   ============================================================ */
+.daily-card {
+  border-color: transparent;
+  background:
+    linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+    linear-gradient(
+        130deg,
+        var(--color-accent),
+        var(--color-aurora-violet),
+        var(--color-aurora-cyan),
+        var(--color-accent)
+      )
+      border-box;
+  background-size:
+    100% 100%,
+    300% 300%;
+  animation: border-pan 10s linear infinite;
+  box-shadow: 0 12px 40px color-mix(in srgb, var(--color-accent) 16%, transparent);
+}
+.daily-card::after {
+  border: 0;
+  background: radial-gradient(
+    closest-side,
+    color-mix(in srgb, var(--color-aurora-violet) 22%, transparent),
+    transparent
+  );
+}
+.daily-card__title {
+  background: linear-gradient(100deg, var(--color-text), var(--color-accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.countdown-chip strong {
+  color: var(--color-accent);
+}
+
+.leaderboard,
+.history {
+  background: var(--color-glass);
+  border-color: var(--color-glass-border);
+}
+.leaderboard__head {
+  background: color-mix(in srgb, var(--color-surface-2) 80%, transparent);
+}
+.leaderboard-row {
+  transition: background-color var(--duration-fast) var(--ease-out);
+  animation: rise-in var(--duration-slow) var(--ease-out) both;
+}
+.leaderboard-row:hover {
+  background: color-mix(in srgb, var(--color-aurora-violet) 7%, transparent);
+}
+.leaderboard__body > :nth-child(2) {
+  animation-delay: 40ms;
+}
+.leaderboard__body > :nth-child(3) {
+  animation-delay: 80ms;
+}
+.leaderboard__body > :nth-child(4) {
+  animation-delay: 120ms;
+}
+.leaderboard__body > :nth-child(5) {
+  animation-delay: 160ms;
+}
+.leaderboard__body > :nth-child(6) {
+  animation-delay: 200ms;
+}
+.leaderboard__body > :nth-child(7) {
+  animation-delay: 240ms;
+}
+.leaderboard__body > :nth-child(8) {
+  animation-delay: 280ms;
+}
+.leaderboard__body > :nth-child(n + 9) {
+  animation-delay: 300ms;
+}
+/* Podium: metallic gradient chips + tinted rows */
+.leaderboard-row[data-variant="gold"] .leaderboard-row__rank {
+  background: linear-gradient(140deg, var(--color-mode-top-10-from), var(--color-gold-deep));
+  box-shadow: 0 0 16px color-mix(in srgb, var(--color-gold) 55%, transparent);
+}
+.leaderboard-row[data-variant="silver"] .leaderboard-row__rank {
+  background: linear-gradient(140deg, var(--color-white), var(--color-silver-deep));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--color-silver) 40%, transparent);
+}
+.leaderboard-row[data-variant="bronze"] .leaderboard-row__rank {
+  background: linear-gradient(140deg, var(--color-bronze), var(--color-bronze-deep));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--color-bronze) 45%, transparent);
+}
+.leaderboard-row[data-variant="gold"] {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-gold) 14%, transparent),
+    transparent 70%
+  );
+}
+.leaderboard-row[data-variant="silver"] {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-silver) 10%, transparent),
+    transparent 70%
+  );
+}
+.leaderboard-row[data-variant="bronze"] {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-bronze) 12%, transparent),
+    transparent 70%
+  );
+}
+.leaderboard-row[data-variant="gold"] .leaderboard-row__points {
+  color: var(--color-gold);
+}
+.leaderboard-row[data-variant="you"] {
+  background: linear-gradient(
+    90deg,
+    color-mix(in srgb, var(--color-accent) 22%, var(--color-surface)),
+    color-mix(in srgb, var(--color-aurora-violet) 10%, var(--color-surface))
+  );
+}
+.leaderboard__you {
+  border-top-color: transparent;
+  box-shadow:
+    0 -1px 0 var(--color-accent),
+    0 -10px 30px color-mix(in srgb, var(--color-bg) 70%, transparent);
+}
+.you-tag {
+  background: var(--brand-grad);
+}
+
+/* Achievements: each badge has its own colour once earned */
+.achievement {
+  --badge: var(--color-accent);
+  position: relative;
+  overflow: hidden;
+  background: var(--color-glass-strong);
+  border-color: var(--color-glass-border);
+  transition:
+    transform var(--duration-base) var(--ease-out),
+    border-color var(--duration-base) var(--ease-out),
+    box-shadow var(--duration-base) var(--ease-out);
+}
+.achievement[data-achievement="first-game"] {
+  --badge: var(--color-badge-first-game);
+}
+.achievement[data-achievement="perfect-10"] {
+  --badge: var(--color-badge-perfect-10);
+}
+.achievement[data-achievement="streak-5"] {
+  --badge: var(--color-badge-streak-5);
+}
+.achievement[data-achievement="streak-10"] {
+  --badge: var(--color-badge-streak-10);
+}
+.achievement[data-achievement="expert-win"] {
+  --badge: var(--color-badge-expert-win);
+}
+.achievement[data-achievement="all-modes"] {
+  --badge: var(--color-badge-all-modes);
+}
+.achievement[data-achievement="daily-3"] {
+  --badge: var(--color-badge-daily-3);
+}
+.achievement[data-achievement="points-10k"] {
+  --badge: var(--color-badge-points-10k);
+}
+.achievement:not([data-state="locked"]) {
+  border-color: color-mix(in srgb, var(--badge) 35%, transparent);
+  background:
+    radial-gradient(
+      120% 80% at 50% 0%,
+      color-mix(in srgb, var(--badge) 16%, transparent),
+      transparent 70%
+    ),
+    var(--color-glass-strong);
+}
+.achievement:not([data-state="locked"]):hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--badge) 25%, transparent);
+}
+.achievement:not([data-state="locked"]) .achievement__medal {
+  color: var(--color-on-accent);
+  border: 0;
+  background:
+    radial-gradient(
+      circle at 30% 25%,
+      color-mix(in srgb, var(--color-white) 55%, transparent),
+      transparent 45%
+    ),
+    var(--badge);
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--badge) 25%, transparent),
+    0 8px 22px color-mix(in srgb, var(--badge) 40%, transparent);
+}
+.achievement[data-state="unlocking"] {
+  border-color: var(--badge);
+}
+.achievement[data-state="unlocking"] .achievement__medal {
+  box-shadow:
+    0 0 0 3px color-mix(in srgb, var(--badge) 35%, transparent),
+    0 0 36px color-mix(in srgb, var(--badge) 60%, transparent);
+}
+.achievement[data-state="unlocking"]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 30%,
+    color-mix(in srgb, var(--color-white) 22%, transparent) 50%,
+    transparent 70%
+  );
+  animation: shine-once 900ms var(--ease-out) 500ms both;
+}
+.achievement[data-state="locked"] {
+  opacity: 0.75;
+}
+
+/* Profile avatar: rotating conic ring */
+.profile-head__avatar {
+  position: relative;
+  background: var(--brand-grad);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--color-accent) 30%, transparent);
+}
+.profile-head__avatar::before {
+  content: "";
+  position: absolute;
+  inset: -5px;
+  z-index: -1;
+  border-radius: inherit;
+  background: conic-gradient(
+    var(--color-accent),
+    var(--color-streak-blaze),
+    var(--color-aurora-cyan),
+    var(--color-accent)
+  );
+  animation: spin var(--duration-ring) linear infinite;
+}
+.profile-head {
+  isolation: isolate;
+}
+.history__item {
+  transition: background-color var(--duration-fast) var(--ease-out);
+}
+.history__item:hover {
+  background: color-mix(in srgb, var(--color-aurora-violet) 6%, transparent);
+}
+.nickname-cta,
+.nudge {
+  background: linear-gradient(
+    110deg,
+    color-mix(in srgb, var(--color-accent) 14%, var(--color-surface)),
+    color-mix(in srgb, var(--color-aurora-violet) 10%, var(--color-surface))
+  );
+}
+
+/* 404 */
+.not-found__code,
+.nf__code {
+  background: var(--brand-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ============================================================
+   RESPONSIVE additions
+   ============================================================ */
+@media (max-width: 767px) {
+  .screen .block {
+    margin-top: var(--spacing-6);
+  }
+  .screen .block--tight {
+    margin-top: var(--spacing-3);
+  }
+  .game-card__visual {
+    height: 108px;
+  }
+  .result-summary__score {
+    font-size: var(--text-5xl);
+    line-height: var(--text-5xl--line-height);
+  }
+  .page-header::before {
+    left: -20%;
+  }
+}
+@media (min-width: 1024px) {
+  .grid--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero {
+    grid-template-columns: 1.3fr 1fr;
+    align-items: center;
+    padding-top: var(--spacing-12);
+  }
+  .hero__title {
+    font-size: var(--text-6xl);
+    line-height: var(--text-6xl--line-height);
+  }
+  .grid--3,
+  .grid--2 {
+    gap: var(--spacing-6);
+  }
+}
+@media (min-width: 1280px) {
+  .hero {
+    padding-top: var(--spacing-16);
+    padding-bottom: var(--spacing-10);
+  }
+}
+@media (min-width: 1536px) {
+  :root {
+    --spacing-container: var(--spacing-container-wide);
+  }
+  .game-layout {
+    grid-template-columns: minmax(0, 1fr) 420px;
+  }
+}
+
+/* ============================================================
+   KEYFRAMES
+   ============================================================ */
+@keyframes aurora-drift {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  to {
+    transform: translate3d(-4vmax, 3vmax, 0) scale(1.08);
+  }
+}
+@keyframes glow-breathe {
+  from {
+    opacity: 0.7;
+    transform: scale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+}
+/* `translate` (not `transform`) so entrances never override a component's own transform (GameCard tilt). */
+@keyframes rise-in {
+  from {
+    opacity: 0;
+    translate: 0 14px;
+  }
+  to {
+    opacity: 1;
+    translate: none;
+  }
+}
+@keyframes reveal {
+  from {
+    opacity: 0.35;
+    translate: 0 24px;
+  }
+  to {
+    opacity: 1;
+    translate: none;
+  }
+}
+@keyframes gradient-pan {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 200% 50%;
+  }
+}
+@keyframes border-pan {
+  from {
+    background-position:
+      0 0,
+      0% 50%;
+  }
+  to {
+    background-position:
+      0 0,
+      300% 50%;
+  }
+}
+@keyframes count-host {
+  from {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    background-size: 0 0;
+  }
+}
+@keyframes count-run {
+  from {
+    --count: 0;
+    visibility: visible;
+  }
+  99% {
+    visibility: visible;
+  }
+  to {
+    --count: var(--count-to);
+    visibility: hidden;
+  }
+}
+@keyframes burst {
+  0% {
+    opacity: 1;
+    transform: scale(0.2);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2.4);
+  }
+}
+@keyframes ring-out {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-success) 60%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 14px color-mix(in srgb, var(--color-success) 0%, transparent);
+  }
+}
+@keyframes wrong-flash {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-danger) 0%, transparent);
+  }
+  30% {
+    box-shadow: 0 0 26px color-mix(in srgb, var(--color-danger) 45%, transparent);
+  }
+  100% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-danger) 0%, transparent);
+  }
+}
+@keyframes shine-once {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(110%);
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION — ambient/decorative motion off, entrances → opacity only
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  .hero::before,
+  .game-card__orb,
+  .result-summary__rays,
+  .profile-head__avatar::before,
+  .daily-card,
+  .streak-meter[data-state="fire"],
+  .hero__title em,
+  .answer-option[data-state="correct"]::after,
+  .answer-option[data-state="correct"]::before,
+  .achievement[data-state="unlocking"]::after {
+    animation: none !important;
+  }
+  .answer-option[data-state="correct"]::after,
+  .achievement[data-state="unlocking"]::after,
+  .btn[data-variant="primary"]::before,
+  .game-card::after {
+    display: none;
+  }
+  .count-up {
+    animation: none !important;
+  }
+  .count-up::after {
+    content: none;
+  }
+  .hero > .stack > *,
+  .hero > :nth-child(2),
+  .summary-strip > *,
+  .profile-tiles > *,
+  .grid--3 > *,
+  .achievements > *,
+  .leaderboard-row,
+  .result-summary > *,
+  .page-header__title,
+  .page-header__desc {
+    animation: fade-in var(--duration-base) linear both !important;
+  }
+  .block__head,
+  .history,
+  .leaderboard,
+  .achievements {
+    animation: none !important;
+  }
+  .game-card,
+  .game-card[data-variant="interactive"]:hover,
+  .game-card:hover .game-card__glyph,
+  .difficulty-option:hover,
+  .achievement:not([data-state="locked"]):hover,
+  .answer-option:hover:not(:disabled),
+  .logo:hover .logo__mark {
+    transform: none;
+  }
+  .answer-option[data-state="wrong"] {
+    animation: fade-in var(--duration-base) linear both !important;
+  }
+}
