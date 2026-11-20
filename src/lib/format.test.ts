@@ -8,6 +8,7 @@ import {
   initials,
   teamKey,
 } from "./format";
+import { en } from "./i18n";
 import { difficultyMeta, isGameModeSlug } from "./modes";
 
 describe("format", () => {
@@ -45,10 +46,10 @@ describe("modes", () => {
   });
 
   it("derives difficulty meta from the real rules", () => {
-    expect(difficultyMeta("starting-five", "easy")).toBe("4 options · 30s");
-    expect(difficultyMeta("starting-five", "medium")).toBe("6 options · 25s");
-    expect(difficultyMeta("box-score", "hard")).toBe("Search · 20s");
-    expect(difficultyMeta("box-score", "expert")).toBe("Search · 20s · fewer hints");
-    expect(difficultyMeta("top-10", "expert")).toBe("5 blanks · 60s");
+    expect(difficultyMeta("starting-five", "easy", en)).toBe("4 options · 30s");
+    expect(difficultyMeta("starting-five", "medium", en)).toBe("6 options · 25s");
+    expect(difficultyMeta("box-score", "hard", en)).toBe("Search · 20s");
+    expect(difficultyMeta("box-score", "expert", en)).toBe("Search · 20s · fewer hints");
+    expect(difficultyMeta("top-10", "expert", en)).toBe("5 blanks · 60s");
   });
 });

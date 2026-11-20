@@ -45,3 +45,9 @@ export const TOP10_TIME_LIMIT_SEC = 60;
 export const TOP10_HIDDEN_ROWS: Record<Difficulty, number> = { easy: 2, medium: 3, hard: 4, expert: 5 };
 
 export const TEAMMATES_SHOWN: Record<Difficulty, number> = { easy: 5, medium: 5, hard: 3, expert: 2 };
+
+/**
+ * Era "current" Starting Five uses only lineups from the latest N seasons present in the data
+ * (today's teams); era "retired" uses the older ones (classic teams). ISKELET F16.
+ */
+export const CURRENT_ERA_LINEUP_SEASONS = 3;

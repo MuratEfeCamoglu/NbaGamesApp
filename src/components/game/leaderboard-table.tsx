@@ -1,6 +1,9 @@
+"use client";
+
 import type { ReactNode } from "react";
 import type { LeaderboardDTO } from "@/lib/api-types";
 import { fmtNumber } from "@/lib/format";
+import { useI18n } from "@/lib/i18n/provider";
 import { PlayerAvatar } from "./player-avatar";
 
 type Row = LeaderboardDTO["rows"][number];
@@ -26,10 +29,11 @@ export function LeaderboardRow({
   isMe?: boolean;
   as?: "li" | "div";
 }) {
+  const { t, locale } = useI18n();
   const variant: LeaderboardRowVariant = isMe ? "you" : medal(rank);
   return (
     <Tag className="leaderboard-row" data-component="LeaderboardRow" data-variant={variant}>
-      <span className="leaderboard-row__rank">{rank === null ? "—" : fmtNumber(rank)}</span>
+      <span className="leaderboard-row__rank">{rank === null ? "—" : fmtNumber(rank, locale)}</span>
       <span className="leaderboard-row__player">
         <PlayerAvatar name={name} size="sm" />
         <span className="stack stack--sm grow">
@@ -38,20 +42,20 @@ export function LeaderboardRow({
             {isMe ? (
               <>
                 {" "}
-                <span className="you-tag">You</span>
+                <span className="you-tag">{t.common.you}</span>
               </>
             ) : null}
           </span>
         </span>
       </span>
-      <span className="leaderboard-row__points">{fmtNumber(points)}</span>
+      <span className="leaderboard-row__points">{fmtNumber(points, locale)}</span>
     </Tag>
   );
 }
 
 interface LeaderboardTableProps {
   rows: Row[];
-  /** Sticky "You" row; null hides it (e.g. when you are already visible in a short list). */
+  /** Sticky "You" row. Shown only while your own row is not among `rows`; null hides it. */
   me?: { rank: number | null; points: number; name: string } | null;
   variant: "full" | "compact" | "daily";
   /** Rendered above the header (no-nickname call-out). */
@@ -59,14 +63,11 @@ interface LeaderboardTableProps {
   label?: string;
 }
 
-export function LeaderboardTable({
-  rows,
-  me,
-  variant,
-  callout,
-  label = "Top players",
-}: LeaderboardTableProps) {
+export function LeaderboardTable({ rows, me, variant, callout, label }: LeaderboardTableProps) {
+  const { t } = useI18n();
   const short = variant !== "full";
+  // Already listed (highlighted in place) → a second sticky copy would just repeat it.
+  const stickyMe = me && !rows.some((r) => r.isMe) ? me : null;
   return (
     <div
       className={short ? "leaderboard leaderboard--short" : "leaderboard"}
@@ -76,12 +77,12 @@ export function LeaderboardTable({
       {callout}
       {variant === "full" ? (
         <div className="leaderboard__head t-label" aria-hidden="true">
-          <span>Rank</span>
-          <span>Player</span>
-          <span>Points</span>
+          <span>{t.common.rank}</span>
+          <span>{t.common.player}</span>
+          <span>{t.common.points}</span>
         </div>
       ) : null}
-      <ol className="leaderboard__body" aria-label={label}>
+      <ol className="leaderboard__body" aria-label={label ?? t.leaderboard.defaultLabel}>
         {rows.map((r) => (
           <LeaderboardRow
             key={`${r.rank}-${r.nickname}`}
@@ -92,9 +93,15 @@ export function LeaderboardTable({
           />
         ))}
       </ol>
-      {me ? (
+      {stickyMe ? (
         <div className="leaderboard__you">
-          <LeaderboardRow as="div" rank={me.rank} name={me.name} points={me.points} isMe />
+          <LeaderboardRow
+            as="div"
+            rank={stickyMe.rank}
+            name={stickyMe.name}
+            points={stickyMe.points}
+            isMe
+          />
         </div>
       ) : null}
     </div>

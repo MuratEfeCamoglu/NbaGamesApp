@@ -2,7 +2,10 @@
 import { cleanup, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import type { QuestionContent } from "@/games/core/types";
-import { PROMPTS, QuestionCard } from "./question-card";
+import { en } from "@/lib/i18n";
+import { QuestionCard } from "./question-card";
+
+const PROMPTS = en.question.prompts;
 import {
   BOX_SCORE,
   CAREER,

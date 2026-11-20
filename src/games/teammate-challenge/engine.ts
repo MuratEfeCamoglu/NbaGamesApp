@@ -15,15 +15,30 @@ interface Link {
   season: string;
 }
 
+// playerId → every teammate id. Depends only on the (immutable) data source, so it is shared
+// across questions instead of being rebuilt for each one.
+const teammateCache = new WeakMap<NbaDataSource, Map<string, Set<string>>>();
+
+function teammateSets(ds: NbaDataSource): Map<string, Set<string>> {
+  let cache = teammateCache.get(ds);
+  if (!cache) {
+    cache = new Map();
+    teammateCache.set(ds, cache);
+  }
+  return cache;
+}
+
 export const engine: GameEngine = {
   mode: "teammate-challenge",
   questionsPerSession: SESSION_LENGTH,
-  generateQuestion(ds, difficulty, rng, exclude) {
+  generateQuestion(ds, difficulty, rng, exclude, era = "all") {
     const shownCount = TEAMMATES_SHOWN[difficulty];
-    const candidates = getPool(ds, difficulty).filter(
+    // Only the target is era-bound; the shown teammates may be of either era, and uniqueness is
+    // checked against every player (search offers everyone).
+    const candidates = getPool(ds, difficulty, era).filter(
       (p) => !exclude.has(`tm:${p.id}`) && ds.getRosterEntries(p.id).length > 0,
     );
-    const teammateCache = new Map<string, Set<string>>();
+    const cache = teammateSets(ds);
 
     for (const target of rng.shuffle(candidates)) {
       const linksByMate = collectLinks(ds, target.id);
@@ -31,7 +46,7 @@ export const engine: GameEngine = {
 
       for (let attempt = 0; attempt < MAX_SET_ATTEMPTS; attempt++) {
         const chosen = chooseLinks(linksByMate, shownCount, rng, attempt === 0);
-        if (!identifiesUniquely(ds, target.id, chosen, teammateCache)) continue;
+        if (!identifiesUniquely(ds, target.id, chosen, cache)) continue;
 
         const hideSeason = DIFFICULTY_RULES[difficulty].reducedHints;
         return singleAnswerQuestion({
@@ -41,6 +56,7 @@ export const engine: GameEngine = {
           key: `tm:${target.id}`,
           answerId: target.id,
           rng,
+          era,
           avoidOptionIds: new Set(chosen.map((l) => l.mate.id)),
           content: {
             mode: "teammate-challenge",
@@ -104,12 +120,15 @@ function chooseLinks(byMate: Map<string, Link[]>, count: number, rng: Rng, famou
   return chosen;
 }
 
-/** True when the target is the only player (besides the clues) who played with every shown teammate. */
+/**
+ * True when the target is the only player (besides the clues) who played with every shown
+ * teammate. Era-independent on purpose: it considers every player in the data.
+ */
 export function identifiesUniquely(
   ds: NbaDataSource,
   targetId: string,
   links: readonly { mate: { id: string } }[],
-  cache: Map<string, Set<string>> = new Map(),
+  cache: Map<string, Set<string>> = teammateSets(ds),
 ): boolean {
   const shownIds = new Set(links.map((l) => l.mate.id));
   if (shownIds.size === 0) return false;

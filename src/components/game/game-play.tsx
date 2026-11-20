@@ -12,6 +12,9 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { useToast } from "@/components/ui/toast";
 import { api, type ApiError } from "@/lib/api-client";
 import type { StartSessionResponse } from "@/lib/api-types";
+import { achievementCopy } from "@/lib/i18n/helpers";
+import type { Messages } from "@/lib/i18n/types";
+import { useT } from "@/lib/i18n/provider";
 import { meData, useMe } from "@/lib/me-context";
 import { toApiError } from "@/lib/use-api";
 import { AnswerGrid } from "./answer-option";
@@ -63,20 +66,20 @@ export interface GamePlayProps {
   emptyState?: ReactNode;
 }
 
-export function feedbackFor(a: Answered): { kind: FeedbackKind; message: string } {
+export function feedbackFor(a: Answered, t: Messages): { kind: FeedbackKind; message: string } {
   const r = a.result;
   if (r.correctAnswer.kind === "slots") {
     if (r.totalUnits > 0 && r.correctUnits === r.totalUnits)
-      return { kind: "correct", message: "List complete!" };
+      return { kind: "correct", message: t.play.listComplete };
     return {
       kind: a.timedOut ? "timeout" : "wrong",
-      message: `${a.timedOut ? "Time's up — " : ""}${r.correctUnits} of ${r.totalUnits} found.`,
+      message: t.play.foundOf(r.correctUnits, r.totalUnits, a.timedOut),
     };
   }
   const name = r.correctAnswer.player.name;
-  if (r.correct) return { kind: "correct", message: "Correct!" };
-  if (a.timedOut) return { kind: "timeout", message: `Time's up — it was ${name}.` };
-  return { kind: "wrong", message: `Not quite — it was ${name}.` };
+  if (r.correct) return { kind: "correct", message: t.play.correct };
+  if (a.timedOut) return { kind: "timeout", message: t.play.timeUpWas(name) };
+  return { kind: "wrong", message: t.play.notQuiteWas(name) };
 }
 
 export function GamePlay({
@@ -90,6 +93,7 @@ export function GamePlay({
 }: GamePlayProps) {
   const router = useRouter();
   const toast = useToast();
+  const t = useT();
   const { state: meState, setMe, refresh: refreshMe } = useMe();
   const me = meData(meState);
   const reduceMotion = useReducedMotion();
@@ -180,6 +184,9 @@ export function GamePlay({
       return next;
     });
     if (r.points > 0) setScorePop((t) => ({ key: t.key + 1, points: r.points }));
+    // Last answer: the server has booked every point, so refresh totals (nav pill, Home, Profile)
+    // now — not after the reveal timer, which never fires if the player leaves during the reveal.
+    if (!r.next) refreshMe();
 
     later(() => {
       if (r.next) {
@@ -196,11 +203,10 @@ export function GamePlay({
         );
       } else {
         setFinished({ summary: r.summary, newAchievements: r.newAchievements });
-        refreshMe();
         onFinished?.();
         r.newAchievements.forEach((a, i) =>
           later(
-            () => toast(`Badge unlocked: ${a.name}`, "accent", "award"),
+            () => toast(t.play.badgeUnlocked(achievementCopy(t, a).name), "accent", "award"),
             BADGE_TOAST_DELAY_MS + i * 400,
           ),
         );
@@ -272,9 +278,9 @@ export function GamePlay({
         <EmptyState
           className="block"
           icon="search"
-          title="No questions for this mode yet"
-          description="We're still building questions at this difficulty. Try another level or mode."
-          actions={<Button href="/games">Choose another game</Button>}
+          title={t.flow.emptyTitle}
+          description={t.play.emptyDesc}
+          actions={<Button href="/games">{t.common.chooseAnotherGame}</Button>}
         />
       );
     }
@@ -283,13 +289,13 @@ export function GamePlay({
         <ErrorState
           className="block"
           variant="session-expired"
-          title="Session expired"
-          description="This game was idle for too long. Start a new session to keep earning points."
+          title={t.play.expiredTitle}
+          description={t.play.expiredDesc}
           actions={
             <>
-              <Button onClick={onRestart}>Start new session</Button>
+              <Button onClick={onRestart}>{t.play.startNew}</Button>
               <Button href="/" variant="ghost">
-                Home
+                {t.common.home}
               </Button>
             </>
           }
@@ -301,8 +307,8 @@ export function GamePlay({
         <EmptyState
           className="block"
           icon="calendar-check"
-          title="Already played today"
-          description="Come back tomorrow for a new challenge."
+          title={t.play.alreadyPlayedTitle}
+          description={t.play.alreadyPlayedDesc}
         />
       );
     }
@@ -310,13 +316,13 @@ export function GamePlay({
     return (
       <ErrorState
         className="block"
-        title={rateLimited ? "Slow down a little" : "Connection lost"}
+        title={rateLimited ? t.play.rateLimitedTitle : t.play.connectionTitle}
         description={
           rateLimited
-            ? "Too many requests in a short time. Wait a few seconds and try again."
+            ? t.play.rateLimitedDesc
             : startError
-              ? "We couldn't start the game. Check your connection and try again."
-              : "We couldn't load the next question. Your score so far is saved."
+              ? t.play.startErrorDesc
+              : t.play.answerErrorDesc
         }
         onRetry={() => {
           if (startError) onRestart();
@@ -334,7 +340,7 @@ export function GamePlay({
   if (!question || !session || !countdownDone) {
     return (
       <>
-        <div className="block" aria-busy="true" aria-label="Loading question">
+        <div className="block" aria-busy="true" aria-label={t.play.loadingQuestion}>
           <div className="stack">
             <Skeleton shape="row" />
             <div className="card stack">
@@ -391,7 +397,7 @@ export function GamePlay({
   const reveal = answered
     ? { correct: answered.result.correct, answer: answered.result.correctAnswer }
     : null;
-  const feedback = answered ? feedbackFor(answered) : null;
+  const feedback = answered ? feedbackFor(answered, t) : null;
   const correctPlayerId =
     answered?.result.correctAnswer.kind === "player"
       ? answered.result.correctAnswer.player.id
@@ -479,11 +485,9 @@ export function GamePlay({
 
           {q.input === "top10" ? (
             <div data-input-view="top10">
-              <p className="t-sm t-muted">
-                Search a player for every blank row. {q.timeLimitSec} seconds per list.
-              </p>
+              <p className="t-sm t-muted">{t.play.top10Hint(q.timeLimitSec)}</p>
               <Button variant="secondary" onClick={giveUp} disabled={locked}>
-                Give up &amp; reveal
+                {t.play.giveUp}
               </Button>
             </div>
           ) : null}

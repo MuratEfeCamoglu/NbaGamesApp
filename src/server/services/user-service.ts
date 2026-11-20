@@ -5,6 +5,7 @@ import type { ServiceContext } from "../context";
 import { isUniqueViolation } from "../db";
 import { AppError } from "../errors";
 import { ACHIEVEMENTS } from "./achievements";
+import { eraOf } from "./game-service";
 import { isNicknameBlocked } from "./nickname-blocklist";
 
 export const NICKNAME_MIN = 3;
@@ -88,6 +89,7 @@ export async function getHistory(ctx: ServiceContext, userId: string): Promise<H
       sessionId: s.id,
       mode: s.mode as GameMode | "daily",
       difficulty: s.difficulty as Difficulty,
+      era: eraOf(s),
       score: s.score,
       correct: s.correctCount,
       total: s.total,

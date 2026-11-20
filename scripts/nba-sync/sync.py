@@ -3,7 +3,8 @@
 Run with `npm run data:sync` on a developer machine only (stats.nba.com blocks cloud IPs).
 Flow: fetch (cached in data-cache/) -> transform (transform.py) -> write to a staging
 dir -> `tsx scripts/validate-data.ts --dir <staging>` -> atomic move into src/data/seed.
-If the API is unreachable, nothing in src/data/seed is touched.
+If the API is unreachable, or a used team code cannot be described (name, conference,
+color tokens), nothing in src/data/seed is touched.
 
 Flags:
   --dry-run   stop after the pool has been computed (prints sizes, writes nothing)
@@ -19,6 +20,7 @@ import shutil
 import subprocess
 import sys
 import time
+from collections import Counter
 from pathlib import Path
 from typing import Any, Callable
 
@@ -40,6 +42,12 @@ BACKOFF_BASE_S = 2.0
 # per-player request count (~2 per player) around the ~2,000-request budget.
 POOL_MIN_WINDOW_GAMES = 300
 MAX_BOX_SCORES_PER_SEASON = 10
+# Players in the top LEGENDS_TOP_X of any used all-time list join the pool with full careers
+# (brings in pre-1996 legends for the Retired era).
+LEGENDS_TOP_X = 50
+# Active-leader lists: this many active players per stat (ranked by game-log totals) get an
+# official career-totals request; the lists are then ranked on those official totals.
+ACTIVE_LEADER_CANDIDATES = 15
 UNREACHABLE_MSG = "NBA API'ye erişilemedi — seed dosyaları değiştirilmedi"
 
 
@@ -92,10 +100,17 @@ def write_file(directory: Path, name: str, endpoints: list[str], items: list[dic
     (directory / name).write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+def slim_career(raw: dict[str, Any]) -> dict[str, Any]:
+    """Keep only the season rows of a playercareerstats response (memory: ~1.4k players)."""
+    return {"resultSets": [s for s in raw["resultSets"] if s.get("name") == "SeasonTotalsRegularSeason"]}
+
+
 def run(dry_run: bool) -> int:
     from nba_api.stats.endpoints import (
         alltimeleadersgrids,
+        boxscoretraditionalv3,
         commonallplayers,
+        franchisehistory,
         leaguedashlineups,
         leaguegamelog,
         playerawards,
@@ -105,38 +120,50 @@ def run(dry_run: bool) -> int:
     from nba_api.stats.static import teams as static_teams
 
     started = time.monotonic()
-    snapshot = dt.datetime.now(dt.timezone.utc).date().isoformat()
+    today = dt.datetime.now(dt.timezone.utc).date()
+    snapshot = today.isoformat()
     f = Fetcher()
     last = tf.season_label(tf.LAST_SEASON_START)
     seasons = tf.window_seasons()
 
-    print("1/6 commonallplayers + playerindex", flush=True)
+    def game_log(season: str, kind: str) -> list[dict[str, Any]]:
+        return tf.result_set(
+            f.get("leaguegamelog", leaguegamelog.LeagueGameLog, season=season, player_or_team_abbreviation=kind,
+                  season_type_all_star="Regular Season")
+        )
+
+    print("1/8 commonallplayers + playerindex", flush=True)
     allp = tf.result_set(
         f.get("commonallplayers", commonallplayers.CommonAllPlayers, is_only_current_season=0, league_id="00", season=last),
         "CommonAllPlayers",
     )
     allp_by_id = {str(r["PERSON_ID"]): r for r in allp}
+    active_ids = {pid for pid, r in allp_by_id.items() if tf.is_active(r)}
     pidx = tf.result_set(f.get("playerindex", playerindex.PlayerIndex, historical_nullable="1", season=last))
     position_by_id = {str(r["PERSON_ID"]): r.get("POSITION") for r in pidx}
 
-    print("2/6 leaguegamelog (P, T) per season", flush=True)
-    player_logs: list[dict[str, Any]] = []
+    print("2/8 leaguegamelog (P, T) per season", flush=True)
+    window_games: Counter[str] = Counter()
+    log_totals: dict[str, dict[str, int]] = {}
     box_scores: list[dict[str, Any]] = []
+    team_seen: dict[str, dict[str, set[str]]] = {}
+    openers: list[tuple[str, str, str, str]] = []  # (season, team, TEAM_ID, GAME_ID)
     for s in seasons:
-        p_rows = tf.result_set(
-            f.get("leaguegamelog", leaguegamelog.LeagueGameLog, season=s, player_or_team_abbreviation="P",
-                  season_type_all_star="Regular Season")
-        )
-        t_rows = tf.result_set(
-            f.get("leaguegamelog", leaguegamelog.LeagueGameLog, season=s, player_or_team_abbreviation="T",
-                  season_type_all_star="Regular Season")
-        )
-        player_logs.extend(p_rows)
+        p_rows = game_log(s, "P")
+        t_rows = game_log(s, "T")
+        window_games.update(tf.count_window_games(p_rows))
+        tf.add_log_totals(log_totals, p_rows)
         box_scores.extend(tf.select_box_scores(p_rows, t_rows, s, MAX_BOX_SCORES_PER_SEASON))
-    window_games = tf.count_window_games(player_logs)
-    del player_logs
+        for r in t_rows:
+            tf.note_team(team_seen, r["TEAM_ABBREVIATION"], r["TEAM_ID"], s)
+        if tf.season_start(s) < tf.FIRST_LINEUP_SEASON_START:
+            openers += [(s, team, tid, gid) for team, (tid, gid) in sorted(tf.opening_games(t_rows).items())]
+    live = tf.in_progress_season(today)
+    if tf.season_start(live) > tf.LAST_SEASON_START:
+        # The season under way is outside the pool window but part of every active career.
+        tf.add_log_totals(log_totals, game_log(live, "P"))
 
-    print("3/6 leaguedashlineups per season (2007-08+)", flush=True)
+    print("3/8 leaguedashlineups per season (2007-08+)", flush=True)
     lineups: list[dict[str, Any]] = []
     for s in tf.window_seasons(tf.FIRST_LINEUP_SEASON_START):
         raw = f.get("leaguedashlineups", leaguedashlineups.LeagueDashLineups, group_quantity=5, season=s,
@@ -144,33 +171,59 @@ def run(dry_run: bool) -> int:
                     season_type_all_star="Regular Season")
         lineups.extend(tf.top_lineups(raw, s))
 
-    print("4/6 alltimeleadersgrids", flush=True)
-    leaders_raw = f.get("alltimeleadersgrids", alltimeleadersgrids.AllTimeLeadersGrids, topx=10,
+    print(f"4/8 alltimeleadersgrids (TopX={LEGENDS_TOP_X})", flush=True)
+    leaders_raw = f.get("alltimeleadersgrids", alltimeleadersgrids.AllTimeLeadersGrids, topx=LEGENDS_TOP_X,
                         per_mode_simple="Totals", season_type="Regular Season")
     leaderboards = tf.parse_leaderboards(leaders_raw, snapshot)
+    legends = tf.leader_ids(leaders_raw)
+
+    print(f"5/8 boxscoretraditionalv3: opening-night starters {seasons[0]}…"
+          f"{tf.season_label(tf.FIRST_LINEUP_SEASON_START - 1)} ({len({o[3] for o in openers})} games)", flush=True)
+    opening: list[dict[str, Any]] = []
+    opening_skipped: list[str] = []
+    for s, team, tid, gid in openers:
+        raw = f.get("boxscoretraditionalv3", boxscoretraditionalv3.BoxScoreTraditionalV3, game_id=gid)
+        starters = tf.opening_night_starters(raw, tid)
+        if starters is None:
+            opening_skipped.append(f"{team} {s} ({gid})")
+        else:
+            opening.append(tf.opening_lineup(team, s, starters))
+
+    print("6/8 active career leaders (playercareerstats Totals)", flush=True)
+    candidates = tf.screen_active_candidates(log_totals, active_ids, ACTIVE_LEADER_CANDIDATES)
+    official: dict[str, dict[str, int]] = {}
+    for pid in sorted(candidates):
+        totals = tf.career_totals(
+            f.get("playercareerstats", playercareerstats.PlayerCareerStats, player_id=pid, per_mode36="Totals")
+        )
+        if totals:
+            official[pid] = totals
+    active_lbs = tf.active_leaderboards(official, snapshot)
+    del log_totals
 
     base_pool = {pid for pid, g in window_games.items() if g >= POOL_MIN_WINDOW_GAMES}
+    starters_ids = {p for lu in opening for p in lu["playerIds"]}
     extra = (
         {p for lu in lineups for p in lu["playerIds"]}
+        | starters_ids
         | {b["playerId"] for b in box_scores}
-        | {r["playerId"] for lb in leaderboards for r in lb["rows"]}
+        | legends
+        | {r["playerId"] for lb in leaderboards + active_lbs for r in lb["rows"]}
     )
     pool = sorted(pid for pid in base_pool | extra if pid in allp_by_id)
     print(
-        f"   pool: {len(base_pool)} with ≥{POOL_MIN_WINDOW_GAMES} window games, "
-        f"{len(extra - base_pool)} added for lineups/box scores/leaders → {len(pool)} players "
-        f"(~{2 * len(pool)} requests)",
+        f"   pool: {len(base_pool)} with ≥{POOL_MIN_WINDOW_GAMES} window games + "
+        f"{len(extra - base_pool)} for lineups/openers/box scores/leaders "
+        f"(legends {len(legends - base_pool)}, opening starters {len(starters_ids - base_pool)}) → {len(pool)} players",
         flush=True,
     )
     if dry_run:
         print(f"dry run: {f.network_requests} network requests, {f.cache_hits} cache hits")
         return 0
 
-    print("5/6 playercareerstats + playerawards per player", flush=True)
-    colors = tf.parse_color_tokens(GLOBALS_CSS.read_text(encoding="utf-8"))
-    window = set(seasons)
-    players, stints, rosters, stats = [], [], [], []
-    missing_colors: dict[str, set[str]] = {}
+    print("7/8 playercareerstats + playerawards per player", flush=True)
+    players, stats = [], []
+    careers: dict[str, dict[str, Any]] = {}
     for i, pid in enumerate(pool, start=1):
         career = f.get("playercareerstats", playercareerstats.PlayerCareerStats, player_id=pid, per_mode36="PerGame")
         awards = f.get("playerawards", playerawards.PlayerAwards, player_id=pid)
@@ -180,52 +233,54 @@ def run(dry_run: bool) -> int:
         all_star, mvp = tf.all_star_and_mvp(awards)
         players.append(tf.build_player(pid, allp_by_id[pid], position_by_id.get(pid), all_star, mvp, cs["games"]))
         stats.append(cs)
-        p_stints = tf.career_stints(pid, career)
-        unknown = {s["teamId"] for s in p_stints} - colors.keys()
-        if unknown:
-            # Team without a design color token (pre-1996 franchises): leave the journey out
-            # rather than show a partial one.
-            for t in unknown:
-                missing_colors.setdefault(t, set()).add(pid)
-        else:
-            stints.extend(p_stints)
-        for r in tf.roster_entries(pid, career, window):
-            if r["teamId"] in colors:
-                rosters.append(r)
-            else:
-                missing_colors.setdefault(r["teamId"], set()).add(pid)
+        careers[pid] = slim_career(career)
+        for r in tf.season_rows(career):
+            tf.note_team(team_seen, r["TEAM_ABBREVIATION"], r["TEAM_ID"], r["SEASON_ID"])
         if i % 100 == 0:
             print(f"   {i}/{len(pool)} players", flush=True)
 
-    print("6/6 build, validate, write", flush=True)
-    known = {p["id"] for p in players}
-    lineups = [lu for lu in lineups if all(p in known for p in lu["playerIds"]) and lu["teamId"] in colors]
-    box_scores = [
-        b for b in box_scores if b["playerId"] in known and b["teamId"] in colors and b["opponentId"] in colors
-    ]
-    leaderboards = [lb for lb in leaderboards if all(r["playerId"] in known for r in lb["rows"])]
+    print("8/8 franchisehistory, build, validate, write", flush=True)
+    statics = static_teams.get_teams()
+    periods = tf.team_periods(f.get("franchisehistory", franchisehistory.FranchiseHistory, league_id="00"))
+    alias = tf.team_aliases(team_seen, statics, periods)
+    stints = [s for pid, c in careers.items() for s in tf.career_stints(pid, c, alias)]
+    rosters = [r for pid, c in careers.items() for r in tf.roster_entries(pid, c, alias=alias)]
+    known = set(careers)
+    lineups = [lu for lu in lineups + opening if all(p in known for p in lu["playerIds"])]
+    box_scores = [b for b in box_scores if b["playerId"] in known]
+    leaderboards = [lb for lb in leaderboards + active_lbs if all(r["playerId"] in known for r in lb["rows"])]
     used_teams = (
         {r["teamId"] for r in rosters}
         | {s["teamId"] for s in stints}
         | {lu["teamId"] for lu in lineups}
         | {b["teamId"] for b in box_scores}
         | {b["opponentId"] for b in box_scores}
-        | {t["abbreviation"] for t in static_teams.get_teams()}
+        | {t["abbreviation"] for t in statics}
     )
-    teams = tf.build_teams(used_teams, static_teams.get_teams(), colors)
+    colors = tf.parse_color_tokens(GLOBALS_CSS.read_text(encoding="utf-8"))
+    teams, problems = tf.build_teams(used_teams, statics, colors, team_seen, periods)
+    if problems:
+        print("Takım bilgisi eksik (transform.py CONFERENCE / globals.css takım token'ları) — "
+              "seed dosyaları değiştirilmedi:")
+        for p in problems:
+            print(f"   {p}")
+        return 1
 
     if STAGING_DIR.exists():
         shutil.rmtree(STAGING_DIR)
     STAGING_DIR.mkdir(parents=True)
-    write_file(STAGING_DIR, "teams.json", ["static.teams"], teams, snapshot)
-    write_file(STAGING_DIR, "players.json", ["commonallplayers", "playerindex", "playerawards", "leaguegamelog"],
+    write_file(STAGING_DIR, "teams.json", ["static.teams", "franchisehistory"], teams, snapshot)
+    write_file(STAGING_DIR, "players.json",
+               ["commonallplayers", "playerindex", "playerawards", "playercareerstats", "leaguegamelog"],
                players, snapshot)
     write_file(STAGING_DIR, "rosters.json", ["playercareerstats"], rosters, snapshot)
-    write_file(STAGING_DIR, "starting-fives.json", ["leaguedashlineups"], lineups, snapshot)
+    write_file(STAGING_DIR, "starting-fives.json", ["leaguedashlineups", "boxscoretraditionalv3", "leaguegamelog"],
+               lineups, snapshot)
     write_file(STAGING_DIR, "career-stints.json", ["playercareerstats"], stints, snapshot)
     write_file(STAGING_DIR, "career-stats.json", ["playercareerstats"], stats, snapshot)
     write_file(STAGING_DIR, "box-scores.json", ["leaguegamelog"], box_scores, snapshot)
-    write_file(STAGING_DIR, "leaderboards.json", ["alltimeleadersgrids"], leaderboards, snapshot)
+    write_file(STAGING_DIR, "leaderboards.json", ["alltimeleadersgrids", "playercareerstats", "leaguegamelog"],
+               leaderboards, snapshot)
 
     npx = shutil.which("npx") or "npx"
     result = subprocess.run([npx, "tsx", "scripts/validate-data.ts", "--dir", str(STAGING_DIR)], cwd=ROOT)
@@ -238,10 +293,15 @@ def run(dry_run: bool) -> int:
         os.replace(STAGING_DIR / name, SEED_DIR / name)
     STAGING_DIR.rmdir()
 
-    if missing_colors:
-        print("Renk token'ı olmayan takımlar (yalnız 1996 öncesi; ilgili stint'ler atlandı):")
-        for t, pids in sorted(missing_colors.items()):
-            print(f"   {t}: {len(pids)} oyuncu")
+    by_id = {p["id"]: p for p in players}
+    added_legends = sorted((by_id[p]["name"] for p in legends - base_pool if p in by_id))
+    print(f"Efsaneler (TopX={LEGENDS_TOP_X}, havuz dışından): {len(added_legends)} — {', '.join(added_legends)}")
+    print(f"Açılış gecesi beşleri: {sum(1 for lu in lineups if lu['source'] == 'boxscoretraditionalv3')} "
+          f"(starter'ı 5 olmayan {len(opening_skipped)} maç atlandı{': ' + ', '.join(opening_skipped) if opening_skipped else ''})")
+    print(f"Aktif liderler: {len(official)} aday için resmi kariyer toplamı; listeler: "
+          + "; ".join(f"{lb['title']} (#1 {by_id[lb['rows'][0]['playerId']]['name']} {lb['rows'][0]['value']})"
+                      for lb in leaderboards if lb["scope"] == "active"))
+    print(f"Aynı takımın 1996 öncesi kodları güncel koda çevrildi: {', '.join(f'{a}→{b}' for a, b in sorted(alias.items()))}")
     print(
         f"Bitti: {time.monotonic() - started:.0f} sn, {f.network_requests} ağ isteği, {f.cache_hits} önbellek. "
         f"teams={len(teams)} players={len(players)} rosters={len(rosters)} starting-fives={len(lineups)} "

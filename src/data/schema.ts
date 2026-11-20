@@ -35,6 +35,7 @@ export const playerSchema = z.object({
   position: z.string(),
   fameTier: z.union([z.literal(1), z.literal(2), z.literal(3)]),
   allStarCount: z.number().int().min(0),
+  /** On an NBA roster in the snapshot's current season → era "current"; otherwise "retired". */
   active: z.boolean(),
   /** NBA CDN headshot id (= PERSON_ID); null if unknown. */
   headshotId: z.string().nullable(),
@@ -50,7 +51,10 @@ export const startingFiveSchema = z.object({
   id: z.string().min(1),
   teamId: teamIdSchema,
   season: seasonSchema,
-  /** Exactly 5 distinct players — the five-man unit with the most minutes that season. */
+  /**
+   * Exactly 5 distinct players. 2007-08+: the five-man unit with the most minutes that season
+   * (leaguedashlineups). 1996-97…2006-07: opening-night starters (boxscoretraditionalv3, minutes 0).
+   */
   playerIds: z
     .array(playerIdSchema)
     .length(5)
@@ -117,6 +121,12 @@ export const statLeaderboardSchema = z
       .array(z.object({ rank: z.number().int().min(1).max(10), playerId: playerIdSchema, value: z.number() }))
       .length(10),
     source: z.string().min(1),
+    /**
+     * "all-time" = official all-time leaders (alltimeleadersgrids);
+     * "active" = career leaders among currently active players, computed by the sync
+     * from playercareerstats totals (used by Top 10 in the Current era).
+     */
+    scope: z.enum(["all-time", "active"]).default("all-time"),
   })
   .refine(
     (lb) => lb.rows.every((r, i) => i === 0 || (lb.rows[i - 1]?.value ?? Infinity) >= r.value),

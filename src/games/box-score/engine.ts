@@ -6,8 +6,9 @@ import { getPoolIds, singleAnswerQuestion } from "../shared/question";
 export const engine: GameEngine = {
   mode: "box-score",
   questionsPerSession: SESSION_LENGTH,
-  generateQuestion(ds, difficulty, rng, exclude) {
-    const pool = getPoolIds(ds, difficulty);
+  generateQuestion(ds, difficulty, rng, exclude, era = "all") {
+    // The line's player must match the era; the game itself may be from any season.
+    const pool = getPoolIds(ds, difficulty, era);
     const candidates = ds
       .getBoxScores()
       .filter((l) => pool.has(l.playerId) && ds.getPlayer(l.playerId) && !exclude.has(`bs:${l.id}`));
@@ -23,6 +24,7 @@ export const engine: GameEngine = {
       key: `bs:${line.id}`,
       answerId: line.playerId,
       rng,
+      era,
       content: {
         mode: "box-score",
         line: {

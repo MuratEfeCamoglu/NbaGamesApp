@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { Icon } from "@/components/ui/icon";
+import { useT } from "@/lib/i18n/provider";
 
 /** Design: "TimerBar (normal → last 5 s warning colour, pulse)". */
 export const TIMER_WARNING_SEC = 5;
@@ -19,6 +20,7 @@ export function TimerBar({ durationSec, running, onExpire }: TimerBarProps) {
   const total = durationSec * 1000;
   const [leftMs, setLeftMs] = useState(total);
   const leftRef = useRef(total);
+  const t = useT();
   const onExpireRef = useRef(onExpire);
   useEffect(() => {
     onExpireRef.current = onExpire;
@@ -48,7 +50,7 @@ export function TimerBar({ durationSec, running, onExpire }: TimerBarProps) {
       data-component="TimerBar"
       data-state={state}
       role="timer"
-      aria-label={`Time left: ${secs} seconds`}
+      aria-label={t.hud.timeLeft(secs)}
       style={{ "--timer-progress": String(total > 0 ? leftMs / total : 0) } as CSSProperties}
     >
       <div className="timer-bar__track">

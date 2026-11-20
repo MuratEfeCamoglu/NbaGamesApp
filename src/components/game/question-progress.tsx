@@ -1,3 +1,7 @@
+"use client";
+
+import { useT } from "@/lib/i18n/provider";
+
 export type SegmentState = "correct" | "wrong" | "current" | "todo";
 
 export function QuestionProgress({
@@ -9,6 +13,7 @@ export function QuestionProgress({
   total: number;
   results: ("correct" | "wrong")[];
 }) {
+  const t = useT();
   const segments: SegmentState[] = Array.from(
     { length: total },
     (_, i) => results[i] ?? (i === index ? "current" : "todo"),
@@ -17,7 +22,7 @@ export function QuestionProgress({
     <div className="question-progress" data-component="QuestionProgress" aria-live="polite">
       <span
         className="question-progress__count"
-        aria-label={`Question ${Math.min(index + 1, total)} of ${total}`}
+        aria-label={t.hud.questionOf(Math.min(index + 1, total), total)}
       >
         <b>{Math.min(index + 1, total)}</b>
         <span>

@@ -15,6 +15,15 @@ export type GameMode = (typeof GAME_MODES)[number];
 export const DIFFICULTIES = ["easy", "medium", "hard", "expert"] as const;
 export type Difficulty = (typeof DIFFICULTIES)[number];
 
+/**
+ * Era split (ISKELET F16): "current" = active players & today's teams,
+ * "retired" = retired players & classic teams. The answer player's status always matches the era.
+ */
+export const ERAS = ["current", "retired"] as const;
+export type Era = (typeof ERAS)[number];
+/** "all" = no era filter (Daily Challenge, legacy sessions). */
+export type EraFilter = Era | "all";
+
 /** How the client collects the answer. */
 export type AnswerInput = "choices" | "search" | "top10";
 
@@ -166,6 +175,7 @@ export interface SessionSummary {
   sessionId: string;
   mode: GameMode | "daily";
   difficulty: Difficulty;
+  era: EraFilter;
   score: number;
   correct: number;
   total: number;
@@ -192,13 +202,16 @@ export interface GameEngine {
   /** Number of questions in a normal session (top-10: 3 lists). */
   questionsPerSession: number;
   /**
-   * Produce one question. Must be pure: same (ds, difficulty, rng state, exclude) → same output.
+   * Produce one question. Must be pure: same (ds, difficulty, rng state, exclude, era) → same output.
    * Returns null when no eligible question remains.
+   * `era` (default "all") restricts the ANSWER to players of that era (and, for team-centric
+   * modes, the team-seasons used) — see ISKELET F16. Uniqueness checks still run against all players.
    */
   generateQuestion(
     ds: NbaDataSource,
     difficulty: Difficulty,
     rng: Rng,
     exclude: ReadonlySet<string>,
+    era?: EraFilter,
   ): GeneratedQuestion | null;
 }

@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { getT } from "@/lib/i18n/server";
 import { ProfileView } from "./profile-view";
 
-export const metadata: Metadata = {
-  title: "Profile",
-  description: "Your points, streaks, badges and game history.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await getT();
+  return { title: t.meta.profileTitle, description: t.meta.profileDescription };
+}
 
 export default function ProfilePage() {
   return (

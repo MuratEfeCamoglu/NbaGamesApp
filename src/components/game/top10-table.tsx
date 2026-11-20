@@ -2,6 +2,7 @@
 
 import type { CorrectAnswerView, PlayerRef } from "@/games/core/types";
 import { fmtNumber } from "@/lib/format";
+import { useI18n } from "@/lib/i18n/provider";
 import { PlayerSearch, type PickedPlayer } from "./player-search";
 
 export type Top10Picks = Record<number, PickedPlayer>;
@@ -24,6 +25,7 @@ interface Top10TableProps {
 }
 
 export function Top10Table({ rows, picks, onPick, reveal, disabled }: Top10TableProps) {
+  const { t, locale } = useI18n();
   return (
     <ol className="top10" data-component="Top10Table">
       {rows.map((row) => {
@@ -34,7 +36,7 @@ export function Top10Table({ rows, picks, onPick, reveal, disabled }: Top10Table
               <span className="top10__player">
                 <span className="top10__name top10__reveal">{row.player.name}</span>
               </span>
-              <span className="top10__value">{fmtNumber(row.value)}</span>
+              <span className="top10__value">{fmtNumber(row.value, locale)}</span>
             </li>
           );
         }
@@ -50,9 +52,11 @@ export function Top10Table({ rows, picks, onPick, reveal, disabled }: Top10Table
               <span className="top10__rank">{row.rank}</span>
               <span className="top10__player">
                 <span className="top10__name top10__reveal">{revealed.player.name}</span>
-                <span className="sr-only">{revealed.correct ? "(you got it)" : "(missed)"}</span>
+                <span className="sr-only">
+                  {revealed.correct ? t.question.gotIt : t.question.missed}
+                </span>
               </span>
-              <span className="top10__value">{fmtNumber(row.value)}</span>
+              <span className="top10__value">{fmtNumber(row.value, locale)}</span>
             </li>
           );
         }
@@ -66,12 +70,12 @@ export function Top10Table({ rows, picks, onPick, reveal, disabled }: Top10Table
                   value={picks[row.rank] ?? null}
                   onChange={(p) => onPick(row.rank, p)}
                   disabled={disabled}
-                  label={`Rank ${row.rank} player`}
-                  placeholder={`Who is #${row.rank}?`}
+                  label={t.question.rankPlayer(row.rank)}
+                  placeholder={t.question.whoIs(row.rank)}
                 />
               </span>
             </span>
-            <span className="top10__value">{fmtNumber(row.value)}</span>
+            <span className="top10__value">{fmtNumber(row.value, locale)}</span>
           </li>
         );
       })}

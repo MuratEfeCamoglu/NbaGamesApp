@@ -12,16 +12,14 @@ import { Tabs } from "@/components/ui/tabs";
 import { api } from "@/lib/api-client";
 import type { LeaderboardPeriod } from "@/lib/api-types";
 import { guestName } from "@/lib/format";
+import { useI18n } from "@/lib/i18n/provider";
 import { meData, useMe } from "@/lib/me-context";
 import { useApi } from "@/lib/use-api";
 
-const PERIODS = [
-  { value: "all", label: "All time" },
-  { value: "week", label: "This week" },
-  { value: "day", label: "Today" },
-] as const satisfies readonly { value: LeaderboardPeriod; label: string }[];
+const PERIODS: readonly LeaderboardPeriod[] = ["all", "week", "day"];
 
 export function LeaderboardView() {
+  const { t, locale } = useI18n();
   const [period, setPeriod] = useState<LeaderboardPeriod>("all");
   const [nickOpen, setNickOpen] = useState(false);
   const { state: meState, setMe } = useMe();
@@ -31,7 +29,7 @@ export function LeaderboardView() {
   function body() {
     if (state.status === "loading") {
       return (
-        <div className="stack stack--sm" aria-busy="true" aria-label="Loading leaderboard">
+        <div className="stack stack--sm" aria-busy="true" aria-label={t.common.loadingLeaderboard}>
           {Array.from({ length: 6 }, (_, i) => (
             <Skeleton key={i} shape="row" />
           ))}
@@ -41,8 +39,8 @@ export function LeaderboardView() {
     if (state.status === "error") {
       return (
         <ErrorState
-          title="Leaderboard unavailable"
-          description="We couldn't fetch rankings. Your points are still counted."
+          title={t.common.leaderboardUnavailable}
+          description={t.leaderboard.unavailableDesc}
           onRetry={retry}
         />
       );
@@ -52,28 +50,30 @@ export function LeaderboardView() {
       return (
         <EmptyState
           icon="trophy"
-          title="No scores yet"
-          description="Nobody has played in this period. Be the first name on the board."
-          actions={<Button href="/games">Play now</Button>}
+          title={t.common.noScoresYet}
+          description={t.leaderboard.emptyDesc}
+          actions={<Button href="/games">{t.common.playNow}</Button>}
         />
       );
     }
     const noNickname = !data.me.nickname && !me?.nickname;
     const youName =
-      data.me.nickname ?? me?.nickname ?? `${me ? guestName(me.id) : "Guest"} · no nickname`;
+      data.me.nickname ??
+      me?.nickname ??
+      t.leaderboard.noNickname(me ? guestName(me.id, locale) : t.nav.guest);
     return (
       <LeaderboardTable
         variant="full"
         rows={data.rows}
-        label="Top 100 players"
+        label={t.leaderboard.top100}
         me={{ rank: data.me.rank, points: data.me.points, name: youName }}
         callout={
           noNickname ? (
             <div className="nickname-cta" data-component="Card">
               <Icon name="user" size="lg" className="t-accent" />
-              <span className="t-sm grow">Set a nickname to appear on the leaderboard.</span>
+              <span className="t-sm grow">{t.common.nicknameCta}</span>
               <Button size="sm" onClick={() => setNickOpen(true)}>
-                Set nickname
+                {t.common.setNickname}
               </Button>
             </div>
           ) : null
@@ -87,9 +87,9 @@ export function LeaderboardView() {
       <div className="block">
         <Tabs
           idBase="lb"
-          label="Leaderboard period"
+          label={t.leaderboard.periodLabel}
           size="lg"
-          items={PERIODS}
+          items={PERIODS.map((value) => ({ value, label: t.leaderboard.periods[value] }))}
           value={period}
           onChange={setPeriod}
         />

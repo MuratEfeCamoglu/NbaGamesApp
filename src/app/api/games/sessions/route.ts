@@ -13,5 +13,7 @@ export const POST = withErrorHandling(async (req: Request) => {
   const body = parseOrThrow(startSessionSchema, await readJson(req));
   const userId = await getOrCreateUserId(ctx, req);
   enforceRateLimit("write", userId);
-  return json(await startSession(ctx, userId, body.mode, body.difficulty), { status: 201 });
+  return json(await startSession(ctx, userId, body.mode, body.difficulty, body.era), {
+    status: 201,
+  });
 });

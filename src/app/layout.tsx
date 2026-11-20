@@ -5,6 +5,9 @@ import { Footer } from "@/components/layout/footer";
 import { TopNav } from "@/components/layout/top-nav";
 import { IconSprite } from "@/components/ui/icon";
 import { ToastProvider } from "@/components/ui/toast";
+import { getMessages } from "@/lib/i18n";
+import { LocaleProvider } from "@/lib/i18n/locale-provider";
+import { getLocale } from "@/lib/i18n/server";
 import { MeProvider } from "@/lib/me-context";
 import "./globals.css";
 
@@ -21,11 +24,13 @@ const oswald = Oswald({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: { default: "NBA Games", template: "%s · NBA Games" },
-  description:
-    "Test your NBA knowledge across six trivia games, a daily challenge and a leaderboard.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = getMessages(await getLocale());
+  return {
+    title: { default: "NBA Games", template: "%s · NBA Games" },
+    description: t.meta.siteDescription,
+  };
+}
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -34,19 +39,23 @@ export const viewport: Viewport = {
   themeColor: "#0b0b0d",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+// The locale comes from the ng_lang cookie / Accept-Language (F18), so every page renders per request.
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const locale = await getLocale();
   return (
-    <html lang="en" className={`${inter.variable} ${oswald.variable}`}>
+    <html lang={locale} className={`${inter.variable} ${oswald.variable}`}>
       <body data-immersive="false">
         <IconSprite />
-        <MeProvider>
-          <ToastProvider>
-            <TopNav />
-            <main id="main">{children}</main>
-            <Footer />
-            <BottomTabBar />
-          </ToastProvider>
-        </MeProvider>
+        <LocaleProvider locale={locale}>
+          <MeProvider>
+            <ToastProvider>
+              <TopNav />
+              <main id="main">{children}</main>
+              <Footer locale={locale} />
+              <BottomTabBar />
+            </ToastProvider>
+          </MeProvider>
+        </LocaleProvider>
       </body>
     </html>
   );

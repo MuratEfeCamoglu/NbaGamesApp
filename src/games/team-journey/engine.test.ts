@@ -5,8 +5,8 @@ import { createStaticDataSource } from "@/data/build-source";
 import { seedFileSchemas, type CareerStint, type SeedFileName } from "@/data/schema";
 import type { NbaDataSource } from "@/data/source";
 import { createRng } from "../core/rng";
-import { DIFFICULTIES, type Difficulty, type GeneratedQuestion } from "../core/types";
-import { ds, generate, runEngineContract, SEEDS } from "../shared/engine-contract.testutil";
+import { DIFFICULTIES, ERAS, type Difficulty, type EraFilter, type GeneratedQuestion } from "../core/types";
+import { ds, ERA_FILTERS, generate, runEngineContract, SEEDS } from "../shared/engine-contract.testutil";
 import { seasonLabel } from "../test-fixtures";
 import { engine, getJourneyIndex, mergeFranchiseStints } from "./engine";
 
@@ -43,34 +43,41 @@ function withStints(base: NbaDataSource, overrides: Record<string, [string, numb
   };
 }
 
-function generateOn(source: NbaDataSource, difficulty: Difficulty, seed: number): GeneratedQuestion | null {
-  return engine.generateQuestion(source, difficulty, createRng(seed), new Set());
+function generateOn(
+  source: NbaDataSource,
+  difficulty: Difficulty,
+  seed: number,
+  era: EraFilter = "all",
+): GeneratedQuestion | null {
+  return engine.generateQuestion(source, difficulty, createRng(seed), new Set(), era);
 }
 
 describe("team-journey specifics", () => {
-  it("shows ≥2 franchises in career order (same-franchise stints merged) with formatted years", () => {
-    for (const seed of SEEDS) {
-      const q = generate(engine, "hard", seed);
-      if (q.content.mode !== "team-journey") throw new Error("shape");
-      const id = answerOf(q);
-      const merged = mergeFranchiseStints(ds, ds.getCareerStints(id));
-      const franchises = new Set(q.content.stints.map((s) => ds.getTeam(s.teamId)?.franchiseId));
-      expect(franchises.size).toBeGreaterThanOrEqual(2);
-      expect(shownTeams(q)).toEqual(merged.map((s) => s.teamId));
-      for (const s of q.content.stints) expect(s.years).toMatch(/^\d{4}–\d{2}$/);
-      expect(q.content.allStarCount).toBe(ds.getPlayer(id)?.allStarCount);
-    }
-  });
+  for (const era of ERA_FILTERS) {
+    it(`${era}: shows ≥2 franchises in career order (same-franchise stints merged) with formatted years`, () => {
+      for (const seed of SEEDS) {
+        const q = generate(engine, "hard", seed, new Set(), era);
+        if (q.content.mode !== "team-journey") throw new Error("shape");
+        const id = answerOf(q);
+        const merged = mergeFranchiseStints(ds, ds.getCareerStints(id));
+        const franchises = new Set(q.content.stints.map((s) => ds.getTeam(s.teamId)?.franchiseId));
+        expect(franchises.size).toBeGreaterThanOrEqual(2);
+        expect(shownTeams(q)).toEqual(merged.map((s) => s.teamId));
+        for (const s of q.content.stints) expect(s.years).toMatch(/^\d{4}–\d{2}$/);
+        expect(q.content.allStarCount).toBe(ds.getPlayer(id)?.allStarCount);
+      }
+    });
 
-  it("hides years, seasons and All-Star count only at Expert", () => {
-    for (const seed of SEEDS) {
-      const expert = generate(engine, "expert", seed);
-      if (expert.content.mode !== "team-journey") throw new Error("shape");
-      expect(expert.content.stints.every((s) => s.years === null)).toBe(true);
-      expect(expert.content.seasons).toBeNull();
-      expect(expert.content.allStarCount).toBeNull();
-    }
-  });
+    it(`${era}: hides years, seasons and All-Star count only at Expert`, () => {
+      for (const seed of SEEDS) {
+        const expert = generate(engine, "expert", seed, new Set(), era);
+        if (expert.content.mode !== "team-journey") throw new Error("shape");
+        expect(expert.content.stints.every((s) => s.years === null)).toBe(true);
+        expect(expert.content.seasons).toBeNull();
+        expect(expert.content.allStarCount).toBeNull();
+      }
+    });
+  }
 
   it("formats the first Cleveland stint of LeBron James as 2003–10", () => {
     let found = 0;
@@ -147,6 +154,38 @@ describe("team-journey specifics", () => {
     });
     for (const d of DIFFICULTIES) {
       for (const seed of SEEDS) expect(["1495", "2547"]).not.toContain(answerOf(generateOn(source, d, seed)));
+    }
+  });
+});
+
+describe("team-journey eras (ISKELET F16)", () => {
+  for (const era of ERAS) {
+    it(`${era}: every difficulty asks only about players of the era`, () => {
+      for (const d of DIFFICULTIES) {
+        for (const seed of SEEDS) {
+          expect(ds.getPlayer(answerOf(generateOn(ds, d, seed, era)))?.active).toBe(era === "current");
+        }
+      }
+    });
+  }
+
+  it("judges uniqueness against players of both eras", () => {
+    // Tim Duncan (retired) gets the exact journey of LeBron James (active): the search box would
+    // accept either, so neither may be asked — not even in an era where the other is not a candidate.
+    const lebron: [string, number, number][] = ds
+      .getCareerStints("2544")
+      .map((s) => [s.teamId, Number(s.fromSeason.slice(0, 4)), Number(s.toSeason.slice(0, 4))]);
+    const source = withStints(ds, { "1495": lebron });
+    const index = getJourneyIndex(source);
+    for (const id of ["2544", "1495"]) {
+      expect(index.uniqueWithYears.has(id)).toBe(false);
+      expect(index.uniqueSequence.has(id)).toBe(false);
+    }
+    expect(getJourneyIndex(ds).uniqueWithYears.has("2544")).toBe(true);
+    for (const era of ERA_FILTERS) {
+      for (const d of DIFFICULTIES) {
+        for (const seed of SEEDS) expect(["2544", "1495"]).not.toContain(answerOf(generateOn(source, d, seed, era)));
+      }
     }
   });
 });

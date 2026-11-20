@@ -1,5 +1,8 @@
+"use client";
+
 import type { ReactNode } from "react";
 import { fmtNumber } from "@/lib/format";
+import { useI18n } from "@/lib/i18n/provider";
 import { QuestionProgress } from "./question-progress";
 import { StreakMeter } from "./streak-meter";
 
@@ -14,15 +17,16 @@ interface GameHudProps {
 }
 
 export function GameHud({ index, total, results, streak, score, timer }: GameHudProps) {
+  const { t, locale } = useI18n();
   return (
     <div className="game-hud" data-component="GameHud">
       <div className="game-hud__top">
         <QuestionProgress index={index} total={total} results={results} />
         <StreakMeter streak={streak} />
         <div className="game-hud__score">
-          <span className="t-label">Score</span>
+          <span className="t-label">{t.common.score}</span>
           <span className="game-hud__score-value" aria-live="polite">
-            {fmtNumber(score)}
+            {fmtNumber(score, locale)}
           </span>
         </div>
       </div>

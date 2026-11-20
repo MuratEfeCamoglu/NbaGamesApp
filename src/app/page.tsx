@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import { getT } from "@/lib/i18n/server";
 import { HomeView } from "./home-view";
 
-export const metadata: Metadata = {
-  title: { absolute: "NBA Games — Know the game? Prove it." },
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await getT();
+  return { title: { absolute: t.meta.homeTitle } };
+}
 
 export default function HomePage() {
   return (

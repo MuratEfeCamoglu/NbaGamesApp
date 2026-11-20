@@ -100,11 +100,13 @@ export function getJourneyIndex(ds: NbaDataSource): JourneyIndex {
 export const engine: GameEngine = {
   mode: "team-journey",
   questionsPerSession: SESSION_LENGTH,
-  generateQuestion(ds, difficulty, rng, exclude) {
+  generateQuestion(ds, difficulty, rng, exclude, era = "all") {
     const hide = DIFFICULTY_RULES[difficulty].reducedHints;
+    // The index (and its uniqueness sets) is era-independent: an active and a retired player with
+    // the same clue would both be valid-looking answers, because search offers every player.
     const index = getJourneyIndex(ds);
     const unique = hide ? index.uniqueSequence : index.uniqueWithYears;
-    const pool = getPoolIds(ds, difficulty);
+    const pool = getPoolIds(ds, difficulty, era);
     const candidates = ds
       .getPlayersWithStints(MIN_FRANCHISES)
       .filter((p) => unique.has(p.id) && pool.has(p.id) && !exclude.has(`tj:${p.id}`));
@@ -120,6 +122,7 @@ export const engine: GameEngine = {
       key: `tj:${player.id}`,
       answerId: player.id,
       rng,
+      era,
       content: {
         mode: "team-journey",
         stints: journey.map((s) => ({

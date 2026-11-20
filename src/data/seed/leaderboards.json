@@ -1,9 +1,11 @@
 {
  "meta": {
-  "snapshotDate": "2026-11-19",
+  "snapshotDate": "2026-11-20",
   "source": "stats.nba.com via nba_api 1.12.0",
   "endpoints": [
-   "alltimeleadersgrids"
+   "alltimeleadersgrids",
+   "playercareerstats",
+   "leaguegamelog"
   ]
  },
  "items": [
@@ -11,7 +13,7 @@
    "id": "career-points",
    "title": "Career Points",
    "statLabel": "PTS",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -64,13 +66,14 @@
      "value": 28596
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
   },
   {
    "id": "career-rebounds",
    "title": "Career Rebounds",
    "statLabel": "REB",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -123,13 +126,14 @@
      "value": 14627
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
   },
   {
    "id": "career-assists",
    "title": "Career Assists",
    "statLabel": "AST",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -182,13 +186,14 @@
      "value": 9061
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
   },
   {
    "id": "career-steals",
    "title": "Career Steals",
    "statLabel": "STL",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -241,13 +246,14 @@
      "value": 2162
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
   },
   {
    "id": "career-blocks",
    "title": "Career Blocks",
    "statLabel": "BLK",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -300,13 +306,14 @@
      "value": 2361
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
   },
   {
    "id": "career-3pm",
    "title": "Career 3-Pointers Made",
    "statLabel": "3PM",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -331,7 +338,7 @@
     {
      "rank": 5,
      "playerId": "203081",
-     "value": 2848
+     "value": 2853
     },
     {
      "rank": 6,
@@ -359,13 +366,14 @@
      "value": 2403
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
   },
   {
    "id": "career-games",
    "title": "Career Games Played",
    "statLabel": "GP",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -418,13 +426,14 @@
      "value": 1410
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
   },
   {
    "id": "career-ftm",
    "title": "Career Free Throws Made",
    "statLabel": "FTM",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -477,13 +486,14 @@
      "value": 7160
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
   },
   {
    "id": "career-fgm",
    "title": "Career Field Goals Made",
    "statLabel": "FGM",
-   "asOf": "2026-11-19",
+   "asOf": "2026-11-20",
    "rows": [
     {
      "rank": 1,
@@ -536,7 +546,548 @@
      "value": 10976
     }
    ],
-   "source": "alltimeleadersgrids"
+   "source": "alltimeleadersgrids",
+   "scope": "all-time"
+  },
+  {
+   "id": "active-career-points",
+   "title": "Career Points — Active Players",
+   "statLabel": "PTS",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "2544",
+     "value": 43628
+    },
+    {
+     "rank": 2,
+     "playerId": "201142",
+     "value": 32938
+    },
+    {
+     "rank": 3,
+     "playerId": "201935",
+     "value": 29582
+    },
+    {
+     "rank": 4,
+     "playerId": "201566",
+     "value": 27176
+    },
+    {
+     "rank": 5,
+     "playerId": "201942",
+     "value": 26830
+    },
+    {
+     "rank": 6,
+     "playerId": "201939",
+     "value": 26806
+    },
+    {
+     "rank": 7,
+     "playerId": "203081",
+     "value": 22912
+    },
+    {
+     "rank": 8,
+     "playerId": "203507",
+     "value": 21954
+    },
+    {
+     "rank": 9,
+     "playerId": "203076",
+     "value": 19729
+    },
+    {
+     "rank": 10,
+     "playerId": "202331",
+     "value": 19597
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
+  },
+  {
+   "id": "active-career-rebounds",
+   "title": "Career Rebounds — Active Players",
+   "statLabel": "REB",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "2544",
+     "value": 12177
+    },
+    {
+     "rank": 2,
+     "playerId": "203083",
+     "value": 11622
+    },
+    {
+     "rank": 3,
+     "playerId": "201599",
+     "value": 10887
+    },
+    {
+     "rank": 4,
+     "playerId": "202696",
+     "value": 10741
+    },
+    {
+     "rank": 5,
+     "playerId": "203497",
+     "value": 10735
+    },
+    {
+     "rank": 6,
+     "playerId": "201567",
+     "value": 9712
+    },
+    {
+     "rank": 7,
+     "playerId": "201143",
+     "value": 9210
+    },
+    {
+     "rank": 8,
+     "playerId": "203999",
+     "value": 9116
+    },
+    {
+     "rank": 9,
+     "playerId": "203507",
+     "value": 9071
+    },
+    {
+     "rank": 10,
+     "playerId": "202685",
+     "value": 9052
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
+  },
+  {
+   "id": "active-career-assists",
+   "title": "Career Assists — Active Players",
+   "statLabel": "AST",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "2544",
+     "value": 12098
+    },
+    {
+     "rank": 2,
+     "playerId": "201566",
+     "value": 10351
+    },
+    {
+     "rank": 3,
+     "playerId": "201935",
+     "value": 8967
+    },
+    {
+     "rank": 4,
+     "playerId": "200768",
+     "value": 7110
+    },
+    {
+     "rank": 5,
+     "playerId": "201950",
+     "value": 6826
+    },
+    {
+     "rank": 6,
+     "playerId": "201144",
+     "value": 6784
+    },
+    {
+     "rank": 7,
+     "playerId": "201939",
+     "value": 6782
+    },
+    {
+     "rank": 8,
+     "playerId": "203999",
+     "value": 6196
+    },
+    {
+     "rank": 9,
+     "playerId": "203081",
+     "value": 6130
+    },
+    {
+     "rank": 10,
+     "playerId": "203110",
+     "value": 5409
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
+  },
+  {
+   "id": "active-career-steals",
+   "title": "Career Steals — Active Players",
+   "statLabel": "STL",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "2544",
+     "value": 2430
+    },
+    {
+     "rank": 2,
+     "playerId": "201566",
+     "value": 2038
+    },
+    {
+     "rank": 3,
+     "playerId": "201935",
+     "value": 1808
+    },
+    {
+     "rank": 4,
+     "playerId": "201144",
+     "value": 1640
+    },
+    {
+     "rank": 5,
+     "playerId": "202331",
+     "value": 1628
+    },
+    {
+     "rank": 6,
+     "playerId": "201939",
+     "value": 1611
+    },
+    {
+     "rank": 7,
+     "playerId": "201950",
+     "value": 1545
+    },
+    {
+     "rank": 8,
+     "playerId": "200768",
+     "value": 1501
+    },
+    {
+     "rank": 9,
+     "playerId": "202710",
+     "value": 1455
+    },
+    {
+     "rank": 10,
+     "playerId": "202695",
+     "value": 1384
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
+  },
+  {
+   "id": "active-career-blocks",
+   "title": "Career Blocks — Active Players",
+   "statLabel": "BLK",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "201572",
+     "value": 2159
+    },
+    {
+     "rank": 2,
+     "playerId": "203076",
+     "value": 1865
+    },
+    {
+     "rank": 3,
+     "playerId": "203497",
+     "value": 1856
+    },
+    {
+     "rank": 4,
+     "playerId": "201599",
+     "value": 1580
+    },
+    {
+     "rank": 5,
+     "playerId": "1626167",
+     "value": 1557
+    },
+    {
+     "rank": 6,
+     "playerId": "201143",
+     "value": 1364
+    },
+    {
+     "rank": 7,
+     "playerId": "201142",
+     "value": 1360
+    },
+    {
+     "rank": 8,
+     "playerId": "203083",
+     "value": 1205
+    },
+    {
+     "rank": 9,
+     "playerId": "2544",
+     "value": 1193
+    },
+    {
+     "rank": 10,
+     "playerId": "203507",
+     "value": 1107
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
+  },
+  {
+   "id": "active-career-3pm",
+   "title": "Career 3-Pointers Made — Active Players",
+   "statLabel": "3PM",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "201939",
+     "value": 4291
+    },
+    {
+     "rank": 2,
+     "playerId": "201935",
+     "value": 3429
+    },
+    {
+     "rank": 3,
+     "playerId": "202691",
+     "value": 2956
+    },
+    {
+     "rank": 4,
+     "playerId": "203081",
+     "value": 2853
+    },
+    {
+     "rank": 5,
+     "playerId": "2544",
+     "value": 2646
+    },
+    {
+     "rank": 6,
+     "playerId": "202331",
+     "value": 2493
+    },
+    {
+     "rank": 7,
+     "playerId": "201142",
+     "value": 2403
+    },
+    {
+     "rank": 8,
+     "playerId": "1627741",
+     "value": 2220
+    },
+    {
+     "rank": 9,
+     "playerId": "200768",
+     "value": 2209
+    },
+    {
+     "rank": 10,
+     "playerId": "203468",
+     "value": 2205
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
+  },
+  {
+   "id": "active-career-games",
+   "title": "Career Games Played — Active Players",
+   "statLabel": "GP",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "2544",
+     "value": 1634
+    },
+    {
+     "rank": 2,
+     "playerId": "201566",
+     "value": 1301
+    },
+    {
+     "rank": 3,
+     "playerId": "201942",
+     "value": 1276
+    },
+    {
+     "rank": 4,
+     "playerId": "201145",
+     "value": 1247
+    },
+    {
+     "rank": 5,
+     "playerId": "201935",
+     "value": 1236
+    },
+    {
+     "rank": 6,
+     "playerId": "201144",
+     "value": 1230
+    },
+    {
+     "rank": 7,
+     "playerId": "201142",
+     "value": 1217
+    },
+    {
+     "rank": 8,
+     "playerId": "201587",
+     "value": 1205
+    },
+    {
+     "rank": 9,
+     "playerId": "201143",
+     "value": 1196
+    },
+    {
+     "rank": 10,
+     "playerId": "201572",
+     "value": 1194
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
+  },
+  {
+   "id": "active-career-ftm",
+   "title": "Career Free Throws Made — Active Players",
+   "statLabel": "FTM",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "2544",
+     "value": 8920
+    },
+    {
+     "rank": 2,
+     "playerId": "201935",
+     "value": 8693
+    },
+    {
+     "rank": 3,
+     "playerId": "201142",
+     "value": 7807
+    },
+    {
+     "rank": 4,
+     "playerId": "201942",
+     "value": 6957
+    },
+    {
+     "rank": 5,
+     "playerId": "201566",
+     "value": 6109
+    },
+    {
+     "rank": 6,
+     "playerId": "203081",
+     "value": 5347
+    },
+    {
+     "rank": 7,
+     "playerId": "203507",
+     "value": 5269
+    },
+    {
+     "rank": 8,
+     "playerId": "202710",
+     "value": 5168
+    },
+    {
+     "rank": 9,
+     "playerId": "203076",
+     "value": 4535
+    },
+    {
+     "rank": 10,
+     "playerId": "201939",
+     "value": 4311
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
+  },
+  {
+   "id": "active-career-fgm",
+   "title": "Career Field Goals Made — Active Players",
+   "statLabel": "FGM",
+   "asOf": "2026-11-20",
+   "rows": [
+    {
+     "rank": 1,
+     "playerId": "2544",
+     "value": 16031
+    },
+    {
+     "rank": 2,
+     "playerId": "201142",
+     "value": 11364
+    },
+    {
+     "rank": 3,
+     "playerId": "201566",
+     "value": 9786
+    },
+    {
+     "rank": 4,
+     "playerId": "201942",
+     "value": 9604
+    },
+    {
+     "rank": 5,
+     "playerId": "201939",
+     "value": 9102
+    },
+    {
+     "rank": 6,
+     "playerId": "201935",
+     "value": 8730
+    },
+    {
+     "rank": 7,
+     "playerId": "203507",
+     "value": 8060
+    },
+    {
+     "rank": 8,
+     "playerId": "202696",
+     "value": 7537
+    },
+    {
+     "rank": 9,
+     "playerId": "203076",
+     "value": 7399
+    },
+    {
+     "rank": 10,
+     "playerId": "203081",
+     "value": 7356
+    }
+   ],
+   "source": "playercareerstats",
+   "scope": "active"
   }
  ]
 }

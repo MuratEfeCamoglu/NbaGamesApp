@@ -1,8 +1,9 @@
 // @vitest-environment jsdom
 import { cleanup, fireEvent, render, screen } from "@testing-library/react";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import type { AnswerResult } from "@/games/core/types";
+import type { AnswerResult, SessionSummary } from "@/games/core/types";
 import { feedbackFor } from "./game-play";
+import { en } from "@/lib/i18n";
 import { ResultSummary } from "./result-summary";
 import { player } from "./test-fixtures";
 
@@ -10,10 +11,11 @@ vi.mock("next/navigation", () => ({ useRouter: () => ({ push: vi.fn() }) }));
 
 afterEach(cleanup);
 
-const SUMMARY = {
+const SUMMARY: SessionSummary = {
   sessionId: "s1",
-  mode: "career-stats" as const,
-  difficulty: "hard" as const,
+  mode: "career-stats",
+  difficulty: "hard",
+  era: "retired",
   score: 2140,
   correct: 8,
   total: 10,
@@ -41,6 +43,33 @@ describe("ResultSummary", () => {
     ).toHaveAttribute("data-state", "unlocking");
     expect(screen.getByRole("button", { name: "Play again" })).toBeInTheDocument();
     expect(screen.queryByText(/Set a nickname/)).not.toBeInTheDocument();
+  });
+
+  it("shows the session's era next to 'Session complete' (Daily → Mixed)", () => {
+    const { rerender, container } = render(
+      <ResultSummary
+        summary={SUMMARY}
+        newAchievements={[]}
+        showNicknameNudge={false}
+        onSetNickname={() => {}}
+        actions={null}
+      />,
+    );
+    const badge = () => container.querySelector("[data-component='EraBadge']");
+    expect(badge()).toHaveAttribute("data-variant", "retired");
+    expect(badge()).toHaveTextContent("Retired");
+    rerender(
+      <ResultSummary
+        summary={{ ...SUMMARY, mode: "daily", difficulty: "medium", era: "all" }}
+        newAchievements={[]}
+        showNicknameNudge={false}
+        onSetNickname={() => {}}
+        actions={null}
+      />,
+    );
+    expect(badge()).toHaveAttribute("data-variant", "mixed");
+    expect(badge()).toHaveTextContent("Mixed");
+    expect(screen.getByText("Session complete")).toBeInTheDocument();
   });
 
   it("hides the badge block without new badges and offers the nickname nudge", () => {
@@ -82,15 +111,15 @@ describe("feedbackFor", () => {
   });
 
   it("builds design messages for single answers", () => {
-    expect(feedbackFor(answered({ ...base, correct: true }))).toEqual({
+    expect(feedbackFor(answered({ ...base, correct: true }), en)).toEqual({
       kind: "correct",
       message: "Correct!",
     });
-    expect(feedbackFor(answered(base))).toEqual({
+    expect(feedbackFor(answered(base), en)).toEqual({
       kind: "wrong",
       message: "Not quite — it was Andrew Bogut.",
     });
-    expect(feedbackFor(answered(base, true))).toEqual({
+    expect(feedbackFor(answered(base, true), en)).toEqual({
       kind: "timeout",
       message: "Time's up — it was Andrew Bogut.",
     });
@@ -102,15 +131,15 @@ describe("feedbackFor", () => {
       correctAnswer: { kind: "slots", rows: [] },
       totalUnits: 4,
     };
-    expect(feedbackFor(answered({ ...slots, correctUnits: 4 }))).toEqual({
+    expect(feedbackFor(answered({ ...slots, correctUnits: 4 }), en)).toEqual({
       kind: "correct",
       message: "List complete!",
     });
-    expect(feedbackFor(answered({ ...slots, correctUnits: 2 }))).toEqual({
+    expect(feedbackFor(answered({ ...slots, correctUnits: 2 }), en)).toEqual({
       kind: "wrong",
       message: "2 of 4 found.",
     });
-    expect(feedbackFor(answered({ ...slots, correctUnits: 1 }, true)).message).toBe(
+    expect(feedbackFor(answered({ ...slots, correctUnits: 1 }, true), en).message).toBe(
       "Time's up — 1 of 4 found.",
     );
   });

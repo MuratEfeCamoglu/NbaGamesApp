@@ -1,5 +1,8 @@
+"use client";
+
 import type { BoxScoreStatLine } from "@/games/core/types";
 import { fmtGameDate } from "@/lib/format";
+import { useI18n } from "@/lib/i18n/provider";
 import { TeamBadge } from "./team-badge";
 
 interface GameInfo {
@@ -11,6 +14,7 @@ interface GameInfo {
 }
 
 export function BoxScoreHeader({ game }: { game: GameInfo }) {
+  const { locale } = useI18n();
   const won = game.teamScore >= game.opponentScore;
   return (
     <div className="box-score__matchup" data-component="BoxScoreHeader">
@@ -18,7 +22,7 @@ export function BoxScoreHeader({ game }: { game: GameInfo }) {
         <TeamBadge teamId={game.teamId} size="lg" />
         <span className="box-score__pts">{game.teamScore}</span>
       </span>
-      <span className="t-xs t-muted">{fmtGameDate(game.date)}</span>
+      <span className="t-xs t-muted">{fmtGameDate(game.date, locale)}</span>
       <span className="box-score__team" data-variant={won ? "loser" : "winner"}>
         <span className="box-score__pts">{game.opponentScore}</span>
         <TeamBadge teamId={game.opponentId} size="lg" />
@@ -39,18 +43,19 @@ export function BoxScoreTable({
   /** "???" before the answer, the player's name after. */
   playerLabel: string;
 }) {
+  const { t } = useI18n();
   return (
     <div
       className="table-scroll"
       data-component="BoxScoreTable"
       tabIndex={0}
-      aria-label="Box score line"
+      aria-label={t.question.boxScoreLine}
     >
       <table className="data-table">
         <thead>
           <tr>
             <th className="is-sticky" scope="col">
-              Player
+              {t.common.player}
             </th>
             <th scope="col">MIN</th>
             <th scope="col">PTS</th>

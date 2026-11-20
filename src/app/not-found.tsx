@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
+import { getT } from "@/lib/i18n/server";
 
-export const metadata: Metadata = { title: "Page not found" };
+export async function generateMetadata(): Promise<Metadata> {
+  const { t } = await getT();
+  return { title: t.meta.pageNotFoundTitle };
+}
 
-export default function NotFound() {
+export default async function NotFound() {
+  const { t } = await getT();
   return (
     <section className="screen" aria-labelledby="nf-title">
       <div className="container">
@@ -12,17 +17,15 @@ export default function NotFound() {
             404
           </span>
           <h1 className="t-display t-3xl" id="nf-title">
-            Air ball.
+            {t.notFound.title}
           </h1>
-          <p className="t-muted">
-            This page isn&apos;t on the court. It may have moved, or the link is wrong.
-          </p>
+          <p className="t-muted">{t.notFound.description}</p>
           <div className="row">
             <Button href="/" icon="home">
-              Back to home
+              {t.notFound.back}
             </Button>
             <Button href="/games" variant="secondary">
-              Browse games
+              {t.notFound.browse}
             </Button>
           </div>
         </div>

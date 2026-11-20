@@ -1,9 +1,11 @@
 {
  "meta": {
-  "snapshotDate": "2026-11-19",
+  "snapshotDate": "2026-11-20",
   "source": "stats.nba.com via nba_api 1.12.0",
   "endpoints": [
-   "leaguedashlineups"
+   "leaguedashlineups",
+   "boxscoretraditionalv3",
+   "leaguegamelog"
   ]
  },
  "items": [
@@ -7958,6 +7960,4514 @@
    ],
    "minutes": 90.3,
    "source": "leaguedashlineups"
+  },
+  {
+   "id": "ATL-1996-97-opener",
+   "teamId": "ATL",
+   "season": "1996-97",
+   "playerIds": [
+    "895",
+    "363",
+    "87",
+    "120",
+    "302"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-1996-97-opener",
+   "teamId": "BOS",
+   "season": "1996-97",
+   "playerIds": [
+    "952",
+    "677",
+    "442",
+    "133",
+    "296"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHH-1996-97-opener",
+   "teamId": "CHH",
+   "season": "1996-97",
+   "playerIds": [
+    "193",
+    "761",
+    "124",
+    "209",
+    "177"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-1996-97-opener",
+   "teamId": "CHI",
+   "season": "1996-97",
+   "playerIds": [
+    "937",
+    "23",
+    "26",
+    "166",
+    "893"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-1996-97-opener",
+   "teamId": "CLE",
+   "season": "1996-97",
+   "playerIds": [
+    "168",
+    "238",
+    "770",
+    "682",
+    "210"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-1996-97-opener",
+   "teamId": "DAL",
+   "season": "1996-97",
+   "playerIds": [
+    "45",
+    "684",
+    "376",
+    "467",
+    "754"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-1996-97-opener",
+   "teamId": "DEN",
+   "season": "1996-97",
+   "playerIds": [
+    "107",
+    "111",
+    "911",
+    "349",
+    "179"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-1996-97-opener",
+   "teamId": "DET",
+   "season": "1996-97",
+   "playerIds": [
+    "255",
+    "3",
+    "901",
+    "688",
+    "247"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-1996-97-opener",
+   "teamId": "GSW",
+   "season": "1996-97",
+   "playerIds": [
+    "904",
+    "693",
+    "957",
+    "899",
+    "84"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-1996-97-opener",
+   "teamId": "HOU",
+   "season": "1996-97",
+   "playerIds": [
+    "53",
+    "788",
+    "165",
+    "17",
+    "1074"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-1996-97-opener",
+   "teamId": "IND",
+   "season": "1996-97",
+   "playerIds": [
+    "905",
+    "365",
+    "213",
+    "696",
+    "397"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-1996-97-opener",
+   "teamId": "LAC",
+   "season": "1996-97",
+   "playerIds": [
+    "915",
+    "919",
+    "404",
+    "71",
+    "907"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-1996-97-opener",
+   "teamId": "LAL",
+   "season": "1996-97",
+   "playerIds": [
+    "922",
+    "76",
+    "406",
+    "224",
+    "89"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-1996-97-opener",
+   "teamId": "MIA",
+   "season": "1996-97",
+   "playerIds": [
+    "105",
+    "703",
+    "297",
+    "390",
+    "896"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-1996-97-opener",
+   "teamId": "MIL",
+   "season": "1996-97",
+   "playerIds": [
+    "452",
+    "299",
+    "457",
+    "951",
+    "428"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-1996-97-opener",
+   "teamId": "MIN",
+   "season": "1996-97",
+   "playerIds": [
+    "708",
+    "339",
+    "1037",
+    "28",
+    "950"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-1996-97-opener",
+   "teamId": "NJN",
+   "season": "1996-97",
+   "playerIds": [
+    "709",
+    "420",
+    "762",
+    "383",
+    "123"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-1996-97-opener",
+   "teamId": "NYK",
+   "season": "1996-97",
+   "playerIds": [
+    "913",
+    "433",
+    "121",
+    "275",
+    "369"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-1996-97-opener",
+   "teamId": "ORL",
+   "season": "1996-97",
+   "playerIds": [
+    "140",
+    "270",
+    "280",
+    "98",
+    "358"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-1996-97-opener",
+   "teamId": "PHI",
+   "season": "1996-97",
+   "playerIds": [
+    "221",
+    "934",
+    "262",
+    "711",
+    "947"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-1996-97-opener",
+   "teamId": "PHX",
+   "season": "1996-97",
+   "playerIds": [
+    "109",
+    "920",
+    "170",
+    "445",
+    "208"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-1996-97-opener",
+   "teamId": "POR",
+   "season": "1996-97",
+   "playerIds": [
+    "361",
+    "739",
+    "717",
+    "243",
+    "72"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-1996-97-opener",
+   "teamId": "SAC",
+   "season": "1996-97",
+   "playerIds": [
+    "722",
+    "258",
+    "178",
+    "782",
+    "51"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-1996-97-opener",
+   "teamId": "SAS",
+   "season": "1996-97",
+   "playerIds": [
+    "61",
+    "251",
+    "246",
+    "219",
+    "422"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-1996-97-opener",
+   "teamId": "SEA",
+   "season": "1996-97",
+   "playerIds": [
+    "96",
+    "431",
+    "29",
+    "765",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-1996-97-opener",
+   "teamId": "TOR",
+   "season": "1996-97",
+   "playerIds": [
+    "1005",
+    "461",
+    "440",
+    "57",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-1996-97-opener",
+   "teamId": "UTA",
+   "season": "1996-97",
+   "playerIds": [
+    "935",
+    "252",
+    "731",
+    "204",
+    "304"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "VAN-1996-97-opener",
+   "teamId": "VAN",
+   "season": "1996-97",
+   "playerIds": [
+    "949",
+    "211",
+    "735",
+    "324",
+    "21"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-1996-97-opener",
+   "teamId": "WAS",
+   "season": "1996-97",
+   "playerIds": [
+    "265",
+    "436",
+    "185",
+    "384",
+    "393"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-1997-98-opener",
+   "teamId": "ATL",
+   "season": "1997-98",
+   "playerIds": [
+    "363",
+    "895",
+    "87",
+    "120",
+    "302"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-1997-98-opener",
+   "teamId": "BOS",
+   "season": "1997-98",
+   "playerIds": [
+    "962",
+    "952",
+    "969",
+    "1500",
+    "344"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHH-1997-98-opener",
+   "teamId": "CHH",
+   "season": "1997-98",
+   "playerIds": [
+    "1108",
+    "193",
+    "124",
+    "133",
+    "779"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-1997-98-opener",
+   "teamId": "CHI",
+   "season": "1997-98",
+   "playerIds": [
+    "389",
+    "679",
+    "26",
+    "166",
+    "893"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-1997-98-opener",
+   "teamId": "CLE",
+   "season": "1997-98",
+   "playerIds": [
+    "445",
+    "198",
+    "980",
+    "1507",
+    "682"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-1997-98-opener",
+   "teamId": "DAL",
+   "season": "1997-98",
+   "playerIds": [
+    "714",
+    "920",
+    "762",
+    "93",
+    "234"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-1997-98-opener",
+   "teamId": "DEN",
+   "season": "1997-98",
+   "playerIds": [
+    "1499",
+    "677",
+    "1051",
+    "1517",
+    "179"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-1997-98-opener",
+   "teamId": "DET",
+   "season": "1997-98",
+   "playerIds": [
+    "255",
+    "3",
+    "183",
+    "247",
+    "283"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-1997-98-opener",
+   "teamId": "GSW",
+   "season": "1997-98",
+   "playerIds": [
+    "923",
+    "693",
+    "956",
+    "84",
+    "902"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-1997-98-opener",
+   "teamId": "HOU",
+   "season": "1997-98",
+   "playerIds": [
+    "53",
+    "788",
+    "165",
+    "17",
+    "1074"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-1997-98-opener",
+   "teamId": "IND",
+   "season": "1997-98",
+   "playerIds": [
+    "904",
+    "905",
+    "22",
+    "397",
+    "349"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-1997-98-opener",
+   "teamId": "LAC",
+   "season": "1997-98",
+   "playerIds": [
+    "915",
+    "919",
+    "1037",
+    "239",
+    "699"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-1997-98-opener",
+   "teamId": "LAL",
+   "season": "1997-98",
+   "playerIds": [
+    "109",
+    "296",
+    "399",
+    "224",
+    "89"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-1997-98-opener",
+   "teamId": "MIA",
+   "season": "1997-98",
+   "playerIds": [
+    "469",
+    "136",
+    "1134",
+    "702",
+    "896"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-1997-98-opener",
+   "teamId": "MIL",
+   "season": "1997-98",
+   "playerIds": [
+    "299",
+    "238",
+    "911",
+    "951",
+    "210"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-1997-98-opener",
+   "teamId": "MIN",
+   "season": "1997-98",
+   "playerIds": [
+    "339",
+    "708",
+    "685",
+    "713",
+    "950"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-1997-98-opener",
+   "teamId": "NJN",
+   "season": "1997-98",
+   "playerIds": [
+    "383",
+    "423",
+    "420",
+    "236",
+    "208"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-1997-98-opener",
+   "teamId": "NYK",
+   "season": "1997-98",
+   "playerIds": [
+    "913",
+    "891",
+    "121",
+    "275",
+    "369"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-1997-98-opener",
+   "teamId": "ORL",
+   "season": "1997-98",
+   "playerIds": [
+    "98",
+    "270",
+    "938",
+    "157",
+    "358"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-1997-98-opener",
+   "teamId": "PHI",
+   "season": "1997-98",
+   "playerIds": [
+    "754",
+    "221",
+    "934",
+    "711",
+    "77"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-1997-98-opener",
+   "teamId": "PHX",
+   "season": "1997-98",
+   "playerIds": [
+    "364",
+    "686",
+    "361",
+    "467",
+    "134"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-1997-98-opener",
+   "teamId": "POR",
+   "season": "1997-98",
+   "playerIds": [
+    "258",
+    "739",
+    "717",
+    "278",
+    "180"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-1997-98-opener",
+   "teamId": "SAC",
+   "season": "1997-98",
+   "playerIds": [
+    "182",
+    "63",
+    "178",
+    "782",
+    "310"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-1997-98-opener",
+   "teamId": "SAS",
+   "season": "1997-98",
+   "playerIds": [
+    "1495",
+    "251",
+    "764",
+    "422",
+    "219"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-1997-98-opener",
+   "teamId": "SEA",
+   "season": "1997-98",
+   "playerIds": [
+    "96",
+    "452",
+    "1425",
+    "765",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-1997-98-opener",
+   "teamId": "TOR",
+   "season": "1997-98",
+   "playerIds": [
+    "1005",
+    "948",
+    "440",
+    "57",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-1997-98-opener",
+   "teamId": "UTA",
+   "season": "1997-98",
+   "playerIds": [
+    "252",
+    "935",
+    "731",
+    "204",
+    "458"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "VAN-1997-98-opener",
+   "teamId": "VAN",
+   "season": "1997-98",
+   "playerIds": [
+    "949",
+    "901",
+    "735",
+    "324",
+    "1498"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-1997-98-opener",
+   "teamId": "WAS",
+   "season": "1997-98",
+   "playerIds": [
+    "185",
+    "436",
+    "31",
+    "384",
+    "393"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-1998-99-opener",
+   "teamId": "ATL",
+   "season": "1998-99",
+   "playerIds": [
+    "111",
+    "673",
+    "87",
+    "302",
+    "120"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-1998-99-opener",
+   "teamId": "BOS",
+   "season": "1998-99",
+   "playerIds": [
+    "952",
+    "1718",
+    "1499",
+    "1500",
+    "72"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHH-1998-99-opener",
+   "teamId": "CHH",
+   "season": "1998-99",
+   "playerIds": [
+    "462",
+    "456",
+    "934",
+    "133",
+    "184"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-1998-99-opener",
+   "teamId": "CHI",
+   "season": "1998-99",
+   "playerIds": [
+    "95",
+    "389",
+    "457",
+    "166",
+    "699"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-1998-99-opener",
+   "teamId": "CLE",
+   "season": "1998-99",
+   "playerIds": [
+    "1538",
+    "431",
+    "980",
+    "1510",
+    "445"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-1998-99-opener",
+   "teamId": "DAL",
+   "season": "1998-99",
+   "playerIds": [
+    "920",
+    "1717",
+    "762",
+    "714",
+    "959"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-1998-99-opener",
+   "teamId": "DEN",
+   "season": "1998-99",
+   "playerIds": [
+    "686",
+    "677",
+    "1711",
+    "179",
+    "89"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-1998-99-opener",
+   "teamId": "DET",
+   "season": "1998-99",
+   "playerIds": [
+    "255",
+    "919",
+    "183",
+    "247",
+    "283"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-1998-99-opener",
+   "teamId": "GSW",
+   "season": "1998-99",
+   "playerIds": [
+    "679",
+    "168",
+    "956",
+    "317",
+    "177"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-1998-99-opener",
+   "teamId": "HOU",
+   "season": "1998-99",
+   "playerIds": [
+    "787",
+    "937",
+    "165",
+    "1722",
+    "1074"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-1998-99-opener",
+   "teamId": "IND",
+   "season": "1998-99",
+   "playerIds": [
+    "904",
+    "905",
+    "22",
+    "397",
+    "349"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-1998-99-opener",
+   "teamId": "LAC",
+   "season": "1998-99",
+   "playerIds": [
+    "441",
+    "915",
+    "953",
+    "239",
+    "15"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-1998-99-opener",
+   "teamId": "LAL",
+   "season": "1998-99",
+   "playerIds": [
+    "916",
+    "977",
+    "406",
+    "224",
+    "965"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-1998-99-opener",
+   "teamId": "MIA",
+   "season": "1998-99",
+   "playerIds": [
+    "469",
+    "136",
+    "297",
+    "105",
+    "896"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-1998-99-opener",
+   "teamId": "MIL",
+   "season": "1998-99",
+   "playerIds": [
+    "299",
+    "238",
+    "911",
+    "210",
+    "951"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-1998-99-opener",
+   "teamId": "MIN",
+   "season": "1998-99",
+   "playerIds": [
+    "708",
+    "693",
+    "1051",
+    "324",
+    "950"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-1998-99-opener",
+   "teamId": "NJN",
+   "season": "1998-99",
+   "playerIds": [
+    "383",
+    "1496",
+    "420",
+    "208",
+    "446"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-1998-99-opener",
+   "teamId": "NYK",
+   "season": "1998-99",
+   "playerIds": [
+    "913",
+    "84",
+    "121",
+    "275",
+    "369"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-1998-99-opener",
+   "teamId": "ORL",
+   "season": "1998-99",
+   "playerIds": [
+    "448",
+    "270",
+    "1134",
+    "98",
+    "358"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-1998-99-opener",
+   "teamId": "PHI",
+   "season": "1998-99",
+   "playerIds": [
+    "248",
+    "689",
+    "761",
+    "947",
+    "727"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-1998-99-opener",
+   "teamId": "PHX",
+   "season": "1998-99",
+   "playerIds": [
+    "339",
+    "361",
+    "26",
+    "467",
+    "45"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-1998-99-opener",
+   "teamId": "POR",
+   "season": "1998-99",
+   "playerIds": [
+    "258",
+    "1005",
+    "717",
+    "375",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-1998-99-opener",
+   "teamId": "SAC",
+   "season": "1998-99",
+   "playerIds": [
+    "722",
+    "185",
+    "124",
+    "1505",
+    "1715"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-1998-99-opener",
+   "teamId": "SAS",
+   "season": "1998-99",
+   "playerIds": [
+    "251",
+    "1495",
+    "764",
+    "1114",
+    "422"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-1998-99-opener",
+   "teamId": "SEA",
+   "season": "1998-99",
+   "playerIds": [
+    "452",
+    "96",
+    "178",
+    "182",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-1998-99-opener",
+   "teamId": "TOR",
+   "season": "1998-99",
+   "playerIds": [
+    "1713",
+    "891",
+    "788",
+    "57",
+    "1541"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-1998-99-opener",
+   "teamId": "UTA",
+   "season": "1998-99",
+   "playerIds": [
+    "935",
+    "252",
+    "731",
+    "204",
+    "304"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "VAN-1998-99-opener",
+   "teamId": "VAN",
+   "season": "1998-99",
+   "playerIds": [
+    "949",
+    "685",
+    "763",
+    "694",
+    "1710"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-1998-99-opener",
+   "teamId": "WAS",
+   "season": "1998-99",
+   "playerIds": [
+    "384",
+    "436",
+    "426",
+    "782",
+    "43"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-1999-00-opener",
+   "teamId": "ATL",
+   "season": "1999-00",
+   "playerIds": [
+    "673",
+    "1728",
+    "87",
+    "754",
+    "902"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-1999-00-opener",
+   "teamId": "BOS",
+   "season": "1999-00",
+   "playerIds": [
+    "1559",
+    "952",
+    "958",
+    "1718",
+    "72"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHH-1999-00-opener",
+   "teamId": "CHH",
+   "season": "1999-00",
+   "playerIds": [
+    "184",
+    "193",
+    "922",
+    "133",
+    "224"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-1999-00-opener",
+   "teamId": "CHI",
+   "season": "1999-00",
+   "playerIds": [
+    "389",
+    "1882",
+    "54",
+    "753",
+    "765"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-1999-00-opener",
+   "teamId": "CLE",
+   "season": "1999-00",
+   "playerIds": [
+    "1538",
+    "431",
+    "692",
+    "1510",
+    "682"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-1999-00-opener",
+   "teamId": "DAL",
+   "season": "1999-00",
+   "playerIds": [
+    "714",
+    "1717",
+    "399",
+    "123",
+    "1065"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-1999-00-opener",
+   "teamId": "DEN",
+   "season": "1999-00",
+   "playerIds": [
+    "686",
+    "1899",
+    "1711",
+    "1500",
+    "89"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-1999-00-opener",
+   "teamId": "DET",
+   "season": "1999-00",
+   "playerIds": [
+    "255",
+    "363",
+    "690",
+    "711",
+    "283"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-1999-00-opener",
+   "teamId": "GSW",
+   "season": "1999-00",
+   "playerIds": [
+    "1108",
+    "1712",
+    "1502",
+    "1907",
+    "168"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-1999-00-opener",
+   "teamId": "HOU",
+   "season": "1999-00",
+   "playerIds": [
+    "1005",
+    "787",
+    "165",
+    "1000",
+    "1883"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-1999-00-opener",
+   "teamId": "IND",
+   "season": "1999-00",
+   "playerIds": [
+    "147",
+    "905",
+    "22",
+    "397",
+    "349"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-1999-00-opener",
+   "teamId": "LAC",
+   "season": "1999-00",
+   "playerIds": [
+    "1885",
+    "1508",
+    "1709",
+    "1507",
+    "785"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-1999-00-opener",
+   "teamId": "LAL",
+   "season": "1999-00",
+   "playerIds": [
+    "779",
+    "920",
+    "406",
+    "965",
+    "166"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-1999-00-opener",
+   "teamId": "MIA",
+   "season": "1999-00",
+   "playerIds": [
+    "469",
+    "136",
+    "297",
+    "105",
+    "896"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-1999-00-opener",
+   "teamId": "MIL",
+   "season": "1999-00",
+   "playerIds": [
+    "299",
+    "1714",
+    "462",
+    "951",
+    "208"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-1999-00-opener",
+   "teamId": "MIN",
+   "season": "1999-00",
+   "playerIds": [
+    "708",
+    "1887",
+    "1725",
+    "324",
+    "210"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-1999-00-opener",
+   "teamId": "NJN",
+   "season": "1999-00",
+   "playerIds": [
+    "197",
+    "1496",
+    "29",
+    "383",
+    "950"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-1999-00-opener",
+   "teamId": "NYK",
+   "season": "1999-00",
+   "playerIds": [
+    "913",
+    "84",
+    "948",
+    "275",
+    "369"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-1999-00-opener",
+   "teamId": "ORL",
+   "season": "1999-00",
+   "playerIds": [
+    "1112",
+    "448",
+    "1720",
+    "1505",
+    "353"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-1999-00-opener",
+   "teamId": "PHI",
+   "season": "1999-00",
+   "playerIds": [
+    "182",
+    "248",
+    "238",
+    "727",
+    "947"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-1999-00-opener",
+   "teamId": "PHX",
+   "season": "1999-00",
+   "playerIds": [
+    "339",
+    "361",
+    "26",
+    "1890",
+    "467"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-1999-00-opener",
+   "teamId": "POR",
+   "season": "1999-00",
+   "playerIds": [
+    "937",
+    "739",
+    "717",
+    "120",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-1999-00-opener",
+   "teamId": "SAC",
+   "season": "1999-00",
+   "playerIds": [
+    "722",
+    "185",
+    "124",
+    "98",
+    "1715"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-1999-00-opener",
+   "teamId": "SAS",
+   "season": "1999-00",
+   "playerIds": [
+    "359",
+    "1495",
+    "764",
+    "53",
+    "422"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-1999-00-opener",
+   "teamId": "SEA",
+   "season": "1999-00",
+   "playerIds": [
+    "1739",
+    "452",
+    "270",
+    "699",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-1999-00-opener",
+   "teamId": "TOR",
+   "season": "1999-00",
+   "playerIds": [
+    "1713",
+    "891",
+    "213",
+    "57",
+    "1541"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-1999-00-opener",
+   "teamId": "UTA",
+   "season": "1999-00",
+   "playerIds": [
+    "228",
+    "252",
+    "178",
+    "304",
+    "204"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "VAN-1999-00-opener",
+   "teamId": "VAN",
+   "season": "1999-00",
+   "playerIds": [
+    "949",
+    "970",
+    "735",
+    "1722",
+    "1710"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-1999-00-opener",
+   "teamId": "WAS",
+   "season": "1999-00",
+   "playerIds": [
+    "63",
+    "436",
+    "1134",
+    "782",
+    "393"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-2000-01-opener",
+   "teamId": "ATL",
+   "season": "2000-01",
+   "playerIds": [
+    "1728",
+    "2069",
+    "673",
+    "1891",
+    "754"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-2000-01-opener",
+   "teamId": "BOS",
+   "season": "2000-01",
+   "playerIds": [
+    "952",
+    "677",
+    "1499",
+    "72",
+    "1718"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHH-2000-01-opener",
+   "teamId": "CHH",
+   "season": "2000-01",
+   "playerIds": [
+    "469",
+    "136",
+    "922",
+    "133",
+    "1884"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-2000-01-opener",
+   "teamId": "CHI",
+   "season": "2000-01",
+   "playerIds": [
+    "1897",
+    "1882",
+    "1913",
+    "2064",
+    "1500"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-2000-01-opener",
+   "teamId": "CLE",
+   "season": "2000-01",
+   "playerIds": [
+    "441",
+    "221",
+    "980",
+    "1723",
+    "1889"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-2000-01-opener",
+   "teamId": "DAL",
+   "season": "2000-01",
+   "playerIds": [
+    "2059",
+    "1717",
+    "363",
+    "714",
+    "959"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-2000-01-opener",
+   "teamId": "DEN",
+   "season": "2000-01",
+   "playerIds": [
+    "686",
+    "1899",
+    "1711",
+    "1505",
+    "89"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-2000-01-opener",
+   "teamId": "DET",
+   "season": "2000-01",
+   "playerIds": [
+    "182",
+    "1112",
+    "376",
+    "711",
+    "1088"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-2000-01-opener",
+   "teamId": "GSW",
+   "season": "2000-01",
+   "playerIds": [
+    "1504",
+    "1712",
+    "956",
+    "1716",
+    "302"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-2000-01-opener",
+   "teamId": "HOU",
+   "season": "2000-01",
+   "playerIds": [
+    "1508",
+    "1005",
+    "165",
+    "1000",
+    "1883"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-2000-01-opener",
+   "teamId": "IND",
+   "season": "2000-01",
+   "playerIds": [
+    "1506",
+    "979",
+    "64",
+    "696",
+    "397"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-2000-01-opener",
+   "teamId": "LAC",
+   "season": "2000-01",
+   "playerIds": [
+    "1885",
+    "1730",
+    "1709",
+    "976",
+    "2032"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-2000-01-opener",
+   "teamId": "LAL",
+   "season": "2000-01",
+   "playerIds": [
+    "296",
+    "270",
+    "406",
+    "977",
+    "166"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-2000-01-opener",
+   "teamId": "MIA",
+   "season": "2000-01",
+   "playerIds": [
+    "193",
+    "258",
+    "190",
+    "224",
+    "896"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-2000-01-opener",
+   "teamId": "MIL",
+   "season": "2000-01",
+   "playerIds": [
+    "299",
+    "679",
+    "911",
+    "208",
+    "951"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-2000-01-opener",
+   "teamId": "MIN",
+   "season": "2000-01",
+   "playerIds": [
+    "708",
+    "1887",
+    "1725",
+    "1497",
+    "210"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-2000-01-opener",
+   "teamId": "NJN",
+   "season": "2000-01",
+   "playerIds": [
+    "1536",
+    "2030",
+    "1915",
+    "383",
+    "950"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-2000-01-opener",
+   "teamId": "NYK",
+   "season": "2000-01",
+   "playerIds": [
+    "913",
+    "84",
+    "948",
+    "275",
+    "369"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-2000-01-opener",
+   "teamId": "ORL",
+   "season": "2000-01",
+   "playerIds": [
+    "255",
+    "448",
+    "680",
+    "1503",
+    "353"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-2000-01-opener",
+   "teamId": "PHI",
+   "season": "2000-01",
+   "playerIds": [
+    "238",
+    "248",
+    "689",
+    "947",
+    "727"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-2000-01-opener",
+   "teamId": "PHX",
+   "season": "2000-01",
+   "playerIds": [
+    "361",
+    "1890",
+    "201",
+    "53",
+    "467"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-2000-01-opener",
+   "teamId": "POR",
+   "season": "2000-01",
+   "playerIds": [
+    "937",
+    "905",
+    "739",
+    "120",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-2000-01-opener",
+   "teamId": "SAC",
+   "season": "2000-01",
+   "playerIds": [
+    "185",
+    "978",
+    "124",
+    "57",
+    "1517"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-2000-01-opener",
+   "teamId": "SAS",
+   "season": "2000-01",
+   "playerIds": [
+    "251",
+    "1495",
+    "764",
+    "422",
+    "1507"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-2000-01-opener",
+   "teamId": "SEA",
+   "season": "2000-01",
+   "playerIds": [
+    "1740",
+    "452",
+    "121",
+    "2046",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-2000-01-opener",
+   "teamId": "TOR",
+   "season": "2000-01",
+   "playerIds": [
+    "722",
+    "891",
+    "213",
+    "1713",
+    "349"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-2000-01-opener",
+   "teamId": "UTA",
+   "season": "2000-01",
+   "playerIds": [
+    "252",
+    "935",
+    "178",
+    "304",
+    "317"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "VAN-2000-01-opener",
+   "teamId": "VAN",
+   "season": "2000-01",
+   "playerIds": [
+    "949",
+    "970",
+    "735",
+    "1722",
+    "1710"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-2000-01-opener",
+   "teamId": "WAS",
+   "season": "2000-01",
+   "playerIds": [
+    "1732",
+    "436",
+    "1751",
+    "782",
+    "393"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-2001-02-opener",
+   "teamId": "ATL",
+   "season": "2001-02",
+   "playerIds": [
+    "949",
+    "1901",
+    "689",
+    "1023",
+    "1891"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-2001-02-opener",
+   "teamId": "BOS",
+   "season": "2001-02",
+   "playerIds": [
+    "1718",
+    "952",
+    "1499",
+    "72",
+    "677"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHH-2001-02-opener",
+   "teamId": "CHH",
+   "season": "2001-02",
+   "playerIds": [
+    "469",
+    "136",
+    "922",
+    "1884",
+    "133"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-2001-02-opener",
+   "teamId": "CHI",
+   "season": "2001-02",
+   "playerIds": [
+    "1500",
+    "891",
+    "1802",
+    "21",
+    "697"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-2001-02-opener",
+   "teamId": "CLE",
+   "season": "2001-02",
+   "playerIds": [
+    "441",
+    "2036",
+    "1720",
+    "1889",
+    "445"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-2001-02-opener",
+   "teamId": "DAL",
+   "season": "2001-02",
+   "playerIds": [
+    "436",
+    "1761",
+    "1717",
+    "714",
+    "959"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-2001-02-opener",
+   "teamId": "DEN",
+   "season": "2001-02",
+   "playerIds": [
+    "1505",
+    "281",
+    "1711",
+    "89",
+    "1899"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-2001-02-opener",
+   "teamId": "DET",
+   "season": "2001-02",
+   "playerIds": [
+    "688",
+    "361",
+    "1112",
+    "344",
+    "711"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-2001-02-opener",
+   "teamId": "GSW",
+   "season": "2001-02",
+   "playerIds": [
+    "1712",
+    "1504",
+    "956",
+    "1716",
+    "682"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-2001-02-opener",
+   "teamId": "HOU",
+   "season": "2001-02",
+   "playerIds": [
+    "779",
+    "1903",
+    "1509",
+    "1883",
+    "1749"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-2001-02-opener",
+   "teamId": "IND",
+   "season": "2001-02",
+   "playerIds": [
+    "147",
+    "979",
+    "1902",
+    "397",
+    "2224"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-2001-02-opener",
+   "teamId": "LAC",
+   "season": "2001-02",
+   "playerIds": [
+    "1885",
+    "1882",
+    "1709",
+    "976",
+    "15"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-2001-02-opener",
+   "teamId": "LAL",
+   "season": "2001-02",
+   "playerIds": [
+    "296",
+    "955",
+    "406",
+    "977",
+    "283"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MEM-2001-02-opener",
+   "teamId": "MEM",
+   "season": "2001-02",
+   "playerIds": [
+    "2203",
+    "2031",
+    "953",
+    "1715",
+    "1722"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-2001-02-opener",
+   "teamId": "MIA",
+   "season": "2001-02",
+   "playerIds": [
+    "383",
+    "258",
+    "297",
+    "1853",
+    "224"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-2001-02-opener",
+   "teamId": "MIL",
+   "season": "2001-02",
+   "playerIds": [
+    "299",
+    "193",
+    "2038",
+    "208",
+    "951"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-2001-02-opener",
+   "teamId": "MIN",
+   "season": "2001-02",
+   "playerIds": [
+    "708",
+    "693",
+    "1725",
+    "1887",
+    "210"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-2001-02-opener",
+   "teamId": "NJN",
+   "season": "2001-02",
+   "playerIds": [
+    "1496",
+    "2030",
+    "1928",
+    "954",
+    "467"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-2001-02-opener",
+   "teamId": "NYK",
+   "season": "2001-02",
+   "playerIds": [
+    "84",
+    "703",
+    "280",
+    "275",
+    "349"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-2001-02-opener",
+   "teamId": "ORL",
+   "season": "2001-02",
+   "playerIds": [
+    "255",
+    "270",
+    "692",
+    "1503",
+    "353"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-2001-02-opener",
+   "teamId": "PHI",
+   "season": "2001-02",
+   "playerIds": [
+    "934",
+    "1723",
+    "87",
+    "1952",
+    "2049"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-2001-02-opener",
+   "teamId": "PHX",
+   "season": "2001-02",
+   "playerIds": [
+    "1890",
+    "339",
+    "915",
+    "950",
+    "358"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-2001-02-opener",
+   "teamId": "POR",
+   "season": "2001-02",
+   "playerIds": [
+    "937",
+    "739",
+    "905",
+    "1507",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-2001-02-opener",
+   "teamId": "SAC",
+   "season": "2001-02",
+   "playerIds": [
+    "978",
+    "1513",
+    "124",
+    "57",
+    "1710"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-2001-02-opener",
+   "teamId": "SAS",
+   "season": "2001-02",
+   "playerIds": [
+    "1477",
+    "1495",
+    "764",
+    "1498",
+    "120"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-2001-02-opener",
+   "teamId": "SEA",
+   "season": "2001-02",
+   "playerIds": [
+    "1740",
+    "452",
+    "1916",
+    "699",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-2001-02-opener",
+   "teamId": "TOR",
+   "season": "2001-02",
+   "playerIds": [
+    "2050",
+    "213",
+    "165",
+    "1713",
+    "1541"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-2001-02-opener",
+   "teamId": "UTA",
+   "season": "2001-02",
+   "playerIds": [
+    "923",
+    "252",
+    "731",
+    "304",
+    "1900"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-2001-02-opener",
+   "teamId": "WAS",
+   "season": "2001-02",
+   "playerIds": [
+    "893",
+    "363",
+    "1751",
+    "2042",
+    "1888"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-2002-03-opener",
+   "teamId": "ATL",
+   "season": "2002-03",
+   "playerIds": [
+    "299",
+    "673",
+    "689",
+    "1956",
+    "1891"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-2002-03-opener",
+   "teamId": "BOS",
+   "season": "2002-03",
+   "playerIds": [
+    "952",
+    "677",
+    "1499",
+    "960",
+    "1718"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-2002-03-opener",
+   "teamId": "CHI",
+   "season": "2002-03",
+   "playerIds": [
+    "2199",
+    "147",
+    "2201",
+    "2398",
+    "2239"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-2002-03-opener",
+   "teamId": "CLE",
+   "season": "2002-03",
+   "playerIds": [
+    "2032",
+    "238",
+    "2205",
+    "1729",
+    "902"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-2002-03-opener",
+   "teamId": "DAL",
+   "season": "2002-03",
+   "playerIds": [
+    "2059",
+    "1717",
+    "1711",
+    "959",
+    "714"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-2002-03-opener",
+   "teamId": "DEN",
+   "season": "2002-03",
+   "playerIds": [
+    "1763",
+    "2051",
+    "1548",
+    "1899",
+    "43"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-2002-03-opener",
+   "teamId": "DET",
+   "season": "2002-03",
+   "playerIds": [
+    "688",
+    "1112",
+    "1442",
+    "1888",
+    "1497"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-2002-03-opener",
+   "teamId": "GSW",
+   "season": "2002-03",
+   "playerIds": [
+    "2211",
+    "1712",
+    "956",
+    "2202",
+    "2240"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-2002-03-opener",
+   "teamId": "HOU",
+   "season": "2002-03",
+   "playerIds": [
+    "1749",
+    "2204",
+    "1509",
+    "1883",
+    "983"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-2002-03-opener",
+   "teamId": "IND",
+   "season": "2002-03",
+   "playerIds": [
+    "1733",
+    "979",
+    "1802",
+    "1897",
+    "1065"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-2002-03-opener",
+   "teamId": "LAC",
+   "season": "2002-03",
+   "playerIds": [
+    "1894",
+    "1882",
+    "1709",
+    "1889",
+    "2047"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-2002-03-opener",
+   "teamId": "LAL",
+   "season": "2002-03",
+   "playerIds": [
+    "1904",
+    "109",
+    "2066",
+    "977",
+    "965"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MEM-2002-03-opener",
+   "teamId": "MEM",
+   "season": "2002-03",
+   "playerIds": [
+    "445",
+    "2400",
+    "2200",
+    "1715",
+    "1722"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-2002-03-opener",
+   "teamId": "MIA",
+   "season": "2002-03",
+   "playerIds": [
+    "2406",
+    "2124",
+    "258",
+    "696",
+    "224"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-2002-03-opener",
+   "teamId": "MIL",
+   "season": "2002-03",
+   "playerIds": [
+    "1501",
+    "679",
+    "2429",
+    "208",
+    "951"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-2002-03-opener",
+   "teamId": "MIN",
+   "season": "2002-03",
+   "playerIds": [
+    "708",
+    "2254",
+    "1725",
+    "324",
+    "1607"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-2002-03-opener",
+   "teamId": "NJN",
+   "season": "2002-03",
+   "playerIds": [
+    "2210",
+    "2030",
+    "87",
+    "954",
+    "467"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NOH-2002-03-opener",
+   "teamId": "NOH",
+   "season": "2002-03",
+   "playerIds": [
+    "469",
+    "136",
+    "2048",
+    "1884",
+    "133"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-2002-03-opener",
+   "teamId": "NYK",
+   "season": "2002-03",
+   "playerIds": [
+    "1000",
+    "970",
+    "703",
+    "275",
+    "369"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-2002-03-opener",
+   "teamId": "ORL",
+   "season": "2002-03",
+   "playerIds": [
+    "255",
+    "270",
+    "2469",
+    "1503",
+    "353"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-2002-03-opener",
+   "teamId": "PHI",
+   "season": "2002-03",
+   "playerIds": [
+    "243",
+    "1496",
+    "1928",
+    "947",
+    "727"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-2002-03-opener",
+   "teamId": "PHX",
+   "season": "2002-03",
+   "playerIds": [
+    "339",
+    "1890",
+    "2054",
+    "358",
+    "2207"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-2002-03-opener",
+   "teamId": "POR",
+   "season": "2002-03",
+   "playerIds": [
+    "1719",
+    "739",
+    "905",
+    "1507",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-2002-03-opener",
+   "teamId": "SAC",
+   "season": "2002-03",
+   "playerIds": [
+    "978",
+    "185",
+    "124",
+    "2045",
+    "1517"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-2002-03-opener",
+   "teamId": "SAS",
+   "season": "2002-03",
+   "playerIds": [
+    "1477",
+    "1495",
+    "764",
+    "120",
+    "2225"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-2002-03-opener",
+   "teamId": "SEA",
+   "season": "2002-03",
+   "playerIds": [
+    "2501",
+    "1740",
+    "1542",
+    "699",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-2002-03-opener",
+   "teamId": "TOR",
+   "season": "2002-03",
+   "playerIds": [
+    "2050",
+    "213",
+    "1741",
+    "1713",
+    "1541"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-2002-03-opener",
+   "teamId": "UTA",
+   "season": "2002-03",
+   "playerIds": [
+    "1905",
+    "252",
+    "731",
+    "304",
+    "2052"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-2002-03-opener",
+   "teamId": "WAS",
+   "season": "2002-03",
+   "playerIds": [
+    "935",
+    "2198",
+    "363",
+    "711",
+    "1716"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-2003-04-opener",
+   "teamId": "ATL",
+   "season": "2003-04",
+   "playerIds": [
+    "1536",
+    "949",
+    "689",
+    "1891",
+    "1901"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-2003-04-opener",
+   "teamId": "BOS",
+   "season": "2003-04",
+   "playerIds": [
+    "2208",
+    "452",
+    "1548",
+    "2229",
+    "1718"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-2003-04-opener",
+   "teamId": "CHI",
+   "season": "2003-04",
+   "playerIds": [
+    "937",
+    "2437",
+    "2201",
+    "2037",
+    "147"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-2003-04-opener",
+   "teamId": "CLE",
+   "season": "2003-04",
+   "playerIds": [
+    "1729",
+    "2430",
+    "980",
+    "2032",
+    "2544"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-2003-04-opener",
+   "teamId": "DAL",
+   "season": "2003-04",
+   "playerIds": [
+    "952",
+    "1717",
+    "1504",
+    "714",
+    "959"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-2003-04-opener",
+   "teamId": "DEN",
+   "season": "2003-04",
+   "playerIds": [
+    "2546",
+    "2403",
+    "948",
+    "702",
+    "1889"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-2003-04-opener",
+   "teamId": "DET",
+   "season": "2003-04",
+   "playerIds": [
+    "2419",
+    "1112",
+    "922",
+    "1888",
+    "1497"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-2003-04-opener",
+   "teamId": "GSW",
+   "season": "2003-04",
+   "playerIds": [
+    "361",
+    "2399",
+    "956",
+    "384",
+    "2049"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-2003-04-opener",
+   "teamId": "HOU",
+   "season": "2003-04",
+   "playerIds": [
+    "754",
+    "1509",
+    "2397",
+    "1883",
+    "1749"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-2003-04-opener",
+   "teamId": "IND",
+   "season": "2003-04",
+   "playerIds": [
+    "1897",
+    "979",
+    "1513",
+    "72",
+    "397"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-2003-04-opener",
+   "teamId": "LAC",
+   "season": "2003-04",
+   "playerIds": [
+    "1882",
+    "1894",
+    "1542",
+    "2039",
+    "2047"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-2003-04-opener",
+   "teamId": "LAL",
+   "season": "2003-04",
+   "playerIds": [
+    "1904",
+    "252",
+    "406",
+    "965",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MEM-2003-04-opener",
+   "teamId": "MEM",
+   "season": "2003-04",
+   "playerIds": [
+    "1899",
+    "2200",
+    "2031",
+    "1715",
+    "2034"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-2003-04-opener",
+   "teamId": "MIA",
+   "season": "2003-04",
+   "playerIds": [
+    "1885",
+    "2617",
+    "258",
+    "2548",
+    "224"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-2003-04-opener",
+   "teamId": "MIL",
+   "season": "2003-04",
+   "playerIds": [
+    "1501",
+    "1730",
+    "693",
+    "2072",
+    "1800"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-2003-04-opener",
+   "teamId": "MIN",
+   "season": "2003-04",
+   "playerIds": [
+    "708",
+    "697",
+    "1709",
+    "84",
+    "208"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-2003-04-opener",
+   "teamId": "NJN",
+   "season": "2003-04",
+   "playerIds": [
+    "2210",
+    "2030",
+    "2215",
+    "954",
+    "467"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NOH-2003-04-opener",
+   "teamId": "NOH",
+   "season": "2003-04",
+   "playerIds": [
+    "248",
+    "136",
+    "2048",
+    "1884",
+    "133"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-2003-04-opener",
+   "teamId": "NYK",
+   "season": "2003-04",
+   "playerIds": [
+    "703",
+    "1496",
+    "87",
+    "275",
+    "369"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-2003-04-opener",
+   "teamId": "ORL",
+   "season": "2003-04",
+   "playerIds": [
+    "2400",
+    "2639",
+    "436",
+    "1731",
+    "1503"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-2003-04-opener",
+   "teamId": "PHI",
+   "season": "2003-04",
+   "playerIds": [
+    "2422",
+    "1903",
+    "934",
+    "727",
+    "947"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-2003-04-opener",
+   "teamId": "PHX",
+   "season": "2003-04",
+   "playerIds": [
+    "1890",
+    "2405",
+    "2063",
+    "950",
+    "2207"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-2003-04-opener",
+   "teamId": "POR",
+   "season": "2003-04",
+   "playerIds": [
+    "2216",
+    "739",
+    "905",
+    "757",
+    "1719"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-2003-04-opener",
+   "teamId": "SAC",
+   "season": "2003-04",
+   "playerIds": [
+    "978",
+    "1802",
+    "124",
+    "57",
+    "1710"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-2003-04-opener",
+   "teamId": "SAS",
+   "season": "2003-04",
+   "playerIds": [
+    "1477",
+    "1495",
+    "1725",
+    "1853",
+    "1938"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-2003-04-opener",
+   "teamId": "SEA",
+   "season": "2003-04",
+   "playerIds": [
+    "1740",
+    "2209",
+    "1916",
+    "699",
+    "2436"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-2003-04-opener",
+   "teamId": "TOR",
+   "season": "2003-04",
+   "playerIds": [
+    "688",
+    "966",
+    "213",
+    "1713",
+    "1541"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-2003-04-opener",
+   "teamId": "UTA",
+   "season": "2003-04",
+   "playerIds": [
+    "1723",
+    "1905",
+    "731",
+    "2306",
+    "2052"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-2003-04-opener",
+   "teamId": "WAS",
+   "season": "2003-04",
+   "playerIds": [
+    "2198",
+    "2553",
+    "2217",
+    "2240",
+    "1716"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-2004-05-opener",
+   "teamId": "ATL",
+   "season": "2004-05",
+   "playerIds": [
+    "1733",
+    "952",
+    "2044",
+    "72",
+    "2564"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-2004-05-opener",
+   "teamId": "BOS",
+   "season": "2004-05",
+   "playerIds": [
+    "1729",
+    "1711",
+    "1548",
+    "56",
+    "1718"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHA-2004-05-opener",
+   "teamId": "CHA",
+   "season": "2004-05",
+   "playerIds": [
+    "2222",
+    "2731",
+    "2056",
+    "1510",
+    "2574"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-2004-05-opener",
+   "teamId": "CHI",
+   "season": "2004-05",
+   "playerIds": [
+    "2804",
+    "970",
+    "2199",
+    "2732",
+    "2550"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-2004-05-opener",
+   "teamId": "CLE",
+   "season": "2004-05",
+   "playerIds": [
+    "2544",
+    "2400",
+    "980",
+    "976",
+    "446"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-2004-05-opener",
+   "teamId": "DAL",
+   "season": "2004-05",
+   "playerIds": [
+    "2572",
+    "1717",
+    "956",
+    "714",
+    "2734"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-2004-05-opener",
+   "teamId": "DEN",
+   "season": "2004-05",
+   "playerIds": [
+    "2546",
+    "2030",
+    "948",
+    "702",
+    "1889"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-2004-05-opener",
+   "teamId": "DET",
+   "season": "2004-05",
+   "playerIds": [
+    "2419",
+    "739",
+    "1112",
+    "1888",
+    "1497"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-2004-05-opener",
+   "teamId": "GSW",
+   "season": "2004-05",
+   "playerIds": [
+    "2211",
+    "2399",
+    "1502",
+    "2202",
+    "2049"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-2004-05-opener",
+   "teamId": "HOU",
+   "season": "2004-05",
+   "playerIds": [
+    "754",
+    "1508",
+    "2397",
+    "1503",
+    "369"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-2004-05-opener",
+   "teamId": "IND",
+   "season": "2004-05",
+   "playerIds": [
+    "1897",
+    "1506",
+    "1513",
+    "2224",
+    "1536"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-2004-05-opener",
+   "teamId": "LAC",
+   "season": "2004-05",
+   "playerIds": [
+    "2250",
+    "1882",
+    "2404",
+    "1894",
+    "2060"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-2004-05-opener",
+   "teamId": "LAL",
+   "season": "2004-05",
+   "playerIds": [
+    "2406",
+    "1885",
+    "2036",
+    "977",
+    "1088"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MEM-2004-05-opener",
+   "teamId": "MEM",
+   "season": "2004-05",
+   "playerIds": [
+    "1899",
+    "2200",
+    "2031",
+    "1715",
+    "1719"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-2004-05-opener",
+   "teamId": "MIA",
+   "season": "2004-05",
+   "playerIds": [
+    "2446",
+    "2617",
+    "406",
+    "224",
+    "2548"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-2004-05-opener",
+   "teamId": "MIL",
+   "season": "2004-05",
+   "playerIds": [
+    "693",
+    "1496",
+    "2429",
+    "2072",
+    "2590"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-2004-05-opener",
+   "teamId": "MIN",
+   "season": "2004-05",
+   "playerIds": [
+    "1887",
+    "708",
+    "1709",
+    "84",
+    "208"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-2004-05-opener",
+   "teamId": "NJN",
+   "season": "2004-05",
+   "playerIds": [
+    "2210",
+    "677",
+    "2215",
+    "1500",
+    "1521"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NOH-2004-05-opener",
+   "teamId": "NOH",
+   "season": "2004-05",
+   "playerIds": [
+    "248",
+    "136",
+    "2048",
+    "1884",
+    "133"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-2004-05-opener",
+   "teamId": "NYK",
+   "season": "2004-05",
+   "playerIds": [
+    "703",
+    "1501",
+    "1737",
+    "2037",
+    "950"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-2004-05-opener",
+   "teamId": "ORL",
+   "season": "2004-05",
+   "playerIds": [
+    "255",
+    "2730",
+    "1509",
+    "1749",
+    "1883"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-2004-05-opener",
+   "teamId": "PHI",
+   "season": "2004-05",
+   "playerIds": [
+    "2738",
+    "1903",
+    "1531",
+    "947",
+    "243"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-2004-05-opener",
+   "teamId": "PHX",
+   "season": "2004-05",
+   "playerIds": [
+    "2047",
+    "1890",
+    "2405",
+    "959",
+    "2207"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-2004-05-opener",
+   "teamId": "POR",
+   "season": "2004-05",
+   "playerIds": [
+    "2216",
+    "949",
+    "689",
+    "1507",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-2004-05-opener",
+   "teamId": "SAC",
+   "season": "2004-05",
+   "playerIds": [
+    "185",
+    "978",
+    "1802",
+    "2230",
+    "1710"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-2004-05-opener",
+   "teamId": "SAS",
+   "season": "2004-05",
+   "playerIds": [
+    "1477",
+    "1495",
+    "1725",
+    "2225",
+    "1938"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-2004-05-opener",
+   "teamId": "SEA",
+   "season": "2004-05",
+   "playerIds": [
+    "1740",
+    "2501",
+    "1744",
+    "951",
+    "2557"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-2004-05-opener",
+   "teamId": "TOR",
+   "season": "2004-05",
+   "playerIds": [
+    "147",
+    "2547",
+    "2254",
+    "1713",
+    "1747"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-2004-05-opener",
+   "teamId": "UTA",
+   "season": "2004-05",
+   "playerIds": [
+    "1905",
+    "2430",
+    "2260",
+    "2693",
+    "1921"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-2004-05-opener",
+   "teamId": "WAS",
+   "season": "2004-05",
+   "playerIds": [
+    "2553",
+    "1712",
+    "1913",
+    "2413",
+    "1919"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-2005-06-opener",
+   "teamId": "ATL",
+   "season": "2005-06",
+   "playerIds": [
+    "1733",
+    "2746",
+    "2585",
+    "2735",
+    "2207"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-2005-06-opener",
+   "teamId": "BOS",
+   "season": "2005-06",
+   "playerIds": [
+    "1718",
+    "1711",
+    "1548",
+    "1729",
+    "2753"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHA-2005-06-opener",
+   "teamId": "CHA",
+   "season": "2005-06",
+   "playerIds": [
+    "2731",
+    "2222",
+    "2056",
+    "2416",
+    "1510"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-2005-06-opener",
+   "teamId": "CHI",
+   "season": "2005-06",
+   "playerIds": [
+    "2804",
+    "2443",
+    "2199",
+    "2550",
+    "2768"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-2005-06-opener",
+   "teamId": "CLE",
+   "season": "2005-06",
+   "playerIds": [
+    "2544",
+    "2400",
+    "980",
+    "727",
+    "1716"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-2005-06-opener",
+   "teamId": "DAL",
+   "season": "2005-06",
+   "playerIds": [
+    "2572",
+    "1717",
+    "956",
+    "57",
+    "1891"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-2005-06-opener",
+   "teamId": "DEN",
+   "season": "2005-06",
+   "playerIds": [
+    "2546",
+    "2030",
+    "948",
+    "1889",
+    "702"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-2005-06-opener",
+   "teamId": "DET",
+   "season": "2005-06",
+   "playerIds": [
+    "2419",
+    "739",
+    "1112",
+    "1888",
+    "1497"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-2005-06-opener",
+   "teamId": "GSW",
+   "season": "2005-06",
+   "playerIds": [
+    "2211",
+    "2399",
+    "1502",
+    "2202",
+    "1884"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-2005-06-opener",
+   "teamId": "HOU",
+   "season": "2005-06",
+   "playerIds": [
+    "1503",
+    "436",
+    "2397",
+    "1747",
+    "1507"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-2005-06-opener",
+   "teamId": "IND",
+   "season": "2005-06",
+   "playerIds": [
+    "1897",
+    "1506",
+    "979",
+    "1536",
+    "2224"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-2005-06-opener",
+   "teamId": "LAC",
+   "season": "2005-06",
+   "playerIds": [
+    "1882",
+    "2624",
+    "2549",
+    "208",
+    "1749"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-2005-06-opener",
+   "teamId": "LAL",
+   "season": "2005-06",
+   "playerIds": [
+    "1885",
+    "2198",
+    "2036",
+    "2470",
+    "977"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MEM-2005-06-opener",
+   "teamId": "MEM",
+   "season": "2005-06",
+   "playerIds": [
+    "2203",
+    "2200",
+    "953",
+    "757",
+    "224"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-2005-06-opener",
+   "teamId": "MIA",
+   "season": "2005-06",
+   "playerIds": [
+    "952",
+    "2617",
+    "406",
+    "1715",
+    "2548"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-2005-06-opener",
+   "teamId": "MIL",
+   "season": "2005-06",
+   "playerIds": [
+    "2250",
+    "101106",
+    "2048",
+    "2072",
+    "2551"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-2005-06-opener",
+   "teamId": "MIN",
+   "season": "2005-06",
+   "playerIds": [
+    "1887",
+    "708",
+    "1709",
+    "2239",
+    "2060"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-2005-06-opener",
+   "teamId": "NJN",
+   "season": "2005-06",
+   "playerIds": [
+    "2210",
+    "2215",
+    "2420",
+    "1713",
+    "467"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NOK-2005-06-opener",
+   "teamId": "NOK",
+   "season": "2005-06",
+   "playerIds": [
+    "2561",
+    "2411",
+    "136",
+    "101108",
+    "2747"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-2005-06-opener",
+   "teamId": "NYK",
+   "season": "2005-06",
+   "playerIds": [
+    "2440",
+    "213",
+    "2201",
+    "950",
+    "2047"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-2005-06-opener",
+   "teamId": "ORL",
+   "season": "2005-06",
+   "playerIds": [
+    "2045",
+    "2730",
+    "1499",
+    "2052",
+    "1883"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-2005-06-opener",
+   "teamId": "PHI",
+   "season": "2005-06",
+   "playerIds": [
+    "2594",
+    "185",
+    "2212",
+    "2738",
+    "947"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-2005-06-opener",
+   "teamId": "PHX",
+   "season": "2005-06",
+   "playerIds": [
+    "2592",
+    "1890",
+    "703",
+    "1952",
+    "959"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-2005-06-opener",
+   "teamId": "POR",
+   "season": "2005-06",
+   "playerIds": [
+    "2032",
+    "2216",
+    "2038",
+    "1520",
+    "2742"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-2005-06-opener",
+   "teamId": "SAC",
+   "season": "2005-06",
+   "playerIds": [
+    "949",
+    "978",
+    "1802",
+    "1710",
+    "1719"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-2005-06-opener",
+   "teamId": "SAS",
+   "season": "2005-06",
+   "playerIds": [
+    "1477",
+    "1495",
+    "1725",
+    "2225",
+    "1938"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-2005-06-opener",
+   "teamId": "SEA",
+   "season": "2005-06",
+   "playerIds": [
+    "2501",
+    "1740",
+    "101130",
+    "951",
+    "2557"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-2005-06-opener",
+   "teamId": "TOR",
+   "season": "2005-06",
+   "playerIds": [
+    "101121",
+    "2547",
+    "2254",
+    "147",
+    "2229"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-2005-06-opener",
+   "teamId": "UTA",
+   "season": "2005-06",
+   "playerIds": [
+    "1905",
+    "2246",
+    "731",
+    "2693",
+    "1921"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-2005-06-opener",
+   "teamId": "WAS",
+   "season": "2005-06",
+   "playerIds": [
+    "1712",
+    "2407",
+    "2217",
+    "1498",
+    "2240"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ATL-2006-07-opener",
+   "teamId": "ATL",
+   "season": "2006-07",
+   "playerIds": [
+    "2746",
+    "200749",
+    "2585",
+    "2207",
+    "2049"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "BOS-2006-07-opener",
+   "teamId": "BOS",
+   "season": "2006-07",
+   "playerIds": [
+    "1718",
+    "1887",
+    "2570",
+    "2753",
+    "2742"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHA-2006-07-opener",
+   "teamId": "CHA",
+   "season": "2006-07",
+   "playerIds": [
+    "2222",
+    "101118",
+    "2731",
+    "101109",
+    "1510"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CHI-2006-07-opener",
+   "teamId": "CHI",
+   "season": "2006-07",
+   "playerIds": [
+    "2736",
+    "136",
+    "1112",
+    "2732",
+    "2550"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "CLE-2006-07-opener",
+   "teamId": "CLE",
+   "season": "2006-07",
+   "playerIds": [
+    "2544",
+    "2400",
+    "980",
+    "1716",
+    "727"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DAL-2006-07-opener",
+   "teamId": "DAL",
+   "season": "2006-07",
+   "playerIds": [
+    "2572",
+    "1717",
+    "2205",
+    "1761",
+    "1891"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DEN-2006-07-opener",
+   "teamId": "DEN",
+   "season": "2006-07",
+   "playerIds": [
+    "2030",
+    "2546",
+    "948",
+    "2747",
+    "1889"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "DET-2006-07-opener",
+   "teamId": "DET",
+   "season": "2006-07",
+   "playerIds": [
+    "2419",
+    "739",
+    "1737",
+    "1888",
+    "1497"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "GSW-2006-07-opener",
+   "teamId": "GSW",
+   "season": "2006-07",
+   "playerIds": [
+    "2554",
+    "2399",
+    "2211",
+    "2202",
+    "1884"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "HOU-2006-07-opener",
+   "teamId": "HOU",
+   "season": "2006-07",
+   "playerIds": [
+    "1503",
+    "2203",
+    "2397",
+    "2745",
+    "1747"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "IND-2006-07-opener",
+   "teamId": "IND",
+   "season": "2006-07",
+   "playerIds": [
+    "101122",
+    "979",
+    "1733",
+    "1536",
+    "2224"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAC-2006-07-opener",
+   "teamId": "LAC",
+   "season": "2006-07",
+   "playerIds": [
+    "1501",
+    "2624",
+    "1882",
+    "1749",
+    "2733"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "LAL-2006-07-opener",
+   "teamId": "LAL",
+   "season": "2006-07",
+   "playerIds": [
+    "1885",
+    "2575",
+    "101115",
+    "2470",
+    "2756"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MEM-2006-07-opener",
+   "teamId": "MEM",
+   "season": "2006-07",
+   "playerIds": [
+    "2034",
+    "101124",
+    "2054",
+    "224",
+    "757"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIA-2006-07-opener",
+   "teamId": "MIA",
+   "season": "2006-07",
+   "playerIds": [
+    "952",
+    "2617",
+    "406",
+    "2548",
+    "56"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIL-2006-07-opener",
+   "teamId": "MIL",
+   "season": "2006-07",
+   "playerIds": [
+    "1739",
+    "101111",
+    "101106",
+    "2072",
+    "2590"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "MIN-2006-07-opener",
+   "teamId": "MIN",
+   "season": "2006-07",
+   "playerIds": [
+    "2239",
+    "708",
+    "1548",
+    "1729",
+    "2229"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NJN-2006-07-opener",
+   "teamId": "NJN",
+   "season": "2006-07",
+   "playerIds": [
+    "2210",
+    "2215",
+    "2420",
+    "1713",
+    "467"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NOK-2006-07-opener",
+   "teamId": "NOK",
+   "season": "2006-07",
+   "playerIds": [
+    "2046",
+    "2561",
+    "2199",
+    "101108",
+    "978"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "NYK-2006-07-opener",
+   "teamId": "NYK",
+   "season": "2006-07",
+   "playerIds": [
+    "2047",
+    "101112",
+    "2201",
+    "1883",
+    "950"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "ORL-2006-07-opener",
+   "teamId": "ORL",
+   "season": "2006-07",
+   "playerIds": [
+    "2045",
+    "2730",
+    "1499",
+    "255",
+    "2749"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHI-2006-07-opener",
+   "teamId": "PHI",
+   "season": "2006-07",
+   "playerIds": [
+    "2738",
+    "185",
+    "2223",
+    "947",
+    "1563"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "PHX-2006-07-opener",
+   "teamId": "PHX",
+   "season": "2006-07",
+   "playerIds": [
+    "2564",
+    "1890",
+    "703",
+    "959",
+    "1952"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "POR-2006-07-opener",
+   "teamId": "POR",
+   "season": "2006-07",
+   "playerIds": [
+    "2137",
+    "2216",
+    "2038",
+    "200750",
+    "101127"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAC-2006-07-opener",
+   "teamId": "SAC",
+   "season": "2006-07",
+   "playerIds": [
+    "1897",
+    "1903",
+    "1802",
+    "2755",
+    "1710"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SAS-2006-07-opener",
+   "teamId": "SAS",
+   "season": "2006-07",
+   "playerIds": [
+    "1477",
+    "1495",
+    "101177",
+    "1938",
+    "2225"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "SEA-2006-07-opener",
+   "teamId": "SEA",
+   "season": "2006-07",
+   "playerIds": [
+    "1740",
+    "2404",
+    "200754",
+    "951",
+    "2557"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "TOR-2006-07-opener",
+   "teamId": "TOR",
+   "season": "2006-07",
+   "playerIds": [
+    "2050",
+    "2547",
+    "1725",
+    "1515",
+    "2551"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "UTA-2006-07-opener",
+   "teamId": "UTA",
+   "season": "2006-07",
+   "playerIds": [
+    "1905",
+    "2430",
+    "2246",
+    "101139",
+    "101114"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
+  },
+  {
+   "id": "WAS-2006-07-opener",
+   "teamId": "WAS",
+   "season": "2006-07",
+   "playerIds": [
+    "2406",
+    "1712",
+    "2041",
+    "2052",
+    "2240"
+   ],
+   "minutes": 0,
+   "source": "boxscoretraditionalv3"
   }
  ]
 }

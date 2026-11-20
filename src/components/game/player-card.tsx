@@ -1,5 +1,8 @@
+"use client";
+
 import type { ReactNode } from "react";
 import { teamKey } from "@/lib/format";
+import { useT } from "@/lib/i18n/provider";
 import { PlayerAvatar } from "./player-avatar";
 
 interface PlayerCardProps {
@@ -31,6 +34,7 @@ export function MysteryPlayerCard({
   result: "correct" | "wrong" | null;
   meta?: ReactNode;
 }) {
+  const t = useT();
   return (
     <div
       className="player-card"
@@ -42,7 +46,7 @@ export function MysteryPlayerCard({
         ?
       </div>
       <div className="player-card__body">
-        <span className="player-card__name">{revealedName ?? "Missing starter"}</span>
+        <span className="player-card__name">{revealedName ?? t.question.missingStarter}</span>
         {meta ? <span className="player-card__meta">{meta}</span> : null}
       </div>
     </div>

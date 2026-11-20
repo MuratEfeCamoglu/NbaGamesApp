@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshotDate": "2026-11-19",
+  "snapshotDate": "2026-11-20",
   "source": "stats.nba.com via nba_api 1.12.0",
   "endpoints": [
    "playercareerstats"
@@ -20,6 +20,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "100263",
+   "games": 1068,
+   "seasons": 14,
+   "ppg": 12.9,
+   "rpg": 9.7,
+   "apg": 2.0,
+   "spg": 0.7,
+   "bpg": 0.9,
+   "fgPct": 49.8,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1005",
    "games": 708,
    "seasons": 11,
@@ -29,6 +41,18 @@
    "spg": 0.9,
    "bpg": 0.6,
    "fgPct": 42.5,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1006",
+   "games": 1102,
+   "seasons": 18,
+   "ppg": 10.8,
+   "rpg": 5.9,
+   "apg": 1.7,
+   "spg": 0.5,
+   "bpg": 1.5,
+   "fgPct": 46.7,
    "source": "playercareerstats"
   },
   {
@@ -137,6 +161,18 @@
    "spg": 0.3,
    "bpg": 1.6,
    "fgPct": 55.6,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "101118",
+   "games": 119,
+   "seasons": 4,
+   "ppg": 6.9,
+   "rpg": 4.0,
+   "apg": 1.0,
+   "spg": 0.4,
+   "bpg": 0.4,
+   "fgPct": 45.8,
    "source": "playercareerstats"
   },
   {
@@ -512,6 +548,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1023",
+   "games": 226,
+   "seasons": 6,
+   "ppg": 4.9,
+   "rpg": 1.9,
+   "apg": 1.8,
+   "spg": 0.7,
+   "bpg": 0.1,
+   "fgPct": 39.4,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1032",
    "games": 417,
    "seasons": 8,
@@ -521,6 +569,30 @@
    "spg": 0.3,
    "bpg": 0.4,
    "fgPct": 51.8,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1037",
+   "games": 170,
+   "seasons": 5,
+   "ppg": 2.8,
+   "rpg": 3.0,
+   "apg": 0.3,
+   "spg": 0.1,
+   "bpg": 1.1,
+   "fgPct": 47.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "104",
+   "games": 807,
+   "seasons": 15,
+   "ppg": 11.4,
+   "rpg": 7.5,
+   "apg": 1.3,
+   "spg": 0.6,
+   "bpg": 2.0,
+   "fgPct": 49.7,
    "source": "playercareerstats"
   },
   {
@@ -560,6 +632,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "107",
+   "games": 1209,
+   "seasons": 17,
+   "ppg": 15.7,
+   "rpg": 3.5,
+   "apg": 1.4,
+   "spg": 0.8,
+   "bpg": 0.2,
+   "fgPct": 47.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1074",
+   "games": 295,
+   "seasons": 6,
+   "ppg": 7.4,
+   "rpg": 1.7,
+   "apg": 2.9,
+   "spg": 0.8,
+   "bpg": 0.0,
+   "fgPct": 40.8,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1088",
    "games": 696,
    "seasons": 11,
@@ -581,6 +677,18 @@
    "spg": 1.0,
    "bpg": 0.9,
    "fgPct": 42.5,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1108",
+   "games": 101,
+   "seasons": 2,
+   "ppg": 5.3,
+   "rpg": 3.2,
+   "apg": 0.8,
+   "spg": 0.8,
+   "bpg": 0.2,
+   "fgPct": 39.5,
    "source": "playercareerstats"
   },
   {
@@ -620,6 +728,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1122",
+   "games": 1074,
+   "seasons": 15,
+   "ppg": 24.8,
+   "rpg": 6.7,
+   "apg": 2.5,
+   "spg": 1.3,
+   "bpg": 0.6,
+   "fgPct": 46.1,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1134",
    "games": 432,
    "seasons": 9,
@@ -656,6 +776,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "123",
+   "games": 552,
+   "seasons": 13,
+   "ppg": 8.9,
+   "rpg": 2.0,
+   "apg": 4.6,
+   "spg": 1.1,
+   "bpg": 0.1,
+   "fgPct": 42.5,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "124",
    "games": 1134,
    "seasons": 16,
@@ -680,6 +812,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "134",
+   "games": 735,
+   "seasons": 12,
+   "ppg": 17.9,
+   "rpg": 3.3,
+   "apg": 9.1,
+   "spg": 1.5,
+   "bpg": 0.2,
+   "fgPct": 49.3,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "136",
    "games": 1089,
    "seasons": 15,
@@ -689,6 +833,18 @@
    "spg": 0.8,
    "bpg": 1.0,
    "fgPct": 46.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "140",
+   "games": 504,
+   "seasons": 8,
+   "ppg": 6.3,
+   "rpg": 2.8,
+   "apg": 1.0,
+   "spg": 0.5,
+   "bpg": 0.2,
+   "fgPct": 47.3,
    "source": "playercareerstats"
   },
   {
@@ -704,6 +860,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1442",
+   "games": 215,
+   "seasons": 5,
+   "ppg": 5.9,
+   "rpg": 3.2,
+   "apg": 0.4,
+   "spg": 0.3,
+   "bpg": 0.7,
+   "fgPct": 52.7,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1444",
    "games": 318,
    "seasons": 7,
@@ -716,6 +884,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1449",
+   "games": 897,
+   "seasons": 13,
+   "ppg": 24.3,
+   "rpg": 10.0,
+   "apg": 6.3,
+   "spg": 1.7,
+   "bpg": 0.8,
+   "fgPct": 49.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "145",
    "games": 659,
    "seasons": 12,
@@ -725,6 +905,30 @@
    "spg": 0.5,
    "bpg": 0.2,
    "fgPct": 43.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1450",
+   "games": 971,
+   "seasons": 13,
+   "ppg": 17.9,
+   "rpg": 7.3,
+   "apg": 1.7,
+   "spg": 0.4,
+   "bpg": 1.7,
+   "fgPct": 55.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1453",
+   "games": 1033,
+   "seasons": 15,
+   "ppg": 18.9,
+   "rpg": 3.0,
+   "apg": 3.8,
+   "spg": 1.2,
+   "bpg": 0.1,
+   "fgPct": 51.1,
    "source": "playercareerstats"
   },
   {
@@ -749,6 +953,18 @@
    "spg": 0.8,
    "bpg": 0.3,
    "fgPct": 44.3,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1472",
+   "games": 1107,
+   "seasons": 16,
+   "ppg": 18.1,
+   "rpg": 6.1,
+   "apg": 2.1,
+   "spg": 0.8,
+   "bpg": 0.6,
+   "fgPct": 46.8,
    "source": "playercareerstats"
   },
   {
@@ -896,6 +1112,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1505",
+   "games": 236,
+   "seasons": 6,
+   "ppg": 7.8,
+   "rpg": 3.3,
+   "apg": 1.1,
+   "spg": 0.8,
+   "bpg": 0.4,
+   "fgPct": 41.7,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1506",
    "games": 659,
    "seasons": 12,
@@ -992,6 +1220,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1520",
+   "games": 142,
+   "seasons": 5,
+   "ppg": 5.1,
+   "rpg": 1.4,
+   "apg": 0.9,
+   "spg": 0.6,
+   "bpg": 0.5,
+   "fgPct": 40.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1521",
    "games": 776,
    "seasons": 12,
@@ -1040,6 +1280,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1538",
+   "games": 260,
+   "seasons": 5,
+   "ppg": 7.3,
+   "rpg": 2.9,
+   "apg": 1.6,
+   "spg": 0.9,
+   "bpg": 0.4,
+   "fgPct": 43.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1541",
    "games": 460,
    "seasons": 9,
@@ -1049,6 +1301,18 @@
    "spg": 1.2,
    "bpg": 0.2,
    "fgPct": 42.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1542",
+   "games": 278,
+   "seasons": 4,
+   "ppg": 7.9,
+   "rpg": 3.5,
+   "apg": 0.8,
+   "spg": 0.5,
+   "bpg": 0.4,
+   "fgPct": 42.5,
    "source": "playercareerstats"
   },
   {
@@ -1085,6 +1349,18 @@
    "spg": 0.5,
    "bpg": 0.0,
    "fgPct": 41.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "157",
+   "games": 1199,
+   "seasons": 16,
+   "ppg": 13.3,
+   "rpg": 2.4,
+   "apg": 5.5,
+   "spg": 1.6,
+   "bpg": 0.3,
+   "fgPct": 46.3,
    "source": "playercareerstats"
   },
   {
@@ -4748,6 +5024,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "170",
+   "games": 965,
+   "seasons": 15,
+   "ppg": 4.8,
+   "rpg": 4.1,
+   "apg": 0.6,
+   "spg": 0.3,
+   "bpg": 0.3,
+   "fgPct": 45.3,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1709",
    "games": 500,
    "seasons": 9,
@@ -4904,6 +5192,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1722",
+   "games": 212,
+   "seasons": 5,
+   "ppg": 15.4,
+   "rpg": 2.9,
+   "apg": 2.6,
+   "spg": 1.0,
+   "bpg": 0.4,
+   "fgPct": 43.2,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1723",
    "games": 665,
    "seasons": 11,
@@ -4940,6 +5240,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1728",
+   "games": 113,
+   "seasons": 3,
+   "ppg": 7.2,
+   "rpg": 2.7,
+   "apg": 1.1,
+   "spg": 0.4,
+   "bpg": 0.1,
+   "fgPct": 40.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1729",
    "games": 736,
    "seasons": 12,
@@ -4973,6 +5285,18 @@
    "spg": 0.5,
    "bpg": 0.0,
    "fgPct": 43.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1732",
+   "games": 249,
+   "seasons": 4,
+   "ppg": 5.8,
+   "rpg": 2.4,
+   "apg": 1.0,
+   "spg": 0.6,
+   "bpg": 0.2,
+   "fgPct": 43.2,
    "source": "playercareerstats"
   },
   {
@@ -5024,6 +5348,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1741",
+   "games": 260,
+   "seasons": 8,
+   "ppg": 4.6,
+   "rpg": 3.5,
+   "apg": 0.5,
+   "spg": 0.3,
+   "bpg": 0.7,
+   "fgPct": 53.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1742",
    "games": 325,
    "seasons": 7,
@@ -5072,6 +5408,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "175",
+   "games": 953,
+   "seasons": 16,
+   "ppg": 6.6,
+   "rpg": 6.3,
+   "apg": 1.0,
+   "spg": 0.4,
+   "bpg": 1.5,
+   "fgPct": 51.2,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1751",
    "games": 334,
    "seasons": 7,
@@ -5108,6 +5456,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "177",
+   "games": 889,
+   "seasons": 14,
+   "ppg": 7.7,
+   "rpg": 2.6,
+   "apg": 7.6,
+   "spg": 1.5,
+   "bpg": 0.0,
+   "fgPct": 45.8,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "178",
    "games": 1058,
    "seasons": 15,
@@ -5132,6 +5492,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "180",
+   "games": 477,
+   "seasons": 11,
+   "ppg": 4.0,
+   "rpg": 1.1,
+   "apg": 2.1,
+   "spg": 0.4,
+   "bpg": 0.0,
+   "fgPct": 43.1,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1800",
    "games": 657,
    "seasons": 11,
@@ -5153,6 +5525,42 @@
    "spg": 0.7,
    "bpg": 0.7,
    "fgPct": 48.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "182",
+   "games": 600,
+   "seasons": 10,
+   "ppg": 11.7,
+   "rpg": 6.7,
+   "apg": 2.8,
+   "spg": 0.9,
+   "bpg": 0.5,
+   "fgPct": 48.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "183",
+   "games": 413,
+   "seasons": 8,
+   "ppg": 11.0,
+   "rpg": 6.2,
+   "apg": 1.1,
+   "spg": 0.8,
+   "bpg": 0.9,
+   "fgPct": 52.8,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "184",
+   "games": 467,
+   "seasons": 9,
+   "ppg": 11.0,
+   "rpg": 3.1,
+   "apg": 2.7,
+   "spg": 1.3,
+   "bpg": 0.3,
+   "fgPct": 44.3,
    "source": "playercareerstats"
   },
   {
@@ -5189,6 +5597,18 @@
    "spg": 0.6,
    "bpg": 0.1,
    "fgPct": 41.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "187",
+   "games": 1183,
+   "seasons": 18,
+   "ppg": 16.4,
+   "rpg": 7.3,
+   "apg": 1.9,
+   "spg": 1.1,
+   "bpg": 0.5,
+   "fgPct": 48.4,
    "source": "playercareerstats"
   },
   {
@@ -5336,6 +5756,42 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "190",
+   "games": 541,
+   "seasons": 11,
+   "ppg": 4.9,
+   "rpg": 4.2,
+   "apg": 0.4,
+   "spg": 0.4,
+   "bpg": 1.4,
+   "fgPct": 50.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1900",
+   "games": 159,
+   "seasons": 4,
+   "ppg": 3.6,
+   "rpg": 1.3,
+   "apg": 0.6,
+   "spg": 0.4,
+   "bpg": 0.2,
+   "fgPct": 39.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1901",
+   "games": 294,
+   "seasons": 6,
+   "ppg": 8.2,
+   "rpg": 3.1,
+   "apg": 1.5,
+   "spg": 0.8,
+   "bpg": 0.2,
+   "fgPct": 41.1,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1902",
    "games": 764,
    "seasons": 13,
@@ -5384,6 +5840,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1907",
+   "games": 199,
+   "seasons": 3,
+   "ppg": 6.9,
+   "rpg": 1.9,
+   "apg": 2.7,
+   "spg": 0.9,
+   "bpg": 0.2,
+   "fgPct": 38.3,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1908",
    "games": 471,
    "seasons": 8,
@@ -5420,6 +5888,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "1915",
+   "games": 153,
+   "seasons": 4,
+   "ppg": 2.8,
+   "rpg": 3.9,
+   "apg": 0.5,
+   "spg": 0.5,
+   "bpg": 0.6,
+   "fgPct": 46.3,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "1916",
    "games": 366,
    "seasons": 10,
@@ -5429,6 +5909,18 @@
    "spg": 0.3,
    "bpg": 1.0,
    "fgPct": 45.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1919",
+   "games": 135,
+   "seasons": 4,
+   "ppg": 3.3,
+   "rpg": 1.5,
+   "apg": 1.2,
+   "spg": 0.5,
+   "bpg": 0.2,
+   "fgPct": 41.9,
    "source": "playercareerstats"
   },
   {
@@ -5465,6 +5957,18 @@
    "spg": 0.4,
    "bpg": 0.2,
    "fgPct": 47.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "1928",
+   "games": 223,
+   "seasons": 4,
+   "ppg": 6.1,
+   "rpg": 4.0,
+   "apg": 0.5,
+   "spg": 0.3,
+   "bpg": 0.8,
+   "fgPct": 54.1,
    "source": "playercareerstats"
   },
   {
@@ -5525,6 +6029,18 @@
    "spg": 0.6,
    "bpg": 0.1,
    "fgPct": 41.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "197",
+   "games": 383,
+   "seasons": 8,
+   "ppg": 6.9,
+   "rpg": 3.5,
+   "apg": 1.4,
+   "spg": 0.9,
+   "bpg": 0.5,
+   "fgPct": 41.8,
    "source": "playercareerstats"
   },
   {
@@ -5633,6 +6149,18 @@
    "spg": 1.1,
    "bpg": 0.7,
    "fgPct": 45.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "200754",
+   "games": 47,
+   "seasons": 3,
+   "ppg": 2.2,
+   "rpg": 1.6,
+   "apg": 0.0,
+   "spg": 0.1,
+   "bpg": 0.5,
+   "fgPct": 42.7,
    "source": "playercareerstats"
   },
   {
@@ -7880,6 +8408,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "203",
+   "games": 796,
+   "seasons": 12,
+   "ppg": 5.9,
+   "rpg": 4.0,
+   "apg": 6.1,
+   "spg": 1.9,
+   "bpg": 0.4,
+   "fgPct": 44.3,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2030",
    "games": 757,
    "seasons": 15,
@@ -9224,6 +9764,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "204",
+   "games": 1077,
+   "seasons": 14,
+   "ppg": 14.5,
+   "rpg": 3.4,
+   "apg": 4.9,
+   "spg": 1.4,
+   "bpg": 0.2,
+   "fgPct": 49.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "204001",
    "games": 533,
    "seasons": 10,
@@ -9281,6 +9833,30 @@
    "spg": 0.3,
    "bpg": 1.0,
    "fgPct": 51.3,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2042",
+   "games": 187,
+   "seasons": 3,
+   "ppg": 9.0,
+   "rpg": 2.2,
+   "apg": 1.2,
+   "spg": 0.6,
+   "bpg": 0.1,
+   "fgPct": 42.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2044",
+   "games": 151,
+   "seasons": 5,
+   "ppg": 5.6,
+   "rpg": 2.9,
+   "apg": 0.3,
+   "spg": 0.2,
+   "bpg": 0.2,
+   "fgPct": 45.5,
    "source": "playercareerstats"
   },
   {
@@ -9368,6 +9944,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "2051",
+   "games": 205,
+   "seasons": 5,
+   "ppg": 5.6,
+   "rpg": 4.0,
+   "apg": 0.8,
+   "spg": 0.5,
+   "bpg": 0.4,
+   "fgPct": 46.0,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2052",
    "games": 824,
    "seasons": 13,
@@ -9452,6 +10040,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "2064",
+   "games": 50,
+   "seasons": 1,
+   "ppg": 6.3,
+   "rpg": 1.6,
+   "apg": 2.9,
+   "spg": 1.0,
+   "bpg": 0.0,
+   "fgPct": 37.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2066",
+   "games": 47,
+   "seasons": 2,
+   "ppg": 1.4,
+   "rpg": 1.6,
+   "apg": 0.1,
+   "spg": 0.0,
+   "bpg": 0.4,
+   "fgPct": 38.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2067",
    "games": 717,
    "seasons": 11,
@@ -9461,6 +10073,18 @@
    "spg": 0.7,
    "bpg": 0.1,
    "fgPct": 40.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2069",
+   "games": 155,
+   "seasons": 2,
+   "ppg": 4.6,
+   "rpg": 2.9,
+   "apg": 0.5,
+   "spg": 0.2,
+   "bpg": 0.2,
+   "fgPct": 44.2,
    "source": "playercareerstats"
   },
   {
@@ -9548,6 +10172,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "211",
+   "games": 113,
+   "seasons": 3,
+   "ppg": 3.9,
+   "rpg": 3.1,
+   "apg": 0.5,
+   "spg": 0.2,
+   "bpg": 0.5,
+   "fgPct": 54.1,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2124",
    "games": 478,
    "seasons": 10,
@@ -9632,6 +10268,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "22",
+   "games": 867,
+   "seasons": 12,
+   "ppg": 14.8,
+   "rpg": 6.1,
+   "apg": 1.4,
+   "spg": 0.4,
+   "bpg": 1.3,
+   "fgPct": 50.7,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2200",
    "games": 1226,
    "seasons": 18,
@@ -9713,6 +10361,18 @@
    "spg": 0.8,
    "bpg": 0.2,
    "fgPct": 44.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2208",
+   "games": 143,
+   "seasons": 4,
+   "ppg": 3.6,
+   "rpg": 2.4,
+   "apg": 0.7,
+   "spg": 0.6,
+   "bpg": 0.2,
+   "fgPct": 40.5,
    "source": "playercareerstats"
   },
   {
@@ -9968,6 +10628,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "2254",
+   "games": 215,
+   "seasons": 6,
+   "ppg": 2.6,
+   "rpg": 3.2,
+   "apg": 0.3,
+   "spg": 0.3,
+   "bpg": 0.6,
+   "fgPct": 41.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2260",
    "games": 542,
    "seasons": 10,
@@ -10004,6 +10676,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "23",
+   "games": 911,
+   "seasons": 14,
+   "ppg": 7.3,
+   "rpg": 13.1,
+   "apg": 1.8,
+   "spg": 0.7,
+   "bpg": 0.6,
+   "fgPct": 52.1,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2306",
    "games": 569,
    "seasons": 9,
@@ -10013,6 +10697,30 @@
    "spg": 0.5,
    "bpg": 0.0,
    "fgPct": 43.8,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "234",
+   "games": 277,
+   "seasons": 6,
+   "ppg": 7.8,
+   "rpg": 2.1,
+   "apg": 3.2,
+   "spg": 0.8,
+   "bpg": 0.1,
+   "fgPct": 41.6,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "236",
+   "games": 604,
+   "seasons": 11,
+   "ppg": 10.9,
+   "rpg": 2.7,
+   "apg": 2.7,
+   "spg": 1.4,
+   "bpg": 0.3,
+   "fgPct": 42.3,
    "source": "playercareerstats"
   },
   {
@@ -10061,6 +10769,18 @@
    "spg": 0.4,
    "bpg": 1.9,
    "fgPct": 52.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2398",
+   "games": 75,
+   "seasons": 1,
+   "ppg": 9.5,
+   "rpg": 2.6,
+   "apg": 4.7,
+   "spg": 1.1,
+   "bpg": 0.2,
+   "fgPct": 39.9,
    "source": "playercareerstats"
   },
   {
@@ -10316,6 +11036,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "2437",
+   "games": 162,
+   "seasons": 4,
+   "ppg": 3.9,
+   "rpg": 2.9,
+   "apg": 0.2,
+   "spg": 0.2,
+   "bpg": 0.4,
+   "fgPct": 46.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2440",
    "games": 929,
    "seasons": 14,
@@ -10376,6 +11108,54 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "246",
+   "games": 680,
+   "seasons": 10,
+   "ppg": 7.3,
+   "rpg": 6.2,
+   "apg": 0.6,
+   "spg": 0.7,
+   "bpg": 0.9,
+   "fgPct": 49.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2469",
+   "games": 127,
+   "seasons": 3,
+   "ppg": 3.7,
+   "rpg": 2.1,
+   "apg": 0.3,
+   "spg": 0.2,
+   "bpg": 0.3,
+   "fgPct": 40.8,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "247",
+   "games": 1018,
+   "seasons": 14,
+   "ppg": 16.1,
+   "rpg": 2.2,
+   "apg": 4.5,
+   "spg": 0.9,
+   "bpg": 0.1,
+   "fgPct": 46.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2470",
+   "games": 274,
+   "seasons": 5,
+   "ppg": 9.0,
+   "rpg": 2.4,
+   "apg": 2.9,
+   "spg": 1.2,
+   "bpg": 0.2,
+   "fgPct": 42.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "248",
    "games": 774,
    "seasons": 12,
@@ -10408,6 +11188,18 @@
    "apg": 0.6,
    "spg": 0.7,
    "bpg": 0.1,
+   "fgPct": 46.5,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "251",
+   "games": 742,
+   "seasons": 12,
+   "ppg": 14.2,
+   "rpg": 4.3,
+   "apg": 2.6,
+   "spg": 0.8,
+   "bpg": 0.4,
    "fgPct": 46.5,
    "source": "playercareerstats"
   },
@@ -10844,6 +11636,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "26",
+   "games": 567,
+   "seasons": 10,
+   "ppg": 7.2,
+   "rpg": 4.9,
+   "apg": 1.5,
+   "spg": 0.5,
+   "bpg": 1.0,
+   "fgPct": 46.2,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2605",
    "games": 548,
    "seasons": 10,
@@ -10868,6 +11672,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "262",
+   "games": 1140,
+   "seasons": 15,
+   "ppg": 7.3,
+   "rpg": 7.6,
+   "apg": 0.9,
+   "spg": 0.9,
+   "bpg": 0.6,
+   "fgPct": 51.5,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2624",
    "games": 458,
    "seasons": 7,
@@ -10880,6 +11696,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "2639",
+   "games": 26,
+   "seasons": 2,
+   "ppg": 2.1,
+   "rpg": 2.1,
+   "apg": 0.6,
+   "spg": 0.3,
+   "bpg": 0.0,
+   "fgPct": 28.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "265",
+   "games": 783,
+   "seasons": 11,
+   "ppg": 9.9,
+   "rpg": 4.4,
+   "apg": 1.6,
+   "spg": 0.8,
+   "bpg": 0.5,
+   "fgPct": 46.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2679",
    "games": 459,
    "seasons": 10,
@@ -10889,6 +11729,18 @@
    "spg": 0.5,
    "bpg": 0.1,
    "fgPct": 41.3,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "2693",
+   "games": 200,
+   "seasons": 4,
+   "ppg": 5.5,
+   "rpg": 1.3,
+   "apg": 2.7,
+   "spg": 0.7,
+   "bpg": 0.1,
+   "fgPct": 35.7,
    "source": "playercareerstats"
   },
   {
@@ -11264,6 +12116,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "28",
+   "games": 676,
+   "seasons": 12,
+   "ppg": 9.6,
+   "rpg": 2.5,
+   "apg": 1.9,
+   "spg": 0.7,
+   "bpg": 0.3,
+   "fgPct": 48.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "280",
+   "games": 640,
+   "seasons": 12,
+   "ppg": 5.2,
+   "rpg": 5.4,
+   "apg": 0.3,
+   "spg": 0.4,
+   "bpg": 0.8,
+   "fgPct": 48.4,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "2804",
    "games": 514,
    "seasons": 8,
@@ -11309,6 +12185,18 @@
    "spg": 0.7,
    "bpg": 0.2,
    "fgPct": 42.6,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "29",
+   "games": 401,
+   "seasons": 7,
+   "ppg": 2.7,
+   "rpg": 3.1,
+   "apg": 0.3,
+   "spg": 0.3,
+   "bpg": 1.7,
+   "fgPct": 44.6,
    "source": "playercareerstats"
   },
   {
@@ -11393,6 +12281,30 @@
    "spg": 0.8,
    "bpg": 1.5,
    "fgPct": 53.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "31",
+   "games": 253,
+   "seasons": 7,
+   "ppg": 3.0,
+   "rpg": 6.3,
+   "apg": 1.0,
+   "spg": 0.5,
+   "bpg": 1.4,
+   "fgPct": 46.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "310",
+   "games": 269,
+   "seasons": 5,
+   "ppg": 3.8,
+   "rpg": 1.1,
+   "apg": 3.3,
+   "spg": 0.4,
+   "bpg": 0.0,
+   "fgPct": 35.3,
    "source": "playercareerstats"
   },
   {
@@ -11552,6 +12464,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "364",
+   "games": 666,
+   "seasons": 12,
+   "ppg": 14.6,
+   "rpg": 2.5,
+   "apg": 2.7,
+   "spg": 0.9,
+   "bpg": 0.2,
+   "fgPct": 43.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "365",
+   "games": 937,
+   "seasons": 15,
+   "ppg": 11.0,
+   "rpg": 4.7,
+   "apg": 2.4,
+   "spg": 1.1,
+   "bpg": 0.7,
+   "fgPct": 48.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "369",
    "games": 630,
    "seasons": 11,
@@ -11636,6 +12572,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "390",
+   "games": 75,
+   "seasons": 2,
+   "ppg": 12.8,
+   "rpg": 2.4,
+   "apg": 2.0,
+   "spg": 0.9,
+   "bpg": 0.2,
+   "fgPct": 43.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "393",
    "games": 1094,
    "seasons": 17,
@@ -11669,6 +12617,18 @@
    "spg": 0.3,
    "bpg": 0.7,
    "fgPct": 45.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "404",
+   "games": 684,
+   "seasons": 11,
+   "ppg": 11.8,
+   "rpg": 5.8,
+   "apg": 0.9,
+   "spg": 0.5,
+   "bpg": 0.5,
+   "fgPct": 46.8,
    "source": "playercareerstats"
   },
   {
@@ -11708,6 +12668,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "420",
+   "games": 475,
+   "seasons": 9,
+   "ppg": 7.3,
+   "rpg": 7.5,
+   "apg": 0.6,
+   "spg": 0.4,
+   "bpg": 0.6,
+   "fgPct": 44.0,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "422",
    "games": 1054,
    "seasons": 16,
@@ -11729,6 +12701,30 @@
    "spg": 0.7,
    "bpg": 0.5,
    "fgPct": 51.3,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "426",
+   "games": 480,
+   "seasons": 10,
+   "ppg": 6.4,
+   "rpg": 6.0,
+   "apg": 0.6,
+   "spg": 0.4,
+   "bpg": 0.3,
+   "fgPct": 47.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "428",
+   "games": 765,
+   "seasons": 12,
+   "ppg": 11.0,
+   "rpg": 2.2,
+   "apg": 5.9,
+   "spg": 1.0,
+   "bpg": 0.1,
+   "fgPct": 48.4,
    "source": "playercareerstats"
   },
   {
@@ -11756,6 +12752,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "433",
+   "games": 1307,
+   "seasons": 17,
+   "ppg": 12.8,
+   "rpg": 10.0,
+   "apg": 1.3,
+   "spg": 0.8,
+   "bpg": 0.8,
+   "fgPct": 54.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "436",
    "games": 1208,
    "seasons": 19,
@@ -11768,6 +12776,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "440",
+   "games": 247,
+   "seasons": 6,
+   "ppg": 5.0,
+   "rpg": 3.6,
+   "apg": 0.7,
+   "spg": 0.3,
+   "bpg": 0.5,
+   "fgPct": 50.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "441",
    "games": 736,
    "seasons": 11,
@@ -11777,6 +12797,18 @@
    "spg": 0.9,
    "bpg": 0.4,
    "fgPct": 43.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "442",
+   "games": 474,
+   "seasons": 11,
+   "ppg": 9.5,
+   "rpg": 6.7,
+   "apg": 1.5,
+   "spg": 0.6,
+   "bpg": 1.6,
+   "fgPct": 51.0,
    "source": "playercareerstats"
   },
   {
@@ -11840,6 +12872,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "456",
+   "games": 943,
+   "seasons": 13,
+   "ppg": 14.7,
+   "rpg": 5.1,
+   "apg": 2.8,
+   "spg": 0.7,
+   "bpg": 0.2,
+   "fgPct": 45.8,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "457",
+   "games": 737,
+   "seasons": 12,
+   "ppg": 6.0,
+   "rpg": 4.8,
+   "apg": 0.6,
+   "spg": 0.5,
+   "bpg": 1.5,
+   "fgPct": 47.0,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "458",
    "games": 786,
    "seasons": 12,
@@ -11861,6 +12917,18 @@
    "spg": 0.6,
    "bpg": 0.3,
    "fgPct": 44.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "462",
+   "games": 672,
+   "seasons": 11,
+   "ppg": 8.5,
+   "rpg": 5.0,
+   "apg": 1.0,
+   "spg": 0.8,
+   "bpg": 0.4,
+   "fgPct": 47.2,
    "source": "playercareerstats"
   },
   {
@@ -11900,6 +12968,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "470",
+   "games": 864,
+   "seasons": 13,
+   "ppg": 10.9,
+   "rpg": 3.0,
+   "apg": 5.7,
+   "spg": 1.8,
+   "bpg": 0.4,
+   "fgPct": 44.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "51",
+   "games": 586,
+   "seasons": 9,
+   "ppg": 14.6,
+   "rpg": 1.9,
+   "apg": 3.5,
+   "spg": 0.8,
+   "bpg": 0.1,
+   "fgPct": 44.2,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "53",
    "games": 732,
    "seasons": 11,
@@ -11909,6 +13001,18 @@
    "spg": 0.9,
    "bpg": 0.2,
    "fgPct": 47.3,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "54",
+   "games": 327,
+   "seasons": 7,
+   "ppg": 4.2,
+   "rpg": 3.6,
+   "apg": 0.9,
+   "spg": 0.3,
+   "bpg": 0.2,
+   "fgPct": 44.0,
    "source": "playercareerstats"
   },
   {
@@ -11936,6 +13040,54 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "600001",
+   "games": 964,
+   "seasons": 14,
+   "ppg": 15.0,
+   "rpg": 15.0,
+   "apg": 2.7,
+   "spg": 0.5,
+   "bpg": 2.1,
+   "fgPct": 42.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "600003",
+   "games": 924,
+   "seasons": 14,
+   "ppg": 18.4,
+   "rpg": 5.2,
+   "apg": 7.5,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 37.5,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "600005",
+   "games": 959,
+   "seasons": 14,
+   "ppg": 20.1,
+   "rpg": 10.1,
+   "apg": 3.1,
+   "spg": 1.1,
+   "bpg": 1.5,
+   "fgPct": 51.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "600014",
+   "games": 909,
+   "seasons": 12,
+   "ppg": 17.1,
+   "rpg": 10.1,
+   "apg": 2.0,
+   "spg": 0.5,
+   "bpg": 1.9,
+   "fgPct": 59.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "600015",
    "games": 1040,
    "seasons": 14,
@@ -11945,6 +13097,18 @@
    "spg": 1.1,
    "bpg": 0.1,
    "fgPct": 48.5,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "61",
+   "games": 465,
+   "seasons": 8,
+   "ppg": 5.3,
+   "rpg": 3.6,
+   "apg": 0.6,
+   "spg": 0.5,
+   "bpg": 0.4,
+   "fgPct": 47.6,
    "source": "playercareerstats"
   },
   {
@@ -12020,6 +13184,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "680",
+   "games": 294,
+   "seasons": 5,
+   "ppg": 6.2,
+   "rpg": 2.6,
+   "apg": 0.8,
+   "spg": 0.3,
+   "bpg": 0.3,
+   "fgPct": 40.3,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "682",
    "games": 657,
    "seasons": 10,
@@ -12029,6 +13205,18 @@
    "spg": 1.0,
    "bpg": 0.2,
    "fgPct": 41.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "684",
+   "games": 140,
+   "seasons": 3,
+   "ppg": 4.6,
+   "rpg": 3.4,
+   "apg": 0.6,
+   "spg": 0.2,
+   "bpg": 0.4,
+   "fgPct": 43.2,
    "source": "playercareerstats"
   },
   {
@@ -12116,6 +13304,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "694",
+   "games": 259,
+   "seasons": 7,
+   "ppg": 7.8,
+   "rpg": 2.1,
+   "apg": 1.3,
+   "spg": 0.6,
+   "bpg": 0.1,
+   "fgPct": 40.0,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "696",
    "games": 708,
    "seasons": 10,
@@ -12200,6 +13400,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "709",
+   "games": 128,
+   "seasons": 2,
+   "ppg": 5.0,
+   "rpg": 2.5,
+   "apg": 0.8,
+   "spg": 0.6,
+   "bpg": 0.2,
+   "fgPct": 36.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "71",
+   "games": 639,
+   "seasons": 10,
+   "ppg": 11.1,
+   "rpg": 2.8,
+   "apg": 6.5,
+   "spg": 1.3,
+   "bpg": 0.2,
+   "fgPct": 44.4,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "711",
    "games": 970,
    "seasons": 18,
@@ -12209,6 +13433,18 @@
    "spg": 0.9,
    "bpg": 0.5,
    "fgPct": 40.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "713",
+   "games": 297,
+   "seasons": 6,
+   "ppg": 6.7,
+   "rpg": 2.2,
+   "apg": 1.0,
+   "spg": 0.3,
+   "bpg": 0.2,
+   "fgPct": 41.6,
    "source": "playercareerstats"
   },
   {
@@ -12284,6 +13520,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "73",
+   "games": 887,
+   "seasons": 13,
+   "ppg": 11.0,
+   "rpg": 6.8,
+   "apg": 1.8,
+   "spg": 0.8,
+   "bpg": 1.6,
+   "fgPct": 48.0,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "731",
    "games": 756,
    "seasons": 11,
@@ -12356,6 +13604,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "76",
+   "games": 609,
+   "seasons": 11,
+   "ppg": 14.3,
+   "rpg": 5.3,
+   "apg": 1.2,
+   "spg": 0.7,
+   "bpg": 0.3,
+   "fgPct": 50.0,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "76003",
    "games": 1560,
    "seasons": 20,
@@ -12368,6 +13628,78 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "76054",
+   "games": 876,
+   "seasons": 13,
+   "ppg": 18.8,
+   "rpg": 2.3,
+   "apg": 7.4,
+   "spg": 1.1,
+   "bpg": 0.1,
+   "fgPct": 46.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76056",
+   "games": 713,
+   "seasons": 10,
+   "ppg": 22.8,
+   "rpg": 8.6,
+   "apg": 2.3,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 42.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "761",
+   "games": 552,
+   "seasons": 10,
+   "ppg": 9.2,
+   "rpg": 5.7,
+   "apg": 0.7,
+   "spg": 0.6,
+   "bpg": 0.6,
+   "fgPct": 49.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76127",
+   "games": 846,
+   "seasons": 14,
+   "ppg": 27.4,
+   "rpg": 13.5,
+   "apg": 4.3,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 43.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76144",
+   "games": 1043,
+   "seasons": 14,
+   "ppg": 20.1,
+   "rpg": 13.7,
+   "apg": 2.4,
+   "spg": 0.7,
+   "bpg": 0.6,
+   "fgPct": 51.6,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76195",
+   "games": 624,
+   "seasons": 10,
+   "ppg": 2.6,
+   "rpg": 4.2,
+   "apg": 0.3,
+   "spg": 0.2,
+   "bpg": 3.3,
+   "fgPct": 40.7,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "762",
    "games": 832,
    "seasons": 12,
@@ -12377,6 +13709,18 @@
    "spg": 0.6,
    "bpg": 2.5,
    "fgPct": 45.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76253",
+   "games": 926,
+   "seasons": 13,
+   "ppg": 11.9,
+   "rpg": 11.9,
+   "apg": 2.8,
+   "spg": 0.7,
+   "bpg": 0.4,
+   "fgPct": 44.2,
    "source": "playercareerstats"
   },
   {
@@ -12428,6 +13772,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "76441",
+   "games": 984,
+   "seasons": 14,
+   "ppg": 7.9,
+   "rpg": 6.2,
+   "apg": 0.9,
+   "spg": 0.3,
+   "bpg": 1.6,
+   "fgPct": 45.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76462",
+   "games": 766,
+   "seasons": 11,
+   "ppg": 17.6,
+   "rpg": 13.6,
+   "apg": 3.8,
+   "spg": 1.1,
+   "bpg": 0.9,
+   "fgPct": 46.0,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "765",
    "games": 983,
    "seasons": 13,
@@ -12437,6 +13805,30 @@
    "spg": 1.7,
    "bpg": 0.3,
    "fgPct": 46.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76504",
+   "games": 955,
+   "seasons": 15,
+   "ppg": 24.3,
+   "rpg": 5.7,
+   "apg": 3.0,
+   "spg": 1.0,
+   "bpg": 0.2,
+   "fgPct": 54.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76545",
+   "games": 875,
+   "seasons": 12,
+   "ppg": 16.1,
+   "rpg": 11.0,
+   "apg": 2.9,
+   "spg": 0.9,
+   "bpg": 0.5,
+   "fgPct": 43.2,
    "source": "playercareerstats"
   },
   {
@@ -12452,6 +13844,66 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "76673",
+   "games": 1193,
+   "seasons": 15,
+   "ppg": 21.5,
+   "rpg": 5.5,
+   "apg": 3.6,
+   "spg": 0.9,
+   "bpg": 0.7,
+   "fgPct": 50.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76753",
+   "games": 886,
+   "seasons": 13,
+   "ppg": 20.3,
+   "rpg": 2.7,
+   "apg": 3.7,
+   "spg": 1.0,
+   "bpg": 0.3,
+   "fgPct": 45.6,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76804",
+   "games": 791,
+   "seasons": 10,
+   "ppg": 26.2,
+   "rpg": 4.6,
+   "apg": 2.8,
+   "spg": 1.2,
+   "bpg": 0.8,
+   "fgPct": 51.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76882",
+   "games": 1122,
+   "seasons": 15,
+   "ppg": 19.2,
+   "rpg": 5.0,
+   "apg": 4.0,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 45.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "76970",
+   "games": 1270,
+   "seasons": 16,
+   "ppg": 20.8,
+   "rpg": 6.3,
+   "apg": 4.8,
+   "spg": 1.2,
+   "bpg": 0.3,
+   "fgPct": 43.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "76979",
    "games": 1303,
    "seasons": 16,
@@ -12461,6 +13913,42 @@
    "spg": 1.0,
    "bpg": 2.0,
    "fgPct": 45.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77",
+   "games": 499,
+   "seasons": 11,
+   "ppg": 4.5,
+   "rpg": 1.3,
+   "apg": 2.1,
+   "spg": 0.4,
+   "bpg": 0.0,
+   "fgPct": 41.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "770",
+   "games": 1090,
+   "seasons": 17,
+   "ppg": 5.7,
+   "rpg": 4.9,
+   "apg": 0.4,
+   "spg": 0.3,
+   "bpg": 1.3,
+   "fgPct": 58.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77070",
+   "games": 950,
+   "seasons": 12,
+   "ppg": 18.7,
+   "rpg": 9.9,
+   "apg": 2.0,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 48.0,
    "source": "playercareerstats"
   },
   {
@@ -12476,6 +13964,102 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "77149",
+   "games": 904,
+   "seasons": 13,
+   "ppg": 4.8,
+   "rpg": 6.5,
+   "apg": 1.0,
+   "spg": 0.5,
+   "bpg": 2.5,
+   "fgPct": 45.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77175",
+   "games": 1068,
+   "seasons": 14,
+   "ppg": 6.2,
+   "rpg": 7.2,
+   "apg": 1.3,
+   "spg": 0.4,
+   "bpg": 1.4,
+   "fgPct": 47.3,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77248",
+   "games": 905,
+   "seasons": 12,
+   "ppg": 13.8,
+   "rpg": 11.2,
+   "apg": 2.2,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 41.8,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77264",
+   "games": 874,
+   "seasons": 14,
+   "ppg": 22.5,
+   "rpg": 5.8,
+   "apg": 3.3,
+   "spg": 1.0,
+   "bpg": 0.3,
+   "fgPct": 51.8,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77326",
+   "games": 1002,
+   "seasons": 13,
+   "ppg": 10.3,
+   "rpg": 9.7,
+   "apg": 3.7,
+   "spg": 1.3,
+   "bpg": 1.5,
+   "fgPct": 44.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77376",
+   "games": 752,
+   "seasons": 11,
+   "ppg": 13.9,
+   "rpg": 6.0,
+   "apg": 6.2,
+   "spg": 2.2,
+   "bpg": 0.3,
+   "fgPct": 44.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77418",
+   "games": 829,
+   "seasons": 11,
+   "ppg": 17.0,
+   "rpg": 15.6,
+   "apg": 3.3,
+   "spg": 0.4,
+   "bpg": 0.3,
+   "fgPct": 49.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77419",
+   "games": 928,
+   "seasons": 14,
+   "ppg": 10.7,
+   "rpg": 2.3,
+   "apg": 7.0,
+   "spg": 1.4,
+   "bpg": 0.1,
+   "fgPct": 44.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "77449",
    "games": 1329,
    "seasons": 19,
@@ -12488,6 +14072,42 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "77685",
+   "games": 920,
+   "seasons": 13,
+   "ppg": 17.1,
+   "rpg": 8.0,
+   "apg": 2.6,
+   "spg": 0.9,
+   "bpg": 2.2,
+   "fgPct": 54.6,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77721",
+   "games": 768,
+   "seasons": 10,
+   "ppg": 15.7,
+   "rpg": 2.6,
+   "apg": 8.3,
+   "spg": 1.5,
+   "bpg": 0.1,
+   "fgPct": 48.3,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "77847",
+   "games": 792,
+   "seasons": 11,
+   "ppg": 26.4,
+   "rpg": 16.2,
+   "apg": 3.0,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 43.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "779",
    "games": 1000,
    "seasons": 15,
@@ -12497,6 +14117,18 @@
    "spg": 1.0,
    "bpg": 0.3,
    "fgPct": 45.6,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "78003",
+   "games": 892,
+   "seasons": 12,
+   "ppg": 11.7,
+   "rpg": 4.3,
+   "apg": 7.8,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 37.8,
    "source": "playercareerstats"
   },
   {
@@ -12524,6 +14156,42 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "78076",
+   "games": 996,
+   "seasons": 15,
+   "ppg": 18.5,
+   "rpg": 12.1,
+   "apg": 3.1,
+   "spg": 0.0,
+   "bpg": 0.0,
+   "fgPct": 38.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "78149",
+   "games": 1107,
+   "seasons": 14,
+   "ppg": 15.6,
+   "rpg": 9.8,
+   "apg": 3.2,
+   "spg": 1.0,
+   "bpg": 0.9,
+   "fgPct": 46.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "78151",
+   "games": 1254,
+   "seasons": 16,
+   "ppg": 9.4,
+   "rpg": 9.9,
+   "apg": 2.1,
+   "spg": 0.6,
+   "bpg": 0.2,
+   "fgPct": 43.2,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "782",
    "games": 976,
    "seasons": 14,
@@ -12533,6 +14201,18 @@
    "spg": 1.2,
    "bpg": 0.3,
    "fgPct": 45.5,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "78310",
+   "games": 1026,
+   "seasons": 13,
+   "ppg": 18.5,
+   "rpg": 3.3,
+   "apg": 6.3,
+   "spg": 1.2,
+   "bpg": 0.2,
+   "fgPct": 47.1,
    "source": "playercareerstats"
   },
   {
@@ -12548,6 +14228,30 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "78392",
+   "games": 984,
+   "seasons": 13,
+   "ppg": 10.8,
+   "rpg": 14.0,
+   "apg": 3.9,
+   "spg": 1.1,
+   "bpg": 0.6,
+   "fgPct": 50.9,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "78435",
+   "games": 1032,
+   "seasons": 13,
+   "ppg": 18.2,
+   "rpg": 7.1,
+   "apg": 2.1,
+   "spg": 0.7,
+   "bpg": 0.1,
+   "fgPct": 47.0,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "78497",
    "games": 932,
    "seasons": 14,
@@ -12557,6 +14261,42 @@
    "spg": 2.6,
    "bpg": 0.7,
    "fgPct": 47.4,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "785",
+   "games": 508,
+   "seasons": 9,
+   "ppg": 10.1,
+   "rpg": 2.5,
+   "apg": 4.9,
+   "spg": 1.6,
+   "bpg": 0.1,
+   "fgPct": 43.8,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "78530",
+   "games": 1077,
+   "seasons": 15,
+   "ppg": 16.5,
+   "rpg": 4.7,
+   "apg": 6.7,
+   "spg": 1.3,
+   "bpg": 0.2,
+   "fgPct": 43.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "78549",
+   "games": 825,
+   "seasons": 11,
+   "ppg": 17.1,
+   "rpg": 2.7,
+   "apg": 5.6,
+   "spg": 2.0,
+   "bpg": 0.4,
+   "fgPct": 46.1,
    "source": "playercareerstats"
   },
   {
@@ -12644,6 +14384,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "895",
+   "games": 1065,
+   "seasons": 16,
+   "ppg": 9.2,
+   "rpg": 4.7,
+   "apg": 1.8,
+   "spg": 1.2,
+   "bpg": 0.3,
+   "fgPct": 45.6,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "896",
    "games": 867,
    "seasons": 13,
@@ -12653,6 +14405,18 @@
    "spg": 1.6,
    "bpg": 0.1,
    "fgPct": 43.1,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "899",
+   "games": 722,
+   "seasons": 12,
+   "ppg": 15.2,
+   "rpg": 2.6,
+   "apg": 6.7,
+   "spg": 1.2,
+   "bpg": 0.1,
+   "fgPct": 47.2,
    "source": "playercareerstats"
   },
   {
@@ -12680,6 +14444,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "904",
+   "games": 986,
+   "seasons": 16,
+   "ppg": 18.2,
+   "rpg": 4.1,
+   "apg": 3.5,
+   "spg": 1.6,
+   "bpg": 0.6,
+   "fgPct": 50.9,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "905",
    "games": 1094,
    "seasons": 16,
@@ -12689,6 +14465,18 @@
    "spg": 0.6,
    "bpg": 1.2,
    "fgPct": 53.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "907",
+   "games": 493,
+   "seasons": 8,
+   "ppg": 10.1,
+   "rpg": 3.2,
+   "apg": 1.7,
+   "spg": 1.1,
+   "bpg": 0.3,
+   "fgPct": 42.6,
    "source": "playercareerstats"
   },
   {
@@ -12740,6 +14528,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "919",
+   "games": 689,
+   "seasons": 11,
+   "ppg": 10.1,
+   "rpg": 7.1,
+   "apg": 0.9,
+   "spg": 0.7,
+   "bpg": 0.3,
+   "fgPct": 50.4,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "920",
    "games": 1278,
    "seasons": 16,
@@ -12773,6 +14573,18 @@
    "spg": 0.8,
    "bpg": 0.9,
    "fgPct": 43.5,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "926",
+   "games": 779,
+   "seasons": 10,
+   "ppg": 14.0,
+   "rpg": 5.2,
+   "apg": 5.0,
+   "spg": 2.7,
+   "bpg": 0.4,
+   "fgPct": 47.7,
    "source": "playercareerstats"
   },
   {
@@ -12824,6 +14636,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "938",
+   "games": 678,
+   "seasons": 11,
+   "ppg": 14.7,
+   "rpg": 9.5,
+   "apg": 1.3,
+   "spg": 0.7,
+   "bpg": 1.3,
+   "fgPct": 48.4,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "947",
    "games": 914,
    "seasons": 14,
@@ -12857,6 +14681,18 @@
    "spg": 1.0,
    "bpg": 0.8,
    "fgPct": 47.2,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "95",
+   "games": 797,
+   "seasons": 15,
+   "ppg": 5.4,
+   "rpg": 3.8,
+   "apg": 0.6,
+   "spg": 0.4,
+   "bpg": 0.2,
+   "fgPct": 50.0,
    "source": "playercareerstats"
   },
   {
@@ -12944,6 +14780,18 @@
    "source": "playercareerstats"
   },
   {
+   "playerId": "957",
+   "games": 225,
+   "seasons": 5,
+   "ppg": 3.7,
+   "rpg": 3.0,
+   "apg": 0.2,
+   "spg": 0.2,
+   "bpg": 0.3,
+   "fgPct": 42.2,
+   "source": "playercareerstats"
+  },
+  {
    "playerId": "958",
    "games": 610,
    "seasons": 11,
@@ -12965,6 +14813,18 @@
    "spg": 0.7,
    "bpg": 0.1,
    "fgPct": 49.0,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "96",
+   "games": 1136,
+   "seasons": 16,
+   "ppg": 13.9,
+   "rpg": 6.2,
+   "apg": 3.4,
+   "spg": 0.8,
+   "bpg": 0.3,
+   "fgPct": 49.1,
    "source": "playercareerstats"
   },
   {
@@ -13097,6 +14957,18 @@
    "spg": 0.5,
    "bpg": 1.8,
    "fgPct": 46.7,
+   "source": "playercareerstats"
+  },
+  {
+   "playerId": "98",
+   "games": 800,
+   "seasons": 13,
+   "ppg": 14.4,
+   "rpg": 5.1,
+   "apg": 2.6,
+   "spg": 1.4,
+   "bpg": 0.5,
+   "fgPct": 44.6,
    "source": "playercareerstats"
   },
   {

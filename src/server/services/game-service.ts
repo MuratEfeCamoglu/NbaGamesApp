@@ -9,16 +9,18 @@ import {
 import { getEngine } from "@/games/core/registry";
 import { createRng } from "@/games/core/rng";
 import { scoreAnswer } from "@/games/core/scoring";
-import type {
-  AchievementView,
-  AnswerKey,
-  AnswerResult,
-  Difficulty,
-  GameMode,
-  GeneratedQuestion,
-  PublicQuestion,
-  SessionSummary,
-  SubmittedAnswer,
+import {
+  ERAS,
+  type AchievementView,
+  type AnswerKey,
+  type AnswerResult,
+  type Difficulty,
+  type EraFilter,
+  type GameMode,
+  type GeneratedQuestion,
+  type PublicQuestion,
+  type SessionSummary,
+  type SubmittedAnswer,
 } from "@/games/core/types";
 import { evaluateAnswer } from "@/games/shared/answer";
 import { toPublicQuestion } from "@/games/shared/public";
@@ -30,6 +32,15 @@ import { achievementsEarnedAt, awardAchievements } from "./achievements";
 const MS_PER_SEC = 1000;
 const MS_PER_MIN = 60 * MS_PER_SEC;
 export const DAILY_MODE = "daily";
+/** No era filter: what a request without `era`, every daily and every pre-F16 session gets. */
+export const NO_ERA_FILTER: EraFilter = "all";
+
+const ERA_FILTERS: readonly string[] = [...ERAS, NO_ERA_FILTER];
+
+/** `era` is a plain string column (SQLite has no enums); anything unexpected reads as "all". */
+export function eraOf(session: Pick<GameSession, "era">): EraFilter {
+  return ERA_FILTERS.includes(session.era) ? (session.era as EraFilter) : NO_ERA_FILTER;
+}
 
 /**
  * The client shows a "3-2-1" countdown before the first question and the reveal + slide before
@@ -94,13 +105,14 @@ export function generateQuestions(
   difficulty: Difficulty,
   count: number,
   seed: number,
+  era: EraFilter = NO_ERA_FILTER,
 ): GeneratedQuestion[] {
   const engine = getEngine(mode);
   const rng = createRng(seed);
   const exclude = new Set<string>();
   const out: GeneratedQuestion[] = [];
   for (let i = 0; i < count; i++) {
-    const q = engine.generateQuestion(ctx.ds, difficulty, rng, exclude);
+    const q = engine.generateQuestion(ctx.ds, difficulty, rng, exclude, era);
     if (!q) break;
     exclude.add(q.key);
     out.push(q);
@@ -114,6 +126,7 @@ export async function createSessionWithQuestions(
     userId: string;
     mode: GameMode | typeof DAILY_MODE;
     difficulty: Difficulty;
+    era: EraFilter;
     seed: number;
     questions: GeneratedQuestion[];
     dailyDate?: string;
@@ -129,6 +142,7 @@ export async function createSessionWithQuestions(
       userId: input.userId,
       mode: input.mode,
       difficulty: input.difficulty,
+      era: input.era,
       isDaily: input.mode === DAILY_MODE,
       dailyDate: input.dailyDate ?? null,
       seed: input.seed,
@@ -148,17 +162,19 @@ export async function createSessionWithQuestions(
     sessionId: session.id,
     mode: input.mode,
     difficulty: input.difficulty,
+    era: eraOf(session),
     total: session.questionCount,
     question: toPublic(first, session.questionCount),
   };
 }
 
-/** POST /api/games/sessions */
+/** POST /api/games/sessions. `era` restricts every answer to that era's players (ISKELET F16). */
 export async function startSession(
   ctx: ServiceContext,
   userId: string,
   mode: GameMode,
   difficulty: Difficulty,
+  era: EraFilter = NO_ERA_FILTER,
 ): Promise<StartSessionResponse> {
   const seed = ctx.randomSeed();
   const questions = generateQuestions(
@@ -167,8 +183,9 @@ export async function startSession(
     difficulty,
     getEngine(mode).questionsPerSession,
     seed,
+    era,
   );
-  return createSessionWithQuestions(ctx, { userId, mode, difficulty, seed, questions });
+  return createSessionWithQuestions(ctx, { userId, mode, difficulty, era, seed, questions });
 }
 
 /** Re-serves the current question of an ACTIVE session without touching its `issuedAt`. */
@@ -193,6 +210,7 @@ export async function resumeSession(
     sessionId: session.id,
     mode: session.mode as GameMode | typeof DAILY_MODE,
     difficulty: session.difficulty as Difficulty,
+    era: eraOf(session),
     total: session.questionCount,
     question: toPublic(current, session.questionCount),
   };
@@ -203,6 +221,7 @@ export function toSummary(session: GameSession): SessionSummary {
     sessionId: session.id,
     mode: session.mode as GameMode | typeof DAILY_MODE,
     difficulty: session.difficulty as Difficulty,
+    era: eraOf(session),
     score: session.score,
     correct: session.correctCount,
     total: session.total,

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, type ReactNode } from "react";
+import { useT } from "@/lib/i18n/provider";
 import { IconButton } from "./icon-button";
 
 interface ModalProps {
@@ -18,6 +19,7 @@ const FOCUSABLE =
 /** Bottom sheet on mobile, centred dialog ≥768 px (design.css). Esc / backdrop close; focus is trapped and restored. */
 export function Modal({ open, onClose, title, description, children, id = "modal" }: ModalProps) {
   const panelRef = useRef<HTMLDivElement>(null);
+  const t = useT();
   const onCloseRef = useRef(onClose);
   useEffect(() => {
     onCloseRef.current = onClose;
@@ -81,7 +83,7 @@ export function Modal({ open, onClose, title, description, children, id = "modal
             </h2>
             {description ? <p className="t-sm t-muted">{description}</p> : null}
           </div>
-          <IconButton icon="x" label="Close" variant="ghost" onClick={onClose} />
+          <IconButton icon="x" label={t.common.close} variant="ghost" onClick={onClose} />
         </div>
         {children}
       </div>

@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshotDate": "2026-11-19",
+  "snapshotDate": "2026-11-20",
   "source": "stats.nba.com via nba_api 1.12.0",
   "endpoints": [
    "leaguegamelog"

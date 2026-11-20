@@ -6,8 +6,8 @@ import { getPoolIds, singleAnswerQuestion } from "../shared/question";
 export const engine: GameEngine = {
   mode: "career-stats",
   questionsPerSession: SESSION_LENGTH,
-  generateQuestion(ds, difficulty, rng, exclude) {
-    const pool = getPoolIds(ds, difficulty);
+  generateQuestion(ds, difficulty, rng, exclude, era = "all") {
+    const pool = getPoolIds(ds, difficulty, era);
     const candidates = ds
       .getPlayersWithCareerStats()
       .filter((p) => pool.has(p.id) && !exclude.has(`cs:${p.id}`));
@@ -25,6 +25,7 @@ export const engine: GameEngine = {
       key: `cs:${player.id}`,
       answerId: player.id,
       rng,
+      era,
       content: {
         mode: "career-stats",
         stats: {

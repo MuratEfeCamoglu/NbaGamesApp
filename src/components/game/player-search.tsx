@@ -3,6 +3,7 @@
 import { useEffect, useId, useRef, useState, type KeyboardEvent, type ReactNode } from "react";
 import { Icon } from "@/components/ui/icon";
 import { api } from "@/lib/api-client";
+import { useT } from "@/lib/i18n/provider";
 import type { PlayerSearchResultDTO } from "@/lib/api-types";
 import { PlayerAvatar } from "./player-avatar";
 
@@ -46,11 +47,12 @@ export function PlayerSearch({
   result,
   disabled,
   compact,
-  label = "Search players",
-  placeholder = "Search players…",
+  label,
+  placeholder,
   autoFocus,
 }: PlayerSearchProps) {
   const uid = useId();
+  const t = useT();
   const listId = `${uid}-list`;
   const inputRef = useRef<HTMLInputElement>(null);
   const [query, setQuery] = useState("");
@@ -136,9 +138,9 @@ export function PlayerSearch({
           autoComplete="off"
           spellCheck={false}
           maxLength={SEARCH_MAX_CHARS}
-          placeholder={placeholder}
+          placeholder={placeholder ?? t.search.placeholder}
           role="combobox"
-          aria-label={label}
+          aria-label={label ?? t.search.label}
           aria-expanded={expanded}
           aria-controls={listId}
           aria-autocomplete="list"
@@ -158,7 +160,7 @@ export function PlayerSearch({
         className="player-search__results"
         id={listId}
         role="listbox"
-        aria-label="Players"
+        aria-label={t.search.listLabel}
         aria-busy={state === "loading"}
       >
         {state === "loading" ? (
@@ -191,18 +193,18 @@ export function PlayerSearch({
       {compact ? null : (
         <>
           <p className="player-search__msg" data-for="empty">
-            Type at least 2 letters · ↑↓ to move · Enter to pick
+            {t.search.hintEmpty}
           </p>
           <p className="player-search__msg" data-for="typing">
-            Keep typing…
+            {t.search.typing}
           </p>
           <p className="player-search__msg" data-for="no-results" role="status">
             <Icon name="search" size="sm" />
-            No players found
+            {t.search.noResults}
           </p>
           <p className="player-search__msg" data-for="error" role="alert">
             <Icon name="wifi-off" size="sm" />
-            Search is unavailable. Check your connection.
+            {t.search.error}
           </p>
         </>
       )}
@@ -223,7 +225,7 @@ export function PlayerSearch({
                 className="icon-btn"
                 data-component="IconButton"
                 data-variant="ghost"
-                aria-label={`Clear ${value.name}`}
+                aria-label={t.search.clear(value.name)}
                 onClick={() => {
                   onChange(null);
                   requestAnimationFrame(() => inputRef.current?.focus());

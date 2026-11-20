@@ -1,9 +1,10 @@
 {
  "meta": {
-  "snapshotDate": "2026-11-19",
+  "snapshotDate": "2026-11-20",
   "source": "stats.nba.com via nba_api 1.12.0",
   "endpoints": [
-   "static.teams"
+   "static.teams",
+   "franchisehistory"
   ]
  },
  "items": [
@@ -26,12 +27,39 @@
    "secondaryColor": "#ffffff"
   },
   {
+   "id": "BLT",
+   "name": "Baltimore Bullets",
+   "city": "Baltimore",
+   "franchiseId": "WAS",
+   "conference": "East",
+   "primaryColor": "#0b3d91",
+   "secondaryColor": "#ffffff"
+  },
+  {
    "id": "BOS",
    "name": "Boston Celtics",
    "city": "Boston",
    "franchiseId": "BOS",
    "conference": "East",
    "primaryColor": "#007a33",
+   "secondaryColor": "#ffffff"
+  },
+  {
+   "id": "BUF",
+   "name": "Buffalo Braves",
+   "city": "Buffalo",
+   "franchiseId": "LAC",
+   "conference": "East",
+   "primaryColor": "#6cace4",
+   "secondaryColor": "#000000"
+  },
+  {
+   "id": "CAP",
+   "name": "Capital Bullets",
+   "city": "Capital",
+   "franchiseId": "WAS",
+   "conference": "East",
+   "primaryColor": "#ce1141",
    "secondaryColor": "#ffffff"
   },
   {
@@ -59,6 +87,33 @@
    "franchiseId": "CHI",
    "conference": "East",
    "primaryColor": "#ce1141",
+   "secondaryColor": "#ffffff"
+  },
+  {
+   "id": "CHP",
+   "name": "Chicago Packers",
+   "city": "Chicago",
+   "franchiseId": "WAS",
+   "conference": "West",
+   "primaryColor": "#00573f",
+   "secondaryColor": "#ffffff"
+  },
+  {
+   "id": "CHZ",
+   "name": "Chicago Zephyrs",
+   "city": "Chicago",
+   "franchiseId": "WAS",
+   "conference": "West",
+   "primaryColor": "#e56020",
+   "secondaryColor": "#000000"
+  },
+  {
+   "id": "CIN",
+   "name": "Cincinnati Royals",
+   "city": "Cincinnati",
+   "franchiseId": "SAC",
+   "conference": "East",
+   "primaryColor": "#0046ad",
    "secondaryColor": "#ffffff"
   },
   {
@@ -125,6 +180,15 @@
    "secondaryColor": "#fdbb30"
   },
   {
+   "id": "KCK",
+   "name": "Kansas City Kings",
+   "city": "Kansas City",
+   "franchiseId": "SAC",
+   "conference": "West",
+   "primaryColor": "#c8102e",
+   "secondaryColor": "#ffffff"
+  },
+  {
    "id": "LAC",
    "name": "Los Angeles Clippers",
    "city": "Los Angeles",
@@ -149,7 +213,7 @@
    "franchiseId": "MEM",
    "conference": "West",
    "primaryColor": "#5d76a9",
-   "secondaryColor": "#12173f"
+   "secondaryColor": "#ffffff"
   },
   {
    "id": "MIA",
@@ -158,6 +222,15 @@
    "franchiseId": "MIA",
    "conference": "East",
    "primaryColor": "#98002e",
+   "secondaryColor": "#ffffff"
+  },
+  {
+   "id": "MIH",
+   "name": "Milwaukee Hawks",
+   "city": "Milwaukee",
+   "franchiseId": "ATL",
+   "conference": "West",
+   "primaryColor": "#003da5",
    "secondaryColor": "#ffffff"
   },
   {
@@ -179,6 +252,15 @@
    "secondaryColor": "#78be20"
   },
   {
+   "id": "MNL",
+   "name": "Minneapolis Lakers",
+   "city": "Minneapolis",
+   "franchiseId": "LAL",
+   "conference": "West",
+   "primaryColor": "#1d4289",
+   "secondaryColor": "#fdb927"
+  },
+  {
    "id": "NJN",
    "name": "New Jersey Nets",
    "city": "New Jersey",
@@ -195,6 +277,15 @@
    "conference": "West",
    "primaryColor": "#00778b",
    "secondaryColor": "#ffffff"
+  },
+  {
+   "id": "NOJ",
+   "name": "New Orleans Jazz",
+   "city": "New Orleans",
+   "franchiseId": "UTA",
+   "conference": "East",
+   "primaryColor": "#4f2d7f",
+   "secondaryColor": "#fdb927"
   },
   {
    "id": "NOK",
@@ -224,6 +315,15 @@
    "secondaryColor": "#ffffff"
   },
   {
+   "id": "NYN",
+   "name": "New York Nets",
+   "city": "New York",
+   "franchiseId": "BKN",
+   "conference": "East",
+   "primaryColor": "#ce1141",
+   "secondaryColor": "#ffffff"
+  },
+  {
    "id": "OKC",
    "name": "Oklahoma City Thunder",
    "city": "Oklahoma City",
@@ -249,6 +349,15 @@
    "conference": "East",
    "primaryColor": "#006bb6",
    "secondaryColor": "#ffffff"
+  },
+  {
+   "id": "PHW",
+   "name": "Philadelphia Warriors",
+   "city": "Philadelphia",
+   "franchiseId": "GSW",
+   "conference": "East",
+   "primaryColor": "#1d428a",
+   "secondaryColor": "#ffc72c"
   },
   {
    "id": "PHX",
@@ -287,13 +396,58 @@
    "secondaryColor": "#000000"
   },
   {
+   "id": "SDC",
+   "name": "San Diego Clippers",
+   "city": "San Diego",
+   "franchiseId": "LAC",
+   "conference": "West",
+   "primaryColor": "#5fa8e0",
+   "secondaryColor": "#0c2340"
+  },
+  {
+   "id": "SDR",
+   "name": "San Diego Rockets",
+   "city": "San Diego",
+   "franchiseId": "HOU",
+   "conference": "West",
+   "primaryColor": "#00573f",
+   "secondaryColor": "#ffc72c"
+  },
+  {
    "id": "SEA",
    "name": "Seattle SuperSonics",
    "city": "Seattle",
    "franchiseId": "OKC",
    "conference": "West",
-   "primaryColor": "#00653a",
+   "primaryColor": "#005a34",
    "secondaryColor": "#ffc200"
+  },
+  {
+   "id": "SFW",
+   "name": "San Francisco Warriors",
+   "city": "San Francisco",
+   "franchiseId": "GSW",
+   "conference": "West",
+   "primaryColor": "#fdb927",
+   "secondaryColor": "#002b5c"
+  },
+  {
+   "id": "STL",
+   "name": "St. Louis Hawks",
+   "city": "St. Louis",
+   "franchiseId": "ATL",
+   "conference": "West",
+   "primaryColor": "#003da5",
+   "secondaryColor": "#ffffff"
+  },
+  {
+   "id": "SYR",
+   "name": "Syracuse Nationals",
+   "city": "Syracuse",
+   "franchiseId": "PHI",
+   "conference": "East",
+   "primaryColor": "#c8102e",
+   "secondaryColor": "#ffffff"
   },
   {
    "id": "TOR",

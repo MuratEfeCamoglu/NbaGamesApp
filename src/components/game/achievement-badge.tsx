@@ -1,4 +1,7 @@
+"use client";
+
 import { Icon, type IconName } from "@/components/ui/icon";
+import { useT } from "@/lib/i18n/provider";
 
 /** Medal icon per achievement id (ISKELET §3.4); locked badges always show the lock. */
 const ACHIEVEMENT_ICONS: Record<string, IconName> = {
@@ -25,6 +28,7 @@ export function AchievementBadge({
   description?: string;
   state: AchievementState;
 }) {
+  const t = useT();
   const icon: IconName = state === "locked" ? "lock" : (ACHIEVEMENT_ICONS[id] ?? "medal");
   return (
     <div
@@ -38,7 +42,7 @@ export function AchievementBadge({
       </span>
       <span className="achievement__name">{name}</span>
       {description ? <span className="achievement__desc">{description}</span> : null}
-      {state === "locked" ? <span className="sr-only">Locked</span> : null}
+      {state === "locked" ? <span className="sr-only">{t.common.locked}</span> : null}
     </div>
   );
 }

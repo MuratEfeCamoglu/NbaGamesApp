@@ -1,4 +1,7 @@
+"use client";
+
 import type { ReactNode } from "react";
+import { useT } from "@/lib/i18n/provider";
 import { Button } from "./button";
 import { Icon, type IconName } from "./icon";
 
@@ -28,11 +31,12 @@ export function ErrorState({
   title,
   description,
   onRetry,
-  retryLabel = "Try again",
+  retryLabel,
   actions,
   compact,
   className,
 }: ErrorStateProps) {
+  const t = useT();
   return (
     <div
       className={["state-panel", compact ? "state-panel--compact" : "", className ?? ""]
@@ -56,7 +60,7 @@ export function ErrorState({
               icon="rotate"
               onClick={onRetry}
             >
-              {retryLabel}
+              {retryLabel ?? t.common.tryAgain}
             </Button>
           ) : null}
           {actions}

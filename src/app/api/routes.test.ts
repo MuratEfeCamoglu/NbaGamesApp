@@ -2,6 +2,8 @@ import { afterAll, afterEach, beforeAll, beforeEach, describe, expect, it, vi } 
 import type {
   AnswerResponse,
   ApiErrorDTO,
+  DailyStatusDTO,
+  HistoryDTO,
   MeDTO,
   PlayerSearchDTO,
   StartSessionResponse,
@@ -124,6 +126,7 @@ describe("API route handlers", () => {
     );
     expect(res.status).toBe(201);
     const start = await read<StartSessionResponse>(res);
+    expect(start.era).toBe("all"); // no era in the request → no era filter
     const key = await answerKeyOf(env.ctx, start.sessionId, 0);
     if (key.kind !== "player") throw new Error("expected player key");
     expect(JSON.stringify(start)).not.toContain(`"${key.playerId}"`);
@@ -170,12 +173,46 @@ describe("API route handlers", () => {
     const start = await read<StartSessionResponse>(
       await dailyStart(post("/api/daily/sessions", {})),
     );
+    expect(start.era).toBe("all"); // the daily is never split by era
     const params = { params: Promise.resolve({ id: start.sessionId }) };
     for (let i = 0; i < start.total; i++) {
       await answerRoute(post("/x", { questionIndex: i, answer: { timeout: true } }), params);
     }
     const second = await dailyStart(post("/api/daily/sessions", {}));
     expect(second.status).toBe(409);
+    const status = await read<DailyStatusDTO>(await dailyStatusRoute(get("/api/daily")));
+    expect(status.result).toMatchObject({ sessionId: start.sessionId, era: "all" });
+  });
+
+  it("POST /api/games/sessions takes an optional era and reports it up to the history", async () => {
+    for (const era of ["modern", "all", "Current", null, 1]) {
+      const bad = await startRoute(
+        post("/api/games/sessions", { mode: "career-stats", difficulty: "easy", era }),
+      );
+      expect(bad.status, String(era)).toBe(400);
+      expect((await read<ApiErrorDTO>(bad)).error.code).toBe("VALIDATION");
+    }
+    expect(await env.ctx.db.gameSession.count()).toBe(0);
+
+    const res = await startRoute(
+      post("/api/games/sessions", { mode: "career-stats", difficulty: "easy", era: "retired" }),
+    );
+    expect(res.status).toBe(201);
+    const start = await read<StartSessionResponse>(res);
+    expect(start.era).toBe("retired");
+    const params = { params: Promise.resolve({ id: start.sessionId }) };
+    let last: AnswerResponse | null = null;
+    for (let i = 0; i < start.total; i++) {
+      const key = await answerKeyOf(env.ctx, start.sessionId, i);
+      if (key.kind !== "player") throw new Error("expected player key");
+      expect(env.ctx.ds.getPlayer(key.playerId)?.active, `question ${i}`).toBe(false);
+      last = await read<AnswerResponse>(
+        await answerRoute(post("/x", { questionIndex: i, answer: correctAnswerFor(key) }), params),
+      );
+    }
+    expect(last?.summary).toMatchObject({ sessionId: start.sessionId, era: "retired" });
+    const history = await read<HistoryDTO>(await historyRoute(get("/api/me/history")));
+    expect(history.items.map((h) => [h.sessionId, h.era])).toEqual([[start.sessionId, "retired"]]);
   });
 
   it("GET /api/players/search validates q, returns ≤10 results and rate-limits", async () => {

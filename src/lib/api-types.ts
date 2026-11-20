@@ -3,13 +3,16 @@
 import type {
   AnswerResult,
   Difficulty,
+  Era,
+  EraFilter,
   GameMode,
   PublicQuestion,
   SessionSummary,
   SubmittedAnswer,
 } from "@/games/core/types";
 
-export type ApiErrorCode = "VALIDATION" | "NOT_FOUND" | "CONFLICT" | "EXPIRED" | "RATE_LIMITED" | "INTERNAL";
+export type ApiErrorCode =
+  "VALIDATION" | "NOT_FOUND" | "CONFLICT" | "EXPIRED" | "RATE_LIMITED" | "INTERNAL";
 
 export interface ApiErrorDTO {
   error: { code: ApiErrorCode; message: string };
@@ -43,6 +46,7 @@ export interface HistoryItemDTO {
   sessionId: string;
   mode: GameMode | "daily";
   difficulty: Difficulty;
+  era: EraFilter;
   score: number;
   correct: number;
   total: number;
@@ -57,12 +61,15 @@ export interface HistoryDTO {
 export interface StartSessionRequest {
   mode: GameMode;
   difficulty: Difficulty;
+  /** Omitted → "all" (no era filter; legacy behaviour). The UI always sends one. */
+  era?: Era;
 }
-/** Also returned by POST /api/daily/sessions (mode "daily", difficulty "medium"). */
+/** Also returned by POST /api/daily/sessions (mode "daily", difficulty "medium", era "all"). */
 export interface StartSessionResponse {
   sessionId: string;
   mode: GameMode | "daily";
   difficulty: Difficulty;
+  era: EraFilter;
   total: number;
   question: PublicQuestion;
 }

@@ -4,6 +4,7 @@ import type { ReactNode } from "react";
 import type { CorrectAnswerView, QuestionContent } from "@/games/core/types";
 import { Badge } from "@/components/ui/badge";
 import { fmtDecimal, fmtNumber } from "@/lib/format";
+import { useI18n } from "@/lib/i18n/provider";
 import { BoxScoreHeader, BoxScoreTable } from "./box-score-table";
 import { CareerTimeline } from "./career-timeline";
 import { PlayerCard, MysteryPlayerCard } from "./player-card";
@@ -11,14 +12,6 @@ import { StatCard, StatGrid } from "./stat-grid";
 import { TeamBadge } from "./team-badge";
 import { Top10Table, type Top10Picks } from "./top10-table";
 import type { PickedPlayer } from "./player-search";
-
-export const PROMPTS: Record<Exclude<QuestionContent["mode"], "top-10">, string> = {
-  "starting-five": "Who completes the starting five?",
-  "team-journey": "Whose career path is this?",
-  "teammate-challenge": "Who played with all of them?",
-  "career-stats": "Whose career averages are these?",
-  "box-score": "Who had this night?",
-};
 
 interface QuestionCardProps {
   content: QuestionContent;
@@ -40,6 +33,8 @@ interface QuestionCardProps {
  * is simply not rendered — the UI never decides what to hide.
  */
 export function QuestionCard({ content, reveal, top10, anim, children }: QuestionCardProps) {
+  const { t, locale } = useI18n();
+  const prompts = t.question.prompts;
   const revealedName = reveal?.answer.kind === "player" ? reveal.answer.player.name : null;
   const playerResult = reveal ? (reveal.correct ? "correct" : "wrong") : null;
 
@@ -70,7 +65,7 @@ export function QuestionCard({ content, reveal, top10, anim, children }: Questio
                 {content.season ? ` · ${content.season}` : null}
               </span>
             </div>
-            <h2 className="question-card__prompt">{PROMPTS["starting-five"]}</h2>
+            <h2 className="question-card__prompt">{prompts["starting-five"]}</h2>
             <div className="lineup">
               {content.players.map((p) => (
                 <PlayerCard
@@ -95,25 +90,25 @@ export function QuestionCard({ content, reveal, top10, anim, children }: Questio
             {content.seasons !== null || content.allStarCount !== null ? (
               <div className="question-card__context">
                 {content.seasons !== null ? (
-                  <Badge variant="outline">{content.seasons} seasons</Badge>
+                  <Badge variant="outline">{t.question.seasons(content.seasons)}</Badge>
                 ) : null}
                 {content.allStarCount !== null ? (
                   <Badge variant="outline">
                     {content.allStarCount > 0
-                      ? `${content.allStarCount}× All-Star`
-                      : "No All-Star picks"}
+                      ? t.question.allStar(content.allStarCount)
+                      : t.question.noAllStar}
                   </Badge>
                 ) : null}
               </div>
             ) : null}
-            <h2 className="question-card__prompt">{PROMPTS["team-journey"]}</h2>
+            <h2 className="question-card__prompt">{prompts["team-journey"]}</h2>
             <CareerTimeline stints={content.stints} />
           </>
         );
       case "teammate-challenge":
         return (
           <>
-            <h2 className="question-card__prompt">{PROMPTS["teammate-challenge"]}</h2>
+            <h2 className="question-card__prompt">{prompts["teammate-challenge"]}</h2>
             <div className="teammates">
               {content.teammates.map((t) => (
                 <PlayerCard
@@ -136,17 +131,21 @@ export function QuestionCard({ content, reveal, top10, anim, children }: Questio
         const s = content.stats;
         return (
           <>
-            <h2 className="question-card__prompt">{PROMPTS["career-stats"]}</h2>
+            <h2 className="question-card__prompt">{prompts["career-stats"]}</h2>
             <StatGrid>
-              <StatCard label="PPG" value={fmtDecimal(s.ppg)} highlight />
-              <StatCard label="RPG" value={fmtDecimal(s.rpg)} highlight />
-              <StatCard label="APG" value={fmtDecimal(s.apg)} />
-              <StatCard label="SPG" value={fmtDecimal(s.spg)} />
-              <StatCard label="BPG" value={fmtDecimal(s.bpg)} />
-              <StatCard label="FG%" value={fmtDecimal(s.fgPct)} />
-              <StatCard label="Games" value={fmtNumber(s.games)} />
-              {s.seasons !== null ? <StatCard label="Seasons" value={s.seasons} /> : null}
-              {s.position !== null ? <StatCard label="Position" value={s.position} text /> : null}
+              <StatCard label="PPG" value={fmtDecimal(s.ppg, locale)} highlight />
+              <StatCard label="RPG" value={fmtDecimal(s.rpg, locale)} highlight />
+              <StatCard label="APG" value={fmtDecimal(s.apg, locale)} />
+              <StatCard label="SPG" value={fmtDecimal(s.spg, locale)} />
+              <StatCard label="BPG" value={fmtDecimal(s.bpg, locale)} />
+              <StatCard label="FG%" value={fmtDecimal(s.fgPct, locale)} />
+              <StatCard label={t.question.games} value={fmtNumber(s.games, locale)} />
+              {s.seasons !== null ? (
+                <StatCard label={t.question.seasonsLabel} value={s.seasons} />
+              ) : null}
+              {s.position !== null ? (
+                <StatCard label={t.question.position} value={s.position} text />
+              ) : null}
             </StatGrid>
           </>
         );
@@ -154,7 +153,7 @@ export function QuestionCard({ content, reveal, top10, anim, children }: Questio
       case "box-score":
         return (
           <>
-            <h2 className="question-card__prompt">{PROMPTS["box-score"]}</h2>
+            <h2 className="question-card__prompt">{prompts["box-score"]}</h2>
             {content.game ? <BoxScoreHeader game={content.game} /> : null}
             <BoxScoreTable
               line={content.line}
@@ -168,11 +167,11 @@ export function QuestionCard({ content, reveal, top10, anim, children }: Questio
           <>
             <div className="question-card__context">
               <Badge variant="accent">
-                List {content.listIndex}/{content.listTotal}
+                {t.question.list(content.listIndex, content.listTotal)}
               </Badge>
               <span className="t-xs t-muted">{content.statLabel}</span>
             </div>
-            <h2 className="question-card__prompt">{content.title}</h2>
+            <h2 className="question-card__prompt">{t.question.listTitle(content.title)}</h2>
             <Top10Table
               rows={content.rows}
               picks={top10?.picks ?? {}}

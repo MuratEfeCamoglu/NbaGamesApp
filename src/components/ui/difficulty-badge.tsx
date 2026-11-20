@@ -1,10 +1,13 @@
+"use client";
+
 import type { Difficulty } from "@/games/core/types";
-import { DIFFICULTY_LABEL } from "@/lib/modes";
+import { useT } from "@/lib/i18n/provider";
 
 export function DifficultyBadge({ difficulty }: { difficulty: Difficulty }) {
+  const t = useT();
   return (
     <span className="diff-badge" data-component="DifficultyBadge" data-variant={difficulty}>
-      {DIFFICULTY_LABEL[difficulty]}
+      {t.difficulty.label[difficulty]}
     </span>
   );
 }

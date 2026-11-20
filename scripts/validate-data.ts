@@ -1,5 +1,6 @@
 // Validates NBA seed snapshots: Zod schemas, ISKELET §2.2 minimum counts, referential
-// integrity and design color tokens. Usage: tsx scripts/validate-data.ts [--dir <path>]
+// integrity, era-split leaderboards (F16) and design color tokens.
+// Usage: tsx scripts/validate-data.ts [--dir <path>]
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
@@ -11,6 +12,9 @@ export interface ValidationResult {
 }
 
 const MAX_ERRORS_PER_CHECK = 20;
+/** ISKELET F16: Top 10 uses active-player lists in the Current era and all-time lists in Retired. */
+export const MIN_ACTIVE_LEADERBOARDS = 6;
+export const MIN_ALL_TIME_LEADERBOARDS = 8;
 
 /** Lowercase team ids that have a `--color-team-<id>` token in globals.css. */
 export function readTeamColorTokens(css: string): Set<string> {
@@ -201,6 +205,30 @@ export function validateSeedFiles(
     add(
       "leaderboards.json",
       dup(lbs.data.items, (lb) => lb.id),
+    );
+    add(
+      "leaderboards.json",
+      lbs.data.items.flatMap((lb) => dup(lb.rows, (r) => `${lb.id} player ${r.playerId}`)),
+    );
+
+    const active = lbs.data.items.filter((lb) => lb.scope === "active");
+    const allTime = lbs.data.items.filter((lb) => lb.scope === "all-time");
+    if (active.length < MIN_ACTIVE_LEADERBOARDS)
+      errors.push(
+        `leaderboards.json: ${active.length} active-player lists (scope "active"), minimum is ${MIN_ACTIVE_LEADERBOARDS}`,
+      );
+    if (allTime.length < MIN_ALL_TIME_LEADERBOARDS)
+      errors.push(
+        `leaderboards.json: ${allTime.length} all-time lists, minimum is ${MIN_ALL_TIME_LEADERBOARDS}`,
+      );
+    const isActive = new Map(players.data.items.map((p) => [p.id, p.active]));
+    add(
+      "leaderboards.json",
+      active.flatMap((lb) =>
+        lb.rows
+          .filter((r) => isActive.get(r.playerId) === false)
+          .map((r) => `${lb.id} rank ${r.rank}: player ${r.playerId} is not active`),
+      ),
     );
   }
 

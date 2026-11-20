@@ -29,6 +29,8 @@ model GameSession {
   /// GameMode slug or "daily".
   mode           String
   difficulty     String
+  /// EraFilter (ISKELET F16): "current" | "retired"; "all" = no filter (daily, pre-F16 sessions).
+  era            String    @default("all")
   isDaily        Boolean   @default(false)
   /// UTC YYYY-MM-DD; only for daily sessions (one per user per day).
   dailyDate      String?

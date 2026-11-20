@@ -7,9 +7,17 @@ import type { Difficulty, GeneratedQuestion } from "@/games/core/types";
 import type { ServiceContext } from "../context";
 import { isUniqueViolation } from "../db";
 import { AppError } from "../errors";
-import { createSessionWithQuestions, DAILY_MODE, resumeSession, toSummary } from "./game-service";
+import {
+  createSessionWithQuestions,
+  DAILY_MODE,
+  NO_ERA_FILTER,
+  resumeSession,
+  toSummary,
+} from "./game-service";
 
 const DAILY_DIFFICULTY: Difficulty = "medium";
+/** Daily stays mixed (ISKELET F16): one shared question set, no Current/Retired split. */
+const DAILY_ERA = NO_ERA_FILTER;
 const DAY_MS = 24 * 60 * 60 * 1000;
 
 /** Daily boundaries are UTC (ISKELET V7). */
@@ -30,7 +38,7 @@ export function generateDailyQuestions(ctx: ServiceContext, date: string): Gener
   const exclude = new Set<string>();
   const out: GeneratedQuestion[] = [];
   for (const mode of rng.shuffle(DAILY_MODES).slice(0, DAILY_LENGTH)) {
-    const q = getEngine(mode).generateQuestion(ctx.ds, DAILY_DIFFICULTY, rng, exclude);
+    const q = getEngine(mode).generateQuestion(ctx.ds, DAILY_DIFFICULTY, rng, exclude, DAILY_ERA);
     if (!q) continue;
     exclude.add(q.key);
     out.push(q);
@@ -77,6 +85,7 @@ export async function startDaily(
       userId,
       mode: DAILY_MODE,
       difficulty: DAILY_DIFFICULTY,
+      era: DAILY_ERA,
       seed: dailySeed(date),
       dailyDate: date,
       questions: generateDailyQuestions(ctx, date),

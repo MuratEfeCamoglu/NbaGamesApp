@@ -1,5 +1,6 @@
-import { afterEach, beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { DAILY_LENGTH, NEXT_QUESTION_DELAY_MS } from "@/games/core/difficulty";
+import { DAILY_MODES, getEngine } from "@/games/core/registry";
 import { AppError } from "../errors";
 import {
   answerKeyOf,
@@ -43,6 +44,7 @@ describe("daily-service", () => {
     const sb = await startDaily(ctx, b);
     expect(sa.mode).toBe("daily");
     expect(sa.difficulty).toBe("medium");
+    expect(sa.era).toBe("all");
     expect(sa.total).toBe(DAILY_LENGTH);
     const payloads = async (sessionId: string) =>
       (await ctx.db.question.findMany({ where: { sessionId }, orderBy: { index: "asc" } })).map(
@@ -63,6 +65,7 @@ describe("daily-service", () => {
     expect(last?.summary).toMatchObject({
       mode: "daily",
       difficulty: "medium",
+      era: "all",
       correct: DAILY_LENGTH,
     });
 
@@ -77,6 +80,7 @@ describe("daily-service", () => {
       nextResetAt: "2026-03-11T00:00:00.000Z",
     });
     expect(status.result?.sessionId).toBe(s.sessionId);
+    expect(status.result?.era).toBe("all");
 
     clock.advanceSec(24 * 60 * 60);
     const tomorrow = await startDaily(ctx, userId);
@@ -91,6 +95,7 @@ describe("daily-service", () => {
     clock.advanceSec(7);
     const resumed = await startDaily(ctx, userId);
     expect(resumed.sessionId).toBe(s.sessionId);
+    expect(resumed.era).toBe("all");
     expect(resumed.question.index).toBe(1);
     // Question 1 was issued when question 0 was answered (at the start time), stamped to begin
     // after the reveal + slide; resuming keeps that stamp instead of restarting the timer.
@@ -98,6 +103,22 @@ describe("daily-service", () => {
       new Date(TEST_START.getTime() + NEXT_QUESTION_DELAY_MS).toISOString(),
     );
     expect(await getDailyStatus(ctx, userId)).toMatchObject({ played: false, result: null });
+  });
+
+  it("stays mixed: every engine call and the stored session use era 'all'", async () => {
+    const { ctx } = env;
+    const userId = await createUser(ctx);
+    const spies = DAILY_MODES.map((mode) => vi.spyOn(getEngine(mode), "generateQuestion"));
+    try {
+      const s = await startDaily(ctx, userId);
+      const eras = spies.flatMap((spy) => spy.mock.calls.map((call) => call[4]));
+      expect(eras.length).toBeGreaterThanOrEqual(s.total);
+      expect(new Set(eras)).toEqual(new Set(["all"]));
+      const row = await ctx.db.gameSession.findUniqueOrThrow({ where: { id: s.sessionId } });
+      expect(row.era).toBe("all");
+    } finally {
+      for (const spy of spies) spy.mockRestore();
+    }
   });
 
   it("reports not played for an anonymous visitor", async () => {

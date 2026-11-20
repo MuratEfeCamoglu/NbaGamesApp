@@ -1,6 +1,6 @@
 {
  "meta": {
-  "snapshotDate": "2026-11-19",
+  "snapshotDate": "2026-11-20",
   "source": "stats.nba.com via nba_api 1.12.0",
   "endpoints": [
    "playercareerstats"
@@ -34,6 +34,20 @@
    "fromSeason": "2004-05",
    "toSeason": "2005-06",
    "order": 4
+  },
+  {
+   "playerId": "100263",
+   "teamId": "CLE",
+   "fromSeason": "1980-81",
+   "toSeason": "1981-82",
+   "order": 1
+  },
+  {
+   "playerId": "100263",
+   "teamId": "DET",
+   "fromSeason": "1981-82",
+   "toSeason": "1993-94",
+   "order": 2
   },
   {
    "playerId": "1005",
@@ -76,6 +90,41 @@
    "fromSeason": "2002-03",
    "toSeason": "2002-03",
    "order": 6
+  },
+  {
+   "playerId": "1006",
+   "teamId": "IND",
+   "fromSeason": "1981-82",
+   "toSeason": "1988-89",
+   "order": 1
+  },
+  {
+   "playerId": "1006",
+   "teamId": "DAL",
+   "fromSeason": "1988-89",
+   "toSeason": "1991-92",
+   "order": 2
+  },
+  {
+   "playerId": "1006",
+   "teamId": "NYK",
+   "fromSeason": "1992-93",
+   "toSeason": "1994-95",
+   "order": 3
+  },
+  {
+   "playerId": "1006",
+   "teamId": "TOR",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 4
+  },
+  {
+   "playerId": "1006",
+   "teamId": "NYK",
+   "fromSeason": "1995-96",
+   "toSeason": "1998-99",
+   "order": 5
   },
   {
    "playerId": "101106",
@@ -419,6 +468,20 @@
    "fromSeason": "2013-14",
    "toSeason": "2013-14",
    "order": 3
+  },
+  {
+   "playerId": "101118",
+   "teamId": "CHA",
+   "fromSeason": "2005-06",
+   "toSeason": "2008-09",
+   "order": 1
+  },
+  {
+   "playerId": "101118",
+   "teamId": "SAC",
+   "fromSeason": "2009-10",
+   "toSeason": "2009-10",
+   "order": 2
   },
   {
    "playerId": "101120",
@@ -1506,6 +1569,27 @@
    "order": 4
   },
   {
+   "playerId": "1023",
+   "teamId": "HOU",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "1023",
+   "teamId": "SEA",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "1023",
+   "teamId": "ATL",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 3
+  },
+  {
    "playerId": "1032",
    "teamId": "DEN",
    "fromSeason": "1996-97",
@@ -1546,6 +1630,90 @@
    "fromSeason": "2003-04",
    "toSeason": "2004-05",
    "order": 6
+  },
+  {
+   "playerId": "1037",
+   "teamId": "BOS",
+   "fromSeason": "1990-91",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "1037",
+   "teamId": "MIN",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "1037",
+   "teamId": "LAC",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "104",
+   "teamId": "LAC",
+   "fromSeason": "1985-86",
+   "toSeason": "1990-91",
+   "order": 1
+  },
+  {
+   "playerId": "104",
+   "teamId": "SEA",
+   "fromSeason": "1990-91",
+   "toSeason": "1992-93",
+   "order": 2
+  },
+  {
+   "playerId": "104",
+   "teamId": "LAL",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 3
+  },
+  {
+   "playerId": "104",
+   "teamId": "NJN",
+   "fromSeason": "1993-94",
+   "toSeason": "1994-95",
+   "order": 4
+  },
+  {
+   "playerId": "104",
+   "teamId": "VAN",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 5
+  },
+  {
+   "playerId": "104",
+   "teamId": "MIL",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 6
+  },
+  {
+   "playerId": "104",
+   "teamId": "TOR",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 7
+  },
+  {
+   "playerId": "104",
+   "teamId": "PHI",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 8
+  },
+  {
+   "playerId": "104",
+   "teamId": "CLE",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 9
   },
   {
    "playerId": "105",
@@ -1646,6 +1814,83 @@
    "order": 6
   },
   {
+   "playerId": "107",
+   "teamId": "DAL",
+   "fromSeason": "1983-84",
+   "toSeason": "1985-86",
+   "order": 1
+  },
+  {
+   "playerId": "107",
+   "teamId": "SEA",
+   "fromSeason": "1986-87",
+   "toSeason": "1990-91",
+   "order": 2
+  },
+  {
+   "playerId": "107",
+   "teamId": "MIL",
+   "fromSeason": "1990-91",
+   "toSeason": "1991-92",
+   "order": 3
+  },
+  {
+   "playerId": "107",
+   "teamId": "SAS",
+   "fromSeason": "1992-93",
+   "toSeason": "1993-94",
+   "order": 4
+  },
+  {
+   "playerId": "107",
+   "teamId": "DEN",
+   "fromSeason": "1994-95",
+   "toSeason": "1996-97",
+   "order": 5
+  },
+  {
+   "playerId": "107",
+   "teamId": "SEA",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 6
+  },
+  {
+   "playerId": "107",
+   "teamId": "MIL",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 7
+  },
+  {
+   "playerId": "107",
+   "teamId": "CHH",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 8
+  },
+  {
+   "playerId": "1074",
+   "teamId": "HOU",
+   "fromSeason": "1996-97",
+   "toSeason": "1998-99",
+   "order": 1
+  },
+  {
+   "playerId": "1074",
+   "teamId": "CHI",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
+   "playerId": "1074",
+   "teamId": "ATL",
+   "fromSeason": "2000-01",
+   "toSeason": "2002-03",
+   "order": 3
+  },
+  {
    "playerId": "1088",
    "teamId": "ORL",
    "fromSeason": "1999-00",
@@ -1737,6 +1982,20 @@
    "order": 4
   },
   {
+   "playerId": "1108",
+   "teamId": "CHH",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "1108",
+   "teamId": "GSW",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
    "playerId": "111",
    "teamId": "DEN",
    "fromSeason": "1992-93",
@@ -1805,6 +2064,160 @@
    "fromSeason": "2009-10",
    "toSeason": "2011-12",
    "order": 6
+  },
+  {
+   "playerId": "1114",
+   "teamId": "NJN",
+   "fromSeason": "1989-90",
+   "toSeason": "1989-90",
+   "order": 1
+  },
+  {
+   "playerId": "1114",
+   "teamId": "GSW",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 2
+  },
+  {
+   "playerId": "1114",
+   "teamId": "LAC",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 3
+  },
+  {
+   "playerId": "1114",
+   "teamId": "POR",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 4
+  },
+  {
+   "playerId": "1114",
+   "teamId": "PHI",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 5
+  },
+  {
+   "playerId": "1114",
+   "teamId": "HOU",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 6
+  },
+  {
+   "playerId": "1114",
+   "teamId": "WAS",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 7
+  },
+  {
+   "playerId": "1114",
+   "teamId": "SAS",
+   "fromSeason": "1997-98",
+   "toSeason": "2000-01",
+   "order": 8
+  },
+  {
+   "playerId": "1114",
+   "teamId": "ORL",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 9
+  },
+  {
+   "playerId": "1122",
+   "teamId": "ATL",
+   "fromSeason": "1982-83",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "1122",
+   "teamId": "LAC",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "1122",
+   "teamId": "BOS",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 3
+  },
+  {
+   "playerId": "1122",
+   "teamId": "SAS",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "1122",
+   "teamId": "ORL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "1134",
+   "teamId": "UTA",
+   "fromSeason": "1991-92",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "1134",
+   "teamId": "PHI",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "1134",
+   "teamId": "MIA",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "1134",
+   "teamId": "LAC",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "1134",
+   "teamId": "ORL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "1134",
+   "teamId": "WAS",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 6
+  },
+  {
+   "playerId": "1134",
+   "teamId": "VAN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 7
+  },
+  {
+   "playerId": "1134",
+   "teamId": "MEM",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 8
   },
   {
    "playerId": "120",
@@ -1877,6 +2290,69 @@
    "order": 3
   },
   {
+   "playerId": "123",
+   "teamId": "POR",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "123",
+   "teamId": "DEN",
+   "fromSeason": "1992-93",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "123",
+   "teamId": "WAS",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "123",
+   "teamId": "NJN",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "123",
+   "teamId": "DAL",
+   "fromSeason": "1996-97",
+   "toSeason": "1999-00",
+   "order": 5
+  },
+  {
+   "playerId": "123",
+   "teamId": "DEN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 6
+  },
+  {
+   "playerId": "123",
+   "teamId": "MIN",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 7
+  },
+  {
+   "playerId": "123",
+   "teamId": "NOH",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 8
+  },
+  {
+   "playerId": "123",
+   "teamId": "NJN",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 9
+  },
+  {
    "playerId": "124",
    "teamId": "LAL",
    "fromSeason": "1989-90",
@@ -1947,6 +2423,20 @@
    "order": 6
   },
   {
+   "playerId": "134",
+   "teamId": "CLE",
+   "fromSeason": "1987-88",
+   "toSeason": "1987-88",
+   "order": 1
+  },
+  {
+   "playerId": "134",
+   "teamId": "PHX",
+   "fromSeason": "1987-88",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
    "playerId": "136",
    "teamId": "NJN",
    "fromSeason": "1993-94",
@@ -1996,6 +2486,146 @@
    "order": 7
   },
   {
+   "playerId": "140",
+   "teamId": "MIN",
+   "fromSeason": "1989-90",
+   "toSeason": "1989-90",
+   "order": 1
+  },
+  {
+   "playerId": "140",
+   "teamId": "SAS",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 2
+  },
+  {
+   "playerId": "140",
+   "teamId": "ORL",
+   "fromSeason": "1992-93",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "140",
+   "teamId": "GSW",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "140",
+   "teamId": "CHH",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 5
+  },
+  {
+   "playerId": "140",
+   "teamId": "ORL",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 6
+  },
+  {
+   "playerId": "140",
+   "teamId": "CHH",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 7
+  },
+  {
+   "playerId": "1425",
+   "teamId": "UTA",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "1425",
+   "teamId": "MIL",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "1425",
+   "teamId": "DEN",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "1425",
+   "teamId": "VAN",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "1425",
+   "teamId": "SEA",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "1425",
+   "teamId": "WAS",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 6
+  },
+  {
+   "playerId": "1425",
+   "teamId": "NJN",
+   "fromSeason": "2000-01",
+   "toSeason": "2004-05",
+   "order": 7
+  },
+  {
+   "playerId": "1425",
+   "teamId": "TOR",
+   "fromSeason": "2004-05",
+   "toSeason": "2005-06",
+   "order": 8
+  },
+  {
+   "playerId": "1425",
+   "teamId": "NOK",
+   "fromSeason": "2005-06",
+   "toSeason": "2005-06",
+   "order": 9
+  },
+  {
+   "playerId": "1425",
+   "teamId": "LAC",
+   "fromSeason": "2006-07",
+   "toSeason": "2007-08",
+   "order": 10
+  },
+  {
+   "playerId": "1442",
+   "teamId": "DET",
+   "fromSeason": "2001-02",
+   "toSeason": "2003-04",
+   "order": 1
+  },
+  {
+   "playerId": "1442",
+   "teamId": "ATL",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 2
+  },
+  {
+   "playerId": "1442",
+   "teamId": "LAC",
+   "fromSeason": "2004-05",
+   "toSeason": "2005-06",
+   "order": 3
+  },
+  {
    "playerId": "1444",
    "teamId": "SAC",
    "fromSeason": "1997-98",
@@ -2008,6 +2638,13 @@
    "fromSeason": "2004-05",
    "toSeason": "2004-05",
    "order": 2
+  },
+  {
+   "playerId": "1449",
+   "teamId": "BOS",
+   "fromSeason": "1979-80",
+   "toSeason": "1991-92",
+   "order": 1
   },
   {
    "playerId": "145",
@@ -2066,6 +2703,90 @@
    "order": 8
   },
   {
+   "playerId": "1450",
+   "teamId": "BOS",
+   "fromSeason": "1980-81",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "1453",
+   "teamId": "PHX",
+   "fromSeason": "1977-78",
+   "toSeason": "1987-88",
+   "order": 1
+  },
+  {
+   "playerId": "1453",
+   "teamId": "DEN",
+   "fromSeason": "1988-89",
+   "toSeason": "1990-91",
+   "order": 2
+  },
+  {
+   "playerId": "1453",
+   "teamId": "POR",
+   "fromSeason": "1990-91",
+   "toSeason": "1990-91",
+   "order": 3
+  },
+  {
+   "playerId": "1453",
+   "teamId": "DEN",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 4
+  },
+  {
+   "playerId": "146",
+   "teamId": "NJN",
+   "fromSeason": "1990-91",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "146",
+   "teamId": "SAS",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 2
+  },
+  {
+   "playerId": "146",
+   "teamId": "GSW",
+   "fromSeason": "1991-92",
+   "toSeason": "1993-94",
+   "order": 3
+  },
+  {
+   "playerId": "146",
+   "teamId": "CHI",
+   "fromSeason": "1994-95",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "146",
+   "teamId": "DET",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 5
+  },
+  {
+   "playerId": "146",
+   "teamId": "PHX",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 6
+  },
+  {
+   "playerId": "146",
+   "teamId": "ORL",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 7
+  },
+  {
    "playerId": "147",
    "teamId": "DEN",
    "fromSeason": "1994-95",
@@ -2105,6 +2826,48 @@
    "teamId": "PHX",
    "fromSeason": "2006-07",
    "toSeason": "2006-07",
+   "order": 6
+  },
+  {
+   "playerId": "1472",
+   "teamId": "SDC",
+   "fromSeason": "1981-82",
+   "toSeason": "1982-83",
+   "order": 1
+  },
+  {
+   "playerId": "1472",
+   "teamId": "SEA",
+   "fromSeason": "1983-84",
+   "toSeason": "1987-88",
+   "order": 2
+  },
+  {
+   "playerId": "1472",
+   "teamId": "PHX",
+   "fromSeason": "1988-89",
+   "toSeason": "1992-93",
+   "order": 3
+  },
+  {
+   "playerId": "1472",
+   "teamId": "UTA",
+   "fromSeason": "1993-94",
+   "toSeason": "1994-95",
+   "order": 4
+  },
+  {
+   "playerId": "1472",
+   "teamId": "CHH",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 5
+  },
+  {
+   "playerId": "1472",
+   "teamId": "PHI",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
    "order": 6
   },
   {
@@ -2584,6 +3347,34 @@
    "order": 5
   },
   {
+   "playerId": "1505",
+   "teamId": "SAC",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 1
+  },
+  {
+   "playerId": "1505",
+   "teamId": "ORL",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
+   "playerId": "1505",
+   "teamId": "DEN",
+   "fromSeason": "1999-00",
+   "toSeason": "2001-02",
+   "order": 3
+  },
+  {
+   "playerId": "1505",
+   "teamId": "DAL",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 4
+  },
+  {
    "playerId": "1506",
    "teamId": "IND",
    "fromSeason": "1997-98",
@@ -2913,6 +3704,41 @@
    "order": 8
   },
   {
+   "playerId": "1520",
+   "teamId": "MIA",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "1520",
+   "teamId": "LAC",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 2
+  },
+  {
+   "playerId": "1520",
+   "teamId": "SAS",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 3
+  },
+  {
+   "playerId": "1520",
+   "teamId": "POR",
+   "fromSeason": "2002-03",
+   "toSeason": "2005-06",
+   "order": 4
+  },
+  {
+   "playerId": "1520",
+   "teamId": "DEN",
+   "fromSeason": "2005-06",
+   "toSeason": "2005-06",
+   "order": 5
+  },
+  {
    "playerId": "1521",
    "teamId": "UTA",
    "fromSeason": "1997-98",
@@ -3130,6 +3956,20 @@
    "order": 9
   },
   {
+   "playerId": "1538",
+   "teamId": "CLE",
+   "fromSeason": "1997-98",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "1538",
+   "teamId": "GSW",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 2
+  },
+  {
    "playerId": "1541",
    "teamId": "POR",
    "fromSeason": "1997-98",
@@ -3148,6 +3988,27 @@
    "teamId": "LAC",
    "fromSeason": "2006-07",
    "toSeason": "2006-07",
+   "order": 3
+  },
+  {
+   "playerId": "1542",
+   "teamId": "SEA",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 1
+  },
+  {
+   "playerId": "1542",
+   "teamId": "LAC",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 2
+  },
+  {
+   "playerId": "1542",
+   "teamId": "ATL",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
    "order": 3
   },
   {
@@ -3338,6 +4199,41 @@
    "fromSeason": "2009-10",
    "toSeason": "2009-10",
    "order": 15
+  },
+  {
+   "playerId": "157",
+   "teamId": "DAL",
+   "fromSeason": "1983-84",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "157",
+   "teamId": "NYK",
+   "fromSeason": "1993-94",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "157",
+   "teamId": "DAL",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "157",
+   "teamId": "ORL",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "157",
+   "teamId": "LAL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
   },
   {
    "playerId": "1594",
@@ -9829,6 +10725,62 @@
    "order": 2
   },
   {
+   "playerId": "170",
+   "teamId": "SAC",
+   "fromSeason": "1985-86",
+   "toSeason": "1988-89",
+   "order": 1
+  },
+  {
+   "playerId": "170",
+   "teamId": "BOS",
+   "fromSeason": "1988-89",
+   "toSeason": "1992-93",
+   "order": 2
+  },
+  {
+   "playerId": "170",
+   "teamId": "PHX",
+   "fromSeason": "1993-94",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "170",
+   "teamId": "LAL",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "170",
+   "teamId": "NJN",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 5
+  },
+  {
+   "playerId": "170",
+   "teamId": "CHI",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 6
+  },
+  {
+   "playerId": "170",
+   "teamId": "PHX",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 7
+  },
+  {
+   "playerId": "170",
+   "teamId": "POR",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 8
+  },
+  {
    "playerId": "1709",
    "teamId": "LAC",
    "fromSeason": "1998-99",
@@ -10284,6 +11236,27 @@
    "order": 4
   },
   {
+   "playerId": "1722",
+   "teamId": "HOU",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 1
+  },
+  {
+   "playerId": "1722",
+   "teamId": "VAN",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "1722",
+   "teamId": "MEM",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 3
+  },
+  {
    "playerId": "1723",
    "teamId": "ORL",
    "fromSeason": "1998-99",
@@ -10358,6 +11331,20 @@
    "teamId": "ORL",
    "fromSeason": "1999-00",
    "toSeason": "2007-08",
+   "order": 2
+  },
+  {
+   "playerId": "1728",
+   "teamId": "ATL",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "1728",
+   "teamId": "PHI",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
    "order": 2
   },
   {
@@ -10548,6 +11535,27 @@
    "fromSeason": "2008-09",
    "toSeason": "2008-09",
    "order": 8
+  },
+  {
+   "playerId": "1732",
+   "teamId": "VAN",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 1
+  },
+  {
+   "playerId": "1732",
+   "teamId": "WAS",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "1732",
+   "teamId": "MIN",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 3
   },
   {
    "playerId": "1733",
@@ -10739,6 +11747,48 @@
    "order": 4
   },
   {
+   "playerId": "1741",
+   "teamId": "SEA",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "1741",
+   "teamId": "LAL",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 2
+  },
+  {
+   "playerId": "1741",
+   "teamId": "TOR",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 3
+  },
+  {
+   "playerId": "1741",
+   "teamId": "CLE",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 4
+  },
+  {
+   "playerId": "1741",
+   "teamId": "ATL",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 5
+  },
+  {
+   "playerId": "1741",
+   "teamId": "DEN",
+   "fromSeason": "2007-08",
+   "toSeason": "2007-08",
+   "order": 6
+  },
+  {
    "playerId": "1742",
    "teamId": "ATL",
    "fromSeason": "1998-99",
@@ -10893,6 +11943,48 @@
    "order": 4
   },
   {
+   "playerId": "175",
+   "teamId": "MIL",
+   "fromSeason": "1981-82",
+   "toSeason": "1985-86",
+   "order": 1
+  },
+  {
+   "playerId": "175",
+   "teamId": "SEA",
+   "fromSeason": "1986-87",
+   "toSeason": "1988-89",
+   "order": 2
+  },
+  {
+   "playerId": "175",
+   "teamId": "GSW",
+   "fromSeason": "1989-90",
+   "toSeason": "1992-93",
+   "order": 3
+  },
+  {
+   "playerId": "175",
+   "teamId": "MIL",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 4
+  },
+  {
+   "playerId": "175",
+   "teamId": "BOS",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 5
+  },
+  {
+   "playerId": "175",
+   "teamId": "POR",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 6
+  },
+  {
    "playerId": "1751",
    "teamId": "WAS",
    "fromSeason": "1998-99",
@@ -10984,6 +12076,34 @@
    "order": 4
   },
   {
+   "playerId": "177",
+   "teamId": "WAS",
+   "fromSeason": "1987-88",
+   "toSeason": "1987-88",
+   "order": 1
+  },
+  {
+   "playerId": "177",
+   "teamId": "CHH",
+   "fromSeason": "1988-89",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "177",
+   "teamId": "GSW",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "177",
+   "teamId": "TOR",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
    "playerId": "178",
    "teamId": "SEA",
    "fromSeason": "1987-88",
@@ -11052,6 +12172,62 @@
    "fromSeason": "2001-02",
    "toSeason": "2001-02",
    "order": 3
+  },
+  {
+   "playerId": "180",
+   "teamId": "UTA",
+   "fromSeason": "1992-93",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "180",
+   "teamId": "CLE",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "180",
+   "teamId": "MIA",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "180",
+   "teamId": "POR",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "180",
+   "teamId": "SEA",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "180",
+   "teamId": "DET",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 6
+  },
+  {
+   "playerId": "180",
+   "teamId": "UTA",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 7
+  },
+  {
+   "playerId": "180",
+   "teamId": "DEN",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 8
   },
   {
    "playerId": "1800",
@@ -11180,6 +12356,146 @@
    "order": 7
   },
   {
+   "playerId": "182",
+   "teamId": "GSW",
+   "fromSeason": "1991-92",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "182",
+   "teamId": "MIA",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "182",
+   "teamId": "SAC",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "182",
+   "teamId": "SEA",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "182",
+   "teamId": "PHI",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 5
+  },
+  {
+   "playerId": "182",
+   "teamId": "GSW",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 6
+  },
+  {
+   "playerId": "182",
+   "teamId": "DET",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 7
+  },
+  {
+   "playerId": "183",
+   "teamId": "ORL",
+   "fromSeason": "1991-92",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "183",
+   "teamId": "DEN",
+   "fromSeason": "1993-94",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "183",
+   "teamId": "LAC",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "183",
+   "teamId": "CHI",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "183",
+   "teamId": "DET",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "184",
+   "teamId": "CLE",
+   "fromSeason": "1991-92",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "184",
+   "teamId": "CHH",
+   "fromSeason": "1997-98",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
+   "playerId": "185",
+   "teamId": "GSW",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "185",
+   "teamId": "WAS",
+   "fromSeason": "1994-95",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "185",
+   "teamId": "SAC",
+   "fromSeason": "1998-99",
+   "toSeason": "2004-05",
+   "order": 3
+  },
+  {
+   "playerId": "185",
+   "teamId": "PHI",
+   "fromSeason": "2004-05",
+   "toSeason": "2006-07",
+   "order": 4
+  },
+  {
+   "playerId": "185",
+   "teamId": "DET",
+   "fromSeason": "2006-07",
+   "toSeason": "2006-07",
+   "order": 5
+  },
+  {
+   "playerId": "185",
+   "teamId": "GSW",
+   "fromSeason": "2007-08",
+   "toSeason": "2007-08",
+   "order": 6
+  },
+  {
    "playerId": "1853",
    "teamId": "MIA",
    "fromSeason": "1999-00",
@@ -11304,6 +12620,62 @@
    "fromSeason": "2011-12",
    "toSeason": "2011-12",
    "order": 12
+  },
+  {
+   "playerId": "187",
+   "teamId": "SDC",
+   "fromSeason": "1982-83",
+   "toSeason": "1983-84",
+   "order": 1
+  },
+  {
+   "playerId": "187",
+   "teamId": "MIL",
+   "fromSeason": "1984-85",
+   "toSeason": "1988-89",
+   "order": 2
+  },
+  {
+   "playerId": "187",
+   "teamId": "SAS",
+   "fromSeason": "1989-90",
+   "toSeason": "1994-95",
+   "order": 3
+  },
+  {
+   "playerId": "187",
+   "teamId": "MIL",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 4
+  },
+  {
+   "playerId": "187",
+   "teamId": "SEA",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 5
+  },
+  {
+   "playerId": "187",
+   "teamId": "PHI",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 6
+  },
+  {
+   "playerId": "187",
+   "teamId": "NYK",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 7
+  },
+  {
+   "playerId": "187",
+   "teamId": "GSW",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 8
   },
   {
    "playerId": "1882",
@@ -11789,6 +13161,55 @@
    "order": 7
   },
   {
+   "playerId": "190",
+   "teamId": "SAC",
+   "fromSeason": "1990-91",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "190",
+   "teamId": "MIA",
+   "fromSeason": "1997-98",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "1900",
+   "teamId": "UTA",
+   "fromSeason": "1999-00",
+   "toSeason": "2001-02",
+   "order": 1
+  },
+  {
+   "playerId": "1900",
+   "teamId": "MIN",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 2
+  },
+  {
+   "playerId": "1901",
+   "teamId": "ATL",
+   "fromSeason": "1999-00",
+   "toSeason": "2003-04",
+   "order": 1
+  },
+  {
+   "playerId": "1901",
+   "teamId": "TOR",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 2
+  },
+  {
+   "playerId": "1901",
+   "teamId": "SAS",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 3
+  },
+  {
    "playerId": "1902",
    "teamId": "IND",
    "fromSeason": "1999-00",
@@ -11857,6 +13278,20 @@
    "fromSeason": "2013-14",
    "toSeason": "2014-15",
    "order": 3
+  },
+  {
+   "playerId": "1907",
+   "teamId": "GSW",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "1907",
+   "teamId": "PHI",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 2
   },
   {
    "playerId": "1908",
@@ -11978,6 +13413,20 @@
    "order": 6
   },
   {
+   "playerId": "1915",
+   "teamId": "NJN",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "1915",
+   "teamId": "DAL",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 2
+  },
+  {
    "playerId": "1916",
    "teamId": "WAS",
    "fromSeason": "1999-00",
@@ -12039,6 +13488,20 @@
    "fromSeason": "2008-09",
    "toSeason": "2008-09",
    "order": 9
+  },
+  {
+   "playerId": "1919",
+   "teamId": "WAS",
+   "fromSeason": "1999-00",
+   "toSeason": "2004-05",
+   "order": 1
+  },
+  {
+   "playerId": "1919",
+   "teamId": "LAL",
+   "fromSeason": "2005-06",
+   "toSeason": "2005-06",
+   "order": 2
   },
   {
    "playerId": "1921",
@@ -12172,6 +13635,27 @@
    "fromSeason": "2005-06",
    "toSeason": "2005-06",
    "order": 7
+  },
+  {
+   "playerId": "1928",
+   "teamId": "PHI",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "1928",
+   "teamId": "NJN",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 2
+  },
+  {
+   "playerId": "1928",
+   "teamId": "PHI",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 3
   },
   {
    "playerId": "193",
@@ -12347,6 +13831,41 @@
    "fromSeason": "2005-06",
    "toSeason": "2005-06",
    "order": 6
+  },
+  {
+   "playerId": "197",
+   "teamId": "CHH",
+   "fromSeason": "1993-94",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "197",
+   "teamId": "GSW",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "197",
+   "teamId": "CHI",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "197",
+   "teamId": "NJN",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 4
+  },
+  {
+   "playerId": "197",
+   "teamId": "CHH",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 5
   },
   {
    "playerId": "198",
@@ -12606,6 +14125,27 @@
    "fromSeason": "2021-22",
    "toSeason": "2022-23",
    "order": 5
+  },
+  {
+   "playerId": "200754",
+   "teamId": "SEA",
+   "fromSeason": "2006-07",
+   "toSeason": "2007-08",
+   "order": 1
+  },
+  {
+   "playerId": "200754",
+   "teamId": "OKC",
+   "fromSeason": "2008-09",
+   "toSeason": "2008-09",
+   "order": 2
+  },
+  {
+   "playerId": "200754",
+   "teamId": "NYK",
+   "fromSeason": "2008-09",
+   "toSeason": "2008-09",
+   "order": 3
   },
   {
    "playerId": "200755",
@@ -20350,6 +21890,13 @@
    "order": 4
   },
   {
+   "playerId": "203",
+   "teamId": "SEA",
+   "fromSeason": "1986-87",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
    "playerId": "2030",
    "teamId": "NJN",
    "fromSeason": "2000-01",
@@ -24354,6 +25901,27 @@
    "order": 1
   },
   {
+   "playerId": "204",
+   "teamId": "PHX",
+   "fromSeason": "1986-87",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "204",
+   "teamId": "PHI",
+   "fromSeason": "1992-93",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "204",
+   "teamId": "UTA",
+   "fromSeason": "1993-94",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
    "playerId": "204001",
    "teamId": "NYK",
    "fromSeason": "2015-16",
@@ -24527,6 +26095,41 @@
    "fromSeason": "2010-11",
    "toSeason": "2010-11",
    "order": 3
+  },
+  {
+   "playerId": "2042",
+   "teamId": "DAL",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "2042",
+   "teamId": "WAS",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 2
+  },
+  {
+   "playerId": "2042",
+   "teamId": "NOH",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 3
+  },
+  {
+   "playerId": "2044",
+   "teamId": "HOU",
+   "fromSeason": "2000-01",
+   "toSeason": "2002-03",
+   "order": 1
+  },
+  {
+   "playerId": "2044",
+   "teamId": "ATL",
+   "fromSeason": "2003-04",
+   "toSeason": "2004-05",
+   "order": 2
   },
   {
    "playerId": "204456",
@@ -24795,6 +26398,41 @@
    "order": 3
   },
   {
+   "playerId": "2051",
+   "teamId": "DAL",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 1
+  },
+  {
+   "playerId": "2051",
+   "teamId": "DEN",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 2
+  },
+  {
+   "playerId": "2051",
+   "teamId": "ORL",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 3
+  },
+  {
+   "playerId": "2051",
+   "teamId": "PHX",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 4
+  },
+  {
+   "playerId": "2051",
+   "teamId": "NJN",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 5
+  },
+  {
    "playerId": "2052",
    "teamId": "UTA",
    "fromSeason": "2000-01",
@@ -25012,6 +26650,27 @@
    "order": 5
   },
   {
+   "playerId": "2064",
+   "teamId": "CHI",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "2066",
+   "teamId": "NJN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 1
+  },
+  {
+   "playerId": "2066",
+   "teamId": "LAL",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 2
+  },
+  {
    "playerId": "2067",
    "teamId": "MIA",
    "fromSeason": "2000-01",
@@ -25080,6 +26739,13 @@
    "fromSeason": "2010-11",
    "toSeason": "2010-11",
    "order": 10
+  },
+  {
+   "playerId": "2069",
+   "teamId": "ATL",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 1
   },
   {
    "playerId": "2072",
@@ -25264,6 +26930,41 @@
    "order": 8
   },
   {
+   "playerId": "209",
+   "teamId": "UTA",
+   "fromSeason": "1986-87",
+   "toSeason": "1986-87",
+   "order": 1
+  },
+  {
+   "playerId": "209",
+   "teamId": "CLE",
+   "fromSeason": "1987-88",
+   "toSeason": "1987-88",
+   "order": 2
+  },
+  {
+   "playerId": "209",
+   "teamId": "CHH",
+   "fromSeason": "1988-89",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "209",
+   "teamId": "MIL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "209",
+   "teamId": "TOR",
+   "fromSeason": "1999-00",
+   "toSeason": "2001-02",
+   "order": 5
+  },
+  {
    "playerId": "21",
    "teamId": "NYK",
    "fromSeason": "1991-92",
@@ -25325,6 +27026,20 @@
    "fromSeason": "1998-99",
    "toSeason": "2001-02",
    "order": 3
+  },
+  {
+   "playerId": "211",
+   "teamId": "MIL",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "211",
+   "teamId": "VAN",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 2
   },
   {
    "playerId": "2124",
@@ -25509,6 +27224,41 @@
    "order": 7
   },
   {
+   "playerId": "219",
+   "teamId": "SAC",
+   "fromSeason": "1988-89",
+   "toSeason": "1989-90",
+   "order": 1
+  },
+  {
+   "playerId": "219",
+   "teamId": "SAS",
+   "fromSeason": "1992-93",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "219",
+   "teamId": "MIL",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "219",
+   "teamId": "GSW",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
+   "playerId": "219",
+   "teamId": "PHX",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 5
+  },
+  {
    "playerId": "2198",
    "teamId": "WAS",
    "fromSeason": "2001-02",
@@ -25626,6 +27376,13 @@
    "fromSeason": "2019-20",
    "toSeason": "2019-20",
    "order": 10
+  },
+  {
+   "playerId": "22",
+   "teamId": "IND",
+   "fromSeason": "1988-89",
+   "toSeason": "1999-00",
+   "order": 1
   },
   {
    "playerId": "2200",
@@ -25859,6 +27616,27 @@
    "order": 8
   },
   {
+   "playerId": "2208",
+   "teamId": "BOS",
+   "fromSeason": "2001-02",
+   "toSeason": "2003-04",
+   "order": 1
+  },
+  {
+   "playerId": "2208",
+   "teamId": "CLE",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 2
+  },
+  {
+   "playerId": "2208",
+   "teamId": "PHI",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 3
+  },
+  {
    "playerId": "2209",
    "teamId": "SEA",
    "fromSeason": "2001-02",
@@ -25906,6 +27684,48 @@
    "fromSeason": "2012-13",
    "toSeason": "2012-13",
    "order": 7
+  },
+  {
+   "playerId": "221",
+   "teamId": "PHI",
+   "fromSeason": "1992-93",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "221",
+   "teamId": "GSW",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "221",
+   "teamId": "MIA",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "221",
+   "teamId": "CLE",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
+   "playerId": "221",
+   "teamId": "NYK",
+   "fromSeason": "2001-02",
+   "toSeason": "2003-04",
+   "order": 5
+  },
+  {
+   "playerId": "221",
+   "teamId": "HOU",
+   "fromSeason": "2003-04",
+   "toSeason": "2004-05",
+   "order": 6
   },
   {
    "playerId": "2210",
@@ -26650,6 +28470,34 @@
    "order": 6
   },
   {
+   "playerId": "2254",
+   "teamId": "MIN",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 1
+  },
+  {
+   "playerId": "2254",
+   "teamId": "MIA",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 2
+  },
+  {
+   "playerId": "2254",
+   "teamId": "TOR",
+   "fromSeason": "2004-05",
+   "toSeason": "2005-06",
+   "order": 3
+  },
+  {
+   "playerId": "2254",
+   "teamId": "HOU",
+   "fromSeason": "2007-08",
+   "toSeason": "2007-08",
+   "order": 4
+  },
+  {
    "playerId": "2260",
    "teamId": "UTA",
    "fromSeason": "2001-02",
@@ -26678,6 +28526,27 @@
    "order": 4
   },
   {
+   "playerId": "228",
+   "teamId": "ATL",
+   "fromSeason": "1992-93",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "228",
+   "teamId": "UTA",
+   "fromSeason": "1994-95",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
+   "playerId": "228",
+   "teamId": "GSW",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 3
+  },
+  {
    "playerId": "2294",
    "teamId": "PHX",
    "fromSeason": "2001-02",
@@ -26704,6 +28573,41 @@
    "fromSeason": "2010-11",
    "toSeason": "2010-11",
    "order": 4
+  },
+  {
+   "playerId": "23",
+   "teamId": "DET",
+   "fromSeason": "1986-87",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "23",
+   "teamId": "SAS",
+   "fromSeason": "1993-94",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "23",
+   "teamId": "CHI",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "23",
+   "teamId": "LAL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "23",
+   "teamId": "DAL",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 5
   },
   {
    "playerId": "2306",
@@ -26753,6 +28657,76 @@
    "fromSeason": "2010-11",
    "toSeason": "2010-11",
    "order": 7
+  },
+  {
+   "playerId": "234",
+   "teamId": "MIA",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "234",
+   "teamId": "CHH",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "234",
+   "teamId": "NJN",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "234",
+   "teamId": "DAL",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "234",
+   "teamId": "DET",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "234",
+   "teamId": "CHI",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 6
+  },
+  {
+   "playerId": "236",
+   "teamId": "MIA",
+   "fromSeason": "1988-89",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "236",
+   "teamId": "NJN",
+   "fromSeason": "1993-94",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "236",
+   "teamId": "ORL",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "236",
+   "teamId": "VAN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
   },
   {
    "playerId": "2365",
@@ -26809,6 +28783,55 @@
    "fromSeason": "2016-17",
    "toSeason": "2016-17",
    "order": 8
+  },
+  {
+   "playerId": "238",
+   "teamId": "GSW",
+   "fromSeason": "1990-91",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "238",
+   "teamId": "CLE",
+   "fromSeason": "1993-94",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "238",
+   "teamId": "MIL",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "238",
+   "teamId": "PHI",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
+   "playerId": "238",
+   "teamId": "CLE",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 5
+  },
+  {
+   "playerId": "238",
+   "teamId": "PHI",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 6
+  },
+  {
+   "playerId": "238",
+   "teamId": "MIA",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 7
   },
   {
    "playerId": "239",
@@ -26878,6 +28901,13 @@
    "teamId": "HOU",
    "fromSeason": "2002-03",
    "toSeason": "2010-11",
+   "order": 1
+  },
+  {
+   "playerId": "2398",
+   "teamId": "CHI",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
    "order": 1
   },
   {
@@ -27707,6 +29737,48 @@
    "order": 8
   },
   {
+   "playerId": "2437",
+   "teamId": "CHI",
+   "fromSeason": "2002-03",
+   "toSeason": "2003-04",
+   "order": 1
+  },
+  {
+   "playerId": "2437",
+   "teamId": "TOR",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 2
+  },
+  {
+   "playerId": "2437",
+   "teamId": "WAS",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 3
+  },
+  {
+   "playerId": "2437",
+   "teamId": "NOH",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 4
+  },
+  {
+   "playerId": "2437",
+   "teamId": "HOU",
+   "fromSeason": "2005-06",
+   "toSeason": "2005-06",
+   "order": 5
+  },
+  {
+   "playerId": "2437",
+   "teamId": "CHA",
+   "fromSeason": "2005-06",
+   "toSeason": "2005-06",
+   "order": 6
+  },
+  {
    "playerId": "2440",
    "teamId": "LAC",
    "fromSeason": "2003-04",
@@ -27994,6 +30066,125 @@
    "order": 10
   },
   {
+   "playerId": "246",
+   "teamId": "SAS",
+   "fromSeason": "1987-88",
+   "toSeason": "1988-89",
+   "order": 1
+  },
+  {
+   "playerId": "246",
+   "teamId": "MIL",
+   "fromSeason": "1989-90",
+   "toSeason": "1990-91",
+   "order": 2
+  },
+  {
+   "playerId": "246",
+   "teamId": "NJN",
+   "fromSeason": "1990-91",
+   "toSeason": "1990-91",
+   "order": 3
+  },
+  {
+   "playerId": "246",
+   "teamId": "DEN",
+   "fromSeason": "1990-91",
+   "toSeason": "1991-92",
+   "order": 4
+  },
+  {
+   "playerId": "246",
+   "teamId": "DET",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 5
+  },
+  {
+   "playerId": "246",
+   "teamId": "ATL",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 6
+  },
+  {
+   "playerId": "246",
+   "teamId": "SAS",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 7
+  },
+  {
+   "playerId": "246",
+   "teamId": "ATL",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 8
+  },
+  {
+   "playerId": "2469",
+   "teamId": "ORL",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 1
+  },
+  {
+   "playerId": "2469",
+   "teamId": "PHX",
+   "fromSeason": "2005-06",
+   "toSeason": "2006-07",
+   "order": 2
+  },
+  {
+   "playerId": "247",
+   "teamId": "DET",
+   "fromSeason": "1985-86",
+   "toSeason": "1998-99",
+   "order": 1
+  },
+  {
+   "playerId": "2470",
+   "teamId": "CLE",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 1
+  },
+  {
+   "playerId": "2470",
+   "teamId": "DET",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 2
+  },
+  {
+   "playerId": "2470",
+   "teamId": "PHX",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 3
+  },
+  {
+   "playerId": "2470",
+   "teamId": "LAL",
+   "fromSeason": "2005-06",
+   "toSeason": "2006-07",
+   "order": 4
+  },
+  {
+   "playerId": "2470",
+   "teamId": "MIA",
+   "fromSeason": "2007-08",
+   "toSeason": "2007-08",
+   "order": 5
+  },
+  {
+   "playerId": "2470",
+   "teamId": "LAC",
+   "fromSeason": "2007-08",
+   "toSeason": "2007-08",
+   "order": 6
+  },
+  {
    "playerId": "248",
    "teamId": "LAL",
    "fromSeason": "1993-94",
@@ -28132,6 +30323,41 @@
    "fromSeason": "2013-14",
    "toSeason": "2014-15",
    "order": 7
+  },
+  {
+   "playerId": "251",
+   "teamId": "SAS",
+   "fromSeason": "1989-90",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "251",
+   "teamId": "DET",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "251",
+   "teamId": "SAS",
+   "fromSeason": "1994-95",
+   "toSeason": "2000-01",
+   "order": 3
+  },
+  {
+   "playerId": "252",
+   "teamId": "UTA",
+   "fromSeason": "1985-86",
+   "toSeason": "2002-03",
+   "order": 1
+  },
+  {
+   "playerId": "252",
+   "teamId": "LAL",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 2
   },
   {
    "playerId": "2544",
@@ -29429,6 +31655,34 @@
    "order": 7
   },
   {
+   "playerId": "26",
+   "teamId": "MIN",
+   "fromSeason": "1991-92",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "26",
+   "teamId": "CHI",
+   "fromSeason": "1993-94",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "26",
+   "teamId": "PHX",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "26",
+   "teamId": "NYK",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
    "playerId": "2605",
    "teamId": "DAL",
    "fromSeason": "2003-04",
@@ -29462,6 +31716,41 @@
    "fromSeason": "2003-04",
    "toSeason": "2022-23",
    "order": 1
+  },
+  {
+   "playerId": "262",
+   "teamId": "LAC",
+   "fromSeason": "1984-85",
+   "toSeason": "1987-88",
+   "order": 1
+  },
+  {
+   "playerId": "262",
+   "teamId": "SEA",
+   "fromSeason": "1988-89",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "262",
+   "teamId": "CLE",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "262",
+   "teamId": "PHI",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "262",
+   "teamId": "NJN",
+   "fromSeason": "1997-98",
+   "toSeason": "1999-00",
+   "order": 5
   },
   {
    "playerId": "2624",
@@ -29499,6 +31788,48 @@
    "order": 5
   },
   {
+   "playerId": "2639",
+   "teamId": "ORL",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 1
+  },
+  {
+   "playerId": "2639",
+   "teamId": "IND",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 2
+  },
+  {
+   "playerId": "265",
+   "teamId": "WAS",
+   "fromSeason": "1988-89",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "265",
+   "teamId": "POR",
+   "fromSeason": "1993-94",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "265",
+   "teamId": "WAS",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "265",
+   "teamId": "PHI",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
    "playerId": "2679",
    "teamId": "POR",
    "fromSeason": "2003-04",
@@ -29532,6 +31863,34 @@
    "fromSeason": "2010-11",
    "toSeason": "2012-13",
    "order": 5
+  },
+  {
+   "playerId": "2693",
+   "teamId": "MIN",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 1
+  },
+  {
+   "playerId": "2693",
+   "teamId": "UTA",
+   "fromSeason": "2004-05",
+   "toSeason": "2005-06",
+   "order": 2
+  },
+  {
+   "playerId": "2693",
+   "teamId": "GSW",
+   "fromSeason": "2006-07",
+   "toSeason": "2006-07",
+   "order": 3
+  },
+  {
+   "playerId": "2693",
+   "teamId": "IND",
+   "fromSeason": "2006-07",
+   "toSeason": "2006-07",
+   "order": 4
   },
   {
    "playerId": "2694",
@@ -30801,6 +33160,62 @@
    "order": 6
   },
   {
+   "playerId": "28",
+   "teamId": "MIN",
+   "fromSeason": "1989-90",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "28",
+   "teamId": "VAN",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "280",
+   "teamId": "MIN",
+   "fromSeason": "1990-91",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "280",
+   "teamId": "UTA",
+   "fromSeason": "1993-94",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "280",
+   "teamId": "ORL",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "280",
+   "teamId": "GSW",
+   "fromSeason": "1996-97",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "280",
+   "teamId": "SAS",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 5
+  },
+  {
+   "playerId": "280",
+   "teamId": "NYK",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 6
+  },
+  {
    "playerId": "2804",
    "teamId": "CHI",
    "fromSeason": "2004-05",
@@ -30820,6 +33235,55 @@
    "fromSeason": "2010-11",
    "toSeason": "2011-12",
    "order": 3
+  },
+  {
+   "playerId": "281",
+   "teamId": "CHI",
+   "fromSeason": "1990-91",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "281",
+   "teamId": "PHI",
+   "fromSeason": "1994-95",
+   "toSeason": "1998-99",
+   "order": 2
+  },
+  {
+   "playerId": "281",
+   "teamId": "MIL",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 3
+  },
+  {
+   "playerId": "281",
+   "teamId": "DEN",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 4
+  },
+  {
+   "playerId": "281",
+   "teamId": "PHX",
+   "fromSeason": "2002-03",
+   "toSeason": "2003-04",
+   "order": 5
+  },
+  {
+   "playerId": "281",
+   "teamId": "DAL",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 6
+  },
+  {
+   "playerId": "281",
+   "teamId": "CLE",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 7
   },
   {
    "playerId": "283",
@@ -30911,6 +33375,27 @@
    "fromSeason": "2017-18",
    "toSeason": "2017-18",
    "order": 7
+  },
+  {
+   "playerId": "29",
+   "teamId": "WAS",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "29",
+   "teamId": "SEA",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "29",
+   "teamId": "NJN",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 3
   },
   {
    "playerId": "296",
@@ -31053,6 +33538,209 @@
    "order": 3
   },
   {
+   "playerId": "304",
+   "teamId": "UTA",
+   "fromSeason": "1984-85",
+   "toSeason": "2002-03",
+   "order": 1
+  },
+  {
+   "playerId": "305",
+   "teamId": "GSW",
+   "fromSeason": "1976-77",
+   "toSeason": "1979-80",
+   "order": 1
+  },
+  {
+   "playerId": "305",
+   "teamId": "BOS",
+   "fromSeason": "1980-81",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "305",
+   "teamId": "CHH",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "305",
+   "teamId": "CHI",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "31",
+   "teamId": "CHH",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "31",
+   "teamId": "ORL",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 2
+  },
+  {
+   "playerId": "31",
+   "teamId": "BOS",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 3
+  },
+  {
+   "playerId": "31",
+   "teamId": "ORL",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 4
+  },
+  {
+   "playerId": "31",
+   "teamId": "CHH",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 5
+  },
+  {
+   "playerId": "31",
+   "teamId": "DAL",
+   "fromSeason": "1993-94",
+   "toSeason": "1995-96",
+   "order": 6
+  },
+  {
+   "playerId": "31",
+   "teamId": "WAS",
+   "fromSeason": "1996-97",
+   "toSeason": "1999-00",
+   "order": 7
+  },
+  {
+   "playerId": "310",
+   "teamId": "SAC",
+   "fromSeason": "1993-94",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "310",
+   "teamId": "VAN",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "317",
+   "teamId": "GSW",
+   "fromSeason": "1988-89",
+   "toSeason": "1988-89",
+   "order": 1
+  },
+  {
+   "playerId": "317",
+   "teamId": "NYK",
+   "fromSeason": "1990-91",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "317",
+   "teamId": "GSW",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "317",
+   "teamId": "CHI",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 4
+  },
+  {
+   "playerId": "317",
+   "teamId": "UTA",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 5
+  },
+  {
+   "playerId": "323",
+   "teamId": "WAS",
+   "fromSeason": "1990-91",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "323",
+   "teamId": "ATL",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 2
+  },
+  {
+   "playerId": "323",
+   "teamId": "MIL",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 3
+  },
+  {
+   "playerId": "323",
+   "teamId": "CHI",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 4
+  },
+  {
+   "playerId": "323",
+   "teamId": "MIN",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 5
+  },
+  {
+   "playerId": "323",
+   "teamId": "UTA",
+   "fromSeason": "1995-96",
+   "toSeason": "1998-99",
+   "order": 6
+  },
+  {
+   "playerId": "323",
+   "teamId": "SEA",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 7
+  },
+  {
+   "playerId": "323",
+   "teamId": "LAL",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 8
+  },
+  {
+   "playerId": "323",
+   "teamId": "MIL",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 9
+  },
+  {
+   "playerId": "323",
+   "teamId": "TOR",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 10
+  },
+  {
    "playerId": "324",
    "teamId": "LAL",
    "fromSeason": "1992-93",
@@ -31135,6 +33823,90 @@
    "fromSeason": "2002-03",
    "toSeason": "2002-03",
    "order": 7
+  },
+  {
+   "playerId": "339",
+   "teamId": "WAS",
+   "fromSeason": "1992-93",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "339",
+   "teamId": "GSW",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "339",
+   "teamId": "MIN",
+   "fromSeason": "1994-95",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "339",
+   "teamId": "PHX",
+   "fromSeason": "1998-99",
+   "toSeason": "2003-04",
+   "order": 4
+  },
+  {
+   "playerId": "339",
+   "teamId": "UTA",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 5
+  },
+  {
+   "playerId": "339",
+   "teamId": "BOS",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 6
+  },
+  {
+   "playerId": "339",
+   "teamId": "ATL",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 7
+  },
+  {
+   "playerId": "344",
+   "teamId": "SEA",
+   "fromSeason": "1989-90",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "344",
+   "teamId": "PHI",
+   "fromSeason": "1993-94",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "344",
+   "teamId": "BOS",
+   "fromSeason": "1995-96",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "344",
+   "teamId": "DET",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 4
+  },
+  {
+   "playerId": "344",
+   "teamId": "BOS",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 5
   },
   {
    "playerId": "345",
@@ -31466,6 +34238,55 @@
    "order": 6
   },
   {
+   "playerId": "364",
+   "teamId": "CHH",
+   "fromSeason": "1988-89",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "364",
+   "teamId": "WAS",
+   "fromSeason": "1991-92",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "364",
+   "teamId": "MIA",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "364",
+   "teamId": "PHX",
+   "fromSeason": "1996-97",
+   "toSeason": "1999-00",
+   "order": 4
+  },
+  {
+   "playerId": "365",
+   "teamId": "SEA",
+   "fromSeason": "1987-88",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "365",
+   "teamId": "IND",
+   "fromSeason": "1993-94",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "365",
+   "teamId": "PHI",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 3
+  },
+  {
    "playerId": "369",
    "teamId": "NYK",
    "fromSeason": "1994-95",
@@ -31739,6 +34560,90 @@
    "order": 4
   },
   {
+   "playerId": "390",
+   "teamId": "MIA",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "390",
+   "teamId": "DAL",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "393",
+   "teamId": "NYK",
+   "fromSeason": "1988-89",
+   "toSeason": "1989-90",
+   "order": 1
+  },
+  {
+   "playerId": "393",
+   "teamId": "SAS",
+   "fromSeason": "1989-90",
+   "toSeason": "1991-92",
+   "order": 2
+  },
+  {
+   "playerId": "393",
+   "teamId": "POR",
+   "fromSeason": "1992-93",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "393",
+   "teamId": "WAS",
+   "fromSeason": "1996-97",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
+   "playerId": "393",
+   "teamId": "POR",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 5
+  },
+  {
+   "playerId": "393",
+   "teamId": "MIA",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 6
+  },
+  {
+   "playerId": "393",
+   "teamId": "MIN",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 7
+  },
+  {
+   "playerId": "393",
+   "teamId": "ORL",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 8
+  },
+  {
+   "playerId": "393",
+   "teamId": "TOR",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 9
+  },
+  {
+   "playerId": "393",
+   "teamId": "HOU",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 10
+  },
+  {
    "playerId": "397",
    "teamId": "IND",
    "fromSeason": "1987-88",
@@ -31800,6 +34705,41 @@
    "fromSeason": "2003-04",
    "toSeason": "2003-04",
    "order": 8
+  },
+  {
+   "playerId": "404",
+   "teamId": "SAS",
+   "fromSeason": "1986-87",
+   "toSeason": "1986-87",
+   "order": 1
+  },
+  {
+   "playerId": "404",
+   "teamId": "POR",
+   "fromSeason": "1986-87",
+   "toSeason": "1992-93",
+   "order": 2
+  },
+  {
+   "playerId": "404",
+   "teamId": "WAS",
+   "fromSeason": "1993-94",
+   "toSeason": "1994-95",
+   "order": 3
+  },
+  {
+   "playerId": "404",
+   "teamId": "MIL",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 4
+  },
+  {
+   "playerId": "404",
+   "teamId": "LAC",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 5
   },
   {
    "playerId": "406",
@@ -31865,6 +34805,293 @@
    "order": 3
   },
   {
+   "playerId": "42",
+   "teamId": "NYK",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "42",
+   "teamId": "SAS",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "42",
+   "teamId": "DEN",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "42",
+   "teamId": "ORL",
+   "fromSeason": "1999-00",
+   "toSeason": "2001-02",
+   "order": 4
+  },
+  {
+   "playerId": "42",
+   "teamId": "PHI",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 5
+  },
+  {
+   "playerId": "420",
+   "teamId": "PHI",
+   "fromSeason": "1990-91",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "420",
+   "teamId": "NJN",
+   "fromSeason": "1992-93",
+   "toSeason": "1998-99",
+   "order": 2
+  },
+  {
+   "playerId": "422",
+   "teamId": "SEA",
+   "fromSeason": "1988-89",
+   "toSeason": "1989-90",
+   "order": 1
+  },
+  {
+   "playerId": "422",
+   "teamId": "DEN",
+   "fromSeason": "1990-91",
+   "toSeason": "1990-91",
+   "order": 2
+  },
+  {
+   "playerId": "422",
+   "teamId": "SAS",
+   "fromSeason": "1990-91",
+   "toSeason": "1991-92",
+   "order": 3
+  },
+  {
+   "playerId": "422",
+   "teamId": "HOU",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 4
+  },
+  {
+   "playerId": "422",
+   "teamId": "SAS",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 5
+  },
+  {
+   "playerId": "422",
+   "teamId": "GSW",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 6
+  },
+  {
+   "playerId": "422",
+   "teamId": "SAS",
+   "fromSeason": "1994-95",
+   "toSeason": "2000-01",
+   "order": 7
+  },
+  {
+   "playerId": "422",
+   "teamId": "DEN",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 8
+  },
+  {
+   "playerId": "422",
+   "teamId": "DAL",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 9
+  },
+  {
+   "playerId": "422",
+   "teamId": "GSW",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 10
+  },
+  {
+   "playerId": "423",
+   "teamId": "GSW",
+   "fromSeason": "1991-92",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "423",
+   "teamId": "MIA",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "423",
+   "teamId": "DAL",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "423",
+   "teamId": "NJN",
+   "fromSeason": "1996-97",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "423",
+   "teamId": "MIL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "423",
+   "teamId": "ORL",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 6
+  },
+  {
+   "playerId": "423",
+   "teamId": "DEN",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 7
+  },
+  {
+   "playerId": "423",
+   "teamId": "CLE",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 8
+  },
+  {
+   "playerId": "423",
+   "teamId": "MIA",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 9
+  },
+  {
+   "playerId": "426",
+   "teamId": "MIA",
+   "fromSeason": "1989-90",
+   "toSeason": "1990-91",
+   "order": 1
+  },
+  {
+   "playerId": "426",
+   "teamId": "DAL",
+   "fromSeason": "1991-92",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "426",
+   "teamId": "WAS",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "426",
+   "teamId": "DEN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
+   "playerId": "428",
+   "teamId": "MIA",
+   "fromSeason": "1989-90",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "428",
+   "teamId": "BOS",
+   "fromSeason": "1991-92",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "428",
+   "teamId": "MIL",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "428",
+   "teamId": "NJN",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "428",
+   "teamId": "LAC",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "428",
+   "teamId": "NJN",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 6
+  },
+  {
+   "playerId": "43",
+   "teamId": "SAS",
+   "fromSeason": "1993-94",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "43",
+   "teamId": "WAS",
+   "fromSeason": "1995-96",
+   "toSeason": "2001-02",
+   "order": 2
+  },
+  {
+   "playerId": "43",
+   "teamId": "DEN",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 3
+  },
+  {
+   "playerId": "43",
+   "teamId": "ORL",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 4
+  },
+  {
+   "playerId": "43",
+   "teamId": "WAS",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 5
+  },
+  {
    "playerId": "431",
    "teamId": "SEA",
    "fromSeason": "1989-90",
@@ -31891,6 +35118,27 @@
    "fromSeason": "2002-03",
    "toSeason": "2002-03",
    "order": 4
+  },
+  {
+   "playerId": "433",
+   "teamId": "NJN",
+   "fromSeason": "1981-82",
+   "toSeason": "1988-89",
+   "order": 1
+  },
+  {
+   "playerId": "433",
+   "teamId": "POR",
+   "fromSeason": "1989-90",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "433",
+   "teamId": "NYK",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 3
   },
   {
    "playerId": "436",
@@ -31963,6 +35211,34 @@
    "order": 10
   },
   {
+   "playerId": "440",
+   "teamId": "HOU",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "440",
+   "teamId": "TOR",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "440",
+   "teamId": "BOS",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "440",
+   "teamId": "IND",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
    "playerId": "441",
    "teamId": "LAC",
    "fromSeason": "1994-95",
@@ -31988,6 +35264,34 @@
    "teamId": "NJN",
    "fromSeason": "2005-06",
    "toSeason": "2005-06",
+   "order": 4
+  },
+  {
+   "playerId": "442",
+   "teamId": "SAC",
+   "fromSeason": "1989-90",
+   "toSeason": "1989-90",
+   "order": 1
+  },
+  {
+   "playerId": "442",
+   "teamId": "WAS",
+   "fromSeason": "1990-91",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "442",
+   "teamId": "BOS",
+   "fromSeason": "1994-95",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "442",
+   "teamId": "SEA",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
    "order": 4
   },
   {
@@ -32187,6 +35491,153 @@
    "order": 6
   },
   {
+   "playerId": "456",
+   "teamId": "IND",
+   "fromSeason": "1986-87",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "456",
+   "teamId": "MIN",
+   "fromSeason": "1992-93",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "456",
+   "teamId": "SAS",
+   "fromSeason": "1994-95",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "456",
+   "teamId": "CHH",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "456",
+   "teamId": "SEA",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 5
+  },
+  {
+   "playerId": "457",
+   "teamId": "PHX",
+   "fromSeason": "1988-89",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "457",
+   "teamId": "PHI",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 2
+  },
+  {
+   "playerId": "457",
+   "teamId": "ATL",
+   "fromSeason": "1993-94",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "457",
+   "teamId": "MIN",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 4
+  },
+  {
+   "playerId": "457",
+   "teamId": "MIL",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 5
+  },
+  {
+   "playerId": "457",
+   "teamId": "CHI",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 6
+  },
+  {
+   "playerId": "457",
+   "teamId": "NYK",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 7
+  },
+  {
+   "playerId": "458",
+   "teamId": "MIN",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "458",
+   "teamId": "SAS",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "458",
+   "teamId": "UTA",
+   "fromSeason": "1995-96",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "458",
+   "teamId": "DAL",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
+   "playerId": "458",
+   "teamId": "NYK",
+   "fromSeason": "2001-02",
+   "toSeason": "2003-04",
+   "order": 5
+  },
+  {
+   "playerId": "458",
+   "teamId": "PHX",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 6
+  },
+  {
+   "playerId": "458",
+   "teamId": "UTA",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 7
+  },
+  {
+   "playerId": "458",
+   "teamId": "LAC",
+   "fromSeason": "2005-06",
+   "toSeason": "2005-06",
+   "order": 8
+  },
+  {
+   "playerId": "458",
+   "teamId": "DEN",
+   "fromSeason": "2005-06",
+   "toSeason": "2005-06",
+   "order": 9
+  },
+  {
    "playerId": "461",
    "teamId": "DAL",
    "fromSeason": "1993-94",
@@ -32236,6 +35687,55 @@
    "order": 7
   },
   {
+   "playerId": "462",
+   "teamId": "CHH",
+   "fromSeason": "1989-90",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "462",
+   "teamId": "SAS",
+   "fromSeason": "1992-93",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "462",
+   "teamId": "NYK",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "462",
+   "teamId": "CHH",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "462",
+   "teamId": "LAL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "462",
+   "teamId": "MIL",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 6
+  },
+  {
+   "playerId": "462",
+   "teamId": "CLE",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 7
+  },
+  {
    "playerId": "467",
    "teamId": "DAL",
    "fromSeason": "1994-95",
@@ -32271,6 +35771,69 @@
    "order": 5
   },
   {
+   "playerId": "468",
+   "teamId": "MIL",
+   "fromSeason": "1992-93",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "468",
+   "teamId": "GSW",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "468",
+   "teamId": "ATL",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "468",
+   "teamId": "LAL",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "468",
+   "teamId": "SAC",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 5
+  },
+  {
+   "playerId": "468",
+   "teamId": "DET",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 6
+  },
+  {
+   "playerId": "468",
+   "teamId": "DEN",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 7
+  },
+  {
+   "playerId": "468",
+   "teamId": "ATL",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 8
+  },
+  {
+   "playerId": "468",
+   "teamId": "HOU",
+   "fromSeason": "2004-05",
+   "toSeason": "2005-06",
+   "order": 9
+  },
+  {
    "playerId": "469",
    "teamId": "DAL",
    "fromSeason": "1993-94",
@@ -32296,6 +35859,125 @@
    "teamId": "NOH",
    "fromSeason": "2002-03",
    "toSeason": "2003-04",
+   "order": 4
+  },
+  {
+   "playerId": "470",
+   "teamId": "ATL",
+   "fromSeason": "1983-84",
+   "toSeason": "1990-91",
+   "order": 1
+  },
+  {
+   "playerId": "470",
+   "teamId": "LAC",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 2
+  },
+  {
+   "playerId": "470",
+   "teamId": "NYK",
+   "fromSeason": "1992-93",
+   "toSeason": "1994-95",
+   "order": 3
+  },
+  {
+   "playerId": "470",
+   "teamId": "SAS",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 4
+  },
+  {
+   "playerId": "51",
+   "teamId": "DEN",
+   "fromSeason": "1990-91",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "51",
+   "teamId": "SAC",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "51",
+   "teamId": "VAN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 3
+  },
+  {
+   "playerId": "53",
+   "teamId": "PHI",
+   "fromSeason": "1990-91",
+   "toSeason": "1990-91",
+   "order": 1
+  },
+  {
+   "playerId": "53",
+   "teamId": "GSW",
+   "fromSeason": "1990-91",
+   "toSeason": "1991-92",
+   "order": 2
+  },
+  {
+   "playerId": "53",
+   "teamId": "POR",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 3
+  },
+  {
+   "playerId": "53",
+   "teamId": "HOU",
+   "fromSeason": "1993-94",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "53",
+   "teamId": "SAS",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 5
+  },
+  {
+   "playerId": "53",
+   "teamId": "PHX",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 6
+  },
+  {
+   "playerId": "54",
+   "teamId": "CHI",
+   "fromSeason": "1994-95",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "54",
+   "teamId": "GSW",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "54",
+   "teamId": "CHI",
+   "fromSeason": "1997-98",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "54",
+   "teamId": "ATL",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
    "order": 4
   },
   {
@@ -32381,6 +36063,160 @@
    "fromSeason": "2006-07",
    "toSeason": "2006-07",
    "order": 7
+  },
+  {
+   "playerId": "600001",
+   "teamId": "SFW",
+   "fromSeason": "1963-64",
+   "toSeason": "1970-71",
+   "order": 1
+  },
+  {
+   "playerId": "600001",
+   "teamId": "GSW",
+   "fromSeason": "1971-72",
+   "toSeason": "1973-74",
+   "order": 2
+  },
+  {
+   "playerId": "600001",
+   "teamId": "CHI",
+   "fromSeason": "1974-75",
+   "toSeason": "1974-75",
+   "order": 3
+  },
+  {
+   "playerId": "600001",
+   "teamId": "CLE",
+   "fromSeason": "1975-76",
+   "toSeason": "1975-76",
+   "order": 4
+  },
+  {
+   "playerId": "600001",
+   "teamId": "CHI",
+   "fromSeason": "1975-76",
+   "toSeason": "1975-76",
+   "order": 5
+  },
+  {
+   "playerId": "600001",
+   "teamId": "CLE",
+   "fromSeason": "1976-77",
+   "toSeason": "1976-77",
+   "order": 6
+  },
+  {
+   "playerId": "600003",
+   "teamId": "BOS",
+   "fromSeason": "1950-51",
+   "toSeason": "1962-63",
+   "order": 1
+  },
+  {
+   "playerId": "600003",
+   "teamId": "CIN",
+   "fromSeason": "1969-70",
+   "toSeason": "1969-70",
+   "order": 2
+  },
+  {
+   "playerId": "600005",
+   "teamId": "DET",
+   "fromSeason": "1970-71",
+   "toSeason": "1978-79",
+   "order": 1
+  },
+  {
+   "playerId": "600005",
+   "teamId": "MIL",
+   "fromSeason": "1979-80",
+   "toSeason": "1979-80",
+   "order": 2
+  },
+  {
+   "playerId": "600005",
+   "teamId": "DET",
+   "fromSeason": "1979-80",
+   "toSeason": "1979-80",
+   "order": 3
+  },
+  {
+   "playerId": "600005",
+   "teamId": "MIL",
+   "fromSeason": "1980-81",
+   "toSeason": "1983-84",
+   "order": 4
+  },
+  {
+   "playerId": "600014",
+   "teamId": "CHI",
+   "fromSeason": "1976-77",
+   "toSeason": "1981-82",
+   "order": 1
+  },
+  {
+   "playerId": "600014",
+   "teamId": "SAS",
+   "fromSeason": "1982-83",
+   "toSeason": "1986-87",
+   "order": 2
+  },
+  {
+   "playerId": "600014",
+   "teamId": "CHI",
+   "fromSeason": "1987-88",
+   "toSeason": "1987-88",
+   "order": 3
+  },
+  {
+   "playerId": "600014",
+   "teamId": "BOS",
+   "fromSeason": "1987-88",
+   "toSeason": "1987-88",
+   "order": 4
+  },
+  {
+   "playerId": "600015",
+   "teamId": "CIN",
+   "fromSeason": "1960-61",
+   "toSeason": "1969-70",
+   "order": 1
+  },
+  {
+   "playerId": "600015",
+   "teamId": "MIL",
+   "fromSeason": "1970-71",
+   "toSeason": "1973-74",
+   "order": 2
+  },
+  {
+   "playerId": "61",
+   "teamId": "HOU",
+   "fromSeason": "1991-92",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "61",
+   "teamId": "SAS",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "61",
+   "teamId": "VAN",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "61",
+   "teamId": "DEN",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
   },
   {
    "playerId": "63",
@@ -32565,6 +36401,27 @@
    "order": 3
   },
   {
+   "playerId": "680",
+   "teamId": "CLE",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "680",
+   "teamId": "ORL",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "680",
+   "teamId": "UTA",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 3
+  },
+  {
    "playerId": "682",
    "teamId": "CLE",
    "fromSeason": "1995-96",
@@ -32598,6 +36455,27 @@
    "fromSeason": "2004-05",
    "toSeason": "2004-05",
    "order": 5
+  },
+  {
+   "playerId": "684",
+   "teamId": "DAL",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "684",
+   "teamId": "PHX",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "684",
+   "teamId": "DEN",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 3
   },
   {
    "playerId": "685",
@@ -32705,6 +36583,55 @@
    "order": 7
   },
   {
+   "playerId": "688",
+   "teamId": "PHI",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "688",
+   "teamId": "WAS",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "688",
+   "teamId": "DET",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "688",
+   "teamId": "MIL",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "688",
+   "teamId": "DET",
+   "fromSeason": "1999-00",
+   "toSeason": "2002-03",
+   "order": 5
+  },
+  {
+   "playerId": "688",
+   "teamId": "TOR",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 6
+  },
+  {
+   "playerId": "688",
+   "teamId": "IND",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 7
+  },
+  {
    "playerId": "689",
    "teamId": "DET",
    "fromSeason": "1995-96",
@@ -32808,6 +36735,181 @@
    "fromSeason": "2002-03",
    "toSeason": "2002-03",
    "order": 4
+  },
+  {
+   "playerId": "692",
+   "teamId": "GSW",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "692",
+   "teamId": "BOS",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 2
+  },
+  {
+   "playerId": "692",
+   "teamId": "CLE",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "692",
+   "teamId": "ORL",
+   "fromSeason": "2000-01",
+   "toSeason": "2004-05",
+   "order": 4
+  },
+  {
+   "playerId": "693",
+   "teamId": "GSW",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "693",
+   "teamId": "PHI",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "693",
+   "teamId": "MIN",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "693",
+   "teamId": "DET",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
+   "playerId": "693",
+   "teamId": "MIN",
+   "fromSeason": "2001-02",
+   "toSeason": "2002-03",
+   "order": 5
+  },
+  {
+   "playerId": "693",
+   "teamId": "MIL",
+   "fromSeason": "2003-04",
+   "toSeason": "2005-06",
+   "order": 6
+  },
+  {
+   "playerId": "693",
+   "teamId": "DEN",
+   "fromSeason": "2006-07",
+   "toSeason": "2006-07",
+   "order": 7
+  },
+  {
+   "playerId": "693",
+   "teamId": "PHI",
+   "fromSeason": "2006-07",
+   "toSeason": "2006-07",
+   "order": 8
+  },
+  {
+   "playerId": "693",
+   "teamId": "CHI",
+   "fromSeason": "2007-08",
+   "toSeason": "2007-08",
+   "order": 9
+  },
+  {
+   "playerId": "693",
+   "teamId": "CLE",
+   "fromSeason": "2007-08",
+   "toSeason": "2007-08",
+   "order": 10
+  },
+  {
+   "playerId": "693",
+   "teamId": "OKC",
+   "fromSeason": "2008-09",
+   "toSeason": "2008-09",
+   "order": 11
+  },
+  {
+   "playerId": "693",
+   "teamId": "CLE",
+   "fromSeason": "2008-09",
+   "toSeason": "2008-09",
+   "order": 12
+  },
+  {
+   "playerId": "693",
+   "teamId": "ATL",
+   "fromSeason": "2009-10",
+   "toSeason": "2009-10",
+   "order": 13
+  },
+  {
+   "playerId": "693",
+   "teamId": "NJN",
+   "fromSeason": "2010-11",
+   "toSeason": "2010-11",
+   "order": 14
+  },
+  {
+   "playerId": "693",
+   "teamId": "LAL",
+   "fromSeason": "2010-11",
+   "toSeason": "2010-11",
+   "order": 15
+  },
+  {
+   "playerId": "694",
+   "teamId": "SAS",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "694",
+   "teamId": "HOU",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "694",
+   "teamId": "VAN",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "694",
+   "teamId": "HOU",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "694",
+   "teamId": "GSW",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 5
+  },
+  {
+   "playerId": "694",
+   "teamId": "MIA",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 6
   },
   {
    "playerId": "696",
@@ -33090,6 +37192,139 @@
    "order": 4
   },
   {
+   "playerId": "709",
+   "teamId": "NJN",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "709",
+   "teamId": "DAL",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "71",
+   "teamId": "MIN",
+   "fromSeason": "1989-90",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "71",
+   "teamId": "IND",
+   "fromSeason": "1992-93",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "71",
+   "teamId": "LAC",
+   "fromSeason": "1994-95",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "711",
+   "teamId": "PHI",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "711",
+   "teamId": "DET",
+   "fromSeason": "1997-98",
+   "toSeason": "2001-02",
+   "order": 2
+  },
+  {
+   "playerId": "711",
+   "teamId": "WAS",
+   "fromSeason": "2002-03",
+   "toSeason": "2003-04",
+   "order": 3
+  },
+  {
+   "playerId": "711",
+   "teamId": "DAL",
+   "fromSeason": "2004-05",
+   "toSeason": "2008-09",
+   "order": 4
+  },
+  {
+   "playerId": "711",
+   "teamId": "MIL",
+   "fromSeason": "2009-10",
+   "toSeason": "2009-10",
+   "order": 5
+  },
+  {
+   "playerId": "711",
+   "teamId": "MIA",
+   "fromSeason": "2010-11",
+   "toSeason": "2010-11",
+   "order": 6
+  },
+  {
+   "playerId": "711",
+   "teamId": "ATL",
+   "fromSeason": "2011-12",
+   "toSeason": "2011-12",
+   "order": 7
+  },
+  {
+   "playerId": "711",
+   "teamId": "BKN",
+   "fromSeason": "2012-13",
+   "toSeason": "2012-13",
+   "order": 8
+  },
+  {
+   "playerId": "713",
+   "teamId": "PHX",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "713",
+   "teamId": "MIN",
+   "fromSeason": "1996-97",
+   "toSeason": "1998-99",
+   "order": 2
+  },
+  {
+   "playerId": "713",
+   "teamId": "NJN",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "713",
+   "teamId": "GSW",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 4
+  },
+  {
+   "playerId": "713",
+   "teamId": "CHI",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 5
+  },
+  {
+   "playerId": "713",
+   "teamId": "BOS",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 6
+  },
+  {
    "playerId": "714",
    "teamId": "PHX",
    "fromSeason": "1995-96",
@@ -33269,6 +37504,48 @@
    "teamId": "CLE",
    "fromSeason": "2004-05",
    "toSeason": "2007-08",
+   "order": 3
+  },
+  {
+   "playerId": "73",
+   "teamId": "CLE",
+   "fromSeason": "1986-87",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "73",
+   "teamId": "PHX",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "73",
+   "teamId": "DAL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "731",
+   "teamId": "UTA",
+   "fromSeason": "1995-96",
+   "toSeason": "2003-04",
+   "order": 1
+  },
+  {
+   "playerId": "731",
+   "teamId": "SAC",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 2
+  },
+  {
+   "playerId": "731",
+   "teamId": "UTA",
+   "fromSeason": "2005-06",
+   "toSeason": "2005-06",
    "order": 3
   },
   {
@@ -33461,6 +37738,48 @@
    "order": 4
   },
   {
+   "playerId": "76",
+   "teamId": "PHX",
+   "fromSeason": "1990-91",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "76",
+   "teamId": "LAL",
+   "fromSeason": "1994-95",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "76",
+   "teamId": "PHX",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "76",
+   "teamId": "DAL",
+   "fromSeason": "1997-98",
+   "toSeason": "1999-00",
+   "order": 4
+  },
+  {
+   "playerId": "76",
+   "teamId": "DET",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 5
+  },
+  {
+   "playerId": "76",
+   "teamId": "MIA",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 6
+  },
+  {
    "playerId": "76003",
    "teamId": "MIL",
    "fromSeason": "1969-70",
@@ -33475,11 +37794,1341 @@
    "order": 2
   },
   {
+   "playerId": "76054",
+   "teamId": "CIN",
+   "fromSeason": "1970-71",
+   "toSeason": "1971-72",
+   "order": 1
+  },
+  {
+   "playerId": "76054",
+   "teamId": "KCK",
+   "fromSeason": "1972-73",
+   "toSeason": "1975-76",
+   "order": 2
+  },
+  {
+   "playerId": "76054",
+   "teamId": "NYN",
+   "fromSeason": "1976-77",
+   "toSeason": "1976-77",
+   "order": 3
+  },
+  {
+   "playerId": "76054",
+   "teamId": "BOS",
+   "fromSeason": "1978-79",
+   "toSeason": "1982-83",
+   "order": 4
+  },
+  {
+   "playerId": "76054",
+   "teamId": "MIL",
+   "fromSeason": "1983-84",
+   "toSeason": "1983-84",
+   "order": 5
+  },
+  {
+   "playerId": "76056",
+   "teamId": "PHW",
+   "fromSeason": "1950-51",
+   "toSeason": "1961-62",
+   "order": 1
+  },
+  {
+   "playerId": "761",
+   "teamId": "MIA",
+   "fromSeason": "1992-93",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "761",
+   "teamId": "CHH",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "761",
+   "teamId": "PHI",
+   "fromSeason": "1998-99",
+   "toSeason": "2001-02",
+   "order": 3
+  },
+  {
+   "playerId": "76127",
+   "teamId": "MNL",
+   "fromSeason": "1958-59",
+   "toSeason": "1959-60",
+   "order": 1
+  },
+  {
+   "playerId": "76127",
+   "teamId": "LAL",
+   "fromSeason": "1960-61",
+   "toSeason": "1971-72",
+   "order": 2
+  },
+  {
+   "playerId": "76144",
+   "teamId": "CHP",
+   "fromSeason": "1961-62",
+   "toSeason": "1961-62",
+   "order": 1
+  },
+  {
+   "playerId": "76144",
+   "teamId": "CHZ",
+   "fromSeason": "1962-63",
+   "toSeason": "1962-63",
+   "order": 2
+  },
+  {
+   "playerId": "76144",
+   "teamId": "BLT",
+   "fromSeason": "1963-64",
+   "toSeason": "1965-66",
+   "order": 3
+  },
+  {
+   "playerId": "76144",
+   "teamId": "NYK",
+   "fromSeason": "1965-66",
+   "toSeason": "1968-69",
+   "order": 4
+  },
+  {
+   "playerId": "76144",
+   "teamId": "DET",
+   "fromSeason": "1968-69",
+   "toSeason": "1968-69",
+   "order": 5
+  },
+  {
+   "playerId": "76144",
+   "teamId": "ATL",
+   "fromSeason": "1969-70",
+   "toSeason": "1969-70",
+   "order": 6
+  },
+  {
+   "playerId": "76144",
+   "teamId": "DET",
+   "fromSeason": "1969-70",
+   "toSeason": "1969-70",
+   "order": 7
+  },
+  {
+   "playerId": "76144",
+   "teamId": "ATL",
+   "fromSeason": "1970-71",
+   "toSeason": "1973-74",
+   "order": 8
+  },
+  {
+   "playerId": "76144",
+   "teamId": "NOJ",
+   "fromSeason": "1974-75",
+   "toSeason": "1974-75",
+   "order": 9
+  },
+  {
+   "playerId": "76195",
+   "teamId": "WAS",
+   "fromSeason": "1985-86",
+   "toSeason": "1987-88",
+   "order": 1
+  },
+  {
+   "playerId": "76195",
+   "teamId": "GSW",
+   "fromSeason": "1988-89",
+   "toSeason": "1989-90",
+   "order": 2
+  },
+  {
+   "playerId": "76195",
+   "teamId": "PHI",
+   "fromSeason": "1990-91",
+   "toSeason": "1992-93",
+   "order": 3
+  },
+  {
+   "playerId": "76195",
+   "teamId": "MIA",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 4
+  },
+  {
+   "playerId": "76195",
+   "teamId": "WAS",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 5
+  },
+  {
+   "playerId": "76195",
+   "teamId": "PHI",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 6
+  },
+  {
+   "playerId": "76195",
+   "teamId": "GSW",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 7
+  },
+  {
+   "playerId": "762",
+   "teamId": "PHI",
+   "fromSeason": "1993-94",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "762",
+   "teamId": "NJN",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "762",
+   "teamId": "DAL",
+   "fromSeason": "1996-97",
+   "toSeason": "2004-05",
+   "order": 3
+  },
+  {
+   "playerId": "76253",
+   "teamId": "STL",
+   "fromSeason": "1962-63",
+   "toSeason": "1967-68",
+   "order": 1
+  },
+  {
+   "playerId": "76253",
+   "teamId": "ATL",
+   "fromSeason": "1968-69",
+   "toSeason": "1971-72",
+   "order": 2
+  },
+  {
+   "playerId": "76253",
+   "teamId": "PHI",
+   "fromSeason": "1971-72",
+   "toSeason": "1971-72",
+   "order": 3
+  },
+  {
+   "playerId": "76253",
+   "teamId": "LAL",
+   "fromSeason": "1972-73",
+   "toSeason": "1972-73",
+   "order": 4
+  },
+  {
+   "playerId": "76253",
+   "teamId": "PHI",
+   "fromSeason": "1972-73",
+   "toSeason": "1972-73",
+   "order": 5
+  },
+  {
+   "playerId": "76253",
+   "teamId": "LAL",
+   "fromSeason": "1973-74",
+   "toSeason": "1973-74",
+   "order": 6
+  },
+  {
+   "playerId": "76253",
+   "teamId": "GSW",
+   "fromSeason": "1974-75",
+   "toSeason": "1974-75",
+   "order": 7
+  },
+  {
+   "playerId": "76253",
+   "teamId": "LAL",
+   "fromSeason": "1974-75",
+   "toSeason": "1974-75",
+   "order": 8
+  },
+  {
+   "playerId": "763",
+   "teamId": "SAS",
+   "fromSeason": "1990-91",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "763",
+   "teamId": "CHH",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 2
+  },
+  {
+   "playerId": "763",
+   "teamId": "BOS",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 3
+  },
+  {
+   "playerId": "763",
+   "teamId": "GSW",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 4
+  },
+  {
+   "playerId": "763",
+   "teamId": "LAC",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 5
+  },
+  {
+   "playerId": "763",
+   "teamId": "TOR",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 6
+  },
+  {
+   "playerId": "763",
+   "teamId": "PHI",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 7
+  },
+  {
+   "playerId": "763",
+   "teamId": "NJN",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 8
+  },
+  {
+   "playerId": "763",
+   "teamId": "VAN",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
+   "order": 9
+  },
+  {
+   "playerId": "763",
+   "teamId": "HOU",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 10
+  },
+  {
+   "playerId": "763",
+   "teamId": "VAN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 11
+  },
+  {
+   "playerId": "763",
+   "teamId": "MEM",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 12
+  },
+  {
+   "playerId": "763",
+   "teamId": "UTA",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 13
+  },
+  {
+   "playerId": "763",
+   "teamId": "SAC",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 14
+  },
+  {
+   "playerId": "763",
+   "teamId": "SAS",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 15
+  },
+  {
+   "playerId": "76375",
+   "teamId": "PHW",
+   "fromSeason": "1959-60",
+   "toSeason": "1961-62",
+   "order": 1
+  },
+  {
+   "playerId": "76375",
+   "teamId": "SFW",
+   "fromSeason": "1962-63",
+   "toSeason": "1963-64",
+   "order": 2
+  },
+  {
+   "playerId": "76375",
+   "teamId": "PHI",
+   "fromSeason": "1964-65",
+   "toSeason": "1964-65",
+   "order": 3
+  },
+  {
+   "playerId": "76375",
+   "teamId": "SFW",
+   "fromSeason": "1964-65",
+   "toSeason": "1964-65",
+   "order": 4
+  },
+  {
+   "playerId": "76375",
+   "teamId": "PHI",
+   "fromSeason": "1965-66",
+   "toSeason": "1967-68",
+   "order": 5
+  },
+  {
+   "playerId": "76375",
+   "teamId": "LAL",
+   "fromSeason": "1968-69",
+   "toSeason": "1972-73",
+   "order": 6
+  },
+  {
+   "playerId": "76385",
+   "teamId": "PHI",
+   "fromSeason": "1978-79",
+   "toSeason": "1988-89",
+   "order": 1
+  },
+  {
+   "playerId": "76385",
+   "teamId": "SAS",
+   "fromSeason": "1989-90",
+   "toSeason": "1989-90",
+   "order": 2
+  },
+  {
+   "playerId": "76385",
+   "teamId": "NYK",
+   "fromSeason": "1989-90",
+   "toSeason": "1990-91",
+   "order": 3
+  },
+  {
+   "playerId": "76385",
+   "teamId": "ATL",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 4
+  },
+  {
+   "playerId": "76385",
+   "teamId": "NJN",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 5
+  },
+  {
+   "playerId": "764",
+   "teamId": "SAS",
+   "fromSeason": "1989-90",
+   "toSeason": "2002-03",
+   "order": 1
+  },
+  {
+   "playerId": "76441",
+   "teamId": "GSW",
+   "fromSeason": "1978-79",
+   "toSeason": "1979-80",
+   "order": 1
+  },
+  {
+   "playerId": "76441",
+   "teamId": "UTA",
+   "fromSeason": "1980-81",
+   "toSeason": "1980-81",
+   "order": 2
+  },
+  {
+   "playerId": "76441",
+   "teamId": "DAL",
+   "fromSeason": "1981-82",
+   "toSeason": "1981-82",
+   "order": 3
+  },
+  {
+   "playerId": "76441",
+   "teamId": "POR",
+   "fromSeason": "1982-83",
+   "toSeason": "1983-84",
+   "order": 4
+  },
+  {
+   "playerId": "76441",
+   "teamId": "DEN",
+   "fromSeason": "1984-85",
+   "toSeason": "1988-89",
+   "order": 5
+  },
+  {
+   "playerId": "76441",
+   "teamId": "POR",
+   "fromSeason": "1989-90",
+   "toSeason": "1991-92",
+   "order": 6
+  },
+  {
+   "playerId": "76462",
+   "teamId": "BOS",
+   "fromSeason": "1970-71",
+   "toSeason": "1979-80",
+   "order": 1
+  },
+  {
+   "playerId": "76462",
+   "teamId": "MIL",
+   "fromSeason": "1982-83",
+   "toSeason": "1982-83",
+   "order": 2
+  },
+  {
+   "playerId": "765",
+   "teamId": "PHI",
+   "fromSeason": "1988-89",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "765",
+   "teamId": "CHH",
+   "fromSeason": "1993-94",
+   "toSeason": "1994-95",
+   "order": 2
+  },
+  {
+   "playerId": "765",
+   "teamId": "SEA",
+   "fromSeason": "1995-96",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "765",
+   "teamId": "CHI",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 4
+  },
+  {
+   "playerId": "765",
+   "teamId": "CHH",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 5
+  },
+  {
+   "playerId": "76504",
+   "teamId": "BUF",
+   "fromSeason": "1976-77",
+   "toSeason": "1976-77",
+   "order": 1
+  },
+  {
+   "playerId": "76504",
+   "teamId": "IND",
+   "fromSeason": "1977-78",
+   "toSeason": "1977-78",
+   "order": 2
+  },
+  {
+   "playerId": "76504",
+   "teamId": "LAL",
+   "fromSeason": "1977-78",
+   "toSeason": "1978-79",
+   "order": 3
+  },
+  {
+   "playerId": "76504",
+   "teamId": "UTA",
+   "fromSeason": "1979-80",
+   "toSeason": "1985-86",
+   "order": 4
+  },
+  {
+   "playerId": "76504",
+   "teamId": "DET",
+   "fromSeason": "1986-87",
+   "toSeason": "1988-89",
+   "order": 5
+  },
+  {
+   "playerId": "76504",
+   "teamId": "DAL",
+   "fromSeason": "1988-89",
+   "toSeason": "1989-90",
+   "order": 6
+  },
+  {
+   "playerId": "76504",
+   "teamId": "MIL",
+   "fromSeason": "1990-91",
+   "toSeason": "1990-91",
+   "order": 7
+  },
+  {
+   "playerId": "76545",
+   "teamId": "DET",
+   "fromSeason": "1962-63",
+   "toSeason": "1967-68",
+   "order": 1
+  },
+  {
+   "playerId": "76545",
+   "teamId": "NYK",
+   "fromSeason": "1968-69",
+   "toSeason": "1968-69",
+   "order": 2
+  },
+  {
+   "playerId": "76545",
+   "teamId": "DET",
+   "fromSeason": "1968-69",
+   "toSeason": "1968-69",
+   "order": 3
+  },
+  {
+   "playerId": "76545",
+   "teamId": "NYK",
+   "fromSeason": "1969-70",
+   "toSeason": "1973-74",
+   "order": 4
+  },
+  {
+   "playerId": "76631",
+   "teamId": "UTA",
+   "fromSeason": "1982-83",
+   "toSeason": "1992-93",
+   "order": 1
+  },
+  {
+   "playerId": "76673",
+   "teamId": "MIL",
+   "fromSeason": "1976-77",
+   "toSeason": "1977-78",
+   "order": 1
+  },
+  {
+   "playerId": "76673",
+   "teamId": "IND",
+   "fromSeason": "1978-79",
+   "toSeason": "1979-80",
+   "order": 2
+  },
+  {
+   "playerId": "76673",
+   "teamId": "DEN",
+   "fromSeason": "1979-80",
+   "toSeason": "1989-90",
+   "order": 3
+  },
+  {
+   "playerId": "76673",
+   "teamId": "DAL",
+   "fromSeason": "1990-91",
+   "toSeason": "1990-91",
+   "order": 4
+  },
+  {
+   "playerId": "76753",
+   "teamId": "PHI",
+   "fromSeason": "1975-76",
+   "toSeason": "1977-78",
+   "order": 1
+  },
+  {
+   "playerId": "76753",
+   "teamId": "SDC",
+   "fromSeason": "1978-79",
+   "toSeason": "1979-80",
+   "order": 2
+  },
+  {
+   "playerId": "76753",
+   "teamId": "GSW",
+   "fromSeason": "1980-81",
+   "toSeason": "1982-83",
+   "order": 3
+  },
+  {
+   "playerId": "76753",
+   "teamId": "CLE",
+   "fromSeason": "1982-83",
+   "toSeason": "1985-86",
+   "order": 4
+  },
+  {
+   "playerId": "76753",
+   "teamId": "PHI",
+   "fromSeason": "1986-87",
+   "toSeason": "1986-87",
+   "order": 5
+  },
+  {
+   "playerId": "76753",
+   "teamId": "HOU",
+   "fromSeason": "1987-88",
+   "toSeason": "1987-88",
+   "order": 6
+  },
+  {
+   "playerId": "76804",
+   "teamId": "SAS",
+   "fromSeason": "1976-77",
+   "toSeason": "1984-85",
+   "order": 1
+  },
+  {
+   "playerId": "76804",
+   "teamId": "CHI",
+   "fromSeason": "1985-86",
+   "toSeason": "1985-86",
+   "order": 2
+  },
+  {
+   "playerId": "76882",
+   "teamId": "SYR",
+   "fromSeason": "1958-59",
+   "toSeason": "1962-63",
+   "order": 1
+  },
+  {
+   "playerId": "76882",
+   "teamId": "PHI",
+   "fromSeason": "1963-64",
+   "toSeason": "1972-73",
+   "order": 2
+  },
+  {
+   "playerId": "76970",
+   "teamId": "BOS",
+   "fromSeason": "1962-63",
+   "toSeason": "1977-78",
+   "order": 1
+  },
+  {
+   "playerId": "76979",
+   "teamId": "SDR",
+   "fromSeason": "1968-69",
+   "toSeason": "1970-71",
+   "order": 1
+  },
+  {
+   "playerId": "76979",
+   "teamId": "HOU",
+   "fromSeason": "1971-72",
+   "toSeason": "1971-72",
+   "order": 2
+  },
+  {
+   "playerId": "76979",
+   "teamId": "BLT",
+   "fromSeason": "1972-73",
+   "toSeason": "1972-73",
+   "order": 3
+  },
+  {
+   "playerId": "76979",
+   "teamId": "CAP",
+   "fromSeason": "1973-74",
+   "toSeason": "1973-74",
+   "order": 4
+  },
+  {
+   "playerId": "76979",
+   "teamId": "WAS",
+   "fromSeason": "1974-75",
+   "toSeason": "1980-81",
+   "order": 5
+  },
+  {
+   "playerId": "76979",
+   "teamId": "HOU",
+   "fromSeason": "1981-82",
+   "toSeason": "1983-84",
+   "order": 6
+  },
+  {
+   "playerId": "77",
+   "teamId": "WAS",
+   "fromSeason": "1992-93",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "77",
+   "teamId": "DEN",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "77",
+   "teamId": "PHI",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "77",
+   "teamId": "ORL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "77",
+   "teamId": "NJN",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 5
+  },
+  {
+   "playerId": "77",
+   "teamId": "PHI",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 6
+  },
+  {
+   "playerId": "77",
+   "teamId": "BOS",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 7
+  },
+  {
+   "playerId": "77",
+   "teamId": "CHH",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 8
+  },
+  {
+   "playerId": "77",
+   "teamId": "NJN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 9
+  },
+  {
+   "playerId": "77",
+   "teamId": "LAC",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 10
+  },
+  {
+   "playerId": "77",
+   "teamId": "NJN",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 11
+  },
+  {
+   "playerId": "77",
+   "teamId": "LAC",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 12
+  },
+  {
+   "playerId": "770",
+   "teamId": "DAL",
+   "fromSeason": "1983-84",
+   "toSeason": "1983-84",
+   "order": 1
+  },
+  {
+   "playerId": "770",
+   "teamId": "MIL",
+   "fromSeason": "1984-85",
+   "toSeason": "1984-85",
+   "order": 2
+  },
+  {
+   "playerId": "770",
+   "teamId": "CLE",
+   "fromSeason": "1984-85",
+   "toSeason": "1987-88",
+   "order": 3
+  },
+  {
+   "playerId": "770",
+   "teamId": "PHX",
+   "fromSeason": "1987-88",
+   "toSeason": "1993-94",
+   "order": 4
+  },
+  {
+   "playerId": "770",
+   "teamId": "DET",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 5
+  },
+  {
+   "playerId": "770",
+   "teamId": "CLE",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 6
+  },
+  {
+   "playerId": "770",
+   "teamId": "IND",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 7
+  },
+  {
+   "playerId": "770",
+   "teamId": "ATL",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 8
+  },
+  {
+   "playerId": "770",
+   "teamId": "PHX",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 9
+  },
+  {
+   "playerId": "77070",
+   "teamId": "DET",
+   "fromSeason": "1959-60",
+   "toSeason": "1963-64",
+   "order": 1
+  },
+  {
+   "playerId": "77070",
+   "teamId": "BLT",
+   "fromSeason": "1964-65",
+   "toSeason": "1965-66",
+   "order": 2
+  },
+  {
+   "playerId": "77070",
+   "teamId": "BOS",
+   "fromSeason": "1966-67",
+   "toSeason": "1969-70",
+   "order": 3
+  },
+  {
+   "playerId": "77070",
+   "teamId": "PHI",
+   "fromSeason": "1970-71",
+   "toSeason": "1970-71",
+   "order": 4
+  },
+  {
    "playerId": "77142",
    "teamId": "LAL",
    "fromSeason": "1979-80",
    "toSeason": "1995-96",
    "order": 1
+  },
+  {
+   "playerId": "77149",
+   "teamId": "GSW",
+   "fromSeason": "1972-73",
+   "toSeason": "1976-77",
+   "order": 1
+  },
+  {
+   "playerId": "77149",
+   "teamId": "BUF",
+   "fromSeason": "1976-77",
+   "toSeason": "1976-77",
+   "order": 2
+  },
+  {
+   "playerId": "77149",
+   "teamId": "NJN",
+   "fromSeason": "1977-78",
+   "toSeason": "1979-80",
+   "order": 3
+  },
+  {
+   "playerId": "77149",
+   "teamId": "SAS",
+   "fromSeason": "1980-81",
+   "toSeason": "1981-82",
+   "order": 4
+  },
+  {
+   "playerId": "77149",
+   "teamId": "ATL",
+   "fromSeason": "1982-83",
+   "toSeason": "1982-83",
+   "order": 5
+  },
+  {
+   "playerId": "77149",
+   "teamId": "NJN",
+   "fromSeason": "1984-85",
+   "toSeason": "1984-85",
+   "order": 6
+  },
+  {
+   "playerId": "77149",
+   "teamId": "SEA",
+   "fromSeason": "1985-86",
+   "toSeason": "1985-86",
+   "order": 7
+  },
+  {
+   "playerId": "77175",
+   "teamId": "PHI",
+   "fromSeason": "1976-77",
+   "toSeason": "1981-82",
+   "order": 1
+  },
+  {
+   "playerId": "77175",
+   "teamId": "HOU",
+   "fromSeason": "1982-83",
+   "toSeason": "1983-84",
+   "order": 2
+  },
+  {
+   "playerId": "77175",
+   "teamId": "CHI",
+   "fromSeason": "1984-85",
+   "toSeason": "1984-85",
+   "order": 3
+  },
+  {
+   "playerId": "77175",
+   "teamId": "POR",
+   "fromSeason": "1985-86",
+   "toSeason": "1988-89",
+   "order": 4
+  },
+  {
+   "playerId": "77175",
+   "teamId": "SAS",
+   "fromSeason": "1989-90",
+   "toSeason": "1989-90",
+   "order": 5
+  },
+  {
+   "playerId": "77248",
+   "teamId": "SYR",
+   "fromSeason": "1954-55",
+   "toSeason": "1962-63",
+   "order": 1
+  },
+  {
+   "playerId": "77248",
+   "teamId": "PHI",
+   "fromSeason": "1963-64",
+   "toSeason": "1964-65",
+   "order": 2
+  },
+  {
+   "playerId": "77248",
+   "teamId": "BLT",
+   "fromSeason": "1965-66",
+   "toSeason": "1965-66",
+   "order": 3
+  },
+  {
+   "playerId": "77264",
+   "teamId": "NJN",
+   "fromSeason": "1977-78",
+   "toSeason": "1978-79",
+   "order": 1
+  },
+  {
+   "playerId": "77264",
+   "teamId": "UTA",
+   "fromSeason": "1979-80",
+   "toSeason": "1979-80",
+   "order": 2
+  },
+  {
+   "playerId": "77264",
+   "teamId": "GSW",
+   "fromSeason": "1980-81",
+   "toSeason": "1981-82",
+   "order": 3
+  },
+  {
+   "playerId": "77264",
+   "teamId": "NYK",
+   "fromSeason": "1982-83",
+   "toSeason": "1986-87",
+   "order": 4
+  },
+  {
+   "playerId": "77264",
+   "teamId": "WAS",
+   "fromSeason": "1987-88",
+   "toSeason": "1990-91",
+   "order": 5
+  },
+  {
+   "playerId": "77264",
+   "teamId": "NJN",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 6
+  },
+  {
+   "playerId": "77326",
+   "teamId": "CIN",
+   "fromSeason": "1970-71",
+   "toSeason": "1971-72",
+   "order": 1
+  },
+  {
+   "playerId": "77326",
+   "teamId": "KCK",
+   "fromSeason": "1972-73",
+   "toSeason": "1981-82",
+   "order": 2
+  },
+  {
+   "playerId": "77326",
+   "teamId": "NJN",
+   "fromSeason": "1981-82",
+   "toSeason": "1981-82",
+   "order": 3
+  },
+  {
+   "playerId": "77326",
+   "teamId": "CLE",
+   "fromSeason": "1982-83",
+   "toSeason": "1982-83",
+   "order": 4
+  },
+  {
+   "playerId": "77376",
+   "teamId": "POR",
+   "fromSeason": "1982-83",
+   "toSeason": "1983-84",
+   "order": 1
+  },
+  {
+   "playerId": "77376",
+   "teamId": "DEN",
+   "fromSeason": "1984-85",
+   "toSeason": "1989-90",
+   "order": 2
+  },
+  {
+   "playerId": "77376",
+   "teamId": "DAL",
+   "fromSeason": "1990-91",
+   "toSeason": "1993-94",
+   "order": 3
+  },
+  {
+   "playerId": "77418",
+   "teamId": "CIN",
+   "fromSeason": "1963-64",
+   "toSeason": "1969-70",
+   "order": 1
+  },
+  {
+   "playerId": "77418",
+   "teamId": "SFW",
+   "fromSeason": "1969-70",
+   "toSeason": "1970-71",
+   "order": 2
+  },
+  {
+   "playerId": "77418",
+   "teamId": "NYK",
+   "fromSeason": "1971-72",
+   "toSeason": "1973-74",
+   "order": 3
+  },
+  {
+   "playerId": "77419",
+   "teamId": "HOU",
+   "fromSeason": "1976-77",
+   "toSeason": "1977-78",
+   "order": 1
+  },
+  {
+   "playerId": "77419",
+   "teamId": "GSW",
+   "fromSeason": "1978-79",
+   "toSeason": "1980-81",
+   "order": 2
+  },
+  {
+   "playerId": "77419",
+   "teamId": "WAS",
+   "fromSeason": "1981-82",
+   "toSeason": "1982-83",
+   "order": 3
+  },
+  {
+   "playerId": "77419",
+   "teamId": "SAS",
+   "fromSeason": "1983-84",
+   "toSeason": "1983-84",
+   "order": 4
+  },
+  {
+   "playerId": "77419",
+   "teamId": "HOU",
+   "fromSeason": "1984-85",
+   "toSeason": "1985-86",
+   "order": 5
+  },
+  {
+   "playerId": "77419",
+   "teamId": "MIL",
+   "fromSeason": "1986-87",
+   "toSeason": "1987-88",
+   "order": 6
+  },
+  {
+   "playerId": "77419",
+   "teamId": "SEA",
+   "fromSeason": "1988-89",
+   "toSeason": "1988-89",
+   "order": 7
+  },
+  {
+   "playerId": "77419",
+   "teamId": "HOU",
+   "fromSeason": "1989-90",
+   "toSeason": "1989-90",
+   "order": 8
+  },
+  {
+   "playerId": "77449",
+   "teamId": "BUF",
+   "fromSeason": "1976-77",
+   "toSeason": "1976-77",
+   "order": 1
+  },
+  {
+   "playerId": "77449",
+   "teamId": "HOU",
+   "fromSeason": "1976-77",
+   "toSeason": "1981-82",
+   "order": 2
+  },
+  {
+   "playerId": "77449",
+   "teamId": "PHI",
+   "fromSeason": "1982-83",
+   "toSeason": "1985-86",
+   "order": 3
+  },
+  {
+   "playerId": "77449",
+   "teamId": "WAS",
+   "fromSeason": "1986-87",
+   "toSeason": "1987-88",
+   "order": 4
+  },
+  {
+   "playerId": "77449",
+   "teamId": "ATL",
+   "fromSeason": "1988-89",
+   "toSeason": "1990-91",
+   "order": 5
+  },
+  {
+   "playerId": "77449",
+   "teamId": "MIL",
+   "fromSeason": "1991-92",
+   "toSeason": "1992-93",
+   "order": 6
+  },
+  {
+   "playerId": "77449",
+   "teamId": "PHI",
+   "fromSeason": "1993-94",
+   "toSeason": "1993-94",
+   "order": 7
+  },
+  {
+   "playerId": "77449",
+   "teamId": "SAS",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 8
+  },
+  {
+   "playerId": "77685",
+   "teamId": "PHX",
+   "fromSeason": "1981-82",
+   "toSeason": "1987-88",
+   "order": 1
+  },
+  {
+   "playerId": "77685",
+   "teamId": "CLE",
+   "fromSeason": "1987-88",
+   "toSeason": "1993-94",
+   "order": 2
+  },
+  {
+   "playerId": "77721",
+   "teamId": "LAL",
+   "fromSeason": "1977-78",
+   "toSeason": "1982-83",
+   "order": 1
+  },
+  {
+   "playerId": "77721",
+   "teamId": "SDC",
+   "fromSeason": "1983-84",
+   "toSeason": "1983-84",
+   "order": 2
+  },
+  {
+   "playerId": "77721",
+   "teamId": "LAC",
+   "fromSeason": "1984-85",
+   "toSeason": "1988-89",
+   "order": 3
+  },
+  {
+   "playerId": "77847",
+   "teamId": "MIH",
+   "fromSeason": "1954-55",
+   "toSeason": "1954-55",
+   "order": 1
+  },
+  {
+   "playerId": "77847",
+   "teamId": "STL",
+   "fromSeason": "1955-56",
+   "toSeason": "1964-65",
+   "order": 2
   },
   {
    "playerId": "779",
@@ -33524,6 +39173,41 @@
    "order": 6
   },
   {
+   "playerId": "78003",
+   "teamId": "PHW",
+   "fromSeason": "1958-59",
+   "toSeason": "1961-62",
+   "order": 1
+  },
+  {
+   "playerId": "78003",
+   "teamId": "SFW",
+   "fromSeason": "1962-63",
+   "toSeason": "1965-66",
+   "order": 2
+  },
+  {
+   "playerId": "78003",
+   "teamId": "CHI",
+   "fromSeason": "1966-67",
+   "toSeason": "1967-68",
+   "order": 3
+  },
+  {
+   "playerId": "78003",
+   "teamId": "CIN",
+   "fromSeason": "1967-68",
+   "toSeason": "1967-68",
+   "order": 4
+  },
+  {
+   "playerId": "78003",
+   "teamId": "MIL",
+   "fromSeason": "1968-69",
+   "toSeason": "1969-70",
+   "order": 5
+  },
+  {
    "playerId": "78014",
    "teamId": "ATL",
    "fromSeason": "1977-78",
@@ -33566,6 +39250,146 @@
    "order": 1
   },
   {
+   "playerId": "78076",
+   "teamId": "SYR",
+   "fromSeason": "1949-50",
+   "toSeason": "1962-63",
+   "order": 1
+  },
+  {
+   "playerId": "78076",
+   "teamId": "PHI",
+   "fromSeason": "1963-64",
+   "toSeason": "1963-64",
+   "order": 2
+  },
+  {
+   "playerId": "78149",
+   "teamId": "SEA",
+   "fromSeason": "1977-78",
+   "toSeason": "1985-86",
+   "order": 1
+  },
+  {
+   "playerId": "78149",
+   "teamId": "MIL",
+   "fromSeason": "1986-87",
+   "toSeason": "1990-91",
+   "order": 2
+  },
+  {
+   "playerId": "78151",
+   "teamId": "STL",
+   "fromSeason": "1964-65",
+   "toSeason": "1967-68",
+   "order": 1
+  },
+  {
+   "playerId": "78151",
+   "teamId": "ATL",
+   "fromSeason": "1968-69",
+   "toSeason": "1968-69",
+   "order": 2
+  },
+  {
+   "playerId": "78151",
+   "teamId": "PHX",
+   "fromSeason": "1969-70",
+   "toSeason": "1971-72",
+   "order": 3
+  },
+  {
+   "playerId": "78151",
+   "teamId": "BOS",
+   "fromSeason": "1972-73",
+   "toSeason": "1975-76",
+   "order": 4
+  },
+  {
+   "playerId": "78151",
+   "teamId": "DEN",
+   "fromSeason": "1976-77",
+   "toSeason": "1976-77",
+   "order": 5
+  },
+  {
+   "playerId": "78151",
+   "teamId": "SEA",
+   "fromSeason": "1977-78",
+   "toSeason": "1979-80",
+   "order": 6
+  },
+  {
+   "playerId": "782",
+   "teamId": "GSW",
+   "fromSeason": "1988-89",
+   "toSeason": "1990-91",
+   "order": 1
+  },
+  {
+   "playerId": "782",
+   "teamId": "SAC",
+   "fromSeason": "1991-92",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "782",
+   "teamId": "WAS",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 3
+  },
+  {
+   "playerId": "782",
+   "teamId": "LAL",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 4
+  },
+  {
+   "playerId": "78310",
+   "teamId": "CHI",
+   "fromSeason": "1978-79",
+   "toSeason": "1983-84",
+   "order": 1
+  },
+  {
+   "playerId": "78310",
+   "teamId": "KCK",
+   "fromSeason": "1983-84",
+   "toSeason": "1984-85",
+   "order": 2
+  },
+  {
+   "playerId": "78310",
+   "teamId": "SAC",
+   "fromSeason": "1985-86",
+   "toSeason": "1987-88",
+   "order": 3
+  },
+  {
+   "playerId": "78310",
+   "teamId": "ATL",
+   "fromSeason": "1988-89",
+   "toSeason": "1988-89",
+   "order": 4
+  },
+  {
+   "playerId": "78310",
+   "teamId": "ORL",
+   "fromSeason": "1989-90",
+   "toSeason": "1989-90",
+   "order": 5
+  },
+  {
+   "playerId": "78310",
+   "teamId": "NJN",
+   "fromSeason": "1990-91",
+   "toSeason": "1990-91",
+   "order": 6
+  },
+  {
    "playerId": "78318",
    "teamId": "DET",
    "fromSeason": "1981-82",
@@ -33573,11 +39397,270 @@
    "order": 1
   },
   {
+   "playerId": "78392",
+   "teamId": "BLT",
+   "fromSeason": "1968-69",
+   "toSeason": "1972-73",
+   "order": 1
+  },
+  {
+   "playerId": "78392",
+   "teamId": "CAP",
+   "fromSeason": "1973-74",
+   "toSeason": "1973-74",
+   "order": 2
+  },
+  {
+   "playerId": "78392",
+   "teamId": "WAS",
+   "fromSeason": "1974-75",
+   "toSeason": "1980-81",
+   "order": 3
+  },
+  {
+   "playerId": "78435",
+   "teamId": "SYR",
+   "fromSeason": "1962-63",
+   "toSeason": "1962-63",
+   "order": 1
+  },
+  {
+   "playerId": "78435",
+   "teamId": "PHI",
+   "fromSeason": "1963-64",
+   "toSeason": "1968-69",
+   "order": 2
+  },
+  {
+   "playerId": "78435",
+   "teamId": "CHI",
+   "fromSeason": "1969-70",
+   "toSeason": "1974-75",
+   "order": 3
+  },
+  {
    "playerId": "78497",
    "teamId": "LAL",
    "fromSeason": "1960-61",
    "toSeason": "1973-74",
    "order": 1
+  },
+  {
+   "playerId": "785",
+   "teamId": "UTA",
+   "fromSeason": "1991-92",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "785",
+   "teamId": "MIL",
+   "fromSeason": "1992-93",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "785",
+   "teamId": "VAN",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "785",
+   "teamId": "DEN",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 4
+  },
+  {
+   "playerId": "785",
+   "teamId": "MIA",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 5
+  },
+  {
+   "playerId": "785",
+   "teamId": "NJN",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 6
+  },
+  {
+   "playerId": "785",
+   "teamId": "LAC",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 7
+  },
+  {
+   "playerId": "78530",
+   "teamId": "STL",
+   "fromSeason": "1960-61",
+   "toSeason": "1967-68",
+   "order": 1
+  },
+  {
+   "playerId": "78530",
+   "teamId": "SEA",
+   "fromSeason": "1968-69",
+   "toSeason": "1971-72",
+   "order": 2
+  },
+  {
+   "playerId": "78530",
+   "teamId": "CLE",
+   "fromSeason": "1972-73",
+   "toSeason": "1973-74",
+   "order": 3
+  },
+  {
+   "playerId": "78530",
+   "teamId": "POR",
+   "fromSeason": "1974-75",
+   "toSeason": "1974-75",
+   "order": 4
+  },
+  {
+   "playerId": "78549",
+   "teamId": "GSW",
+   "fromSeason": "1975-76",
+   "toSeason": "1976-77",
+   "order": 1
+  },
+  {
+   "playerId": "78549",
+   "teamId": "SEA",
+   "fromSeason": "1977-78",
+   "toSeason": "1983-84",
+   "order": 2
+  },
+  {
+   "playerId": "78549",
+   "teamId": "WAS",
+   "fromSeason": "1984-85",
+   "toSeason": "1985-86",
+   "order": 3
+  },
+  {
+   "playerId": "78549",
+   "teamId": "ATL",
+   "fromSeason": "1986-87",
+   "toSeason": "1986-87",
+   "order": 4
+  },
+  {
+   "playerId": "787",
+   "teamId": "PHI",
+   "fromSeason": "1984-85",
+   "toSeason": "1991-92",
+   "order": 1
+  },
+  {
+   "playerId": "787",
+   "teamId": "PHX",
+   "fromSeason": "1992-93",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "787",
+   "teamId": "HOU",
+   "fromSeason": "1996-97",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "788",
+   "teamId": "ATL",
+   "fromSeason": "1984-85",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "788",
+   "teamId": "MIA",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "788",
+   "teamId": "GSW",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 3
+  },
+  {
+   "playerId": "788",
+   "teamId": "HOU",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "788",
+   "teamId": "TOR",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 5
+  },
+  {
+   "playerId": "788",
+   "teamId": "DEN",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 6
+  },
+  {
+   "playerId": "788",
+   "teamId": "HOU",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 7
+  },
+  {
+   "playerId": "788",
+   "teamId": "SAS",
+   "fromSeason": "2002-03",
+   "toSeason": "2003-04",
+   "order": 8
+  },
+  {
+   "playerId": "788",
+   "teamId": "ATL",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 9
+  },
+  {
+   "playerId": "788",
+   "teamId": "DAL",
+   "fromSeason": "2006-07",
+   "toSeason": "2006-07",
+   "order": 10
+  },
+  {
+   "playerId": "84",
+   "teamId": "GSW",
+   "fromSeason": "1992-93",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "84",
+   "teamId": "NYK",
+   "fromSeason": "1998-99",
+   "toSeason": "2002-03",
+   "order": 2
+  },
+  {
+   "playerId": "84",
+   "teamId": "MIN",
+   "fromSeason": "2003-04",
+   "toSeason": "2004-05",
+   "order": 3
   },
   {
    "playerId": "87",
@@ -33720,6 +39803,279 @@
    "order": 2
   },
   {
+   "playerId": "895",
+   "teamId": "SAS",
+   "fromSeason": "1985-86",
+   "toSeason": "1986-87",
+   "order": 1
+  },
+  {
+   "playerId": "895",
+   "teamId": "CLE",
+   "fromSeason": "1986-87",
+   "toSeason": "1987-88",
+   "order": 2
+  },
+  {
+   "playerId": "895",
+   "teamId": "PHX",
+   "fromSeason": "1987-88",
+   "toSeason": "1988-89",
+   "order": 3
+  },
+  {
+   "playerId": "895",
+   "teamId": "MIN",
+   "fromSeason": "1989-90",
+   "toSeason": "1991-92",
+   "order": 4
+  },
+  {
+   "playerId": "895",
+   "teamId": "UTA",
+   "fromSeason": "1991-92",
+   "toSeason": "1993-94",
+   "order": 5
+  },
+  {
+   "playerId": "895",
+   "teamId": "ATL",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 6
+  },
+  {
+   "playerId": "895",
+   "teamId": "SAC",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 7
+  },
+  {
+   "playerId": "895",
+   "teamId": "MIA",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 8
+  },
+  {
+   "playerId": "895",
+   "teamId": "ATL",
+   "fromSeason": "1996-97",
+   "toSeason": "1998-99",
+   "order": 9
+  },
+  {
+   "playerId": "895",
+   "teamId": "SAC",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 10
+  },
+  {
+   "playerId": "895",
+   "teamId": "TOR",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 11
+  },
+  {
+   "playerId": "896",
+   "teamId": "GSW",
+   "fromSeason": "1989-90",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "896",
+   "teamId": "MIA",
+   "fromSeason": "1995-96",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "896",
+   "teamId": "DAL",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 3
+  },
+  {
+   "playerId": "896",
+   "teamId": "DEN",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 4
+  },
+  {
+   "playerId": "896",
+   "teamId": "IND",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 5
+  },
+  {
+   "playerId": "899",
+   "teamId": "CLE",
+   "fromSeason": "1986-87",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "899",
+   "teamId": "WAS",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "899",
+   "teamId": "GSW",
+   "fromSeason": "1996-97",
+   "toSeason": "1996-97",
+   "order": 3
+  },
+  {
+   "playerId": "899",
+   "teamId": "ORL",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 4
+  },
+  {
+   "playerId": "901",
+   "teamId": "KCK",
+   "fromSeason": "1984-85",
+   "toSeason": "1984-85",
+   "order": 1
+  },
+  {
+   "playerId": "901",
+   "teamId": "SAC",
+   "fromSeason": "1985-86",
+   "toSeason": "1987-88",
+   "order": 2
+  },
+  {
+   "playerId": "901",
+   "teamId": "HOU",
+   "fromSeason": "1988-89",
+   "toSeason": "1994-95",
+   "order": 3
+  },
+  {
+   "playerId": "901",
+   "teamId": "POR",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 4
+  },
+  {
+   "playerId": "901",
+   "teamId": "DET",
+   "fromSeason": "1995-96",
+   "toSeason": "1996-97",
+   "order": 5
+  },
+  {
+   "playerId": "901",
+   "teamId": "VAN",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 6
+  },
+  {
+   "playerId": "901",
+   "teamId": "SAC",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 7
+  },
+  {
+   "playerId": "901",
+   "teamId": "WAS",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 8
+  },
+  {
+   "playerId": "901",
+   "teamId": "MIA",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 9
+  },
+  {
+   "playerId": "901",
+   "teamId": "CHH",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 10
+  },
+  {
+   "playerId": "902",
+   "teamId": "MIA",
+   "fromSeason": "1990-91",
+   "toSeason": "1995-96",
+   "order": 1
+  },
+  {
+   "playerId": "902",
+   "teamId": "GSW",
+   "fromSeason": "1995-96",
+   "toSeason": "1998-99",
+   "order": 2
+  },
+  {
+   "playerId": "902",
+   "teamId": "ATL",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "902",
+   "teamId": "CLE",
+   "fromSeason": "2000-01",
+   "toSeason": "2002-03",
+   "order": 4
+  },
+  {
+   "playerId": "902",
+   "teamId": "BOS",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 5
+  },
+  {
+   "playerId": "902",
+   "teamId": "MIA",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 6
+  },
+  {
+   "playerId": "904",
+   "teamId": "GSW",
+   "fromSeason": "1985-86",
+   "toSeason": "1996-97",
+   "order": 1
+  },
+  {
+   "playerId": "904",
+   "teamId": "IND",
+   "fromSeason": "1997-98",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
+   "playerId": "904",
+   "teamId": "GSW",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 3
+  },
+  {
    "playerId": "905",
    "teamId": "IND",
    "fromSeason": "1991-92",
@@ -33753,6 +40109,34 @@
    "fromSeason": "2005-06",
    "toSeason": "2006-07",
    "order": 5
+  },
+  {
+   "playerId": "907",
+   "teamId": "IND",
+   "fromSeason": "1992-93",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "907",
+   "teamId": "LAC",
+   "fromSeason": "1994-95",
+   "toSeason": "1996-97",
+   "order": 2
+  },
+  {
+   "playerId": "907",
+   "teamId": "DET",
+   "fromSeason": "1997-98",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "907",
+   "teamId": "MIN",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 4
   },
   {
    "playerId": "911",
@@ -33909,6 +40293,34 @@
    "order": 8
   },
   {
+   "playerId": "919",
+   "teamId": "LAC",
+   "fromSeason": "1990-91",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "919",
+   "teamId": "DET",
+   "fromSeason": "1998-99",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
+   "playerId": "919",
+   "teamId": "DAL",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 3
+  },
+  {
+   "playerId": "919",
+   "teamId": "WAS",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
    "playerId": "920",
    "teamId": "LAL",
    "fromSeason": "1985-86",
@@ -33993,6 +40405,90 @@
    "order": 7
   },
   {
+   "playerId": "923",
+   "teamId": "MIN",
+   "fromSeason": "1994-95",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "923",
+   "teamId": "GSW",
+   "fromSeason": "1994-95",
+   "toSeason": "1999-00",
+   "order": 2
+  },
+  {
+   "playerId": "923",
+   "teamId": "UTA",
+   "fromSeason": "2000-01",
+   "toSeason": "2001-02",
+   "order": 3
+  },
+  {
+   "playerId": "923",
+   "teamId": "CHI",
+   "fromSeason": "2002-03",
+   "toSeason": "2003-04",
+   "order": 4
+  },
+  {
+   "playerId": "923",
+   "teamId": "TOR",
+   "fromSeason": "2003-04",
+   "toSeason": "2004-05",
+   "order": 5
+  },
+  {
+   "playerId": "923",
+   "teamId": "CLE",
+   "fromSeason": "2005-06",
+   "toSeason": "2007-08",
+   "order": 6
+  },
+  {
+   "playerId": "923",
+   "teamId": "SEA",
+   "fromSeason": "2007-08",
+   "toSeason": "2007-08",
+   "order": 7
+  },
+  {
+   "playerId": "923",
+   "teamId": "PHI",
+   "fromSeason": "2008-09",
+   "toSeason": "2008-09",
+   "order": 8
+  },
+  {
+   "playerId": "926",
+   "teamId": "SAS",
+   "fromSeason": "1984-85",
+   "toSeason": "1988-89",
+   "order": 1
+  },
+  {
+   "playerId": "926",
+   "teamId": "MIL",
+   "fromSeason": "1989-90",
+   "toSeason": "1992-93",
+   "order": 2
+  },
+  {
+   "playerId": "926",
+   "teamId": "DET",
+   "fromSeason": "1992-93",
+   "toSeason": "1992-93",
+   "order": 3
+  },
+  {
+   "playerId": "926",
+   "teamId": "TOR",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 4
+  },
+  {
    "playerId": "93",
    "teamId": "NYK",
    "fromSeason": "1992-93",
@@ -34035,6 +40531,69 @@
    "order": 6
   },
   {
+   "playerId": "934",
+   "teamId": "NJN",
+   "fromSeason": "1990-91",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "934",
+   "teamId": "PHI",
+   "fromSeason": "1995-96",
+   "toSeason": "1997-98",
+   "order": 2
+  },
+  {
+   "playerId": "934",
+   "teamId": "CHH",
+   "fromSeason": "1998-99",
+   "toSeason": "2000-01",
+   "order": 3
+  },
+  {
+   "playerId": "934",
+   "teamId": "PHI",
+   "fromSeason": "2001-02",
+   "toSeason": "2003-04",
+   "order": 4
+  },
+  {
+   "playerId": "934",
+   "teamId": "DET",
+   "fromSeason": "2004-05",
+   "toSeason": "2004-05",
+   "order": 5
+  },
+  {
+   "playerId": "935",
+   "teamId": "UTA",
+   "fromSeason": "1993-94",
+   "toSeason": "2001-02",
+   "order": 1
+  },
+  {
+   "playerId": "935",
+   "teamId": "WAS",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 2
+  },
+  {
+   "playerId": "935",
+   "teamId": "LAL",
+   "fromSeason": "2003-04",
+   "toSeason": "2003-04",
+   "order": 3
+  },
+  {
+   "playerId": "935",
+   "teamId": "DEN",
+   "fromSeason": "2004-05",
+   "toSeason": "2005-06",
+   "order": 4
+  },
+  {
    "playerId": "937",
    "teamId": "CHI",
    "fromSeason": "1987-88",
@@ -34060,6 +40619,34 @@
    "teamId": "CHI",
    "fromSeason": "2003-04",
    "toSeason": "2003-04",
+   "order": 4
+  },
+  {
+   "playerId": "938",
+   "teamId": "MIA",
+   "fromSeason": "1988-89",
+   "toSeason": "1993-94",
+   "order": 1
+  },
+  {
+   "playerId": "938",
+   "teamId": "GSW",
+   "fromSeason": "1994-95",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "938",
+   "teamId": "ORL",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "938",
+   "teamId": "NJN",
+   "fromSeason": "1997-98",
+   "toSeason": "1998-99",
    "order": 4
   },
   {
@@ -34173,6 +40760,76 @@
    "fromSeason": "2005-06",
    "toSeason": "2007-08",
    "order": 4
+  },
+  {
+   "playerId": "95",
+   "teamId": "POR",
+   "fromSeason": "1988-89",
+   "toSeason": "1994-95",
+   "order": 1
+  },
+  {
+   "playerId": "95",
+   "teamId": "HOU",
+   "fromSeason": "1995-96",
+   "toSeason": "1995-96",
+   "order": 2
+  },
+  {
+   "playerId": "95",
+   "teamId": "PHX",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 3
+  },
+  {
+   "playerId": "95",
+   "teamId": "CHI",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 4
+  },
+  {
+   "playerId": "95",
+   "teamId": "CLE",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 5
+  },
+  {
+   "playerId": "95",
+   "teamId": "DAL",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 6
+  },
+  {
+   "playerId": "95",
+   "teamId": "SAS",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 7
+  },
+  {
+   "playerId": "95",
+   "teamId": "PHI",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 8
+  },
+  {
+   "playerId": "95",
+   "teamId": "DEN",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 9
+  },
+  {
+   "playerId": "95",
+   "teamId": "BOS",
+   "fromSeason": "2002-03",
+   "toSeason": "2002-03",
+   "order": 10
   },
   {
    "playerId": "950",
@@ -34413,6 +41070,34 @@
    "order": 5
   },
   {
+   "playerId": "957",
+   "teamId": "GSW",
+   "fromSeason": "1996-97",
+   "toSeason": "1997-98",
+   "order": 1
+  },
+  {
+   "playerId": "957",
+   "teamId": "UTA",
+   "fromSeason": "1998-99",
+   "toSeason": "1998-99",
+   "order": 2
+  },
+  {
+   "playerId": "957",
+   "teamId": "CHH",
+   "fromSeason": "1999-00",
+   "toSeason": "1999-00",
+   "order": 3
+  },
+  {
+   "playerId": "957",
+   "teamId": "MIA",
+   "fromSeason": "2000-01",
+   "toSeason": "2000-01",
+   "order": 4
+  },
+  {
    "playerId": "958",
    "teamId": "CLE",
    "fromSeason": "1996-97",
@@ -34466,6 +41151,34 @@
    "teamId": "LAL",
    "fromSeason": "2012-13",
    "toSeason": "2013-14",
+   "order": 4
+  },
+  {
+   "playerId": "96",
+   "teamId": "DAL",
+   "fromSeason": "1985-86",
+   "toSeason": "1988-89",
+   "order": 1
+  },
+  {
+   "playerId": "96",
+   "teamId": "IND",
+   "fromSeason": "1988-89",
+   "toSeason": "1992-93",
+   "order": 2
+  },
+  {
+   "playerId": "96",
+   "teamId": "SEA",
+   "fromSeason": "1993-94",
+   "toSeason": "1998-99",
+   "order": 3
+  },
+  {
+   "playerId": "96",
+   "teamId": "POR",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
    "order": 4
   },
   {
@@ -34880,6 +41593,27 @@
    "fromSeason": "2013-14",
    "toSeason": "2013-14",
    "order": 7
+  },
+  {
+   "playerId": "98",
+   "teamId": "ORL",
+   "fromSeason": "1989-90",
+   "toSeason": "1998-99",
+   "order": 1
+  },
+  {
+   "playerId": "98",
+   "teamId": "SAC",
+   "fromSeason": "1999-00",
+   "toSeason": "2000-01",
+   "order": 2
+  },
+  {
+   "playerId": "98",
+   "teamId": "MEM",
+   "fromSeason": "2001-02",
+   "toSeason": "2001-02",
+   "order": 3
   },
   {
    "playerId": "980",

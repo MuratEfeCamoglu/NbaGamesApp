@@ -1,7 +1,7 @@
 # NBA Games — Proje İskeleti ve Sınırları
 
 > Bu dosya projenin tek kapsam referansıdır. CLAUDE.md kuralları, AGENT.md ajan davranışını, TASARIM_PROMPT.md görsel tasarımı tanımlar. Çelişki olursa kapsam konusunda bu dosya geçerlidir.
-> Son güncelleme: 2026-11-19 · Durum: MVP (Aşama 0–7) uygulandı ve test edildi — 270 unit/entegrasyon + 73 e2e testi yeşil, `npm run verify` yeşil. Açık noktalar: Lighthouse puanları ölçülmedi; NBA verisi 2026-27 devam eden sezonu kariyer verisine içeriyor.
+> Son güncelleme: 2026-11-19 · Durum: MVP + F16 dönem ayrımı + F17 oyuncu kapakları + F18 Türkçe uygulandı ve test edildi — 635 unit/entegrasyon + 73 e2e testi yeşil, `npm run verify` yeşil, ilk yükleme JS tüm sayfalarda <193 KB. Açık noktalar: Lighthouse puanları ölçülmedi; dönem seçici ve Türkçe arayüz henüz e2e ile test edilmedi.
 
 ## 1. Amaç ve Hedef Kullanıcı
 
@@ -65,13 +65,15 @@ yanlış/süre doldu: puan = 0, streak = 0
 | F13 | **Game History** | Zorunlu | Her biten oturum: mod, zorluk, puan, doğru/toplam, en iyi streak, tarih. Profilde son 20, en yeni üstte |
 | F14 | **Sayfalar** | Zorunlu | §3.2'deki 6 route; tüm sayfalar 360 px genişlikte yatay kaydırma olmadan çalışır |
 | F15 | **Durum ekranları** | Zorunlu | Her veri çeken ekranda Loading (skeleton), Empty, Error (tekrar dene butonu) durumları; TASARIM_PROMPT.md §8'e uygun |
+| F16 | **Dönem ayrımı: Current / Retired** (kullanıcı isteği, 2026-11-20) — her oyun iki dönemde oynanır: **Current** = aktif oyuncular ve bugünün takımları, **Retired** = emekli oyuncular ve eski takımlar | Zorunlu | Home, Games ve oyun giriş ekranında dönem seçici (Current \| Retired), tarayıcıda hatırlanır, oyun URL'inde `?era=current\|retired`. Kurallar: (1) cevap oyuncusunun durumu dönemle eşleşir (`Player.active`); (2) Easy/Medium şıkları aynı dönem havuzundan; arama tüm oyuncularda (dönemi ele vermez); (3) Starting Five: Current = son `CURRENT_ERA_LINEUP_SEASONS` (3) sezonun beşlileri, Retired = daha eski beşliler; (4) Top 10: Current = aktif oyuncular arasındaki kariyer liderleri listeleri (`scope: "active"`), Retired = all-time listeler ve yalnız emekli oyuncuların satırları gizlenir (yeterli emekli satırı olmayan liste o zorlukta kullanılmaz). Daily karışık kalır (`era: "all"`); leaderboard dönemlerden bağımsız tektir; sonuç ekranı ve geçmiş dönemi gösterir. Doğrulama: 6 mod × 4 zorluk × 2 dönem = 48 kombinasyonun hepsi gerçek veriyle tam oturum üretir ve her cevap dönemle eşleşir (test) |
+| F17 | **Oyuncu kapakları** (kullanıcı isteği, 2026-11-20) — her oyun kartının ve oyun giriş ekranının kapağında, seçili döneme göre bir yıldız oyuncunun fotoğrafı | Zorunlu | Eşleşme (Current / Retired): Starting Five = Curry / Jordan · Team Journey = LeBron / Shaq · Teammate Challenge = Dončić / Magic · Career Stats = Jokić / Kareem · Box Score = Giannis / Kobe · Top 10 = Durant / Duncan. Fotoğraf NBA CDN 260x190, `unoptimized`; yüklenemezse ya da `NEXT_PUBLIC_REMOTE_MEDIA=false` ise baş harfli fallback; `alt` = oyuncu adı |
+| F18 | **Türkçe dil** (kullanıcı isteği, 2026-11-20) — arayüz Türkçe ve İngilizce | Zorunlu | Dil sırası: `ng_lang` cookie → tarayıcı dili (`Accept-Language` tr → Türkçe) → İngilizce. Nav'da TR \| EN seçici; `<html lang>` dile göre. Tüm arayüz metinleri, sayfa başlıkları, aria etiketleri ve hata mesajları (API hata koduna göre istemcide) çevrilir; sayı ve tarihler `Intl` ile yerelleştirilir. Oyun modu adları (Starting Five…) ve istatistik kısaltmaları (PPG, REB…) iki dilde de İngilizce kalır. Ek paket yok: sözlükler `src/lib/i18n/` altında, Türkçe sözlük İngilizce ile aynı tipte (eksik anahtar derleme hatası) |
 
 ### 2.3 Sonraki Sürümler
 - Top 10'da "doğru sıralamayı kur" (sürükle-bırak) varyantı.
 - E-posta/OAuth ile kalıcı hesap ve cihazlar arası senkron.
 - Arkadaş ligleri, paylaşılabilir sonuç kartı.
 - Veri setinin canlı bir API'den otomatik güncellenmesi (ücretli plan gerekir).
-- Çoklu dil (i18n).
 
 ### 2.4 Kapsam Dışı
 - **Canlı skor / gerçek zamanlı maç verisi** — ücretsiz ve güvenilir kaynak yok; oyunlar tarihsel veriyle çalışır.
@@ -79,7 +81,7 @@ yanlış/süre doldu: puan = 0, streak = 0
 - **Ödeme, reklam, premium** — ticari model tanımlı değil.
 - **Native mobil uygulama** — responsive web yeterli.
 - **Şifreli hesap / sosyal giriş** — şifre saklamak güvenlik yükü getirir; misafir hesap yeterli.
-- **Resmi NBA/takım logoları** — ticari marka; renkli kısaltma rozeti kullanılır.
+- **Resmi NBA/takım logoları** — ticari marka; renkli kısaltma rozeti kullanılır. (2026-11-20: kullanıcı NBA logosunu istedi; site resmi NBA ürünü gibi görüneceği ve marka hakkı riski olduğu için eklenmedi, yerine özgün logo önerildi.)
 
 ## 3. Mimari
 
@@ -97,7 +99,7 @@ NBA veri katmanı (src/data — NbaDataSource arayüzü)
 ```
 
 - **NBA veri katmanı** (`src/data`): `NbaDataSource` arayüzü (`getPlayer`, `searchPlayers`, `getStartingFives`, `getCareerStints`, `getTeammates`, `getCareerStats`, `getBoxScores`, `getLeaderboards`, `getTeams`). MVP uygulaması `StaticNbaDataSource` — NBA API'den `npm run data:sync` ile üretilen `src/data/seed/*.json` snapshot'larını Zod ile doğrulayıp bellekte indeksler (§3.6). Oyun motorları JSON'a değil arayüze bağlıdır → veri kaynağı değişince motorlar değişmez.
-- **Oyun motorları** (`src/games/<mode>/engine.ts`): saf fonksiyonlar. `generateQuestion(ds, difficulty, rng) → QuestionWithAnswer` ve `toPublicQuestion(q) → PublicQuestion` (cevap alanları çıkarılmış). DB, HTTP, React importu yasak.
+- **Oyun motorları** (`src/games/<mode>/engine.ts`): saf fonksiyonlar. `generateQuestion(ds, difficulty, rng, exclude, era?) → GeneratedQuestion | null` (era F16; benzersizlik kontrolleri tüm oyuncular üzerinde) ve `toPublicQuestion(q) → PublicQuestion` (cevap alanları çıkarılmış). DB, HTTP, React importu yasak.
 - **Servisler** (`src/server/services`): `game-service` (oturum aç, soru sun, cevap değerlendir, puanla), `daily-service`, `leaderboard-service`, `achievement-service`, `user-service`.
 - **Kimlik** (`src/server/auth/session.ts`): misafir kullanıcı id'si HMAC-SHA256 ile imzalanmış httpOnly, `SameSite=Lax`, `Secure` (prod) cookie'de (`ng_uid`, 1 yıl). `node:crypto` kullanılır, ek kütüphane yok.
 - **RNG** (`src/games/core/rng.ts`): seed'li deterministik PRNG (mulberry32) — Daily ve testler için.
@@ -124,7 +126,7 @@ Tam tipler: `src/lib/api-types.ts` (tek doğru kaynak; tablo özet).
 | `GET /api/me` | — | `MeDTO` (puan, en iyi streak, oyun sayısı, doğruluk, 8 rozetin durumu); cookie yoksa misafir oluşturur |
 | `PATCH /api/me` | `{ nickname }` | `MeDTO`; çakışmada 409 |
 | `GET /api/me/history` | — | `HistoryDTO` (son 20 biten oturum) |
-| `POST /api/games/sessions` | `{ mode, difficulty }` | `StartSessionResponse` |
+| `POST /api/games/sessions` | `{ mode, difficulty, era? }` (`era`: `current`\|`retired`; yoksa `all`; açıkça `all` gönderilirse 400) | `StartSessionResponse` (oturumun `era` değeri dahil) |
 | `GET /api/daily` | — | `DailyStatusDTO` (bugün oynandı mı, sonuç, sonraki sıfırlama) |
 | `POST /api/games/sessions/[id]/answer` | `{ questionIndex, answer: { playerId } \| { slots: Record<rank, playerId> } \| { timeout: true } }` (şık id'leri = playerId) | `AnswerResult` (`src/games/core/types.ts`): `{ correct, correctUnits, totalUnits, correctAnswer, points, streak, totalScore, next, summary, newAchievements }` |
 | `POST /api/daily/sessions` | — | Daily oturumu (aynı answer endpoint'i kullanılır); bugün oynandıysa 409 |
@@ -155,7 +157,7 @@ Her JSON dosyası `meta: { snapshotDate, sources[] }` içerir.
 | Model | Alanlar / kurallar |
 |---|---|
 | `User` | `id` (cuid), `nickname?` (unique, lowercase kopyası `nicknameKey` unique), `totalPoints`, `bestStreak`, `createdAt` |
-| `GameSession` | `id`, `userId`, `mode`, `difficulty`, `isDaily`, `dailyDate?`, `seed`, `currentIndex`, `score`, `streak`, `bestStreak`, `correctCount`, `total`, `status` (`ACTIVE`/`FINISHED`), `questionCount`, `lastActivityAt`, `createdAt`, `finishedAt?`; unique(`userId`,`dailyDate`). `total`/`correctCount` birim sayar (Top 10'da her gizli satır 1 birim) |
+| `GameSession` | `id`, `userId`, `mode`, `difficulty`, `isDaily`, `dailyDate?`, `seed`, `currentIndex`, `score`, `streak`, `bestStreak`, `correctCount`, `total`, `status` (`ACTIVE`/`FINISHED`), `era` (`current`/`retired`/`all`, varsayılan `all`), `questionCount`, `lastActivityAt`, `createdAt`, `finishedAt?`; unique(`userId`,`dailyDate`). `total`/`correctCount` birim sayar (Top 10'da her gizli satır 1 birim) |
 | `Question` | `id`, `sessionId`, `index`, `payload` (JSON, cevapsız), `answerKey` (JSON, yalnız sunucu), `issuedAt?` (soru sunulunca; görünür olacağı ana göre ileri tarihli, bkz. `difficulty.ts`), `answeredAt?`, `correct?`, `points?`, `units`, `correctUnits` |
 | `UserAchievement` | `userId`, `achievementId`, `earnedAt`; unique(`userId`,`achievementId`) |
 
@@ -197,9 +199,14 @@ Veri **NBA API'den gelir**, ama canlı istekle değil: `npm run data:sync` geli�
 | `players.json` | `commonallplayers` (IsOnlyCurrentSeason=0) + `playerawards` | Havuz: 1996-97…2025-26 arasında ≥300 maç (süre bütçesi için ≥100'den yükseltildi) + beşli/box score/liderlik listelerinde geçen oyuncular (1.094). Pozisyon `playerindex`'ten. `headshotId` = `PERSON_ID`. `fameTier`: 1 = ≥3 All-Star seçimi veya MVP; 2 = ≥1 All-Star ya da ≥500 maç; 3 = diğerleri |
 | `career-stats.json`, `career-stints.json` | `playercareerstats` | Ortalamalar `CareerTotalsRegularSeason`'dan; stint'ler `SeasonTotalsRegularSeason` satırlarından, `TOT` satırı atlanır, ardışık aynı takım sezonları birleştirilir |
 | `rosters.json` | `playercareerstats` sezon satırları (`commonteamroster` yerine; ~900 istek tasarrufu) | 1996-97…2025-26 |
-| `starting-fives.json` | `leaguedashlineups` (GroupQuantity=5, sezon başına) | "İlk beş" = o takım-sezonda **en çok dakika oynayan beşli**; 2007-08 ve sonrası (endpoint verisi bu sezondan başlar) |
+| `starting-fives.json` | `leaguedashlineups` (GroupQuantity=5, sezon başına) + `boxscoretraditionalv3` | 2007-08 ve sonrası: o takım-sezonda **en çok dakika oynayan beşli**; 1996-97…2006-07: açılış gecesi ilk beşi (F16 ek verisi) |
 | `box-scores.json` | `leaguegamelog` (PlayerOrTeam=P ve T, sezon başına) | Oyuncu satırı + takım skorları; seçim: PTS ≥ 40 veya triple-double, sezon başına en fazla 10 |
 | `leaderboards.json` | `alltimeleadersgrids` | PTS, REB, AST, STL, BLK, FG3M, GP, FTM, FGM listelerinin ilk 10'u (9 liste) |
+
+Dönem ayrımı için ek veri (F16):
+- **Aktif liderler listeleri** (`leaderboards.json`, `scope: "active"`, id `active-career-*`): adaylar maç kayıtlarından elenir, ardından ~45 aday için resmi `playercareerstats` (PerMode=Totals) toplamları çekilir (PTS, REB, AST, STL, BLK, FG3M, GP, FTM, FGM — 9 liste). Ortalama × maç yaklaşımı kullanılmaz (yanlış toplam verir).
+- **1996 öncesi efsaneler:** `alltimeleadersgrids` (TopX=50) listelerinde geçen 77 oyuncu (Magic, Bird, Russell, Chamberlain…) havuza tam kariyerleriyle eklenir; havuz oyuncularının kadro (`rosters`) penceresi tüm sezonlara genişletilir. Tarihî takımlar (BLT, BUF, CAP, KCK, MIH, NOJ, SDC, SFW, STL, SYR… 17 kod) `teams.json`'a eklenir: ad/şehir `franchisehistory`'den, `franchiseId` TEAM_ID'den, konferans sabit tablodan; renkleri `globals.css` tarihî takım token bloğunda. GOS/PHL/SAN/UTH aynı takımın 1996 öncesi yazımları olduğundan GSW/PHI/SAS/UTA'ya çevrilir.
+- **2007 öncesi ilk beşler:** 1996-97…2006-07 için her takım-sezonun ilk maçının (açılış gecesi) ilk beşi `boxscoretraditionalv3` başlangıç pozisyonlarından alınır (322 beşli; id `…-opener`, `minutes: 0` çünkü box score beşlinin birlikte süresini vermez).
 
 Hat kuralları (`scripts/nba-sync/sync.py`):
 - İstekler arası ≥0.7 sn, istek zaman aşımı 30 sn, 3 deneme (üstel bekleme). Tahmini tam senkron: ~2.000 istek, ~30 dk.
@@ -208,7 +215,7 @@ Hat kuralları (`scripts/nba-sync/sync.py`):
 - Erişim başarısızsa (zaman aşımı/403) betik `"NBA API'ye erişilemedi — seed dosyaları değiştirilmedi"` yazar, 1 ile çıkar ve mevcut seed'lere dokunmaz. Hata olmasa da çalışıyor gibi gösterilmez.
 - Senkron sonunda otomatik `npm run data:validate` çalışır; doğrulama başarısızsa yeni dosyalar yazılmaz (geçici klasörden atomik taşıma).
 
-**Görseller:** Oyuncu fotoğrafı `https://cdn.nba.com/headshots/nba/latest/1040x760/{headshotId}.png` (`next/image` `remotePatterns`). `NEXT_PUBLIC_REMOTE_MEDIA=false` ise veya `headshotId` yoksa veya yükleme hatasında → baş harfli, takım rengiyle `PlayerAvatar` fallback. Takımlar için logo yerine `TeamBadge` (kısaltma + takım renkleri).
+**Görseller:** Oyuncu fotoğrafı `https://cdn.nba.com/headshots/nba/latest/260x190/{headshotId}.png` (~17 KB), `next/image` ile ama `unoptimized`: tarayıcı doğrudan CDN'den yükler. Sunucudaki `/_next/image` proxy'si kullanılmaz — yavaş bir upstream o istekleri asılı bırakıp aynı origin'in bağlantılarını doldurunca cevap isteği kuyrukta takılıyordu. `NEXT_PUBLIC_REMOTE_MEDIA=false` ise veya `headshotId` yoksa veya yükleme hatasında → baş harfli, takım rengiyle `PlayerAvatar` fallback. Takımlar için logo yerine `TeamBadge` (kısaltma + takım renkleri).
 
 ## 4. Klasör Yapısı
 
@@ -312,9 +319,10 @@ Kod içeren tüm aşamalar (1–7) Aşama 0 bitmeden başlamaz. Aşama 2 ile Aş
 - **V2:** Kimlik = misafir hesap + takma ad; şifre/e-posta yok.
 - **V3:** Hard/Expert cevapları serbest metin değil, veri setinden autocomplete ile seçilir (yazım hatası sorununu ortadan kaldırır).
 - **V4:** Oyuncu görselleri NBA CDN'den kullanılır (kişisel/eğitsel proje); takım logoları kullanılmaz.
-- **V5:** Arayüz dili İngilizce (NBA terimleri İngilizce, oyun adları zaten İngilizce); dokümanlar Türkçe. i18n kapsam dışı.
+- **V5:** Arayüz Türkçe ve İngilizce (F18); oyun modu adları ve istatistik kısaltmaları iki dilde de İngilizce. Dokümanlar Türkçe.
 - **V6:** MVP tek sunucu instance'ında çalışır (bellek içi rate limit); dağıtım hedefi ve hosting seçimi kullanıcı onayına bağlı, MVP yerelde `npm start` ile doğrulanır.
 - **V7:** Gün sınırı UTC'dir (Daily ve "Bugün" sıralaması).
 - **V8:** Leaderboard "Son 7 gün" = son 7×24 saatte cevaplanan soruların `Question.points` toplamı (yarıda kalan oturumların puanı da sayılır, V9 ile tutarlı); "Bugün" = bugünkü Daily oturumunun puanı; "Tüm zamanlar" = `User.totalPoints`. Daily puanları totalPoints'e dahildir.
 - **V9:** Yarıda bırakılan (30 dk'dan eski `ACTIVE`) oturumlar puan kazanmış soruları korur ama geçmişte "terk edildi" görünmez; leaderboard'a yalnız kazanılan puan yansır.
 - **V10:** Paket yöneticisi npm; Node 24 LTS.
+- **V11:** "Aktif" = snapshot anındaki güncel sezonda bir NBA kadrosunda olmak (`commonallplayers` ROSTERSTATUS). Varsayılan dönem Current'tır; Daily ve leaderboard dönem ayrımı yapmaz.

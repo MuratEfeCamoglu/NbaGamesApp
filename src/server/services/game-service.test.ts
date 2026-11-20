@@ -5,8 +5,19 @@ import {
   NEXT_QUESTION_DELAY_MS,
   SESSION_IDLE_MINUTES,
 } from "@/games/core/difficulty";
+import { getEngine } from "@/games/core/registry";
 import { scoreAnswer } from "@/games/core/scoring";
-import { GAME_MODES, type AnswerKey, type PublicQuestion } from "@/games/core/types";
+import {
+  DIFFICULTIES,
+  ERAS,
+  GAME_MODES,
+  type AnswerKey,
+  type AnswerResult,
+  type Era,
+  type PublicQuestion,
+  type SubmittedAnswer,
+} from "@/games/core/types";
+import type { ServiceContext } from "../context";
 import { AppError } from "../errors";
 import {
   answerKeyOf,
@@ -17,7 +28,7 @@ import {
   wrongAnswerFor,
   type TestEnv,
 } from "../test-helpers";
-import { canonicalAnswer, startSession, submitAnswer } from "./game-service";
+import { canonicalAnswer, eraOf, startSession, submitAnswer } from "./game-service";
 
 let env: TestEnv;
 beforeEach(async () => {
@@ -84,6 +95,7 @@ describe("game-service", () => {
       sessionId: start.sessionId,
       mode: "career-stats",
       difficulty: "easy",
+      era: "all",
       correct: 7,
       total: 10,
       score: expectedScore,
@@ -399,5 +411,137 @@ describe("game-service", () => {
     expect(
       await ctx.db.userAchievement.count({ where: { userId, achievementId: "first-game" } }),
     ).toBe(1);
+  });
+});
+
+/** Every player a session keeps hidden from the client: single answers and top-10 hidden slots. */
+async function hiddenPlayersOf(ctx: ServiceContext, sessionId: string, total: number) {
+  const ids: string[] = [];
+  for (let i = 0; i < total; i++) ids.push(...hiddenIds(await answerKeyOf(ctx, sessionId, i)));
+  return ids;
+}
+
+/** Names of the given players whose status does not match the era (expected: none). */
+function offEra(ctx: ServiceContext, era: Era, ids: string[]): string[] {
+  return ids
+    .filter((id) => ctx.ds.getPlayer(id)?.active !== (era === "current"))
+    .map((id) => ctx.ds.getPlayer(id)?.name ?? id);
+}
+
+async function playToEnd(
+  ctx: ServiceContext,
+  userId: string,
+  start: { sessionId: string; total: number },
+  answerFor: (key: AnswerKey) => SubmittedAnswer = correctAnswerFor,
+): Promise<AnswerResult> {
+  let last: AnswerResult | null = null;
+  for (let i = 0; i < start.total; i++) {
+    const key = await answerKeyOf(ctx, start.sessionId, i);
+    last = await submitAnswer(ctx, userId, start.sessionId, i, answerFor(key));
+  }
+  if (!last) throw new Error("session without questions");
+  return last;
+}
+
+describe("game-service eras (ISKELET F16)", () => {
+  it("stores the era and passes it to every engine call; no era means 'all'", async () => {
+    const { ctx } = env;
+    const userId = await createUser(ctx);
+    const spy = vi.spyOn(getEngine("career-stats"), "generateQuestion");
+    try {
+      for (const era of [...ERAS, undefined]) {
+        spy.mockClear();
+        const expected = era ?? "all";
+        const start = await startSession(ctx, userId, "career-stats", "hard", era);
+        expect(start.era).toBe(expected);
+        const row = await ctx.db.gameSession.findUniqueOrThrow({ where: { id: start.sessionId } });
+        expect(row.era).toBe(expected);
+        expect(spy.mock.calls.length).toBeGreaterThanOrEqual(start.total);
+        expect(spy.mock.calls.map((call) => call[4])).toEqual(spy.mock.calls.map(() => expected));
+      }
+    } finally {
+      spy.mockRestore();
+    }
+  });
+
+  it("answers NOT_FOUND when the engine has no question for the era", async () => {
+    const { ctx } = env;
+    const userId = await createUser(ctx);
+    const spy = vi.spyOn(getEngine("top-10"), "generateQuestion").mockReturnValue(null);
+    try {
+      await expectAppError(startSession(ctx, userId, "top-10", "expert", "retired"), "NOT_FOUND");
+      expect(spy).toHaveBeenCalledWith(
+        ctx.ds,
+        "expert",
+        expect.anything(),
+        expect.any(Set),
+        "retired",
+      );
+    } finally {
+      spy.mockRestore();
+    }
+    expect(await ctx.db.gameSession.count()).toBe(0);
+  });
+
+  it("fills every mode × difficulty × era session with players of that era only", async () => {
+    const { ctx } = env;
+    const userId = await createUser(ctx);
+    for (const era of ERAS) {
+      for (const mode of GAME_MODES) {
+        for (const difficulty of DIFFICULTIES) {
+          const label = `${era}/${mode}/${difficulty}`;
+          const start = await startSession(ctx, userId, mode, difficulty, era);
+          expect(start.era, label).toBe(era);
+          expect(start.total, label).toBe(getEngine(mode).questionsPerSession);
+          const ids = await hiddenPlayersOf(ctx, start.sessionId, start.total);
+          expect(offEra(ctx, era, ids), label).toEqual([]);
+        }
+      }
+    }
+  });
+
+  it("reports the era in the summary, also when the final answer is replayed", async () => {
+    const { ctx } = env;
+    const userId = await createUser(ctx);
+    for (const era of ERAS) {
+      const start = await startSession(ctx, userId, "career-stats", "easy", era);
+      const last = await playToEnd(ctx, userId, start);
+      expect(last.summary).toMatchObject({
+        sessionId: start.sessionId,
+        era,
+        correct: start.total,
+        total: start.total,
+      });
+      const lastIndex = start.total - 1;
+      const key = await answerKeyOf(ctx, start.sessionId, lastIndex);
+      const retry = await submitAnswer(
+        ctx,
+        userId,
+        start.sessionId,
+        lastIndex,
+        correctAnswerFor(key),
+      );
+      expect(retry.summary).toEqual(last.summary);
+    }
+  });
+
+  it("counts sessions of either era toward the all-modes badge", async () => {
+    const { ctx } = env;
+    const userId = await createUser(ctx);
+    for (const [i, mode] of GAME_MODES.entries()) {
+      const era: Era = i % 2 === 0 ? "current" : "retired";
+      const start = await startSession(ctx, userId, mode, "hard", era);
+      const last = await playToEnd(ctx, userId, start, () => ({ timeout: true }));
+      const badges = last.newAchievements.map((a) => a.id);
+      if (i < GAME_MODES.length - 1) expect(badges, mode).not.toContain("all-modes");
+      else expect(badges).toContain("all-modes");
+    }
+  });
+
+  it("reads a stored era it does not know as 'all'", () => {
+    expect(eraOf({ era: "current" })).toBe("current");
+    expect(eraOf({ era: "retired" })).toBe("retired");
+    expect(eraOf({ era: "all" })).toBe("all");
+    expect(eraOf({ era: "modern" })).toBe("all");
   });
 });

@@ -4,7 +4,8 @@ import { useEffect, useRef } from "react";
 
 /**
  * Decorative pointer light + tilt for its parent card (globals.css `[data-spotlight]`).
- * Writes --spot-x/--spot-y/--tilt-x/--tilt-y on the parent; fine pointers only, and skipped
+ * Writes --spot-x/--spot-y/--tilt-x/--tilt-y (and unitless --px/--py, -0.5…0.5, for the cover
+ * parallax) on the parent; fine pointers only, and skipped
  * entirely with prefers-reduced-motion. Renders an empty aria-hidden span, so it never
  * affects layout, text or the accessibility tree.
  */
@@ -30,12 +31,16 @@ export function Spotlight() {
         // ±4° tilt: enough to feel physical, small enough to keep text crisp.
         host.style.setProperty("--tilt-x", `${((0.5 - py) * 8).toFixed(2)}deg`);
         host.style.setProperty("--tilt-y", `${((px - 0.5) * 8).toFixed(2)}deg`);
+        host.style.setProperty("--px", (px - 0.5).toFixed(3));
+        host.style.setProperty("--py", (py - 0.5).toFixed(3));
       });
     };
     const onLeave = () => {
       cancelAnimationFrame(frame);
       host.style.setProperty("--tilt-x", "0deg");
       host.style.setProperty("--tilt-y", "0deg");
+      host.style.setProperty("--px", "0");
+      host.style.setProperty("--py", "0");
     };
     host.dataset.spotlight = "on";
     host.addEventListener("pointermove", onMove);

@@ -81,10 +81,44 @@ describe("user-service", () => {
     expect(history.items).toHaveLength(1);
     expect(history.items[0]).toMatchObject({
       sessionId: s.sessionId,
+      era: "all",
       correct: 8,
       total: 10,
       bestStreak: 8,
     });
+  });
+
+  it("shows each session's era in the history; pre-era rows read as 'all'", async () => {
+    const { ctx, clock } = env;
+    const userId = await createUser(ctx);
+    // A session row written before the era column existed gets the column default.
+    const legacy = await ctx.db.gameSession.create({
+      data: {
+        userId,
+        mode: "box-score",
+        difficulty: "easy",
+        seed: 1,
+        total: 10,
+        questionCount: 10,
+        status: "FINISHED",
+        finishedAt: clock.now(),
+      },
+    });
+    const played: string[] = [];
+    for (const era of ["current", "retired"] as const) {
+      clock.advanceSec(60);
+      const s = await startSession(ctx, userId, "career-stats", "easy", era);
+      for (let i = 0; i < s.total; i++) {
+        await submitAnswer(ctx, userId, s.sessionId, i, { timeout: true });
+      }
+      played.push(s.sessionId);
+    }
+    const history = await getHistory(ctx, userId);
+    expect(history.items.map((h) => [h.sessionId, h.era])).toEqual([
+      [played[1], "retired"],
+      [played[0], "current"],
+      [legacy.id, "all"],
+    ]);
   });
 });
 
@@ -139,6 +173,27 @@ describe("leaderboard-service", () => {
     const all = await getLeaderboard(ctx, "all", null);
     expect(all.rows.map((r) => r.nickname)).toEqual(["old_timer", "recent"]);
     expect((await getLeaderboard(ctx, "day", null)).rows).toEqual([]);
+  });
+
+  it("is one board for both eras: Current and Retired points add up", async () => {
+    const { ctx } = env;
+    const userId = await createUser(ctx, "two_eras");
+    const scores: number[] = [];
+    for (const era of ["current", "retired"] as const) {
+      const s = await startSession(ctx, userId, "career-stats", "easy", era);
+      let score = 0;
+      for (let i = 0; i < s.total; i++) {
+        const key = await answerKeyOf(ctx, s.sessionId, i);
+        score = (await submitAnswer(ctx, userId, s.sessionId, i, correctAnswerFor(key))).totalScore;
+      }
+      scores.push(score);
+    }
+    const both = (scores[0] ?? 0) + (scores[1] ?? 0);
+    expect(scores.every((p) => p > 0)).toBe(true);
+    for (const period of ["all", "week"] as const) {
+      const board = await getLeaderboard(ctx, period, userId);
+      expect(board.rows).toEqual([{ rank: 1, nickname: "two_eras", points: both, isMe: true }]);
+    }
   });
 
   it("gives tied users the same rank", async () => {

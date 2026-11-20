@@ -1,6 +1,6 @@
 import "server-only";
 import { z } from "zod";
-import { DIFFICULTIES, GAME_MODES } from "@/games/core/types";
+import { DIFFICULTIES, ERAS, GAME_MODES } from "@/games/core/types";
 import { AppError } from "./errors";
 
 const MAX_ID = 64;
@@ -12,6 +12,8 @@ const playerId = z.string().min(1).max(MAX_ID);
 export const startSessionSchema = z.strictObject({
   mode: z.enum(GAME_MODES),
   difficulty: z.enum(DIFFICULTIES),
+  // "all" is not accepted from clients: it is only the server-side meaning of "omitted".
+  era: z.enum(ERAS).optional(),
 });
 
 export const submittedAnswerSchema = z.union([

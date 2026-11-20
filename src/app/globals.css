@@ -83,7 +83,7 @@
   --color-team-lac: #c8102e;
   --color-team-lac-fg: #ffffff;
   --color-team-mem: #5d76a9;
-  --color-team-mem-fg: #12173f;
+  --color-team-mem-fg: #ffffff;
   --color-team-min: #0c2340;
   --color-team-min-fg: #78be20;
   --color-team-nop: #0c2340;
@@ -98,8 +98,8 @@
   --color-team-uta-fg: #f9a01b;
   --color-team-was: #e31837;
   --color-team-was-fg: #ffffff;
-  /* Historical abbreviations seen in 1996-97+ data */
-  --color-team-sea: #00653a;
+  /* Historical abbreviations (stats.nba.com codes used in the data) */
+  --color-team-sea: #005a34;
   --color-team-sea-fg: #ffc200;
   --color-team-van: #00b2a9;
   --color-team-van-fg: #000000;
@@ -111,6 +111,41 @@
   --color-team-nok-fg: #ffffff;
   --color-team-chh: #00778b;
   --color-team-chh-fg: #ffffff;
+  /* Pre-1996 teams (legends' careers, F16): approximate era colours; fg ≥ 4.5:1 on bg */
+  --color-team-syr: #c8102e;
+  --color-team-syr-fg: #ffffff;
+  --color-team-phw: #1d428a;
+  --color-team-phw-fg: #ffc72c;
+  --color-team-sfw: #fdb927;
+  --color-team-sfw-fg: #002b5c;
+  --color-team-mnl: #1d4289;
+  --color-team-mnl-fg: #fdb927;
+  --color-team-mih: #003da5;
+  --color-team-mih-fg: #ffffff;
+  --color-team-stl: #003da5;
+  --color-team-stl-fg: #ffffff;
+  --color-team-cin: #0046ad;
+  --color-team-cin-fg: #ffffff;
+  --color-team-kck: #c8102e;
+  --color-team-kck-fg: #ffffff;
+  --color-team-chp: #00573f;
+  --color-team-chp-fg: #ffffff;
+  --color-team-chz: #e56020;
+  --color-team-chz-fg: #000000;
+  --color-team-blt: #0b3d91;
+  --color-team-blt-fg: #ffffff;
+  --color-team-cap: #ce1141;
+  --color-team-cap-fg: #ffffff;
+  --color-team-sdr: #00573f;
+  --color-team-sdr-fg: #ffc72c;
+  --color-team-buf: #6cace4;
+  --color-team-buf-fg: #000000;
+  --color-team-sdc: #5fa8e0;
+  --color-team-sdc-fg: #0c2340;
+  --color-team-noj: #4f2d7f;
+  --color-team-noj-fg: #fdb927;
+  --color-team-nyn: #ce1141;
+  --color-team-nyn-fg: #ffffff;
 
   /* ---------- Type ---------- */
   --font-display: var(--font-oswald), "Arial Narrow", system-ui, sans-serif;
@@ -197,6 +232,12 @@
      --color-on-accent text is ≥4.5:1 on top of each (ratios in the refresh-layer header below).
      ============================================================ */
   /* Per-mode identity (gradient from → to) */
+  /* Era identity (F16): Current = live orange→rose, Retired = classic gold→bronze. Reuses palette tokens. */
+  --color-era-current-from: var(--color-accent);
+  --color-era-current-to: #fb7185;
+  --color-era-retired-from: var(--color-gold);
+  --color-era-retired-to: var(--color-bronze);
+
   --color-mode-starting-five-from: #ff6b1a;
   --color-mode-starting-five-to: #fb7185;
   --color-mode-team-journey-from: #a78bfa;
@@ -1840,5 +1881,257 @@ body::before {
   }
   .answer-option[data-state="wrong"] {
     animation: fade-in var(--duration-base) linear both !important;
+  }
+}
+
+/* ============================================================
+   GAME COVER (ISKELET F17) — a star player's cut-out on every GameCard and the game intro.
+   Not in design.html: built inside the existing .game-card__visual art. The image keeps fixed
+   width/height attributes and a fixed box, so loading never shifts layout.
+   ============================================================ */
+.game-card__visual {
+  height: 148px;
+  justify-content: flex-start;
+  padding-left: var(--spacing-4);
+}
+/* Era tag moves next to the index: the top-right corner belongs to the cover star now. */
+.game-card .game-card__era-tag {
+  left: calc(var(--spacing-4) + var(--spacing-8));
+  right: auto;
+}
+.game-card .game-card__glyph {
+  width: 52px;
+  height: 52px;
+  margin-top: var(--spacing-5);
+}
+.game-cover {
+  position: absolute;
+  z-index: 1;
+  top: var(--spacing-2);
+  right: 0;
+  bottom: 0;
+  width: min(62%, 236px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+.game-cover__halo {
+  position: absolute;
+  inset: 14% 6% 0;
+  border-radius: 50% 50% 0 0 / 70% 70% 0 0;
+  background: radial-gradient(
+    closest-side at 50% 60%,
+    color-mix(in srgb, var(--mode-from) 60%, transparent),
+    color-mix(in srgb, var(--mode-to) 22%, transparent) 62%,
+    transparent
+  );
+  filter: blur(8px);
+}
+.game-cover__img {
+  position: relative;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: bottom center;
+  transform-origin: 50% 100%;
+  transform: translate3d(calc(var(--px, 0) * 14px), calc(var(--py, 0) * 6px), 0);
+  filter: drop-shadow(0 8px 18px color-mix(in srgb, var(--mode-from) 45%, transparent));
+  /* Fade the cut shoulders into the art instead of a hard bottom edge. */
+  -webkit-mask: linear-gradient(180deg, var(--color-black) 72%, transparent);
+  mask: linear-gradient(180deg, var(--color-black) 72%, transparent);
+  transition: transform var(--duration-slow) var(--ease-out);
+}
+.game-card:hover .game-cover__img {
+  transform: translate3d(calc(var(--px, 0) * 14px), calc(var(--py, 0) * 6px - 2px), 0) scale(1.06);
+}
+.game-card[data-spotlight="on"]:hover .game-cover__img {
+  transition: transform 80ms linear;
+}
+.game-cover__initials {
+  position: relative;
+  align-self: center;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  margin-top: calc(-1 * var(--spacing-4));
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--text-2xl);
+  letter-spacing: var(--tracking-display);
+  color: var(--color-on-accent);
+  background: var(--mode-grad);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--mode-from) 45%, transparent);
+}
+.game-cover__name {
+  position: absolute;
+  z-index: 1;
+  bottom: var(--spacing-2);
+  left: 50%;
+  max-width: calc(100% - var(--spacing-4));
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  padding: var(--spacing-1) var(--spacing-2);
+  border-radius: var(--radius-full);
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  line-height: 1;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--color-text);
+  background: color-mix(in srgb, var(--color-bg) 72%, transparent);
+  border: 1px solid color-mix(in srgb, var(--mode-from) 45%, transparent);
+  backdrop-filter: blur(6px);
+}
+/* Retired: gold-toned print with a halftone grain, like an old trading card. */
+.game-cover[data-era="retired"] .game-cover__halo {
+  background: radial-gradient(
+    closest-side at 50% 60%,
+    color-mix(in srgb, var(--color-era-retired-from) 55%, transparent),
+    color-mix(in srgb, var(--color-era-retired-to) 24%, transparent) 62%,
+    transparent
+  );
+}
+.game-cover[data-era="retired"]::after {
+  content: "";
+  position: absolute;
+  inset: 10% 0 0;
+  pointer-events: none;
+  background: radial-gradient(
+      circle,
+      color-mix(in srgb, var(--color-era-retired-from) 30%, transparent) 1px,
+      transparent 1.5px
+    )
+    0 0 / 6px 6px;
+  -webkit-mask: radial-gradient(closest-side at 50% 65%, var(--color-black), transparent);
+  mask: radial-gradient(closest-side at 50% 65%, var(--color-black), transparent);
+  mix-blend-mode: screen;
+}
+.game-cover[data-era="retired"] .game-cover__img {
+  filter: sepia(0.45) saturate(0.85) contrast(1.05)
+    drop-shadow(0 8px 18px color-mix(in srgb, var(--color-era-retired-from) 40%, transparent));
+}
+.game-cover[data-era="retired"] .game-cover__initials {
+  background: linear-gradient(140deg, var(--color-era-retired-from), var(--color-era-retired-to));
+}
+.game-cover[data-era="retired"] .game-cover__name {
+  border-color: color-mix(in srgb, var(--color-era-retired-from) 55%, transparent);
+}
+/* Game intro: a larger, centred cover at the top of the rules card. */
+.intro-cover {
+  height: 188px;
+  justify-content: center;
+  padding-left: 0;
+  border: 1px solid color-mix(in srgb, var(--mode-from) 25%, var(--color-border));
+  border-radius: var(--radius-md);
+}
+.game-cover[data-size="intro"] {
+  right: 50%;
+  width: min(82%, 300px);
+  transform: translateX(50%);
+}
+@media (max-width: 767px) {
+  .game-card__visual {
+    height: 132px;
+  }
+  .intro-cover {
+    height: 164px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .game-cover__img,
+  .game-card:hover .game-cover__img {
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ============================================================
+   LANGUAGE SWITCH (ISKELET F18) — TR | EN pill, built from the Tabs language.
+   TopNav from 1024 px; below that it sits in the footer (no room in the phone/tablet bar).
+   ============================================================ */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 2px;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--color-glass-border);
+  background: var(--color-glass);
+}
+.lang-switch__option {
+  min-width: var(--spacing-touch);
+  min-height: var(--spacing-touch);
+  padding: 0 var(--spacing-2);
+  border: 0;
+  border-radius: var(--radius-full);
+  background: transparent;
+  color: var(--color-text-muted);
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--tracking-label);
+  cursor: pointer;
+  transition:
+    color var(--duration-fast) var(--ease-out),
+    background-color var(--duration-fast) var(--ease-out);
+}
+.lang-switch__option:hover {
+  color: var(--color-text);
+}
+.lang-switch__option[aria-pressed="true"] {
+  color: var(--color-on-accent);
+  background: var(--brand-grad);
+}
+.lang-switch__option:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+.lang-switch--nav {
+  display: none;
+}
+/* Tablet nav is full with the longer Turkish labels: the switch joins it from 1024 px. */
+@media (min-width: 1024px) {
+  .lang-switch--nav {
+    display: inline-flex;
+  }
+  .lang-switch--footer {
+    display: none;
+  }
+}
+.top-nav__link {
+  white-space: nowrap;
+}
+
+/* ============================================================
+   NARROW SCREENS — longer (Turkish) labels must never clip at 360 px
+   ============================================================ */
+.nudge,
+.nickname-cta {
+  flex-wrap: wrap;
+}
+.nudge > .grow,
+.nickname-cta > .grow {
+  flex: 1 1 11rem;
+  min-width: 0;
+}
+.nudge > .btn,
+.nickname-cta > .btn {
+  flex: none;
+  margin-left: auto;
+}
+@media (max-width: 479px) {
+  /* A label that no longer fits wraps inside the button instead of overflowing it. */
+  .btn {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.15;
   }
 }

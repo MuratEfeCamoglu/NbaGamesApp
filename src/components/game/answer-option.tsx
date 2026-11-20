@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { AnswerOptionView } from "@/games/core/types";
 import { Icon } from "@/components/ui/icon";
+import { useT } from "@/lib/i18n/provider";
 
 export type AnswerOptionState = "default" | "selected" | "correct" | "wrong" | "disabled";
 
@@ -25,6 +26,7 @@ export function AnswerOption({
   focus,
 }: AnswerOptionProps) {
   const ref = useRef<HTMLButtonElement>(null);
+  const t = useT();
   useEffect(() => {
     if (focus) ref.current?.focus();
   }, [focus]);
@@ -44,8 +46,8 @@ export function AnswerOption({
       <span className="answer-option__label">{label}</span>
       <Icon name="check" className="answer-option__status" data-icon="check" />
       <Icon name="x" className="answer-option__status" data-icon="x" />
-      {state === "correct" ? <span className="sr-only">Correct answer</span> : null}
-      {state === "wrong" ? <span className="sr-only">Your answer, wrong</span> : null}
+      {state === "correct" ? <span className="sr-only">{t.answers.correctAnswer}</span> : null}
+      {state === "wrong" ? <span className="sr-only">{t.answers.yourWrongAnswer}</span> : null}
     </button>
   );
 }
@@ -66,6 +68,7 @@ interface AnswerGridProps {
  */
 export function AnswerGrid({ options, onAnswer, reveal, pending }: AnswerGridProps) {
   const [selected, setSelected] = useState<number>(-1);
+  const t = useT();
   const locked = !!reveal || !!pending;
 
   const onAnswerRef = useRef(onAnswer);
@@ -109,7 +112,7 @@ export function AnswerGrid({ options, onAnswer, reveal, pending }: AnswerGridPro
       className="answer-grid"
       data-count={options.length}
       role="group"
-      aria-label="Answer options"
+      aria-label={t.answers.groupLabel}
     >
       {options.map((opt, i) => (
         <AnswerOption

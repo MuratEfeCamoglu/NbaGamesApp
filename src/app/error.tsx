@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ErrorState } from "@/components/ui/error-state";
+import { useT } from "@/lib/i18n/provider";
 
 /** Route error boundary — design "General error variant (500)". */
 export default function RouteError({
@@ -12,6 +13,7 @@ export default function RouteError({
   error: Error & { digest?: string };
   reset: () => void;
 }) {
+  const t = useT();
   useEffect(() => {
     console.error(error);
   }, [error]);
@@ -22,12 +24,12 @@ export default function RouteError({
         <div className="block">
           <ErrorState
             variant="server"
-            title="Technical foul on our side"
-            description="Something broke while loading this page. Try again in a moment."
+            title={t.routeError.title}
+            description={t.routeError.description}
             onRetry={reset}
             actions={
               <Button href="/" variant="ghost">
-                Home
+                {t.common.home}
               </Button>
             }
           />

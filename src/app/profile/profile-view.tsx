@@ -14,13 +14,16 @@ import { IconButton } from "@/components/ui/icon-button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { api } from "@/lib/api-client";
 import type { MeDTO } from "@/lib/api-types";
-import { fmtNumber, guestName, initials } from "@/lib/format";
+import { fmtNumber, fmtPercent, guestName, initials } from "@/lib/format";
+import { achievementCopy } from "@/lib/i18n/helpers";
+import { useI18n, useT } from "@/lib/i18n/provider";
 import { useMe } from "@/lib/me-context";
 import { useApi } from "@/lib/use-api";
 
 function ProfileLoading() {
+  const t = useT();
   return (
-    <div aria-busy="true" aria-label="Loading profile">
+    <div aria-busy="true" aria-label={t.profile.loading}>
       <div className="page-header profile-head">
         <Skeleton shape="circle" />
         <div className="stack stack--sm grow">
@@ -44,11 +47,12 @@ function ProfileLoading() {
 }
 
 function History() {
+  const t = useT();
   const { state, retry } = useApi("history", (s) => api.getHistory(s));
   const [now] = useState(() => new Date());
   if (state.status === "loading") {
     return (
-      <div className="stack stack--sm" aria-busy="true" aria-label="Loading game history">
+      <div className="stack stack--sm" aria-busy="true" aria-label={t.profile.loadingHistory}>
         <Skeleton shape="row" />
         <Skeleton shape="row" />
         <Skeleton shape="row" />
@@ -56,14 +60,14 @@ function History() {
     );
   }
   if (state.status === "error")
-    return <ErrorState compact title="Couldn't load your history" onRetry={retry} />;
+    return <ErrorState compact title={t.profile.historyError} onRetry={retry} />;
   if (state.data.items.length === 0) {
     return (
       <EmptyState
         compact
         icon="gamepad"
-        title="No games played yet"
-        description="Play your first game to start your history."
+        title={t.common.noGamesYet}
+        description={t.profile.historyEmptyDesc}
       />
     );
   }
@@ -71,24 +75,27 @@ function History() {
 }
 
 function Header({ me, onEdit }: { me: MeDTO; onEdit: () => void }) {
-  const name = me.nickname ?? guestName(me.id);
+  const { t, locale } = useI18n();
+  const name = me.nickname ?? guestName(me.id, locale);
   return (
     <div className="page-header profile-head" data-component="PageHeader">
       <span className="profile-head__avatar" aria-hidden="true">
-        {initials(me.nickname ?? "Guest")}
+        {initials(me.nickname ?? t.nav.guest)}
       </span>
       <div className="stack stack--sm grow">
-        <span className="t-label page-header__eyebrow">Profile</span>
+        <span className="t-label page-header__eyebrow">{t.meta.profileTitle}</span>
         <h1 className="page-header__title" id="profile-title">
           {name}
         </h1>
         <div className="row">
-          <Badge variant="outline">{me.nickname ? "Guest · nickname set" : "Guest"}</Badge>
+          <Badge variant="outline">
+            {me.nickname ? t.profile.guestNicknameSet : t.profile.guest}
+          </Badge>
         </div>
       </div>
       <IconButton
         icon="pencil"
-        label={me.nickname ? "Edit nickname" : "Set nickname"}
+        label={me.nickname ? t.profile.editNickname : t.common.setNickname}
         onClick={onEdit}
       />
     </div>
@@ -96,6 +103,7 @@ function Header({ me, onEdit }: { me: MeDTO; onEdit: () => void }) {
 }
 
 export function ProfileView() {
+  const { t, locale } = useI18n();
   const { state, retry, setMe } = useMe();
   const [nickOpen, setNickOpen] = useState(false);
 
@@ -105,8 +113,8 @@ export function ProfileView() {
       <ErrorState
         className="block"
         variant="storage"
-        title="Couldn't read your progress"
-        description="Check your connection and try again. Your stats are stored on our server."
+        title={t.profile.errorTitle}
+        description={t.profile.errorDesc}
         onRetry={retry}
       />
     );
@@ -121,31 +129,30 @@ export function ProfileView() {
       <div className="guest-note" role="note">
         <Icon name="info" />
         <span>
-          <b>Your progress is saved in this browser.</b> Clearing site data or switching devices
-          starts you over.
+          <b>{t.profile.guestNoteStrong}</b> {t.profile.guestNoteRest}
         </span>
       </div>
 
       <div className="profile-tiles block">
         <StatTile
-          label="Total points"
-          value={fmtNumber(me.totalPoints)}
+          label={t.common.totalPoints}
+          value={fmtNumber(me.totalPoints, locale)}
           countTo={me.totalPoints}
           tone={isEmpty ? "muted" : undefined}
         />
         <StatTile
-          label="Games played"
-          value={fmtNumber(me.gamesPlayed)}
+          label={t.common.gamesPlayed}
+          value={fmtNumber(me.gamesPlayed, locale)}
           countTo={me.gamesPlayed}
           tone={isEmpty ? "muted" : undefined}
         />
         <StatTile
-          label="Accuracy"
-          value={isEmpty ? "—" : `${me.accuracy}%`}
+          label={t.common.accuracy}
+          value={isEmpty ? "—" : fmtPercent(me.accuracy, locale)}
           tone={isEmpty ? "muted" : undefined}
         />
         <StatTile
-          label="Best streak"
+          label={t.common.bestStreak}
           value={me.bestStreak}
           countTo={me.bestStreak}
           tone={isEmpty ? "muted" : "accent"}
@@ -156,11 +163,11 @@ export function ProfileView() {
         <EmptyState
           className="block"
           icon="gamepad"
-          title="No games played yet"
-          description="Play your first game to start your history and unlock badges."
+          title={t.common.noGamesYet}
+          description={t.profile.emptyDesc}
           actions={
             <Button href="/games/starting-five" icon="play">
-              Play your first game
+              {t.common.playYourFirstGame}
             </Button>
           }
         />
@@ -169,7 +176,7 @@ export function ProfileView() {
       {isEmpty ? null : (
         <div className="block">
           <div className="block__head">
-            <h2 className="block__title">Achievements</h2>
+            <h2 className="block__title">{t.profile.achievements}</h2>
             <span className="t-sm t-muted">
               {earned} / {me.achievements.length}
             </span>
@@ -179,8 +186,8 @@ export function ProfileView() {
               <AchievementBadge
                 key={a.id}
                 id={a.id}
-                name={a.name}
-                description={a.description}
+                name={achievementCopy(t, a).name}
+                description={achievementCopy(t, a).description}
                 state={a.earnedAt ? "earned" : "locked"}
               />
             ))}
@@ -191,8 +198,8 @@ export function ProfileView() {
       {isEmpty ? null : (
         <div className="block">
           <div className="block__head">
-            <h2 className="block__title">Game history</h2>
-            <span className="t-sm t-muted">Last 20</span>
+            <h2 className="block__title">{t.profile.history}</h2>
+            <span className="t-sm t-muted">{t.profile.last20}</span>
           </div>
           <History />
         </div>

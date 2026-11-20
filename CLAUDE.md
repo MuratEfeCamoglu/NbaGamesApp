@@ -79,6 +79,8 @@ NBA API anahtar istemez; veri hattı için ortam değişkeni yok.
 - design.html'deki demo şeridi (`design-bar`, `screen-controls`/StateSwitcher, Mode/Phase/State seçicileri) dokümantasyon içindir, ürün UI'ına taşınmaz. Demo puan formülü yerine ISKELET §2.1 geçerlidir; misafir kimliği localStorage değil cookie'dir (ISKELET §3.1).
 - Tasarımda karşılığı olmayan ekran/bileşen gerekiyorsa: önce mevcut bileşenlerden kur, farkı rapora yaz; yeni görsel dil icat etme.
 - Animasyonlar `prefers-reduced-motion`'a uyar (`useReducedMotion`).
+- Dil (F18): tüm arayüz metni `src/lib/i18n/` sözlüklerinden gelir (`useT()` istemcide, `getT()` sunucuda); bileşene düz metin yazılmaz. `tr.ts`, `en.ts` ile aynı tiptedir. Oyun modu adları, istatistik kısaltmaları ve oyuncu adları İngilizce kalır (`lang="en"`). e2e İngilizce çalışır; İngilizce metinleri değiştirmek testleri kırar.
+- Oyuncu kapakları (F17): eşleşme `src/lib/covers.ts`, görsel `GameCover`. NBA CDN görselleri her zaman `unoptimized` yüklenir (`/_next/image` proxy'si oyunu kilitlemişti).
 - Breakpoint'ler: mobil 360, tablet 768, masaüstü 1280 px; her ekran 360 px'te yatay kaydırmasız.
 
 ## Çalışma Kuralları

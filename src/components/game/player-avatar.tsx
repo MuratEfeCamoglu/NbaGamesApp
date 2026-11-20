@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { initials, teamKey } from "@/lib/format";
+import { headshotUrl, remoteMediaEnabled } from "@/lib/media";
 
 export type PlayerAvatarSize = "sm" | "md" | "lg" | "photo";
 
@@ -13,17 +14,12 @@ interface PlayerAvatarProps {
   size?: PlayerAvatarSize;
 }
 
-const HEADSHOT_URL = "https://cdn.nba.com/headshots/nba/latest/1040x760";
 const SIZES: Record<PlayerAvatarSize, string> = {
   sm: "32px",
   md: "48px",
   lg: "72px",
   photo: "(min-width: 768px) 220px, 50vw",
 };
-
-function remoteMediaEnabled(): boolean {
-  return process.env.NEXT_PUBLIC_REMOTE_MEDIA === "true";
-}
 
 /** NBA CDN headshot when allowed; initials on the team colour otherwise or when the image fails. */
 export function PlayerAvatar({ name, headshotId, teamId, size = "md" }: PlayerAvatarProps) {
@@ -42,10 +38,14 @@ export function PlayerAvatar({ name, headshotId, teamId, size = "md" }: PlayerAv
       {showImage ? (
         <Image
           className="player-avatar__img"
-          src={`${HEADSHOT_URL}/${headshotId}.png`}
+          src={headshotUrl(headshotId ?? "")}
           alt={name}
           fill
           sizes={SIZES[size]}
+          // Load straight from the NBA CDN, not through our /_next/image proxy: a slow upstream
+          // fetch there kept same-origin connections busy (browsers allow ~6 per host on HTTP/1.1)
+          // and the answer POST queued behind them, freezing the game (e2e starting-five/hard).
+          unoptimized
           onError={() => setFailed(true)}
         />
       ) : null}
