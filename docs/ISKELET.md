@@ -81,7 +81,7 @@ yanlış/süre doldu: puan = 0, streak = 0
 - **Ödeme, reklam, premium** — ticari model tanımlı değil.
 - **Native mobil uygulama** — responsive web yeterli.
 - **Şifreli hesap / sosyal giriş** — şifre saklamak güvenlik yükü getirir; misafir hesap yeterli.
-- **Resmi NBA/takım logoları** — ticari marka; renkli kısaltma rozeti kullanılır. (2026-11-20: kullanıcı NBA logosunu istedi; site resmi NBA ürünü gibi görüneceği ve marka hakkı riski olduğu için eklenmedi, yerine özgün logo önerildi.)
+- **Resmi NBA/takım logoları** — ticari marka; renkli kısaltma rozeti kullanılır. (2026-11-20: kullanıcı NBA logosunu istedi; site resmi NBA ürünü gibi görüneceği ve marka hakkı riski olduğu için eklenmedi; yerine özgün "X'ler ve O'lar" logosu (`LogoMark`, favicon `src/app/icon.svg`) eklendi.)
 
 ## 3. Mimari
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useLayoutEffect, useRef, type KeyboardEvent } from "react";
+import { useRef, type KeyboardEvent } from "react";
 
 export interface TabItem<T extends string> {
   value: T;
@@ -27,29 +27,6 @@ export function Tabs<T extends string>({
   idBase,
 }: TabsProps<T>) {
   const refs = useRef<(HTMLButtonElement | null)[]>([]);
-  const listRef = useRef<HTMLDivElement | null>(null);
-  const selectedIndex = items.findIndex((t) => t.value === value);
-
-  // Sliding indicator (globals.css .tabs[data-indicator]). Written straight to CSS variables so a
-  // resize or tab change never re-renders the list; measured so it follows any label width.
-  useLayoutEffect(() => {
-    const list = listRef.current;
-    if (!list) return;
-    const measure = () => {
-      const tab = refs.current[selectedIndex];
-      if (!tab) return;
-      list.style.setProperty("--tab-x", `${tab.offsetLeft}px`);
-      list.style.setProperty("--tab-w", `${tab.offsetWidth}px`);
-      list.dataset.indicator = "true";
-    };
-    measure();
-    // Web fonts swap in after first paint and change label widths.
-    void document.fonts?.ready.then(measure);
-    if (typeof ResizeObserver === "undefined") return;
-    const ro = new ResizeObserver(measure);
-    ro.observe(list);
-    return () => ro.disconnect();
-  }, [selectedIndex]);
 
   function onKeyDown(e: KeyboardEvent<HTMLDivElement>) {
     const i = items.findIndex((t) => t.value === value);
@@ -67,7 +44,6 @@ export function Tabs<T extends string>({
 
   return (
     <div
-      ref={listRef}
       className="tabs"
       data-component="Tabs"
       data-size={size === "lg" ? "lg" : undefined}

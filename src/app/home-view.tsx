@@ -18,6 +18,7 @@ import { DailyChallengeCard } from "@/components/game/daily-challenge-card";
 import { EraSwitch } from "@/components/game/era-switch";
 import { GameCard } from "@/components/game/game-card";
 import { LeaderboardTable } from "@/components/game/leaderboard-table";
+import { PlayDiagram } from "@/components/game/play-diagram";
 import { StatTile } from "@/components/game/stat-tile";
 
 function HomeLoading() {
@@ -33,8 +34,7 @@ function HomeLoading() {
         </div>
         <Skeleton shape="block" />
       </div>
-      <div className="summary-strip">
-        <Skeleton shape="block" />
+      <div className="home-desk">
         <Skeleton shape="block" />
         <Skeleton shape="block" />
       </div>
@@ -128,8 +128,15 @@ export function HomeView() {
               </Button>
             </div>
           </div>
-          <EmptyState icon="trophy" title={t.home.waitingTitle} description={t.home.waitingDesc} />
+          <PlayDiagram note={t.home.diagramNote} />
         </div>
+        <EmptyState
+          className="block"
+          compact
+          icon="trophy"
+          title={t.home.waitingTitle}
+          description={t.home.waitingDesc}
+        />
       </div>
     );
   }
@@ -155,31 +162,30 @@ export function HomeView() {
             </Button>
           </div>
         </div>
-        <DailyBlock />
+        <PlayDiagram note={t.home.diagramNote} />
       </div>
 
-      <div className="summary-strip">
-        <StatTile
-          label={t.common.totalPoints}
-          value={fmtNumber(me.totalPoints, locale)}
-          countTo={me.totalPoints}
-        />
-        <StatTile
-          label={t.common.gamesPlayed}
-          value={fmtNumber(me.gamesPlayed, locale)}
-          countTo={me.gamesPlayed}
-        />
-        <StatTile
-          label={t.common.bestStreak}
-          value={me.bestStreak}
-          countTo={me.bestStreak}
-          tone="accent"
-        />
-        <StatTile
-          label={t.common.accuracy}
-          value={fmtPercent(me.accuracy, locale)}
-          className="hide-mobile"
-        />
+      <div className="home-desk">
+        <DailyBlock />
+        <div className="summary-strip">
+          <StatTile
+            label={t.common.totalPoints}
+            value={fmtNumber(me.totalPoints, locale)}
+            countTo={me.totalPoints}
+          />
+          <StatTile
+            label={t.common.gamesPlayed}
+            value={fmtNumber(me.gamesPlayed, locale)}
+            countTo={me.gamesPlayed}
+          />
+          <StatTile
+            label={t.common.bestStreak}
+            value={me.bestStreak}
+            countTo={me.bestStreak}
+            tone="accent"
+          />
+          <StatTile label={t.common.accuracy} value={fmtPercent(me.accuracy, locale)} />
+        </div>
       </div>
 
       <div className="block">

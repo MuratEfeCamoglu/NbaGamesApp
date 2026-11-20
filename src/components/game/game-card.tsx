@@ -4,7 +4,6 @@ import type { Era } from "@/games/core/types";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Icon } from "@/components/ui/icon";
-import { Spotlight } from "@/components/ui/spotlight";
 import { DEFAULT_ERA, ERA_INFO, gameHref } from "@/lib/era";
 import { useT } from "@/lib/i18n/provider";
 import type { ModeInfo } from "@/lib/modes";
@@ -36,15 +35,11 @@ export function GameCard({
       data-mode={mode.slug}
       data-era={era}
     >
-      <Spotlight />
+      <span className="game-card__tape" aria-hidden="true" />
       <div className="game-card__visual">
-        <span className="game-card__orb" aria-hidden="true" />
-        <span className="game-card__index">{mode.n}</span>
+        <span className="game-card__index">#{mode.n}</span>
         <span className="game-card__era-tag" aria-hidden="true">
           {eraLabel}
-        </span>
-        <span className="game-card__glyph">
-          <Icon name={mode.icon} size="lg" />
         </span>
         <GameCover mode={mode.slug} era={era} />
       </div>

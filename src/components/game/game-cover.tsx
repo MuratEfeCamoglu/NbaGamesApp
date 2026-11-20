@@ -8,9 +8,10 @@ import { initials } from "@/lib/format";
 import { HEADSHOT_HEIGHT, HEADSHOT_WIDTH, headshotUrl, remoteMediaEnabled } from "@/lib/media";
 
 /**
- * Cover star of a mode (ISKELET F17): the player's cut-out on the mode-coloured art with a glow and
- * a nameplate; Retired covers are toned gold. Not in design.html — built inside the existing
- * GameCard visual. The image box has fixed width/height attributes, so loading never shifts layout.
+ * Cover star of a mode (ISKELET F17): the photo window and name plate of the GameCard's trading-card
+ * front. Retired covers print in sepia like an old card. Not in design.html — built inside the
+ * existing GameCard visual. The image box has fixed width/height attributes, so loading never
+ * shifts layout.
  */
 export function GameCover({
   mode,
@@ -35,7 +36,6 @@ export function GameCover({
       data-era={era}
       data-state={showImage ? undefined : "fallback"}
     >
-      <span className="game-cover__halo" aria-hidden="true" />
       {showImage ? (
         <Image
           key={player.id}

@@ -116,7 +116,6 @@ export function GameFlow({ mode, initialEra = null }: GameFlowProps) {
           <div className="split">
             <Card className="stack">
               <div className="game-card__visual intro-cover" data-era={era}>
-                <span className="game-card__orb" aria-hidden="true" />
                 <GameCover mode={mode} era={era} size="intro" />
               </div>
               <div className="row">

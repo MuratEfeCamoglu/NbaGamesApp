@@ -33,7 +33,6 @@ export function ResultSummary({
   const scoreCount = countUpProps(summary.score);
   return (
     <Card component="ResultSummary" className="result-summary">
-      <span className="result-summary__rays" aria-hidden="true" />
       <div className="row result-summary__tags">
         <Badge variant="success" icon="check">
           {t.result.complete}

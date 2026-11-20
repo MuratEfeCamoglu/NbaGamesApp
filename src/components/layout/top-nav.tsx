@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { PlayerAvatar } from "@/components/game/player-avatar";
+import { LogoMark } from "@/components/layout/logo-mark";
 import { Icon } from "@/components/ui/icon";
 import { fmtNumber } from "@/lib/format";
 import { useI18n } from "@/lib/i18n/provider";
@@ -20,7 +21,7 @@ export function TopNav() {
     <header className="top-nav" data-component="TopNav">
       <div className="top-nav__inner container">
         <Link className="logo" href="/" aria-label={t.nav.homeLabel}>
-          <Icon name="ball" className="logo__mark" />
+          <LogoMark className="logo__mark" />
           <span>
             NBA <span className="logo__accent">Games</span>
           </span>

@@ -69,7 +69,7 @@ NBA API anahtar istemez; veri hattı için ortam değişkeni yok.
 - Magic number yok: zorluk/süre/puan sabitleri `src/games/core/difficulty.ts` ve `scoring.ts`'te.
 
 ## Tasarım Kuralları
-- Görsel katman v2 (kullanıcı isteği, 2026-11-19): design.html yapısının üzerine mod başına renk kimliği, gradyan/cam yüzeyler ve zengin animasyonlar eklendi. Yeni renk/gradyan/süre değerleri yalnızca `globals.css` `@theme` token'larında; yapı ve bileşen adları için design.html geçerli kalır.
+- Görsel katman v3 "Koçun tahtası" (kullanıcı isteği, 2026-11-21 — v2'nin cam/gradyan/parıltı görünümü "yapay zekâ yapımı" bulundu): tebeşir tahtası + gerçek malzemeler (bant, kart, klipsli kâğıt, skorbord, istatistik kâğıdı; Retired = eski skor defteri). Fontlar: Big Shoulders (başlık), Barlow (gövde), Kalam (yalnız kısa el yazısı notlar), Doto (yalnız skor/süre rakamları). Cam, gradyan yazı, glow, ortam ışığı, tilt/spotlight eklenmez; animasyon yalnız anlamlı anlarda. Renk/doku değerleri yalnızca `globals.css` `@theme` token'larında; yapı ve bileşen adları için design.html geçerli kalır.
 - Tek görsel kaynak `design/design.html`: tüm ekranlar, durumlar ve token'lar bu tek dosyada. Tarayıcıda açıp 360/768/1280 px'te incele; kaynakta ekranlar `<section id>` ile ayrılır.
 - `design/design.html` elle değiştirilmez; yeni tasarım gelirse dosya bütün olarak değiştirilir.
 - Renk, font, radius, gölge, spacing, hareket yalnızca token'lardan: `design.html`'deki `:root` değişkenleri `src/app/globals.css` `@theme` bloğuna birebir aktarılır. Hex kodu bileşende yazılmaz.
