@@ -2,11 +2,14 @@
 // source and a controllable clock. Never imported by application code.
 import "server-only";
 import { randomUUID } from "node:crypto";
-import { readdirSync, readFileSync, rmSync } from "node:fs";
+import { mkdirSync, readdirSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import path from "node:path";
+import { PrismaLibSql } from "@prisma/adapter-libsql";
+import { PrismaClient } from "@/generated/prisma/client";
 import { createFixtureDataSource } from "@/games/test-fixtures";
 import type { AnswerKey, SubmittedAnswer } from "@/games/core/types";
+import { LIBSQL_TEST_DIR } from "@/test/libsql-global-setup";
 import type { ServiceContext } from "./context";
 import { createPrismaClient, type Db } from "./db";
 
@@ -57,9 +60,24 @@ export interface TestEnv {
   cleanup(): Promise<void>;
 }
 
-export async function createTestEnv(seedStart = 1): Promise<TestEnv> {
+/**
+ * A fresh database file. The "libsql" Vitest project (TEST_DB=libsql) opens it with the libSQL
+ * adapter production uses with Turso (node build, which also reads local files); its files are
+ * cleared by src/test/libsql-global-setup.ts because libSQL may still hold them open.
+ */
+function openTestDb(): { db: Db; file: string; removeFile: boolean } {
+  if (process.env.TEST_DB === "libsql") {
+    mkdirSync(LIBSQL_TEST_DIR, { recursive: true });
+    const file = path.join(LIBSQL_TEST_DIR, `${randomUUID()}.db`);
+    const adapter = new PrismaLibSql({ url: `file:${file.replaceAll("\\", "/")}` });
+    return { db: new PrismaClient({ adapter }), file, removeFile: false };
+  }
   const file = path.join(tmpdir(), `nba-games-test-${randomUUID()}.db`);
-  const db = createPrismaClient(`file:${file}`);
+  return { db: createPrismaClient(`file:${file}`), file, removeFile: true };
+}
+
+export async function createTestEnv(seedStart = 1): Promise<TestEnv> {
+  const { db, file, removeFile } = openTestDb();
   await applyMigrations(db);
   const clock = createClock();
   let seed = seedStart;
@@ -74,6 +92,7 @@ export async function createTestEnv(seedStart = 1): Promise<TestEnv> {
     clock,
     cleanup: async () => {
       await db.$disconnect();
+      if (!removeFile) return;
       for (const suffix of ["", "-wal", "-shm", "-journal"]) rmSync(file + suffix, { force: true });
     },
   };

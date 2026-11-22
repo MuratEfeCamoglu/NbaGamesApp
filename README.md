@@ -12,12 +12,12 @@ hepsi gerçek NBA istatistiklerinden üretilmiş veriyle.
 ![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-7_%2B_SQLite-2D3748?logo=prisma&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-7_%2B_SQLite_%2F_Turso-2D3748?logo=prisma&logoColor=white)
 ![Vitest](https://img.shields.io/badge/Vitest-5-6E9F18?logo=vitest&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-e2e-2EAD33?logo=playwright&logoColor=white)
 ![Node](https://img.shields.io/badge/Node.js-24_LTS-5FA04E?logo=nodedotjs&logoColor=white)
 
-[Oyunlar](#-oyunlar) · [Nasıl çalışır](#-nasıl-çalışır) · [Kurulum](#-hızlı-başlangıç) · [Komutlar](#-komutlar) · [NBA verisi](#-nba-verisi) · [Mimari](#-mimari) · [Dokümanlar](#-dokümanlar)
+[Oyunlar](#-oyunlar) · [Nasıl çalışır](#-nasıl-çalışır) · [Kurulum](#-hızlı-başlangıç) · [Komutlar](#-komutlar) · [Yayına alma](#-yayına-alma-vercel--turso) · [NBA verisi](#-nba-verisi) · [Mimari](#-mimari) · [Dokümanlar](#-dokümanlar)
 
 </div>
 
@@ -111,6 +111,7 @@ NBA verisi repoda hazır gelir (`src/data/seed/`); API anahtarı gerekmez.
 | Değişken | Açıklama |
 |---|---|
 | `DATABASE_URL` | SQLite dosyası, varsayılan `file:./dev.db` |
+| `TURSO_DATABASE_URL` · `TURSO_AUTH_TOKEN` | Yalnız yayında: doluysa uygulama yerel dosya yerine Turso'ya bağlanır ([Yayına alma](#-yayına-alma-vercel--turso)); yerelde boş bırak |
 | `SESSION_SECRET` | Misafir cookie'sini imzalamak için ≥32 bayt rastgele değer |
 | `NEXT_PUBLIC_REMOTE_MEDIA` | `true` ise oyuncu fotoğrafları NBA CDN'den yüklenir; `false` ise baş harfli avatar |
 | `TRUST_PROXY` | Ters proxy arkasında `true`: rate limit için `X-Forwarded-For` kullanılır |
@@ -134,9 +135,41 @@ NBA verisi repoda hazır gelir (`src/data/seed/`); API anahtarı gerekmez.
 | `npm run verify` | **Tam doğrulama:** lint + typecheck + test + veri doğrulama + build |
 | `npm run db:migrate` | Prisma migration |
 | `npm run db:reset` | Veritabanını sıfırlar — **tüm kullanıcı verisini siler** |
+| `npm run db:deploy` | Bekleyen migration'ları Turso'ya uygular (`TURSO_DATABASE_URL` gerekir) |
 | `npm run data:validate` | Seed verisini şema ve bütünlük kurallarına göre doğrular |
 | `npm run data:sync` | NBA API'den veriyi yeniden çeker (aşağıda) |
 | `npm run data:test` | Veri hattı (Python) testleri |
+
+## 🚢 Yayına alma (Vercel + Turso)
+
+Vercel'in diski salt okunurdur ve her instance'ın kendine ait bir diski vardır; misafir hesaplar, oturumlar ve puanlar orada bir dosyada tutulamaz. Bu yüzden yayında kullanıcı verisi [Turso](https://turso.tech)'da, yani barındırılan ve SQLite uyumlu bir veritabanında durur. Yerelde hiçbir şey değişmez, `dev.db` kullanılmaya devam eder.
+
+1. **Turso veritabanını aç.** Ücretsiz katman yeter; bölgeyi Vercel fonksiyonlarına yakın seç. Turso CLI ile:
+
+   ```bash
+   turso db create nba-games
+   turso db show nba-games --url      # TURSO_DATABASE_URL
+   turso db tokens create nba-games   # TURSO_AUTH_TOKEN
+   ```
+
+2. **Projeyi Vercel'e aktar** (Framework: Next.js) ve ortam değişkenlerini ekle:
+
+   | Değişken | Değer |
+   |---|---|
+   | `TURSO_DATABASE_URL` | `libsql://…turso.io` |
+   | `TURSO_AUTH_TOKEN` | Turso token'ı |
+   | `SESSION_SECRET` | ≥32 bayt rastgele değer (yereldekinden farklı) |
+   | `TRUST_PROXY` | `true` — Vercel istemci IP'sini `X-Forwarded-For` ile iletir |
+   | `NEXT_PUBLIC_REMOTE_MEDIA` | `true` ya da `false` — build sırasında okunur |
+
+3. **Deploy et.** Vercel `vercel-build` betiğini çalıştırır: önce `npm run db:deploy` bekleyen migration'ları Turso'ya uygular, sonra `next build`. `TURSO_DATABASE_URL` yoksa build bilerek durur; uygulama Vercel'de yerel dosyayla çalışamaz.
+
+> [!NOTE]
+> Preview deploy'ları aynı değişkenleri kullanırsa aynı veritabanına bağlanır ve migration uygular. Ayrı tutmak için Preview ortamına ikinci bir Turso veritabanının değerlerini ver.
+
+Migration'ları elle uygulamak için değişkenleri yalnızca o komut için ayarlayıp `npm run db:deploy` çalıştır. Yerel `.env`'e yazarsan `npm run dev` de Turso'ya bağlanır.
+
+Kendi sunucunda (VPS vb.) Turso gerekmez: `DATABASE_URL` kalıcı diskteki bir dosyayı göstersin, migration için `npx prisma migrate deploy`, ardından `npm run build && npm start`.
 
 ## 📊 NBA verisi
 
@@ -175,7 +208,7 @@ Tek bir Next.js monoliti. Katmanlar tek yönlüdür; ters import yasaktır:
 flowchart TD
     UI["UI · src/app, src/components"] --> API["API + servisler · src/app/api, src/server"]
     API --> G["Oyun motorları · src/games"]
-    API --> DB[("Prisma + SQLite")]
+    API --> DB[("Prisma · yerelde SQLite, yayında Turso")]
     G --> DATA["NBA veri katmanı · src/data (NbaDataSource)"]
 ```
 
@@ -192,7 +225,8 @@ flowchart TD
 ├── prisma/               Veritabanı şeması ve migration'lar
 ├── scripts/
 │   ├── nba-sync/         NBA API veri hattı (Python)
-│   └── validate-data.ts  Seed doğrulama
+│   ├── validate-data.ts  Seed doğrulama
+│   └── db-deploy.ts      Migration'ları Turso'ya uygular
 ├── src/
 │   ├── app/              Sayfalar (App Router) ve API route'ları (app/api)
 │   ├── components/       ui/ (temel), layout/ (navigasyon), game/ (oyun ve rekabet bileşenleri)
@@ -237,6 +271,8 @@ Tüm ekranlar, durumlar ve token'lar tek dosyada: [`design/design.html`](design/
 ## 🚧 Bilinen açık noktalar
 
 - Lighthouse puanları (Performance / Accessibility) henüz ölçülmedi.
+- Turso bağlantısı, veritabanı testlerinin libSQL adapter'ıyla yeniden koşulmasıyla doğrulandı; gerçek bir Turso veritabanına karşı henüz denenmedi.
+- Rate limit bellek içinde tutuluyor: Vercel'de her instance ayrı sayar.
 - Dönem seçici ve Türkçe arayüz unit testlerle kapsanıyor, e2e ile henüz test edilmedi.
 - Oyun biter bitmez menüdeki puan kısa süre 0 görünebiliyor.
 

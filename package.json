@@ -10,6 +10,7 @@
     "postinstall": "prisma generate",
     "dev": "next dev",
     "build": "next build",
+    "vercel-build": "npm run db:deploy && npm run build",
     "start": "next start",
     "lint": "eslint .",
     "format": "prettier --write .",
@@ -24,10 +25,13 @@
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
     "db:reset": "prisma migrate reset",
+    "db:deploy": "tsx scripts/db-deploy.ts",
     "verify": "npm run lint && npm run typecheck && npm test && npm run data:validate && npm run build"
   },
   "dependencies": {
+    "@libsql/client": "^0.17.4",
     "@prisma/adapter-better-sqlite3": "^7.10.1",
+    "@prisma/adapter-libsql": "^7.10.1",
     "@prisma/client": "^7.10.1",
     "motion": "^14.14.0",
     "next": "^16.4.6",

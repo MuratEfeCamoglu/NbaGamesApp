@@ -58,7 +58,7 @@ Aynı anda bir dosyayı yalnızca sahibi değiştirir. Colocated `*.test.ts` dos
 
 ### İzin gerektirmeden yapılabilir
 - Sahiplik tablosundaki kendi dosyalarını oluşturma/düzenleme.
-- CLAUDE.md'deki komutları çalıştırma (`db:reset` hariç), yerelde `npm run data:sync` dahil.
+- CLAUDE.md'deki komutları çalıştırma (`db:reset` ve `db:deploy` hariç), yerelde `npm run data:sync` dahil.
 - `npm run db:migrate` ile yeni migration oluşturma (yerel SQLite).
 - ISKELET §3.5'te listelenmiş paketleri kurma.
 - `.env` dosyasını yerelde `.env.example`'dan oluşturup `SESSION_SECRET` üretme.
@@ -69,6 +69,7 @@ Aynı anda bir dosyayı yalnızca sahibi değiştirir. Colocated `*.test.ts` dos
 - Production dağıtımı, hosting/DB sağlayıcı seçimi — çünkü geri alınması zor ve maliyetli.
 - `git commit`, `git push`, branch silme, PR açma — çünkü kullanıcının geçmişini değiştirir.
 - `npm run db:reset` veya migration silme — çünkü kullanıcı verisini yok eder.
+- `npm run db:deploy` — çünkü yayındaki Turso veritabanının şemasını değiştirir.
 - ISKELET.md kapsamını (F-listesi, kapsam dışı) değiştirme — çünkü ürün kararıdır.
 - Yayımlanmış API sözleşmesini (§3.3) kırıcı biçimde değiştirme.
 

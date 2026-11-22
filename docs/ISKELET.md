@@ -1,7 +1,7 @@
 # NBA Games — Proje İskeleti ve Sınırları
 
 > Bu dosya projenin tek kapsam referansıdır. CLAUDE.md kuralları, AGENT.md ajan davranışını, TASARIM_PROMPT.md görsel tasarımı tanımlar. Çelişki olursa kapsam konusunda bu dosya geçerlidir.
-> Son güncelleme: 2026-11-19 · Durum: MVP + F16 dönem ayrımı + F17 oyuncu kapakları + F18 Türkçe uygulandı ve test edildi — 635 unit/entegrasyon + 73 e2e testi yeşil, `npm run verify` yeşil, ilk yükleme JS tüm sayfalarda <193 KB. Açık noktalar: Lighthouse puanları ölçülmedi; dönem seçici ve Türkçe arayüz henüz e2e ile test edilmedi.
+> Son güncelleme: 2026-11-22 · Durum: MVP + F16 dönem ayrımı + F17 oyuncu kapakları + F18 Türkçe uygulandı ve test edildi; Vercel + Turso yayın hazırlığı yapıldı (§3.5, V6) — 694 unit/entegrasyon testi (DB testleri libSQL adapter'ıyla da) + 73 e2e testi yeşil, `npm run verify` yeşil, ilk yükleme JS tüm sayfalarda <193 KB. Açık noktalar: Lighthouse puanları ölçülmedi; dönem seçici ve Türkçe arayüz henüz e2e ile test edilmedi; gerçek bir Turso veritabanına karşı denenmedi; rate limit Vercel'de instance başına sayar.
 
 ## 1. Amaç ve Hedef Kullanıcı
 
@@ -174,7 +174,7 @@ Rozetler oturum bitince değerlendirilir ve sonuç ekranında gösterilir. `firs
 | Stil | Tailwind CSS 4.x (CSS-first `@theme`) | İstendi; tasarım token'ları doğrudan `@theme`'e aktarılır | CSS Modules — token paylaşımı zayıf |
 | Animasyon | `motion` 14.x (Framer Motion'ın güncel paketi, `motion/react`) | İstendi; React 19 uyumlu, MIT | CSS transition — karmaşık sekanslar için yetersiz |
 | Doğrulama | Zod 4.x | API girdisi + veri seti şeması tek kaynaktan; MIT | Valibot — daha küçük ama ekip bilinirliği düşük |
-| ORM / DB | Prisma 7.x (stable; 8.x RC kullanılmaz) + SQLite (`@prisma/adapter-better-sqlite3`) | Sıfır kurulum, ücretsiz; Postgres'e geçiş = `provider` + adapter + `DATABASE_URL` değişikliği | Drizzle — daha hafif ama migration akışı ekipçe daha az bilinir; Supabase — harici hesap gerektirir |
+| ORM / DB | Prisma 7.x (stable; 8.x RC kullanılmaz) + SQLite: yerelde dosya (`@prisma/adapter-better-sqlite3`), yayında Turso — barındırılan libSQL (`@prisma/adapter-libsql/web` + `@libsql/client`, 2026-11-22) | Sıfır kurulum, ücretsiz; Vercel'in salt okunur ve instance'a özel diskinde yerel dosya kullanıcı verisini tutamaz; Turso SQLite uyumlu olduğundan şema, migration'lar ve testler aynı kalır, ücretsiz katmanı var. Migration'ları Turso'ya `npm run db:deploy` uygular (Prisma Migrate libSQL'e bağlanamaz) | Postgres (Neon/Supabase) — migration'ların ve SQLite'a dayanan testlerin Postgres'e taşınmasını gerektirir; Drizzle — daha hafif ama migration akışı ekipçe daha az bilinir |
 | NBA verisi | NBA API (stats.nba.com) → `nba_api` 1.12 ile yerel senkron → `src/data/seed/*.json` snapshot + `NbaDataSource` | Ücretsiz ve en kapsamlı kaynak; detay §3.6 | balldontlie, API-Sports (aşağıda) |
 | Veri senkronu | Python 3.13 (yerelde 3.13.0) + `nba_api`, `scripts/nba-sync/requirements.txt` ile sabit sürüm | `nba_api` endpoint sarmalayıcıları, başlık/oturum yönetimi hazır; yalnız geliştirme aracı, uygulamaya girmez | TS ile ham `fetch` — başlık ve endpoint bakımı bize kalır |
 | Unit/entegrasyon test | Vitest 5.x + @testing-library/react + jsdom | Hızlı, ESM/TS yerel; Next.js dokümanlarında önerilir | Jest — TS/ESM yapılandırması ağır |
@@ -232,6 +232,7 @@ NbaGamesApp/
 ├── prisma.config.ts
 ├── scripts/
 │   ├── validate-data.ts         # seed JSON'larını Zod ile doğrular
+│   ├── db-deploy.ts             # migration'ları Turso'ya uygular (npm run db:deploy)
 │   └── nba-sync/                # NBA API veri hattı (Python): sync.py, requirements.txt
 ├── data-cache/                  # ham NBA API yanıtları (gitignore)
 ├── src/
@@ -265,7 +266,7 @@ Unit testler test edilen dosyanın yanında `*.test.ts(x)`.
 
 ## 5. Kısıtlar
 
-- **Teknik:** Yalnızca açık kaynak (MIT/Apache/ISC) bağımlılıklar. Çalışma zamanında ücretli veya dış API yok. Yeni bağımlılık AGENT.md onay kuralına tabi.
+- **Teknik:** Yalnızca açık kaynak (MIT/Apache/ISC) bağımlılıklar. Çalışma zamanında ücretli servis veya NBA veri API'si yok; yayındaki veritabanı Turso'nun ücretsiz katmanıdır (kullanıcı kararı, 2026-11-22). Yeni bağımlılık AGENT.md onay kuralına tabi.
 - **Performans (ölçülebilir):**
   - Lighthouse (mobil, `npm run build && npm start`) Performance ≥ 85, Accessibility ≥ 95 — Home ve `/games`.
   - LCP < 2.5 sn, CLS < 0.1 (Lighthouse mobil profili).
@@ -307,8 +308,9 @@ Kod içeren tüm aşamalar (1–7) Aşama 0 bitmeden başlamaz. Aşama 2 ile Aş
 | Dönüşüm hatası (yanlış stint birleştirme, eksik beşli) | "Yanlış doğru cevap" | Zod + mantık kontrolleri (beşlide 5 farklı oyuncu, stint sezon sırası, FGM ≤ FGA, ilk 10 sıralı); dönüşüm fonksiyonları için sabit örnek yanıtlarla pytest testleri (`scripts/nba-sync/test_transform.py`, `npm run data:test`); footer'da veri tarihi |
 | NBA CDN fotoğraflarının lisans/erişim sorunu | Görseller kırılır veya kaldırılması gerekir | `NEXT_PUBLIC_REMOTE_MEDIA` bayrağı + baş harfli avatar fallback; ticari yayından önce hukuki kontrol |
 | Misafir cookie silinirse hesap kaybolur | Kullanıcı puanını kaybeder | Profilde açık uyarı metni; kalıcı hesap Sonraki Sürümler'de |
-| Bellek içi rate limit çok instance'ta çalışmaz | Sunucusuz dağıtımda limit atlatılabilir | MVP tek instance varsayımı (V6); `RateLimiter` arayüzü ile Redis'e geçiş noktası bırakılır |
-| SQLite sunucusuz ortamda kalıcı değil | Prod'da veri kaybı | Prod için Postgres'e geçiş adımı ISKELET §3.5'te; deploy onay gerektirir |
+| Bellek içi rate limit çok instance'ta çalışmaz | Vercel'de her instance ayrı sayar, limit atlatılabilir | Açık nokta (V6); `RateLimiter` arayüzü ortak depoya (veritabanı tablosu ya da Redis) geçiş noktası |
+| SQLite dosyası sunucusuz ortamda kalıcı değil | Prod'da veri kaybı | Yayında Turso kullanılır (`TURSO_DATABASE_URL`); değişken yoksa `vercel-build` içindeki `db:deploy` hata verip build'i durdurur; deploy onay gerektirir |
+| Turso'ya migration yarıda kalır | Şema yarım kalır | `db:deploy` başarısız migration'ı `_prisma_migrations`'a kaydeder ve elle düzeltilene kadar sonraki deploy'ları durdurur; migration'lar önce yerelde ve libSQL test projesinde çalışır |
 | Hard/Expert'te autocomplete cevabı ele verir (ör. tek eşleşme) | Zorluk düşer | Arama en az 2 karakter ister, tüm oyuncu havuzundan (sadece cevaplardan değil) sonuç döner |
 | Tasarım çıktısı gecikir veya eksik gelir | Tüm geliştirme bloke (kod tasarımdan sonra başlar) | Teslim tek HTML dosyasıyla sınırlı ve TASARIM_PROMPT §10'da kontrol edilebilir kurallarla tanımlı; eksik bölüm "Tasarım geldikten sonra" listesiyle hemen tespit edilip yalnız o bölüm yeniden istenir |
 
@@ -320,7 +322,7 @@ Kod içeren tüm aşamalar (1–7) Aşama 0 bitmeden başlamaz. Aşama 2 ile Aş
 - **V3:** Hard/Expert cevapları serbest metin değil, veri setinden autocomplete ile seçilir (yazım hatası sorununu ortadan kaldırır).
 - **V4:** Oyuncu görselleri NBA CDN'den kullanılır (kişisel/eğitsel proje); takım logoları kullanılmaz.
 - **V5:** Arayüz Türkçe ve İngilizce (F18); oyun modu adları ve istatistik kısaltmaları iki dilde de İngilizce. Dokümanlar Türkçe.
-- **V6:** MVP tek sunucu instance'ında çalışır (bellek içi rate limit); dağıtım hedefi ve hosting seçimi kullanıcı onayına bağlı, MVP yerelde `npm start` ile doğrulanır.
+- **V6:** Dağıtım hedefi Vercel + Turso (kullanıcı kararı, 2026-11-22); kendi sunucuda `npm start` + yerel SQLite dosyası da çalışır. Rate limit bellek içidir: Vercel'de her instance ayrı sayar (açık nokta).
 - **V7:** Gün sınırı UTC'dir (Daily ve "Bugün" sıralaması).
 - **V8:** Leaderboard "Son 7 gün" = son 7×24 saatte cevaplanan soruların `Question.points` toplamı (yarıda kalan oturumların puanı da sayılır, V9 ile tutarlı); "Bugün" = bugünkü Daily oturumunun puanı; "Tüm zamanlar" = `User.totalPoints`. Daily puanları totalPoints'e dahildir.
 - **V9:** Yarıda bırakılan (30 dk'dan eski `ACTIVE`) oturumlar puan kazanmış soruları korur ama geçmişte "terk edildi" görünmez; leaderboard'a yalnız kazanılan puan yansır.

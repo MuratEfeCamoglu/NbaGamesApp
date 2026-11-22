@@ -14,7 +14,7 @@ NBA oyuncu, takım, kadro ve istatistik verisi üzerine 6 bilgi oyunu (Starting 
 - Next.js 16 App Router · React 19 · Route Handlers (`src/app/api`)
 - Tailwind CSS 4 (CSS-first `@theme`) · `motion` (`import { motion } from "motion/react"`)
 - Zod 4 (API girdisi + veri seti şeması)
-- Prisma 7 (stable) + SQLite (`@prisma/adapter-better-sqlite3`)
+- Prisma 7 (stable) + SQLite: yerelde dosya (`@prisma/adapter-better-sqlite3`), yayında Turso/libSQL (`@prisma/adapter-libsql/web`, `@libsql/client`)
 - Vitest 5 + Testing Library + jsdom · Playwright
 - Yardımcı: `tsx` (betikler), `server-only` (sunucu modül koruması)
 - Veri: NBA API (stats.nba.com) ← Python 3.13 + `nba_api` 1.12 + pytest (yalnız `scripts/nba-sync`, uygulamaya girmez)
@@ -38,6 +38,7 @@ Aşama 1'de `package.json`'a tam olarak bu adlarla eklenir:
 | Veri doğrulama | `npm run data:validate` (`tsx scripts/validate-data.ts`) |
 | DB migration | `npm run db:migrate` (`prisma migrate dev`) |
 | DB sıfırlama | `npm run db:reset` — **onay gerektirir** (AGENT.md) |
+| Turso'ya migration | `npm run db:deploy` (`tsx scripts/db-deploy.ts`; `TURSO_DATABASE_URL` gerekir; Vercel'de `vercel-build` her deploy'da çalıştırır) — **onay gerektirir** (AGENT.md) |
 | Build | `npm run build` · prod çalıştırma: `npm start` |
 | Tam doğrulama | `npm run verify` = lint + typecheck + test + data:validate + build |
 
@@ -45,6 +46,7 @@ Aşama 1'de `package.json`'a tam olarak bu adlarla eklenir:
 - `DATABASE_URL` — `file:./dev.db`
 - `SESSION_SECRET` — ≥32 bayt rastgele (`node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"`)
 - `NEXT_PUBLIC_REMOTE_MEDIA` — `true`/`false` (NBA CDN oyuncu fotoğrafları)
+- `TURSO_DATABASE_URL`, `TURSO_AUTH_TOKEN` — yalnız yayında (Vercel): doluysa uygulama `DATABASE_URL` yerine Turso'ya bağlanır; yerelde boş kalır
 NBA API anahtar istemez; veri hattı için ortam değişkeni yok.
 `.env.example` yalnızca adları ve örnek olmayan açıklamaları içerir.
 
@@ -56,7 +58,7 @@ NBA API anahtar istemez; veri hattı için ortam değişkeni yok.
 - Doğru cevap (`answerKey`) yalnız sunucuda; istemciye `toPublicQuestion()` çıktısı gider.
 - Cevap kontrolü, süre ölçümü ve puan hesabı sunucuda. İstemci zamanlayıcısı yalnızca görseldir.
 - Her Route Handler girdisini Zod ile `safeParse` eder; hatada `src/server/errors.ts` biçimi: `{ error: { code, message } }`.
-- Prisma istemcisi tek örnek: `src/server/db.ts`.
+- Prisma istemcisi tek örnek: `src/server/db.ts`. Adapter URL'den seçilir: `file:` → better-sqlite3, uzak libSQL (Turso) → `@prisma/adapter-libsql/web` (saf JS HTTP istemcisi; Vercel'de native modül yüklenmez).
 - Yeni oyun modu = `src/games/<slug>/engine.ts` + `src/games/core/registry.ts` kaydı; başka yer değişmez.
 
 ## Kod Kuralları
@@ -99,3 +101,5 @@ NBA API anahtar istemez; veri hattı için ortam değişkeni yok.
 - NBA verisi NBA API'den gelir (ISKELET §3.6): `src/data/seed/*.json` yalnızca `npm run data:sync` ile üretilir, elle düzenlenmez; uygulama kodu stats.nba.com'u asla çağırmaz (bulut IP'lerini engeller).
 - Senkron yalnız geliştirici makinesinde; CI ve sunucuda çalıştırılmaz. API erişilemezse betik hata verir ve seed'lere dokunmaz — sonucu olduğu gibi raporla.
 - Seed değiştiyse `npm run data:validate` zorunlu; `data-cache/` ve `.venv/` gitignore'da.
+- Turso: Prisma Migrate libSQL'e bağlanamaz. Migration yerelde `npm run db:migrate` ile üretilir, Turso'ya `npm run db:deploy` uygular (Prisma'nın `_prisma_migrations` tablosuna aynı checksum'larla yazar). Uygulanmış migration dosyası değiştirilmez; her şema değişikliği yeni bir migration'dır.
+- libSQL'in yerel dosya modu uygulamada kullanılmaz: her transaction'ın bağlantısını çöp toplamaya kadar açık bırakıyor (Windows'ta dosya kilitlenir). libSQL adapter'ı Vitest'in `libsql` projesinde DB testleriyle ayrıca koşar; dosyalarını `src/test/libsql-global-setup.ts` temizler.
